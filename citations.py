@@ -2,11 +2,12 @@
 
 This is plain Python, NOT an LLM, so the check can't be talked out of the truth.
 
-STATUS: simple starter version (exact match only). Your job is to upgrade
-verify_quote() with fuzzy matching so the failing tests in
-tests/test_citations.py pass. Hints at the bottom.
+Order of checks: too short -> exact substring -> fuzzy match.
+Tests are in tests/test_citations.py.
 """
 import re
+
+from rapidfuzz import fuzz
 
 MIN_WORDS = 5  # a 2-word "quote" matches almost anywhere and proves nothing
 
@@ -28,17 +29,16 @@ def verify_quote(quote, filing_text, threshold=90):
     quote_n = normalize(quote)
     filing_n = normalize(filing_text)
 
-    # Starter logic: exact substring or nothing.
-    if quote_n and quote_n in filing_n:
+    # 1. Too short to mean anything: a 2-word "quote" fuzzy-matches almost
+    #    anywhere, so reject it before doing any matching.
+    if len(quote_n.split()) < MIN_WORDS:
+        return False, 0.0
+
+    # 2. Fast path: an exact substring is instant and always right.
+    if quote_n in filing_n:
         return True, 100.0
-    return False, 0.0
 
-
-# HINTS (try without them first):
-# 1. Models misquote slightly (one word changed, a word dropped), so exact
-#    matching rejects real quotes. Look at rapidfuzz.fuzz.partial_ratio: it
-#    finds the best-matching window of the long text and scores it 0-100.
-# 2. Keep the exact-match fast path: it is instant and always right.
-# 3. Reject quotes shorter than MIN_WORDS words before matching.
-# 4. partial_ratio on a whole filing is slower than a substring check, which
-#    is one more reason to try the fast path first.
+    # 3. Fuzzy path: slide the quote along the filing and score the
+    #    best-matching window from 0 to 100.
+    score = fuzz.partial_ratio(quote_n, filing_n)
+    return score >= threshold, float(score)
