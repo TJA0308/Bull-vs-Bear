@@ -1,0 +1,148 @@
+{
+  "ticker": "AAPL",
+  "filing": {
+    "accession": "0000320193-26-000026",
+    "document": "aapl-20260926.htm",
+    "date": "2026-11-03"
+  },
+  "model": "claude-haiku-5-5",
+  "created": "2026-11-21T22:21:36+00:00",
+  "bull_first": true,
+  "rounds": [
+    {
+      "round": 1,
+      "bull": {
+        "argument": "Apple's 2026 filing shows strong momentum. Total net sales rose 15% to $478.8 billion, and Services, the higher-margin business, grew 13% on advertising and cloud services. Total gross margin percentage improved to 48.8% from 46.9%. Management states that its cash position and access to debt markets are sufficient for cash requirements and its capital return program \"over the next 12 months and beyond,\" and the Company repurchased $85.8 billion of stock during 2026. The bear case deserves a direct answer. Management flags memory and component cost pressure that it expects to \"intensify,\" and it acknowledges that product gross margin gains partly reflected tariff refunds, which may not recur. R&D rose 32% on AI investment, and the Google search licensing revenue faces remedy risk. Even so, the Company's scale, cash generation, and demonstrated pricing and mix power give it the capacity to absorb these pressures while still returning substantial capital to shareholders.",
+        "claims": [
+          {
+            "claim": "Services revenue grew 13%, driven by advertising and cloud services, supporting higher-margin growth.",
+            "quote": "Services net sales increased during 2026 compared to 2025 primarily due to higher net sales from advertising and cloud services.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management believes liquidity is sufficient for cash needs and capital returns over the next 12 months and beyond.",
+            "quote": "will be sufficient to satisfy its cash requirements and capital return program over the next 12 months and beyond",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Products gross margin improved on mix and tariff refunds, though partly offset by memory costs, a caveat to the upside.",
+            "quote": "Products gross margin and gross margin percentage increased during 2026 compared to 2025 primarily due to product mix and tariff refunds, partially offset by higher costs, including memory.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull case leans on headline growth, but the filing points to fragile foundations. Management states it is experiencing 'supply constraints and rising costs' for advanced semiconductors, memory and storage, and expects these 'to intensify for memory and storage components.' Products gross margin rose partly because of tariff refunds, which the Company says were recognized as a reduction of cost of sales; such one-time benefits do not compound. Meanwhile, R&D jumped 32% to $45.8 billion, largely on AI infrastructure, and the filing concedes AI 'may not enhance the Company's products or services or be beneficial or profitable.' Revenue is also concentrated: iPhone supplied $254.1 billion of $478.8 billion in sales, and the Google search licensing income that feeds Services faces possible remedies. Management itself says gross margins will be subject to 'volatility and downward pressure.' Scale does not cancel these risks; it magnifies them.",
+        "claims": [
+          {
+            "claim": "Management expects component cost pressure to worsen, not ease.",
+            "quote": "The Company expects these trends to intensify for memory and storage components.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Part of the 2026 products margin gain came from a non-recurring tariff refund benefit.",
+            "quote": "primarily due to product mix and tariff refunds, partially offset by higher costs, including memory.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management concedes its AI investments may not prove profitable.",
+            "quote": "the usage of artificial intelligence may not enhance the Company’s products or services or be beneficial or profitable for its business.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "bull": {
+        "argument": "The bear case is right that cost pressure is real, but it overstates how much the 2026 numbers rest on one-offs. Products gross margin rose to 39.3% from 36.8%, and the filing attributes that mainly to product mix; tariff refunds are a named contributor, not the sole driver. Total gross margin still reached 48.8%, and Services, at 76.2%, is now 25.8% of net sales ($123.3B of $478.8B), which structurally lifts the blended margin. Services growth of 13% came from advertising and cloud services, not from a one-time refund. On R&D, the 32% increase is an investment decision the Company can scale, and it is funded by operating cash flow and a $136.9B liquidity position. Management says that position will cover cash needs and capital returns \"over the next 12 months and beyond,\" and it repurchased $85.8B of stock in 2026. Concentration in iPhone is real, but iPhone grew 21% to $254.1B. The filing's risks are substantial. The reported results, however, show a company compounding revenue and margin while funding its own AI build-out.",
+        "claims": [
+          {
+            "claim": "Products gross margin rose on product mix, with tariff refunds only one named contributor.",
+            "quote": "Products gross margin and gross margin percentage increased during 2026 compared to 2025 primarily due to product mix and tariff refunds",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Services is a growing share of sales and carries a much higher gross margin.",
+            "quote": "Services 93,943 82,314 71,050",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Liquidity is expected to cover cash requirements and capital returns over the next 12 months and beyond.",
+            "quote": "will be sufficient to satisfy its cash requirements and capital return program over the next 12 months and beyond",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "Grant the mix point: the filing says products margin rose 'primarily due to product mix and tariff refunds,' so refunds are a co-driver, not a footnote. That still means part of the 2026 margin gain was not operating improvement, and the Company says the refunds came from a Supreme Court ruling, not a repeatable pricing advantage. The margin gain also sits beside a stated cost headwind: memory costs are an offset, and the Company expects memory and storage pressure to intensify. Services is 25.8% of sales, but its growth depends on licensing income that the filing says could be hit by Google search remedies. Liquidity is also thinner than the headline suggests. The Company repurchased $85.8 billion and paid $15.7 billion in dividends, about $101.5 billion in one year, against $136.9 billion of cash and securities. It also carries $78.7 billion of notes and $89.7 billion of manufacturing purchase obligations, $82.7 billion due within 12 months. Growth is real, but the capital commitments are heavy.",
+        "claims": [
+          {
+            "claim": "Part of the 2026 products margin gain came from tariff refunds, a named co-driver rather than a minor factor.",
+            "quote": "primarily due to product mix and tariff refunds, partially offset by higher costs, including memory.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Near-term manufacturing commitments are very large relative to the cash position.",
+            "quote": "the Company had manufacturing purchase obligations of $89.7 billion, with $82.7 billion payable within 12 months.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "A major Services revenue stream could be impaired by the Google search litigation.",
+            "quote": "A reversal of the order on appeal could result in the imposition of certain remedies initially proposed by the DOJ, such as those prohibiting Google from offering the Company commercial terms for search distribution.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    }
+  ],
+  "citations": {
+    "bull": {
+      "verified": 6,
+      "total": 6
+    },
+    "bear": {
+      "verified": 6,
+      "total": 6
+    },
+    "overall": {
+      "verified": 12,
+      "total": 12,
+      "accuracy": 1.0
+    }
+  },
+  "judge": {
+    "scores": {
+      "bull": {
+        "evidence": 7,
+        "logic": 6,
+        "responsiveness": 7
+      },
+      "bear": {
+        "evidence": 8,
+        "logic": 7,
+        "responsiveness": 8
+      }
+    },
+    "winner": "bear",
+    "reasoning": "Both sides cite verified filing language, but the bear grounds its points in more specific, verified quotes (memory cost intensification, $82.7B of manufacturing obligations due within 12 months, Google remedy risk) and directly concedes the mix point while reframing it. The bull's Round 2 rebuttal relies on a Services sales-share figure and a liquidity claim that the bear answers by netting out capital returns and near-term obligations, which the bull does not fully address."
+  },
+  "usage": {
+    "calls": 5,
+    "input_tokens": 127660,
+    "output_tokens": 4341,
+    "cost_usd": 0.0149
+  }
+}
