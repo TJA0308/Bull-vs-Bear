@@ -1,0 +1,148 @@
+{
+  "ticker": "PEP",
+  "filing": {
+    "accession": "0000077476-26-000007",
+    "document": "pep-20251227.htm",
+    "date": "2026-02-03"
+  },
+  "model": "claude-haiku-5-5",
+  "created": "2026-11-21T22:45:08+00:00",
+  "bull_first": true,
+  "rounds": [
+    {
+      "round": 1,
+      "bull": {
+        "argument": "PepsiCo's FY2025 filing shows a company generating substantial cash and returning it to shareholders. Net revenue rose 2% to $93,925 million, and free cash flow increased 9% to $8,200 million despite lower operating cash flow. Management expects to return about $8.9 billion to shareholders in 2026, including a 4% dividend increase to $5.92 per share. Core net ROIC was 19.1%, and ROIC was 14.3%, which signals efficient use of capital. Core EPS was flat at $8.14 versus $8.16, but reported EPS fell mainly because of Rockstar-related impairments, which management classifies as non-recurring items. The company is also investing in growth through the Siete and poppi acquisitions and its productivity plan, which is expected to yield long-term savings. The risks are real, including tariffs, GLP-1 drugs, and sugar taxes, but the filing shows a diversified portfolio in over 200 countries and a strong balance sheet with Tier 1 commercial paper access.",
+        "claims": [
+          {
+            "claim": "Free cash flow grew 9% year over year, supporting the capacity to return cash to shareholders.",
+            "quote": "Free cash flow, non-GAAP measure $ 8,200 $ 7,531 9 %",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management plans a substantial 2026 shareholder return and a dividend increase.",
+            "quote": "We expect to return a total of approximately $8.9 billion to shareholders in 2026, comprising dividends of approximately $7.9 billion and share repurchases of approximately $1.0 billion.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Core net ROIC is strong at 19.1%, indicating efficient capital use even after adjusting for items affecting comparability.",
+            "quote": "Core Net ROIC, non-GAAP measure 19.1 %",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bear case rests on the filing's own warnings. Operating profit fell 11% to $11,498 million and reported EPS dropped 14% to $6.00, with $1.9 billion of impairment charges, mostly Rockstar, showing that brand value assumptions have already broken down. Core EPS was flat at $8.14 versus $8.16, so underlying earnings did not grow despite price increases. Operating cash flow fell to $12,087 million from $12,507 million, and free cash flow of $8,200 million is below the $8.9 billion planned for 2026 shareholder returns, which include $7.9 billion of dividends. Management's own risk factors describe demand pressure from GLP-1 medications, sugar and ingredient taxes, and private label competition. Net interest expense rose $202 million as debt grew, and the SodaStream goodwill 'narrowly exceeded' fair value. Russia supplied 20% of consolidated cash, and restructuring charges will continue through 2030. The shareholder return is funded by borrowing and a stretched cash position.",
+        "claims": [
+          {
+            "claim": "Reported earnings fell sharply, and core EPS did not grow.",
+            "quote": "Net income attributable to PepsiCo per common share – diluted, GAAP measure $ 6.00 $ 6.95 (14) %",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Planned 2026 shareholder returns exceed the free cash flow generated in 2025.",
+            "quote": "We expect to return a total of approximately $8.9 billion to shareholders in 2026, comprising dividends of approximately $7.9 billion and share repurchases of approximately $1.0 billion.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The SodaStream unit has little valuation cushion, so further impairment is possible.",
+            "quote": "the estimated fair value of the SodaStream reporting unit narrowly exceeded its carrying value",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "bull": {
+        "argument": "The bear case leans on real but mostly known issues. The $1.9 billion impairment charge is concentrated in Rockstar, a brand that management has already sold to Celsius in a transaction that produced convertible preferred shares, so the write-down reflects a specific asset rather than a broad breakdown. Core EPS of $8.14 was flat, but core operating profit rose 1.5% to $14,912 million and core net ROIC was 19.1%. Free cash flow of $8,200 million rose 9%, and the 2026 plan of about $8.9 billion is a stated expectation, not a commitment already funded by debt. The filing says dividends and buybacks are funded from operating cash flow, and it reports $9.2 billion of cash and Tier 1 commercial paper access. Russia's 20% share of cash is disclosed as not materially affecting liquidity. The SodaStream and restructuring items are real risks, but the filing reports that the 2019 plan is expected to yield long-term savings and that its charges are already largely accounted for.",
+        "claims": [
+          {
+            "claim": "Core operating profit increased 1.5%, so the operating decline is largely due to items affecting comparability rather than weakening underlying results.",
+            "quote": "Core, non-GAAP measure 6,545 3,285 1,856 2,571 2,144 464 (1,953) 14,912",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management states the shareholder return is expected to be funded primarily by free cash flow, and that Russia-held cash has not materially affected liquidity.",
+            "quote": "We expect to continue to return free cash flow to our shareholders primarily through dividends and share repurchases",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The filing states that cash and Russia-related exposure has not produced a material impact on liquidity.",
+            "quote": "to date, we have not identified any material impact on our liquidity or capital resources as a result of these amounts",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The opponent's strongest point is that the Rockstar write-down is isolated, but the filing undercuts that. The impairment was $1.9 billion across PBNA, EMEA and IB Franchise, and the Note 4 text says the deterioration was in 'certain markets' and 'lower expectations of future business performance,' which is a broader signal than one brand. Core operating profit rose only 1.5%, while reported operating profit fell 11%, and core EPS was flat, so the reported gap is recurring, not one-off. On cash, the filing says free cash flow of $8,200 million was after $4,415 million of capital spending, and dividends alone are about $7.9 billion for 2026. Planned returns of $8.9 billion exceed 2025 free cash flow, and the $1.0 billion buyback is not covered by it. Net interest expense rose $202 million as debt climbed to $42.3 billion long-term. Operating cash flow fell 3%. The 2019 plan is still expected to incur about $900 million of charges in 2026 with 'the majority of the remaining' costs through 2027, so restructuring is not finished.",
+        "claims": [
+          {
+            "claim": "Impairment spread across several segments, not just one brand.",
+            "quote": "impairment charges related to the Rockstar brand in our PBNA, EMEA, and IB Franchise segments",
+            "verified": false,
+            "score": 81.7
+          },
+          {
+            "claim": "Planned 2026 dividends alone approach the full 2025 free cash flow, leaving little room for buybacks.",
+            "quote": "dividends of approximately $7.9 billion and share repurchases of approximately $1.0 billion",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Restructuring charges continue into 2026 and beyond.",
+            "quote": "In our 2026 financial results, we expect to incur pre-tax charges of approximately $900",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    }
+  ],
+  "citations": {
+    "bull": {
+      "verified": 6,
+      "total": 6
+    },
+    "bear": {
+      "verified": 5,
+      "total": 6
+    },
+    "overall": {
+      "verified": 11,
+      "total": 12,
+      "accuracy": 0.917
+    }
+  },
+  "judge": {
+    "scores": {
+      "bull": {
+        "evidence": 7,
+        "logic": 7,
+        "responsiveness": 7
+      },
+      "bear": {
+        "evidence": 6,
+        "logic": 7,
+        "responsiveness": 7
+      }
+    },
+    "winner": "tie",
+    "reasoning": "Both sides cite largely verified filing quotes, but the bear's impairment-spread claim rests on an unverified quote, which weakens its evidence. The bull's rebuttal on Rockstar isolation and funding sources is answered reasonably by the bear's core-vs-reported gap and dividend-coverage arguments, leaving the debate closely balanced."
+  },
+  "usage": {
+    "calls": 5,
+    "input_tokens": 415413,
+    "output_tokens": 2654,
+    "cost_usd": 0.0429
+  }
+}

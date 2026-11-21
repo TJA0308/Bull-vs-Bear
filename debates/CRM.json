@@ -1,0 +1,148 @@
+{
+  "ticker": "CRM",
+  "filing": {
+    "accession": "0001108524-26-000060",
+    "document": "crm-20260131.htm",
+    "date": "2026-03-02"
+  },
+  "model": "claude-haiku-5-5",
+  "created": "2026-11-21T22:43:09+00:00",
+  "bull_first": true,
+  "rounds": [
+    {
+      "round": 1,
+      "bull": {
+        "argument": "Salesforce's fiscal 2026 filing shows a scaled, cash-generative CRM platform with improving profitability. Revenue rose 10% to $41.5 billion, income from operations grew to $8.3 billion from $7.2 billion, and operating margin expanded to about 20% from 19%. Cash from operations reached $15.0 billion, up 15%. Remaining performance obligation reached $72.4 billion, up 14%, giving visibility into future revenue. Subscription and support made up about 95% of revenue, a recurring base. Attrition held near eight percent, and management says it kept attrition consistent year over year. Shareholder returns are substantial, with $12.7 billion of buybacks and $1.6 billion of dividends. The risk factors are extensive, and the filing acknowledges Informatica debt of $6.0 billion and AI-related competition. Still, the financial results show a business that is growing, expanding margins, and returning capital, which supports a bullish view.",
+        "claims": [
+          {
+            "claim": "Operating margin expanded, showing improving profitability.",
+            "quote": "Operating margin, which represents income from operations as a percentage of total revenue, increased to approximately 20 percent for fiscal 2026 compared to approximately 19 percent in the prior year period.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Contracted future revenue is large and growing, giving visibility.",
+            "quote": "Total remaining performance obligation, which represents all future revenue under contract yet to be recognized, as of January 31, 2026 was approximately $72.4 billion, an increase of 14 percent year-over-year.",
+            "verified": true,
+            "score": 99.5
+          },
+          {
+            "claim": "Customer attrition has stayed consistent, supporting recurring revenue.",
+            "quote": "We continue to maintain a variety of customer programs and initiatives, which, along with increasing enterprise adoption, have helped keep our attrition rate consistent as compared to the prior year.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull case rests on headline growth, but the filing points to a weaker balance sheet and rising execution risk. Debt rose from $8.5 billion to $14.5 billion in principal after the full $6.0 billion Informatica borrowing, and the filing warns that debt service could consume a substantial portion of operating cash flow and that covenant breaches could permit acceleration. Cash and marketable securities fell from $14.0 billion to $9.6 billion. Meanwhile, buybacks of $12.7 billion and dividends of $1.6 billion exceeded operating cash flow of $15.0 billion once acquisition outlays of $9.3 billion and capex are counted, so shareholder returns are being funded partly by leverage and cash drawdown. Growth is decelerating in key areas: professional services fell 4%, and the filing notes that AI-native competitors may bypass traditional workflows. Operating margin gains came alongside $586 million of restructuring charges. Reported income also leaned on a $1.0 billion strategic investment gain, versus a $121 million loss a year earlier, which is volatile and not recurring. The filing admits that AI monetization for Agentforce and Data 360 remains uncertain.",
+        "claims": [
+          {
+            "claim": "Principal debt roughly doubled after the Informatica acquisition, raising leverage and fixed obligations.",
+            "quote": "Principal due on our outstanding debt obligations (1) 14,500 8,500",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The filing warns debt service could absorb a large share of operating cash flow and that covenant failures could accelerate debt.",
+            "quote": "cause us to dedicate a substantial portion of our cash flows from operations toward debt service obligations and principal repayments",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Operating income benefited from a one-time-like investment gain that swung sharply from the prior year.",
+            "quote": "For fiscal 2026, the gain on our strategic investment portfolio was primarily driven by unrealized gains on privately held equity investments of $1.5 billion",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "bull": {
+        "argument": "The bear's balance sheet concern is real but overstated. Debt principal rose to $14.5 billion, yet the filing ties the $6.0 billion Informatica borrowing to a $9.6 billion acquisition that already contributed $399 million of fiscal 2026 revenue, and the company says it was in compliance with all debt covenants. Cash dropped to $9.6 billion partly because $3.0 billion of marketable securities were sold to fund investing outflows, and the filing reports $1.0 billion of proceeds from equity plans. The bear is right that buybacks and dividends exceeded the $15.0 billion of operating cash flow only when acquisitions are included, but operating cash flow funded the dividend and most of the repurchases before acquisitions. Operating margin still expanded to about 20% even after $586 million of restructuring, and management expects restructuring charges to be modest near term. The $1.0 billion investment gain is volatile, so I would not treat it as core earnings; operating income of $8.3 billion carries the thesis. Core subscription and support grew 10% and represented 95% of revenue, and the $72.4 billion RPO grew 14%. Those are the drivers to watch.",
+        "claims": [
+          {
+            "claim": "Operating income, not the investment gain, drives the margin story.",
+            "quote": "Income from Operations: For fiscal 2026, income from operations was $8.3 billion as compared to $7.2 billion from a year ago.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management reports compliance with debt covenants as of fiscal year end.",
+            "quote": "We were in compliance with all debt covenants as of January 31, 2026.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Restructuring charges are not expected to be significant near term.",
+            "quote": "We do not expect to incur significant additional charges in connection with our restructuring initiatives in the near term.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The opponent is right that operating cash flow covered the dividend and most buybacks before acquisitions, and that Salesforce reported covenant compliance. But the cushion is thinner than the headline suggests. Operating cash flow of $15.0 billion had to absorb $9.3 billion of acquisition outflows, $594 million of capital expenditures and $1.8 billion of strategic investments. The gap was bridged with $3.0 billion of marketable securities sales and $6.0 billion of Informatica borrowings. Principal debt is now $14.5 billion, up from $8.5 billion, and the filing warns that covenant failures could accelerate all borrowings. Informatica contributed $399 million of revenue against a roughly $9.6 billion price. The $1.0 billion investment gain also lifts pretax income to $9.5 billion; excluding it, pretax income would be about $8.5 billion. Professional services revenue fell 4%, and management expects weak demand for large transformation engagements may continue.",
+        "claims": [
+          {
+            "claim": "Debt principal rose sharply, and the filing warns covenant failures could accelerate all borrowings.",
+            "quote": "A failure to comply with the covenants and other provisions of our outstanding debt could result in events of default under such instruments, which could permit acceleration of all of our debt and borrowings.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Professional services revenue declined, and management expects the weak demand to continue near term.",
+            "quote": "The decrease in professional services and other revenues for fiscal 2026 was primarily due to less demand for larger, multi-year transformation engagements, which may continue in the near term.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Cash and marketable securities fell, reducing the liquidity buffer.",
+            "quote": "Total cash, cash equivalents and marketable securities as of January 31, 2026 was $9.6 billion.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    }
+  ],
+  "citations": {
+    "bull": {
+      "verified": 6,
+      "total": 6
+    },
+    "bear": {
+      "verified": 6,
+      "total": 6
+    },
+    "overall": {
+      "verified": 12,
+      "total": 12,
+      "accuracy": 1.0
+    }
+  },
+  "judge": {
+    "scores": {
+      "bull": {
+        "evidence": 7,
+        "logic": 6,
+        "responsiveness": 6
+      },
+      "bear": {
+        "evidence": 7,
+        "logic": 7,
+        "responsiveness": 7
+      }
+    },
+    "winner": "bear",
+    "reasoning": "Both sides cite verified quotes, so evidence is comparable. The bear's points on debt doubling, covenant acceleration risk, and cash drawdown directly rebut the bull's cash-generation framing, and the bear shows that cash flow covered only pre-acquisition shareholder returns. The bull partly concedes these points and reasonably argues the investment gain is non-core, but it leaves the leverage and liquidity concerns less fully answered, giving the bear a modest edge."
+  },
+  "usage": {
+    "calls": 5,
+    "input_tokens": 201441,
+    "output_tokens": 4499,
+    "cost_usd": 0.0224
+  }
+}

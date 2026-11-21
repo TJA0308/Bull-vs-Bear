@@ -1,0 +1,482 @@
+{
+  "AAPL": {
+    "bull_first": [
+      {
+        "winner": "bear",
+        "margin": -1
+      },
+      {
+        "winner": "tie",
+        "margin": -1
+      },
+      {
+        "winner": "bear",
+        "margin": -1
+      }
+    ],
+    "bear_first": [
+      {
+        "winner": "bear",
+        "margin": -3
+      },
+      {
+        "winner": "bear",
+        "margin": -3
+      },
+      {
+        "winner": "bear",
+        "margin": -3
+      }
+    ]
+  },
+  "MSFT": {
+    "bull_first": [
+      {
+        "winner": "tie",
+        "margin": -1
+      },
+      {
+        "winner": "tie",
+        "margin": -1
+      },
+      {
+        "winner": "tie",
+        "margin": -1
+      }
+    ],
+    "bear_first": [
+      {
+        "winner": "bear",
+        "margin": -3
+      },
+      {
+        "winner": "tie",
+        "margin": -1
+      },
+      {
+        "winner": "tie",
+        "margin": -1
+      }
+    ]
+  },
+  "NVDA": {
+    "bull_first": [
+      {
+        "winner": "bear",
+        "margin": -3
+      },
+      {
+        "winner": "bear",
+        "margin": -3
+      },
+      {
+        "winner": "bear",
+        "margin": -3
+      }
+    ],
+    "bear_first": [
+      {
+        "winner": "bear",
+        "margin": -4
+      },
+      {
+        "winner": "bear",
+        "margin": -4
+      },
+      {
+        "winner": "bear",
+        "margin": -4
+      }
+    ]
+  },
+  "TSLA": {
+    "bull_first": [
+      {
+        "winner": "bear",
+        "margin": -5
+      },
+      {
+        "winner": "bear",
+        "margin": -2
+      },
+      {
+        "winner": "bear",
+        "margin": -2
+      }
+    ],
+    "bear_first": [
+      {
+        "winner": "bear",
+        "margin": -3
+      },
+      {
+        "winner": "bear",
+        "margin": -3
+      },
+      {
+        "winner": "bear",
+        "margin": -3
+      }
+    ]
+  },
+  "AMZN": {
+    "bull_first": [
+      {
+        "winner": "bear",
+        "margin": -4
+      },
+      {
+        "winner": "bear",
+        "margin": -4
+      },
+      {
+        "winner": "bear",
+        "margin": -4
+      }
+    ],
+    "bear_first": [
+      {
+        "winner": "bear",
+        "margin": -3
+      },
+      {
+        "winner": "bear",
+        "margin": -3
+      },
+      {
+        "winner": "bear",
+        "margin": -3
+      }
+    ]
+  },
+  "GOOGL": {
+    "bull_first": [
+      {
+        "winner": "bear",
+        "margin": -4
+      },
+      {
+        "winner": "bear",
+        "margin": -4
+      },
+      {
+        "winner": "bear",
+        "margin": -4
+      }
+    ],
+    "bear_first": [
+      {
+        "winner": "bear",
+        "margin": -4
+      },
+      {
+        "winner": "bear",
+        "margin": -4
+      },
+      {
+        "winner": "bear",
+        "margin": -4
+      }
+    ]
+  },
+  "META": {
+    "bull_first": [
+      {
+        "winner": "tie",
+        "margin": 1
+      },
+      {
+        "winner": "bull",
+        "margin": 1
+      },
+      {
+        "winner": "bull",
+        "margin": 2
+      }
+    ],
+    "bear_first": [
+      {
+        "winner": "tie",
+        "margin": -1
+      },
+      {
+        "winner": "tie",
+        "margin": -2
+      },
+      {
+        "winner": "bear",
+        "margin": -2
+      }
+    ]
+  },
+  "NFLX": {
+    "bull_first": [
+      {
+        "winner": "bear",
+        "margin": -2
+      },
+      {
+        "winner": "bear",
+        "margin": -2
+      },
+      {
+        "winner": "bear",
+        "margin": -2
+      }
+    ],
+    "bear_first": [
+      {
+        "winner": "tie",
+        "margin": 0
+      },
+      {
+        "winner": "tie",
+        "margin": 1
+      },
+      {
+        "winner": "tie",
+        "margin": 1
+      }
+    ]
+  },
+  "AMD": {
+    "bull_first": [
+      {
+        "winner": "bull",
+        "margin": 4
+      },
+      {
+        "winner": "tie",
+        "margin": 1
+      },
+      {
+        "winner": "bull",
+        "margin": 4
+      }
+    ],
+    "bear_first": [
+      {
+        "winner": "tie",
+        "margin": 2
+      },
+      {
+        "winner": "tie",
+        "margin": 2
+      },
+      {
+        "winner": "tie",
+        "margin": 2
+      }
+    ]
+  },
+  "ADBE": {
+    "bull_first": [
+      {
+        "winner": "bear",
+        "margin": -2
+      },
+      {
+        "winner": "bear",
+        "margin": -2
+      },
+      {
+        "winner": "bear",
+        "margin": -3
+      }
+    ],
+    "bear_first": [
+      {
+        "winner": "bear",
+        "margin": -3
+      },
+      {
+        "winner": "bear",
+        "margin": -2
+      },
+      {
+        "winner": "bear",
+        "margin": -4
+      }
+    ]
+  },
+  "CRM": {
+    "bull_first": [
+      {
+        "winner": "bear",
+        "margin": -2
+      },
+      {
+        "winner": "tie",
+        "margin": -1
+      },
+      {
+        "winner": "bear",
+        "margin": -2
+      }
+    ],
+    "bear_first": [
+      {
+        "winner": "tie",
+        "margin": 0
+      },
+      {
+        "winner": "bear",
+        "margin": -2
+      },
+      {
+        "winner": "bear",
+        "margin": -2
+      }
+    ]
+  },
+  "WMT": {
+    "bull_first": [
+      {
+        "winner": "bear",
+        "margin": -2
+      },
+      {
+        "winner": "bear",
+        "margin": -2
+      },
+      {
+        "winner": "bear",
+        "margin": -2
+      }
+    ],
+    "bear_first": [
+      {
+        "winner": "tie",
+        "margin": -1
+      },
+      {
+        "winner": "tie",
+        "margin": -1
+      },
+      {
+        "winner": "tie",
+        "margin": -1
+      }
+    ]
+  },
+  "KO": {
+    "bull_first": [
+      {
+        "winner": "bear",
+        "margin": -4
+      },
+      {
+        "winner": "bear",
+        "margin": -4
+      },
+      {
+        "winner": "bear",
+        "margin": -3
+      }
+    ],
+    "bear_first": [
+      {
+        "winner": "bear",
+        "margin": -4
+      },
+      {
+        "winner": "bear",
+        "margin": -4
+      },
+      {
+        "winner": "bear",
+        "margin": -4
+      }
+    ]
+  },
+  "PEP": {
+    "bull_first": [
+      {
+        "winner": "tie",
+        "margin": 1
+      },
+      {
+        "winner": "tie",
+        "margin": -1
+      },
+      {
+        "winner": "bear",
+        "margin": -1
+      }
+    ],
+    "bear_first": [
+      {
+        "winner": "bear",
+        "margin": -2
+      },
+      {
+        "winner": "bear",
+        "margin": -3
+      },
+      {
+        "winner": "bear",
+        "margin": -3
+      }
+    ]
+  },
+  "NKE": {
+    "bull_first": [
+      {
+        "winner": "bear",
+        "margin": -5
+      },
+      {
+        "winner": "bear",
+        "margin": -4
+      },
+      {
+        "winner": "bear",
+        "margin": -5
+      }
+    ],
+    "bear_first": [
+      {
+        "winner": "bear",
+        "margin": -3
+      },
+      {
+        "winner": "bear",
+        "margin": -6
+      },
+      {
+        "winner": "bear",
+        "margin": -3
+      }
+    ]
+  },
+  "COST": {
+    "bull_first": [
+      {
+        "winner": "bear",
+        "margin": -3
+      },
+      {
+        "winner": "tie",
+        "margin": -1
+      },
+      {
+        "winner": "bear",
+        "margin": -3
+      }
+    ],
+    "bear_first": [
+      {
+        "winner": "bear",
+        "margin": -3
+      },
+      {
+        "winner": "bear",
+        "margin": -4
+      },
+      {
+        "winner": "bear",
+        "margin": -3
+      }
+    ]
+  }
+}

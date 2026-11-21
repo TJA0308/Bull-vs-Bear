@@ -93,10 +93,13 @@ def loose(word):
 
 
 # \s* = optional whitespace, "." in management.s matches ' or the curly ’
-ITEM_1A_START = rf"item\s*1a\.?\s*{loose('risk')}\s*{loose('factors')}"
-ITEM_1A_END = rf"item\s*1b\.?\s*{loose('unresolved')}"
-ITEM_7_START = rf"item\s*7\.?\s*{loose('management')}.s\s*{loose('discussion')}"
-ITEM_7_END = rf"item\s*7a\.?\s*{loose('quantitative')}"
+# Between "Item 1A" and the title filings use a period, colon, hyphen, en dash
+# or em dash (Costco: "Item 1A—Risk Factors"), so allow any of them.
+SEP = r"[\s.:\-–—]*"
+ITEM_1A_START = rf"item\s*1a{SEP}{loose('risk')}\s*{loose('factors')}"
+ITEM_1A_END = rf"item\s*1b{SEP}{loose('unresolved')}"
+ITEM_7_START = rf"item\s*7{SEP}{loose('management')}.s\s*{loose('discussion')}"
+ITEM_7_END = rf"item\s*7a{SEP}{loose('quantitative')}"
 
 
 def extract_section(text, start_pattern, end_pattern):
