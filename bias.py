@@ -25,7 +25,23 @@ TICKERS = [
     "AMD", "ADBE", "CRM", "COST", "WMT", "KO", "PEP", "NKE",
 ]
 JUDGE_RUNS = 3
-RESULTS_PATH = os.path.join("results", "bias.json")
+
+# Experiment variants. "base" is the original setup (bull always speaks first,
+# so bear always gets the last word). "bear-first" flips who speaks first.
+VARIANTS = {
+    "base": {"bull_first": True},
+    "bear-first": {"bull_first": False},
+}
+
+
+def results_path(variant):
+    name = "bias.json" if variant == "base" else f"bias_{variant}.json"
+    return os.path.join("results", name)
+
+
+def debate_dir(variant):
+    # Variant debates go in a subfolder so they never overwrite the base ones.
+    return "debates" if variant == "base" else os.path.join("debates", "variants", variant)
 
 
 def margin(verdict):
@@ -41,21 +57,22 @@ def judge_both_orders(rounds):
         for _ in range(JUDGE_RUNS):
             verdict = judge(rounds, first=first)
             out[f"{first}_first"].append(
-                {"winner": verdict["winner"], "margin": margin(verdict)}
+                {"winner": verdict["winner"], "margin": margin(verdict),
+                 "scores": verdict["scores"]}  # per-criterion, to see what drives a win
             )
     return out
 
 
-def load_results():
-    if os.path.exists(RESULTS_PATH):
-        with open(RESULTS_PATH, encoding="utf-8") as f:
+def load_results(path):
+    if os.path.exists(path):
+        with open(path, encoding="utf-8") as f:
             return json.load(f)
     return {}
 
 
-def save_results(results):
+def save_results(results, path):
     os.makedirs("results", exist_ok=True)
-    with open(RESULTS_PATH, "w", encoding="utf-8") as f:
+    with open(path, "w", encoding="utf-8") as f:
         json.dump(results, f, indent=2)
 
 
@@ -158,26 +175,38 @@ def print_report(results):
 
 
 def main(args):
-    results = load_results()
+    # --variant NAME picks the experiment (default "base"); the rest are tickers.
+    variant = "base"
+    if "--variant" in args:
+        i = args.index("--variant")
+        variant = args[i + 1]
+        args = args[:i] + args[i + 2:]
+    if variant not in VARIANTS:
+        sys.exit(f"Unknown variant {variant!r}. Choose from: {', '.join(VARIANTS)}")
+
+    path = results_path(variant)
+    results = load_results(path)
 
     if "--report" in args:
         print_report(results)
         return
 
+    # Note: the keys "bull_first"/"bear_first" inside results are which side the
+    # JUDGE saw listed first. The variant controls who SPEAKS first in the debate.
     tickers = [a.upper() for a in args] or TICKERS
     for ticker in tickers:
         if ticker in results and "bull_first" in results[ticker]:
             print(f"{ticker}: already done, skipping")
             continue
-        print(f"\n=== {ticker} ===")
+        print(f"\n=== {ticker} ({variant}) ===")
         try:
-            debate = run_debate(ticker)
-            save_debate(debate)
+            debate = run_debate(ticker, **VARIANTS[variant])
+            save_debate(debate, debate_dir(variant))
             results[ticker] = judge_both_orders(debate["rounds"])
         except Exception as e:  # keep going; one bad filing shouldn't stop the batch
             print(f"{ticker}: FAILED ({type(e).__name__}: {e})")
             results[ticker] = {"error": f"{type(e).__name__}: {e}"}
-        save_results(results)  # save after every ticker so a crash loses nothing
+        save_results(results, path)  # save after every ticker so a crash loses nothing
 
     print_report(results)
 

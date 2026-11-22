@@ -204,9 +204,9 @@ def run_debate(ticker, num_rounds=2, bull_first=True):
     }
 
 
-def save_debate(debate):
-    os.makedirs(DEBATE_DIR, exist_ok=True)
-    path = os.path.join(DEBATE_DIR, f"{debate['ticker']}.json")
+def save_debate(debate, directory=DEBATE_DIR):
+    os.makedirs(directory, exist_ok=True)
+    path = os.path.join(directory, f"{debate['ticker']}.json")
     with open(path, "w", encoding="utf-8") as f:
         json.dump(debate, f, indent=2, ensure_ascii=False)
     return path
