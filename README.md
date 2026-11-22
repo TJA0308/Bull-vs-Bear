@@ -17,7 +17,8 @@ Work in progress.
 - [x] Citation checker: minimum length, exact fast path, fuzzy match (`rapidfuzz`, threshold 90), and every number must match; 27 tests across the project
 - [x] Bias evaluation: swap bull/bear order and measure how often the verdict flips (`bias.py`, results below)
 - [x] Interactive static site in `site/`, built from the saved results by `build_site.py`
-- [ ] Publish on GitHub Pages (workflow added; needs a merge to `main` and Pages set to "GitHub Actions")
+- [x] Publish on GitHub Pages: https://tja0308.github.io/Bull-vs-Bear/
+- [x] Run the tests automatically on every pull request (GitHub Actions)
 
 ## How it works
 
@@ -131,6 +132,8 @@ python -m http.server 8123 --directory site   # preview at http://localhost:8123
 | `build_site.py` | Turns saved debates and results into `site/data.js` |
 | `site/` | The static page (HTML, CSS, JavaScript, generated data) |
 | `.github/workflows/pages.yml` | Publishes `site/` to GitHub Pages |
+| `.github/workflows/tests.yml` | Runs pytest on every pull request and push to `main` (no secrets needed) |
+| `LICENSE` | MIT license |
 | `tests/` | pytest tests: citation checker, section extraction, bias statistics, debate-turn validation |
 | `debates/` | Saved debates, one JSON file per ticker |
 | `scripts/check_key.py` | Run by hand to check the Claude API key works (one tiny real call; not part of pytest) |
