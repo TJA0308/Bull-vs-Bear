@@ -1,0 +1,148 @@
+{
+  "ticker": "ADBE",
+  "filing": {
+    "accession": "0000796343-26-000003",
+    "document": "adbe-20251128.htm",
+    "date": "2026-01-15"
+  },
+  "model": "claude-haiku-5-5",
+  "created": "2026-11-21T22:42:31+00:00",
+  "bull_first": true,
+  "rounds": [
+    {
+      "round": 1,
+      "bull": {
+        "argument": "Adobe's filing shows a business compounding at scale with strong cash generation and shareholder returns. Total Adobe ARR reached $25.20 billion, up 11.5% year over year, and remaining performance obligations rose 13% to $22.52 billion, giving visibility into future revenue. Net income grew 28% to $7.13 billion, and operating cash flow rose 25% to $10.03 billion. Subscription revenue now makes up 96% of total revenue, and management returned value through $11.28 billion in stock repurchases during fiscal 2025. The balance sheet supports this, with a $1.5 billion undrawn revolver and no financial covenants on the senior notes. The filing does flag AI competition and monetization uncertainty, and the bull case has to reckon with that. But the reported numbers show a recurring revenue engine that is growing, profitable, and generating cash.",
+        "claims": [
+          {
+            "claim": "Recurring revenue visibility is strong, with subscription revenue at 96% of total and remaining performance obligations up 13%.",
+            "quote": "Remaining performance obligations of $22.52 billion as of November 28, 2025 increased by 13% from $19.96 billion as of November 29, 2024.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Cash generation improved sharply, with operating cash flow up 25% to $10.03 billion.",
+            "quote": "Cash flows from operations of $10.03 billion during fiscal 2025 increased by $1.98 billion, or 25%, compared to fiscal 2024.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management is returning significant capital to shareholders through buybacks.",
+            "quote": "During fiscal 2025, we entered into stock repurchase arrangements with large financial institutions and made payments totaling $11.28 billion to repurchase shares.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The strong headline numbers mask a thinner cushion. Cash and equivalents fell from $7.61 billion to $5.43 billion, and working capital swung from $711 million to a deficit of $(37) million. Fiscal 2025 buybacks of $11.28 billion exceeded operating cash flow of $10.03 billion, and financing outflows were funded partly by the new $6.15 billion of senior notes. Interest expense rose 56% to $263 million, and stockholders' equity dropped from $14.1 billion to $11.6 billion. A pending $1.9 billion Semrush acquisition will draw further on cash. Meanwhile, the filing says AI will intensify competition and may squeeze margins, and that AI monetization is uncertain. ARR growth of 11.5% is real, but it is decelerating against the company's own AI spending and competitive pressure. Returns funded by debt and balance-sheet cash, against rising AI costs and uncertain monetization, make this a risky investment.",
+        "claims": [
+          {
+            "claim": "Financing outflows were driven by buybacks and debt repayment, which together drained cash while the company's balance sheet shrank.",
+            "quote": "payments for our common stock repurchases and repayment of our 1.90% 2025 Notes and 3.25% 2025 Notes",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The filing warns that AI investment costs could compress margins, even as subscription cost of revenue rose 13%.",
+            "quote": "These costs could adversely impact our margins as we continue to make significant investments in AI development",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Competition is expected to intensify as AI reshapes the software market, threatening the growth that the bull case relies on.",
+            "quote": "we expect to face more competition as AI continues to advance and be integrated into the markets in which we compete",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "bull": {
+        "argument": "The bear case reads the balance sheet too narrowly. Cash and equivalents fell to $5.43 billion, but short-term investments rose to $1.16 billion from $273 million, and the $1.5 billion revolver is fully undrawn. The filing says the company expects existing cash, short-term investments, operating cash flow and the revolver to cover needs for the next twelve months and the foreseeable future. The working capital deficit is largely a feature of the subscription model: deferred revenue is a source of cash, and the filing attributes working capital sources to \"increases in deferred revenue.\" The senior notes carry no financial covenants, so the debt does not create a covenant trap. Buybacks did exceed operating cash flow, and equity fell as a result, but that is a capital allocation choice made from a strong cash base. The bull case must acknowledge the real risks: AI competition, margin pressure from AI compute costs, and monetization uncertainty. Still, the reported 11.5% ARR growth, 13% growth in remaining performance obligations, and 25% operating cash flow growth show a business that is compounding today.",
+        "claims": [
+          {
+            "claim": "Liquidity remains adequate, with the filing expecting existing cash, operations and the revolver to meet needs for the next twelve months and beyond.",
+            "quote": "will be sufficient to meet our working capital, operating resource expenditure and capital expenditure requirements for the next twelve months and for the foreseeable future.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The working capital deficit reflects subscription billing dynamics, with deferred revenue a source of cash.",
+            "quote": "Working capital sources of cash included increases in deferred revenue, partially offset by increases in trade receivables attributable to the timing of billings.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The senior notes carry no financial covenants, limiting debt-related constraints on the business.",
+            "quote": "Our senior notes do not contain any financial covenants.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The opponent is right that the revolver is undrawn and that short-term investments rose. But the cushion is smaller than the headline suggests. Cash and short-term investments combined fell from about $7.89 billion to about $6.60 billion, a decline of roughly $1.29 billion (my arithmetic from the balance sheet figures). The pending $1.9 billion Semrush acquisition is to be financed with cash on hand, which would leave a much thinner reserve. The 'no covenants' point is also incomplete. The filing says the revolver carries covenants, and a breach could make outstanding debt immediately payable. Ratings downgrades could also raise revolver interest rates. Working capital moved from +$711 million to -$37 million. Deferred revenue explains part of that, but the swing still reflects buybacks that exceeded operating cash flow. Those buybacks were funded from a balance sheet that is now carrying more debt, while the filing says AI costs could compress margins and competition will intensify.",
+        "claims": [
+          {
+            "claim": "The filing says the revolver is subject to covenants, contrary to the opponent's implication that the debt carries no covenant risk.",
+            "quote": "Our senior unsecured notes, commercial paper program and revolving credit agreement impose restrictions on us and require us to maintain compliance with specified covenants.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Buybacks and debt repayment drove the financing outflow that reduced the cash base.",
+            "quote": "payments for our common stock repurchases and repayment of our 1.90% 2025 Notes and 3.25% 2025 Notes",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The filing says AI investment costs could pressure margins, which weakens the case that current cash generation is durable.",
+            "quote": "These costs could adversely impact our margins as we continue to make significant investments in AI development",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    }
+  ],
+  "citations": {
+    "bull": {
+      "verified": 6,
+      "total": 6
+    },
+    "bear": {
+      "verified": 6,
+      "total": 6
+    },
+    "overall": {
+      "verified": 12,
+      "total": 12,
+      "accuracy": 1.0
+    }
+  },
+  "judge": {
+    "scores": {
+      "bull": {
+        "evidence": 8,
+        "logic": 7,
+        "responsiveness": 6
+      },
+      "bear": {
+        "evidence": 8,
+        "logic": 7,
+        "responsiveness": 8
+      }
+    },
+    "winner": "bear",
+    "reasoning": "Both sides cite verified quotes, so evidence is comparable, though the bear's covenant point directly rebuts the bull's 'no covenants' claim using a verified filing quote that the bull never addressed. The bear also engages the bull's liquidity and working-capital arguments with its own arithmetic on combined cash and short-term investments and the Semrush cash drain, while the bull's Round 2 mostly reasserts earlier headline growth figures rather than answering the margin and competition risks in depth. The bear edges the debate on responsiveness and logic."
+  },
+  "usage": {
+    "calls": 5,
+    "input_tokens": 143997,
+    "output_tokens": 5610,
+    "cost_usd": 0.0172
+  }
+}

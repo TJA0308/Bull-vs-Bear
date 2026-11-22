@@ -1,0 +1,148 @@
+{
+  "ticker": "KO",
+  "filing": {
+    "accession": "0001628280-26-010047",
+    "document": "ko-20251231.htm",
+    "date": "2026-02-20"
+  },
+  "model": "claude-haiku-5-5",
+  "created": "2026-11-21T22:44:32+00:00",
+  "bull_first": true,
+  "rounds": [
+    {
+      "round": 1,
+      "bull": {
+        "argument": "KO's 2025 results show durable profitability and financial strength. Operating income rose 38% to $13,762 million, and operating margin expanded to 28.7% from 21.2%, driven by favorable pricing initiatives and lower other operating charges. Gross profit margin improved to 61.6% from 61.1%. Price/mix added 4% to net operating revenues, showing pricing power even amid inflation. Operating cash flow grew 9% to $7,408 million, and management states that its liquidity position is strong, citing $15.8 billion in cash and short-term investments and $6.2 billion in unused backup credit lines. The company also raised its dividend to $0.53 per quarter, its 64th consecutive annual increase. The filing acknowledges real risks, including the $3.3 billion IRS dispute and the $960 million BodyArmor impairment, but management believes it is more likely than not to prevail on the tax matter, and the remaining trademark is carried at $2,440 million.",
+        "claims": [
+          {
+            "claim": "Operating margin expanded substantially in 2025",
+            "quote": "Consolidated 28.7 % 21.2 %",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Pricing initiatives drove revenue growth despite inflation",
+            "quote": "Price/mix had a 4% favorable impact on our consolidated net operating revenues.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management views liquidity as strong and the dividend record as intact",
+            "quote": "This is our 64 th consecutive annual increase.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "KO's headline 2025 gains are flattered by non-recurring items. Operating income rose 38%, but the prior year carried a $3,109 million fairlife contingent consideration charge, so the comparison is distorted. Revenue grew only 2% to $47,941 million, with volume roughly flat (unit cases even, concentrate sales up 1%), and price/mix of 4% is being offset by a 2% currency hit and a 12% currency drag on operating income. Pricing is also carrying the story while management warns that inflationary pressures on input costs will continue into 2026 and that higher prices may reduce volume. The tax exposure is large: the IRS dispute involves $6.0 billion already paid, and management estimates a further potential liability of roughly $14 billion for 2010 through 2025 if the company does not prevail. Management's view that it is 'more likely than not' to win is a judgment, not a certainty. Meanwhile the BodyArmor trademark was impaired by $960 million, with $2,440 million remaining and further impairment flagged as likely if results lag.",
+        "claims": [
+          {
+            "claim": "Operating income growth was driven largely by the prior-year fairlife charge, not underlying improvement.",
+            "quote": "The increases in operating income and operating margin were primarily driven by lower other operating charges, due to the prior year remeasurement of our contingent consideration liability",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Volume growth is essentially flat, and currency reduced operating income by 12%.",
+            "quote": "In 2025, fluctuations in foreign currency exchange rates, including the effects of our hedging activities, unfavorably impacted consolidated operating income by 12%",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Potential tax liability for 2010 through 2025 could reach about $14 billion.",
+            "quote": "The Company estimates that the potential aggregate remaining incremental tax and interest liability for the tax years 2010 through 2025 could be approximately $14 billion as of December 31, 2025.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "bull": {
+        "argument": "The bear is right that 2025's operating income comparison is flattered by the prior year's $3,109 million fairlife remeasurement, but that cuts both ways: excluding one-time charges, the underlying story is still one of stable margins and cash generation. Revenue growth of 2% reflects 4% price/mix and 1% concentrate volume growth, with currency as the drag, which is a normal cost of a business that earns 59% of its revenue outside the U.S. Management has said it expects to offset most inflation through pricing, and the historical record of that approach is visible in the 2025 price/mix gain. The $6.0 billion IRS deposit is already paid and earns interest, and management says it is more likely than not to prevail. The bear is right that this is a judgment, but the filing also notes that the $14 billion estimate covers 2010 through 2025 and is a potential exposure, not a current charge. The BodyArmor write-down is real, but it is a single brand and the company still generated $7,408 million of operating cash flow to cover obligations.",
+        "claims": [
+          {
+            "claim": "Price/mix drove the revenue gain, not volume alone",
+            "quote": "Price/mix had a 4% favorable impact on our consolidated net operating revenues.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management expects to counter cost inflation through pricing over time",
+            "quote": "we believe that, over time, we will be able to increase prices to counteract the majority of the inflationary effects of increasing costs",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Operating cash flow grew despite one-time payments",
+            "quote": "Net cash provided by operating activities for the years ended December 31, 2025 and 2024 was $7,408 million and $6,805 million, respectively",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The opponent is right that the fairlife comparison flatters 2025, and I concede that the $14 billion tax figure is a potential exposure rather than a booked charge. But the risks are larger than the headline suggests. Currency cut operating income by 12% while cutting revenue by only 2%, so the margin story depends on a weak dollar-adjusted base. Management also warns that higher prices 'may result in reductions in sales volume,' which undercuts the claim that pricing can offset inflation without cost. The $6.0 billion IRS deposit is not a cash asset: the company 'would not receive a refund' of it if the adverse portions are upheld, and management itself says it would 'likely be subject to significant additional liabilities' for later years. The BodyArmor trademark may need another write-down. Taken together, a single bad tax ruling or a weaker pricing cycle could erase much of the cushion the bull case relies on.",
+        "claims": [
+          {
+            "claim": "The $6.0 billion IRS payment could be lost if the adverse Tax Court portions are upheld.",
+            "quote": "the Company would not receive a refund of the applicable portion or all of the $6.0 billion it paid in response to the IRS invoices issued in September 2024",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Pricing to offset inflation may reduce volume, limiting the margin benefit.",
+            "quote": "Higher product prices may result in reductions in sales volume.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The BodyArmor trademark may require further impairment if results lag projections.",
+            "quote": "it is likely that we would be required to recognize an additional impairment charge",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    }
+  ],
+  "citations": {
+    "bull": {
+      "verified": 6,
+      "total": 6
+    },
+    "bear": {
+      "verified": 6,
+      "total": 6
+    },
+    "overall": {
+      "verified": 12,
+      "total": 12,
+      "accuracy": 1.0
+    }
+  },
+  "judge": {
+    "scores": {
+      "bull": {
+        "evidence": 7,
+        "logic": 6,
+        "responsiveness": 6
+      },
+      "bear": {
+        "evidence": 8,
+        "logic": 7,
+        "responsiveness": 8
+      }
+    },
+    "winner": "bear",
+    "reasoning": "Both sides cite verified quotes, but the bear's evidence is more directly on point: it exposes the fairlife comparison distortion, the 12% currency drag, and the risk that the $6.0 billion IRS deposit may not be refunded, while the bull's Round 1 quotes (e.g., the 64th dividend increase) do little to answer those risks. The bull does responsively concede the fairlife point and reframe the tax exposure, but leans on a generic 'over time' pricing quote and does not rebut the currency or refund-risk arguments, so the bear edges the debate."
+  },
+  "usage": {
+    "calls": 5,
+    "input_tokens": 245822,
+    "output_tokens": 3380,
+    "cost_usd": 0.0263
+  }
+}

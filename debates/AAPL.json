@@ -1,0 +1,148 @@
+{
+  "ticker": "AAPL",
+  "filing": {
+    "accession": "0000320193-26-000026",
+    "document": "aapl-20260926.htm",
+    "date": "2026-11-03"
+  },
+  "model": "claude-haiku-5-5",
+  "created": "2026-11-21T22:36:23+00:00",
+  "bull_first": true,
+  "rounds": [
+    {
+      "round": 1,
+      "bull": {
+        "argument": "Apple's fiscal 2026 results show a business gaining momentum. Net sales rose 15% to $478.8 billion, led by iPhone, which grew 21% on higher Pro model demand. Total gross margin percentage expanded to 48.8% from 46.9%, and Services reached $123.3 billion with a 76.2% gross margin. That high-margin, recurring revenue cushions hardware cycles. Management also returned significant capital, repurchasing $85.8 billion of stock and paying $15.7 billion in dividends, while holding $136.9 billion in cash, cash equivalents and marketable securities. The bear case is real: the filing warns of memory and advanced-semiconductor cost pressure, tariffs, and litigation over App Store commissions, and it expects gross margins to face downward pressure. But margin expansion during these pressures, aided partly by tariff refunds, suggests pricing power and supply-chain scale. Strong cash generation and a diversified revenue base make these risks manageable for long-term holders.",
+        "claims": [
+          {
+            "claim": "iPhone, the largest category, grew 21% in fiscal 2026, driven by Pro models.",
+            "quote": "iPhone net sales increased during 2026 compared to 2025 due to higher net sales of Pro models.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Services is a growing, high-margin revenue stream led by advertising and cloud.",
+            "quote": "Services net sales increased during 2026 compared to 2025 primarily due to higher net sales from advertising and cloud services.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The company returned substantial capital to shareholders in 2026, supported by strong cash generation.",
+            "quote": "During 2026, the Company repurchased $85.8 billion of its common stock and paid dividends and dividend equivalents of $15.7 billion.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull case leans on fiscal 2026 margin expansion, but the filing shows that expansion is partly non-recurring and fragile. Management attributes the products gross margin increase partly to tariff refunds, which are one-time relief, not a durable operating improvement. The filing also says memory and advanced-semiconductor costs are rising, that constraints are expected to 'intensify for memory and storage components,' and that price increases 'may also reduce demand.' Gross margins are described as subject to 'volatility and downward pressure.' Revenue concentration is high: the Company 'generates a significant portion of its net sales from a single product category,' and iPhone's 21% jump drove much of the growth. Meanwhile, the Company faces an App Store commission injunction that could 'materially and adversely' affect gross margin, and Google search licensing revenue could be disrupted. Operating expenses rose 22%, with R&D up 32% on AI investment, and the filing admits AI 'may not enhance' products 'or be beneficial or profitable.' Buybacks of $85.8 billion do not change that risk.",
+        "claims": [
+          {
+            "claim": "Part of the products margin improvement came from one-time tariff refunds, not only durable operating gains.",
+            "quote": "primarily due to product mix and tariff refunds, partially offset by higher costs, including memory",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management expects gross margins to face downward pressure and cost pressure is intensifying for memory.",
+            "quote": "the Company believes, in general, gross margins will be subject to volatility and downward pressure",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The filing warns AI investments may not prove profitable while R&D spending jumped 32%.",
+            "quote": "the usage of artificial intelligence may not enhance the Company’s products or services or be beneficial or profitable for its business",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "bull": {
+        "argument": "The bear case is right that some fiscal 2026 margin gains are not durable. Tariff refunds helped Products margin, and the filing expects memory and storage cost pressure to intensify. But the bull thesis does not rest on that line. Services produced $93.9 billion of gross margin at a 76.2% margin, about 40% of total gross margin from roughly 26% of net sales. The filing credits a 'different mix of services' for the Services margin gain, which is structural rather than one-time. Concentration in iPhone is a real exposure, but its growth came from Pro models, which shows demand for premium devices. R&D rose 32%, and AI returns are uncertain, which I concede. The balance sheet absorbs these risks. Management holds $136.9 billion in cash and marketable securities and expects it to cover cash requirements and capital returns over the next 12 months and beyond. Buybacks are discretionary and do not weaken that position.",
+        "claims": [
+          {
+            "claim": "Services margin gains reflect a structural mix shift, not one-time items.",
+            "quote": "Services gross margin percentage increased during 2026 compared to 2025 primarily due to a different mix of services, partially offset by higher costs.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "iPhone growth was driven by premium Pro models, showing demand strength behind the concentration risk.",
+            "quote": "iPhone net sales increased during 2026 compared to 2025 due to higher net sales of Pro models.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Liquidity is sufficient to cover obligations and capital returns, reducing the risk from buybacks.",
+            "quote": "will be sufficient to satisfy its cash requirements and capital return program over the next 12 months and beyond.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull concedes too little. Services is strong, but the filing ties its margin gain partly to 'higher costs' as well as mix, and Services depends on arrangements the filing calls vulnerable. It says the Company 'relies on access' to content on terms that 'do not guarantee the continuation or renewal,' and it flags that Google search licensing 'could materially adversely affect' revenue if remedies are reversed, and that licensing may 'not be renewed on favorable terms.' The App Store commission injunction could leave the Company 'disallowed or restricted' from charging commissions in the U.S. Services is also tied to the same iPhone base, so concentration is not diversification. On cash, the filing's own sufficiency claim is conditional on 'continued access to debt markets,' and debt is rising in the balance sheet: $78.7 billion of Notes, $89.7 billion of manufacturing purchase obligations, and $82.7 billion of that payable within 12 months. Buybacks of $85.8 billion, against $15.7 billion in dividends, were funded at a scale that leaves little slack if demand or margins weaken. The 'discretionary' label cuts both ways: returns can be cut, but the commitments are not.",
+        "claims": [
+          {
+            "claim": "Services margin gains are tied partly to higher costs, and key Services revenue sources can be disrupted.",
+            "quote": "The Company’s business, reputation, results of operations, financial condition and stock price can be materially adversely affected, individually or in the aggregate, by the outcomes of such investigations, litigation or changes to laws and regulations in the future.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Near-term purchase commitments are large relative to the cash cushion.",
+            "quote": "As of September 26, 2026, the Company had manufacturing purchase obligations of $89.7 billion, with $82.7 billion payable within 12 months.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The filing's liquidity assurance depends on continued debt market access.",
+            "quote": "along with cash generated by ongoing operations and continued access to debt markets, will be sufficient to satisfy its cash requirements and capital return program",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    }
+  ],
+  "citations": {
+    "bull": {
+      "verified": 6,
+      "total": 6
+    },
+    "bear": {
+      "verified": 6,
+      "total": 6
+    },
+    "overall": {
+      "verified": 12,
+      "total": 12,
+      "accuracy": 1.0
+    }
+  },
+  "judge": {
+    "scores": {
+      "bull": {
+        "evidence": 8,
+        "logic": 7,
+        "responsiveness": 7
+      },
+      "bear": {
+        "evidence": 7,
+        "logic": 7,
+        "responsiveness": 8
+      }
+    },
+    "winner": "tie",
+    "reasoning": "Both sides cite verified filing language, though the bear's Round 2 claim about Services margin being tied to 'higher costs' is paired with a quote about litigation outcomes that does not support the margin point, weakening its evidence. The bull effectively conceded the tariff-refund and AI points and reframed around Services mix and liquidity, while the bear pressed concentration, debt-market dependence, and purchase obligations, making the debate roughly balanced."
+  },
+  "usage": {
+    "calls": 5,
+    "input_tokens": 127877,
+    "output_tokens": 5169,
+    "cost_usd": 0.0154
+  }
+}

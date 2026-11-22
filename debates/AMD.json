@@ -1,0 +1,148 @@
+{
+  "ticker": "AMD",
+  "filing": {
+    "accession": "0000002488-26-000018",
+    "document": "amd-20251227.htm",
+    "date": "2026-02-04"
+  },
+  "model": "claude-haiku-5-5",
+  "created": "2026-11-21T22:41:46+00:00",
+  "bull_first": true,
+  "rounds": [
+    {
+      "round": 1,
+      "bull": {
+        "argument": "AMD's FY2025 filing shows strong momentum. Net revenue rose 34% to $34.6 billion, and total operating income more than doubled to $3.7 billion from $1.9 billion. Data Center revenue grew 32% to $16.6 billion, driven by EPYC processors and Instinct MI350 Series GPUs, and Client and Gaming revenue rose 51% to $14.6 billion. Gross margin improved to 50% despite roughly $440 million of net export-control charges. Liquidity also strengthened: cash and short-term investments reached $10.6 billion, up from $5.1 billion, and operating cash flow was $7.7 billion including discontinued operations. The company also returned $1.3 billion through buybacks and retains $9.4 billion of authorization. The filing does flag real risks, including export controls on MI308 sales to China, customer concentration, memory shortages, and dependence on TSMC. Still, the reported results show a company converting AI and PC demand into profit and cash.",
+        "claims": [
+          {
+            "claim": "Revenue growth was broad-based and strong in 2025.",
+            "quote": "net revenue increasing 34% to $34.6 billion, compared to $25.8 billion in 2024",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Liquidity improved substantially over the year.",
+            "quote": "Cash, cash equivalents and short-term investments as of December 27, 2025 were $10.6 billion, compared to $5.1 billion at the end of 2024.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Gross margin improved despite the export-control charge, which the filing acknowledges as a risk.",
+            "quote": "Gross margin of 50% increased by 1% compared to 49% in 2024, primarily due to product mix partially offset by approximately $440 million of net inventory and related charges",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The headline growth masks fragile foundations. Operating income of $3.7 billion on $34.6 billion of revenue is roughly a 11% operating margin, and most of the improvement came from Client and Gaming, a segment the filing says has seen declines driven by form factors, competition and replacement cycles. Data Center operating income barely moved, rising from $3.5 billion to $3.6 billion despite 32% revenue growth, as cost of sales grew faster than revenue. Management also concedes that customers may 'lack, or be unable to, secure capital to fund their required AI infrastructure' and may request 'deferred-payment arrangements from vendors,' which would shift credit risk onto AMD. Cash build was partly driven by a $2.2 billion inventory increase and by $1.2 billion of discontinued-operations cash from a business being sold. Debt rose to $3.3 billion from $1.8 billion, and the company faces a memory shortage, dependence on TSMC, and an unpublished U.S. demand for 15% of MI308 China revenue. Investors are paying for a concentrated, cyclical bet with thin visibility.",
+        "claims": [
+          {
+            "claim": "Data Center operating income barely grew despite strong revenue growth, indicating weak incremental profitability in the AI segment.",
+            "quote": "Data Center operating income was $3.6 billion in 2025, compared to operating income of $3.5 billion in 2024.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Customers may need deferred-payment arrangements to fund AI infrastructure, creating demand and credit risk for AMD.",
+            "quote": "Customers may also lack, or be unable to, secure capital to fund their required AI infrastructure and may request alternative financing or deferred‑payment arrangements from vendors and suppliers.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Operating cash flow was boosted by discontinued operations and offset by a large inventory build, and debt increased.",
+            "quote": "The primary drivers of the changes in operating assets and liabilities included a $2.2 billion increase in inventory primarily to support the continued ramp of Data Center products in advanced process nodes.",
+            "verified": true,
+            "score": 98.1
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "bull": {
+        "argument": "The bear case contains real points, but several are overstated or cut against the filing's own numbers. Total operating income rose from $1.9 billion to $3.7 billion, roughly doubling, and Client and Gaming operating income more than doubled to $2.9 billion while revenue grew 51%, which is not a fragile segment. Data Center operating income rose modestly because the filing attributes that period to about $440 million of MI308 export-control charges and higher operating expenses, not to weak demand; the segment's revenue still grew 32%. On cash, the filing shows continuing-operations operating cash flow of $6.5 billion, so the bear's $1.2 billion discontinued-operations point does not drive the core story. The $2.2 billion inventory build is tied to ramping advanced-node Data Center products, which is a deliberate supply decision for demand the company is seeing. Debt rose to $3.3 billion, but cash and short-term investments of $10.6 billion, a $3.0 billion undrawn revolver, and $9.4 billion of buyback authorization leave the balance sheet well cushioned.",
+        "claims": [
+          {
+            "claim": "Client and Gaming profitability improved sharply, not just revenue.",
+            "quote": "Client and Gaming operating income was $2.9 billion in 2025, compared to operating income of $1.2 billion in 2024.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The filing attributes Data Center's flat operating income to a specific export-control charge rather than weak demand.",
+            "quote": "approximately $440 million of net inventory and related charges associated with the U.S. government export control on AMD Instinct™ MI308 Data Center GPU products",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Liquidity and undrawn capacity provide a cushion against the higher debt.",
+            "quote": "We have $3.0 billion available under an unsecured revolving credit facility that expires on April 29, 2027.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The opponent is right that operating income roughly doubled and continuing operations generated $6.5 billion of operating cash flow. But the bear case is about durability, not the single year. Management itself says Client and Gaming revenue 'has experienced a decline' from form factors, competition and replacement cycles, so the segment's 2025 surge depends on a cycle that has reversed before. Data Center is the bigger question. Even after adding back the roughly $440 million MI308 charge, the filing's own figures show the segment's income rising far less than its 32% revenue growth implies, and the AI demand behind it rests on customers who may need deferred payment to fund purchases. A $2.2 billion inventory build is a bet that demand holds. A small customer base, an unpublished 15% government revenue expectation on China sales, and debt that nearly doubled to $3.3 billion make the forward risk real. Strong results are not the same as a margin of safety.",
+        "claims": [
+          {
+            "claim": "Client and Gaming growth is cyclical, since the filing says the segment has previously declined from form factors, competition and replacement cycles.",
+            "quote": "In the past, revenue from the Client and Gaming segment has experienced a decline driven by, among other factors, the adoption of smaller and other form factors, increased competition and changes in replacement cycles.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "AMD depends on a small number of customers for a substantial part of revenue, so losing one would hurt materially.",
+            "quote": "We depend on a small number of customers for a substantial portion of our business",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The filing notes an unpublished U.S. government expectation of 15% of licensed MI308 China revenue, an uncertain cost and litigation risk.",
+            "quote": "U.S. government officials have expressed an expectation that the U.S. government will receive 15% of the revenue generated from licensed MI308 sales to China",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    }
+  ],
+  "citations": {
+    "bull": {
+      "verified": 6,
+      "total": 6
+    },
+    "bear": {
+      "verified": 6,
+      "total": 6
+    },
+    "overall": {
+      "verified": 12,
+      "total": 12,
+      "accuracy": 1.0
+    }
+  },
+  "judge": {
+    "scores": {
+      "bull": {
+        "evidence": 8,
+        "logic": 7,
+        "responsiveness": 8
+      },
+      "bear": {
+        "evidence": 7,
+        "logic": 6,
+        "responsiveness": 6
+      }
+    },
+    "winner": "bull",
+    "reasoning": "Bull's quotes are all verified and it effectively rebutted the bear's Data Center and cash-flow points, citing the $440M MI308 charge and the $6.5B continuing-operations cash flow. Bear's verified quotes on customer concentration and cyclicality are relevant, but its Round 2 reply largely reasserted durability concerns without fully answering the bull's rebuttal on Data Center charges and liquidity, and its Data Center margin argument remained somewhat underdeveloped."
+  },
+  "usage": {
+    "calls": 5,
+    "input_tokens": 203960,
+    "output_tokens": 4102,
+    "cost_usd": 0.0224
+  }
+}

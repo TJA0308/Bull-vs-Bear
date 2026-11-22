@@ -1,0 +1,148 @@
+{
+  "ticker": "PEP",
+  "filing": {
+    "accession": "0000077476-26-000007",
+    "document": "pep-20251227.htm",
+    "date": "2026-02-03"
+  },
+  "model": "claude-haiku-5-5",
+  "created": "2026-11-22T00:28:48+00:00",
+  "bull_first": false,
+  "rounds": [
+    {
+      "round": 1,
+      "bear": {
+        "argument": "PepsiCo's own filing points to a business under pressure. Operating profit fell 11% to $11,498 million from $12,887 million, and operating margin dropped from 14.0% to 12.2%. Reported EPS declined 14% to $6.00. Management cites a decline in organic volume, and the company recorded $1.9 billion of impairment charges, mainly on the Rockstar brand, and says the SodaStream reporting unit's fair value 'narrowly exceeded its carrying value,' leaving room for further write-downs. Net cash from operations fell to $12,087 million from $12,507 million, while the company still plans to return about $8.9 billion to shareholders in 2026, which exceeds 2025 free cash flow of $8,200 million. Net interest expense rose 22%, and long-term debt grew to $42.3 billion. The risk factors describe continuing exposure to GLP-1 drugs, SNAP changes, sugar taxes and a new Mexican beverage tax, plus a 15% global minimum tax, all of which could further squeeze margins.",
+        "claims": [
+          {
+            "claim": "Operating profit fell 11% and margin compressed, showing weakening profitability.",
+            "quote": "Operating profit decreased 11%, primarily driven by certain operating cost increases, impairment charges related to the Rockstar brand, a decline in organic volume",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Impairment risk remains elevated on the SodaStream reporting unit, which had minimal cushion above carrying value.",
+            "quote": "the estimated fair value of the SodaStream reporting unit narrowly exceeded its carrying value. Given the low coverage, there could be further impairment",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Planned shareholder returns exceed the company's free cash flow, raising sustainability concerns.",
+            "quote": "We expect to return a total of approximately $8.9 billion to shareholders in 2026, comprising dividends of approximately $7.9 billion and share repurchases of approximately $1.0 billion.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bull": {
+        "argument": "PepsiCo's filing shows a company with durable scale and cash generation that is investing through a down year. Core (non-GAAP) operating profit was $14,912 million, and core net income per diluted share was $8.14, flat versus $8.16 in 2024, which indicates the reported decline is driven largely by charges rather than a collapse in the underlying franchise. Free cash flow rose 9% to $8,200 million from $7,531 million. Management is pursuing productivity savings and reinvestment, with a 2026 dividend increase of 4% to $5.92 per share and a stated plan to return about $8.9 billion to shareholders. The company also keeps Tier 1 commercial paper access and reports $9.2 billion of cash and equivalents. Net revenue grew 2% to $93,925 million, and organic revenue rose 2%. The bear's concerns on impairments and tax pressure are real, but the Rockstar write-down is a one-time reset of an acquired brand, not a broad-based deterioration.",
+        "claims": [
+          {
+            "claim": "Core operating profit and core EPS were roughly flat, indicating the reported decline is largely driven by items affecting comparability.",
+            "quote": "Core net income attributable to PepsiCo per common share – diluted, non-GAAP measure $ 8.14 $ 8.16 — %",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Free cash flow increased 9% year over year.",
+            "quote": "Free cash flow, non-GAAP measure $ 8,200 $ 7,531 9 %",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Net revenue grew 2%, showing the top line did not deteriorate despite margin pressure.",
+            "quote": "Consolidated Net Revenue and Operating Profit 2025 2024 Change Net revenue $ 93,925 $ 91,854 2 %",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "bear": {
+        "argument": "The bull's core-profit framing leans on non-GAAP adjustments that the filing itself treats as recurring. PepsiCo's 2019 Productivity Plan has been expanded through 2030, with about $6.15 billion of expected pre-tax charges, of which $3.6 billion were incurred to date and roughly $900 million more are planned for 2026. Restructuring is therefore a continuing cost, not a one-time item. Core EPS was flat only because it excludes $1.09 per share of impairments and other charges. Reported EPS fell 14% to $6.00, and operating cash flow fell 3% to $12.1 billion. The free cash flow gain of 9% came from lower capital spending ($4.4 billion versus $5.3 billion), which is not the same as stronger earnings. Net interest expense rose 22% to $1.12 billion, and long-term debt grew to $42.3 billion. Organic volume declined 2%, and management says it has yet to achieve its 2025 North American priorities. The Rockstar write-down was $1.9 billion, and the SodaStream unit still has minimal headroom. The 2026 payout of about $8.9 billion, against 2025 free cash flow of $8.2 billion, is funded partly by debt.",
+        "claims": [
+          {
+            "claim": "Restructuring charges are a continuing feature, not a one-time reset.",
+            "quote": "we expect to incur pre-tax charges of approximately $900 million, including cash expenditures of approximately $750 million",
+            "verified": true,
+            "score": 93.5
+          },
+          {
+            "claim": "Reported earnings fell sharply even though core EPS was flat, because impairments were excluded.",
+            "quote": "Net income attributable to PepsiCo per common share – diluted, GAAP measure $ 6.00 $ 6.95 (14) %",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Planned shareholder returns exceed free cash flow, and debt financing has grown.",
+            "quote": "We expect to return a total of approximately $8.9 billion to shareholders in 2026",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bull": {
+        "argument": "The bear is right that restructuring recurs, and I concede it, but the filing frames the 2019 Productivity Plan as a managed, declining cost: 2025 charges were $983 million versus $727 million in 2024, while the plan's savings target is what funds the business, and management expects the bulk of remaining charges through 2027. Core EPS flat at $8.14 versus $8.16 is a fair measure of underlying earnings power, and reported EPS fell mainly because of the $1.9 billion impairment, largely the Rockstar brand, which the company wrote down after it sold the brand to Celsius in a transaction the filing describes. The free cash flow point is partly fair, but operating cash flow fell only 3% while capital spending fell as the company completed major manufacturing investments; the filing notes that cash payments for restructuring rose, a cost the bear should weigh. On the 2026 payout, the filing states a $7.9 billion dividend plus $1.0 billion of buybacks, against $8.2 billion of 2025 free cash flow, and it holds $9.2 billion of cash and maintains Tier 1 commercial paper access, so the shortfall is manageable rather than a solvency concern. Net revenue still grew 2%, and the company's stated priorities target the North American turnaround the bear questions.",
+        "claims": [
+          {
+            "claim": "Restructuring charges rose only modestly in 2025 and the plan is expected to be substantially complete by 2027, so the cost is declining in relative terms.",
+            "quote": "We expect to incur the majority of the remaining pre-tax charges and cash expenditures through 2027, with the balance to be incurred through 2030.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The company holds substantial cash and retains access to commercial paper markets, which supports the planned shareholder return.",
+            "quote": "We expect to maintain Tier 1 commercial paper access, which we believe will facilitate appropriate financial flexibility and ready access to global credit markets at favorable interest rates.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The company expects to return about $8.9 billion to shareholders in 2026, comprising dividends of approximately $7.9 billion and share repurchases of approximately $1.0 billion.",
+            "quote": "We expect to return a total of approximately $8.9 billion to shareholders in 2026, comprising dividends of approximately $7.9 billion and share repurchases of approximately $1.0 billion.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    }
+  ],
+  "citations": {
+    "bull": {
+      "verified": 6,
+      "total": 6
+    },
+    "bear": {
+      "verified": 6,
+      "total": 6
+    },
+    "overall": {
+      "verified": 12,
+      "total": 12,
+      "accuracy": 1.0
+    }
+  },
+  "judge": {
+    "scores": {
+      "bull": {
+        "evidence": 7,
+        "logic": 6,
+        "responsiveness": 6
+      },
+      "bear": {
+        "evidence": 8,
+        "logic": 7,
+        "responsiveness": 8
+      }
+    },
+    "winner": "bear",
+    "reasoning": "The bear's quotes are mostly verified and directly support its claims about declining operating profit, impairment headroom, GAAP EPS decline, and payouts exceeding free cash flow, and it effectively rebutted the bull's non-GAAP framing by showing restructuring charges are recurring and extended through 2030. The bull's claims about core EPS and cash position are verified but rely on excluding recurring charges, and its answer on the payout shortfall was weaker, mostly pointing to cash balances rather than addressing the funding gap directly."
+  },
+  "usage": {
+    "calls": 5,
+    "input_tokens": 415787,
+    "output_tokens": 2970,
+    "cost_usd": 0.0431
+  }
+}

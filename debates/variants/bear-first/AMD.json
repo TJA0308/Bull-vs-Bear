@@ -1,0 +1,148 @@
+{
+  "ticker": "AMD",
+  "filing": {
+    "accession": "0000002488-26-000018",
+    "document": "amd-20251227.htm",
+    "date": "2026-02-04"
+  },
+  "model": "claude-haiku-5-5",
+  "created": "2026-11-22T00:25:40+00:00",
+  "bull_first": false,
+  "rounds": [
+    {
+      "round": 1,
+      "bear": {
+        "argument": "AMD's own filing shows a business whose growth rests on concentrated, hard-to-forecast demand. The company states it depends on a small number of customers for a substantial portion of revenue, and that its AI accelerator demand depends on generative AI trajectories that are 'unknown.' Export controls already forced roughly $800 million in inventory and related charges on MI308 products, with only partial reversal of about $360 million, and officials have floated a 15% revenue share on licensed China sales that has not been codified. Operating income is also thin relative to revenue: total operating income was $3.7 billion on $34.6 billion of revenue, while amortization of acquisition-related intangibles and stock-based compensation consumed roughly $3.9 billion in the All Other segment. Management acknowledges that the semiconductor industry 'has experienced severe downturns' that caused substantial losses before. Debt also rose from $1.8 billion to $3.3 billion, and a large share of the 2025 cash build came from operating inflows that included a one-time $853 million tax benefit. Investors are buying a cyclical, customer-concentrated business whose largest growth driver faces regulatory and demand uncertainty.",
+        "claims": [
+          {
+            "claim": "Revenue depends heavily on a few customers, creating concentration risk.",
+            "quote": "We depend on a small number of customers for a substantial portion of our business",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "AI accelerator demand rests on an uncertain long-term trajectory.",
+            "quote": "both the near-term and long-term trajectory of such generative AI solutions is unknown",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Export controls already caused large inventory charges.",
+            "quote": "As a result of the restriction, we incurred approximately $800 million in inventory and related charges in the second quarter of 2025.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bull": {
+        "argument": "AMD's filing shows a business that grew fast and is building its position. Net revenue rose 34% to $34.6 billion, Data Center revenue rose 32% to $16.6 billion on strong demand for EPYC processors and Instinct MI350 Series GPUs, and Client and Gaming revenue rose 51% to $14.6 billion. Gross margin improved to 50% from 49%, and operating income climbed to $3.7 billion from $1.9 billion even after the roughly $440 million MI308 export-control charge. Cash, cash equivalents and short-term investments reached $10.6 billion, up from $5.1 billion, and management reports $9.4 billion remaining on its buyback authorization. The opponent is right that customer concentration and export controls are real risks, and the filing says so. But the reversal of about $360 million of the MI308 charges and the new OpenAI agreement for 6 gigawatts of GPUs show demand the company is actively converting. Operating cash flow of $7.7 billion, including discontinued operations, also funded the 2025 cash build.",
+        "claims": [
+          {
+            "claim": "Revenue grew strongly across the business in 2025.",
+            "quote": "In 2025, we delivered strong annual revenue growth with net revenue increasing 34% to $34.6 billion, compared to $25.8 billion in 2024.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Part of the export-control charge was reversed as shipments resumed.",
+            "quote": "During the fourth quarter of fiscal year 2025, we began shipping products and reversed approximately $360 million of the inventory and related charges recorded earlier in the year.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Cash position strengthened significantly during the year.",
+            "quote": "Cash, cash equivalents and short-term investments as of December 27, 2025 were $10.6 billion, compared to $5.1 billion at the end of 2024.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "bear": {
+        "argument": "The bull case leans on headline growth, but the filing gives reasons to discount it. Yes, revenue rose 34%, yet the Client and Gaming surge came with a 31% rise in processor unit shipments and a 15% rise in average selling price, and management cites a 25% jump in R&D and a 52% jump in marketing, general and administrative costs. Operating income of $3.7 billion is less than half of the 2024 comparison's uplift once you note that 2025 included a $853 million tax-related benefit below the operating line. The $360 million reversal of MI308 charges is a partial recovery of an $800 million hit, and the filing states that licenses 'may be temporary or could impose onerous conditions,' and that the U.S. government has not published the 15% revenue-share arrangement, which could 'subject us to litigation.' On the OpenAI deal, the filing says none of the warrant shares met vesting conditions and the agreement is contingent on milestones. Operating cash flow of $7.7 billion included $1.2 billion from the discontinued ZT Manufacturing Business, which was sold, so that portion will not recur. Debt also rose to $3.3 billion from $1.8 billion.",
+        "claims": [
+          {
+            "claim": "Part of the 2025 operating cash flow came from a business AMD has since sold.",
+            "quote": "Net cash provided by operating activities of the ZT Manufacturing Business, classified as discontinued operations, was $1.2 billion.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The OpenAI warrant has not yet produced any vested shares.",
+            "quote": "None of the warrant shares met the vesting or exercise conditions and the warrant had no impact to our financial statements for the year ended December 27, 2025.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "China licenses may be temporary or come with onerous conditions.",
+            "quote": "Even if we are granted licenses, the licenses may be temporary or could impose onerous conditions for us or our customers.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bull": {
+        "argument": "The opponent is right that several risks are real, and the filing states them plainly: customer concentration, conditional China licenses, unpublished revenue-share talk, and debt that rose to $3.3 billion. But some of the rebuttal misreads the numbers. The $853 million tax benefit sits in the income tax line, not operating income. Operating income still rose from $1.9 billion to $3.7 billion, an increase of about $1.8 billion, before the tax effect. Client and Gaming operating income more than doubled, from $1.2 billion to $2.9 billion, so the improvement is not limited to one tax item. Data Center stayed profitable at $3.6 billion even after the MI308 charge. The $360 million reversal is partial, and the license risk is real, but the company has already resumed some shipments. Cash of $10.6 billion also covers the $3.3 billion of debt by a wide margin. The bull case does not depend on ignoring these risks. It depends on growing operating profit, not one-time items.",
+        "claims": [
+          {
+            "claim": "Client and Gaming operating income more than doubled, showing the profit gain is broad.",
+            "quote": "Client and Gaming operating income was $2.9 billion in 2025, compared to operating income of $1.2 billion in 2024.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The $853 million tax benefit was recorded in the tax provision, not in operating results.",
+            "quote": "The decrease in income tax provision in 2025 was primarily driven by an $853 million benefit related to the release of uncertain tax positions",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Cash reserves grew substantially and exceed total debt.",
+            "quote": "Cash, cash equivalents and short-term investments as of December 27, 2025 were $10.6 billion, compared to $5.1 billion at the end of 2024.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    }
+  ],
+  "citations": {
+    "bull": {
+      "verified": 6,
+      "total": 6
+    },
+    "bear": {
+      "verified": 6,
+      "total": 6
+    },
+    "overall": {
+      "verified": 12,
+      "total": 12,
+      "accuracy": 1.0
+    }
+  },
+  "judge": {
+    "scores": {
+      "bull": {
+        "evidence": 7,
+        "logic": 6,
+        "responsiveness": 7
+      },
+      "bear": {
+        "evidence": 8,
+        "logic": 6,
+        "responsiveness": 6
+      }
+    },
+    "winner": "tie",
+    "reasoning": "Both sides cite verified quotes, with the bear's round 2 quotes (ZT discontinued cash flow, warrant vesting, license conditions) being somewhat more pointed against bull claims. The bull effectively rebuts the tax-benefit misreading by showing operating income rose about $1.8 billion and Client and Gaming more than doubled, but the bear's point that the $853 million tax benefit and discontinued-operations cash flow flatter the picture was only partly answered, and the bear's operating-income comparison was muddled. Overall the exchange is closely balanced."
+  },
+  "usage": {
+    "calls": 5,
+    "input_tokens": 203911,
+    "output_tokens": 3445,
+    "cost_usd": 0.0221
+  }
+}

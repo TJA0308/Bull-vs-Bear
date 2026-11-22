@@ -1,0 +1,148 @@
+{
+  "ticker": "META",
+  "filing": {
+    "accession": "0001628280-26-003942",
+    "document": "meta-20251231.htm",
+    "date": "2026-01-29"
+  },
+  "model": "claude-haiku-5-5",
+  "created": "2026-11-21T22:40:36+00:00",
+  "bull_first": true,
+  "rounds": [
+    {
+      "round": 1,
+      "bull": {
+        "argument": "Meta's 2025 results show a business compounding at scale. Total revenue rose 22% to $200.97 billion, and income from operations grew 20% to $83.28 billion. Ad impressions grew 12% and average price per ad rose 9%, meaning growth came from both more ads and higher pricing, which signals strong marketer demand. Family daily active people reached 3.58 billion, up 7%, and worldwide ARPP reached $57.03 for the year, up 15%. The company also generated $115.80 billion in operating cash flow and $43.59 billion in free cash flow despite heavy investment. Management is returning capital, with $26.26 billion in share repurchases and $5.32 billion in dividends in 2025, and the dividend was raised to $0.525 per share. The filing does acknowledge real risks, including ad targeting limits from privacy regulation and Reality Labs losses of about $19.19 billion. But the financial base is strong enough to absorb those pressures while funding AI and infrastructure investment.",
+        "claims": [
+          {
+            "claim": "Revenue grew 22% to $200.97 billion in 2025, driven by advertising.",
+            "quote": "Total revenue for 2025 was $200.97 billion, an increase of 22% compared to 2024, due to an increase in advertising revenue.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Ad growth came from both more impressions and higher pricing per ad.",
+            "quote": "Ad impressions delivered across our Family of Apps in 2025 increased 12% year-over-year, and our average price per ad increased 9% year-over-year.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The company generated strong free cash flow while investing heavily.",
+            "quote": "Free cash flow $ 43,585 $ 52,103 $ 43,010",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "Meta's headline growth masks a business whose economics are under pressure. Reality Labs lost $19.19 billion from operations in 2025, and management expects 2026 RL losses to remain similar. Capital expenditures were $72.22 billion, and the company anticipates 2026 capex of $115 billion to $135 billion. Free cash flow fell from $52.10 billion in 2024 to $43.59 billion in 2025, and net income declined from $62.36 billion to $60.46 billion, with a 30% effective tax rate that includes a $15.93 billion OBBBA charge. Substantially all revenue comes from advertising, and the filing warns that privacy rules, Apple's iOS changes, and the EU's less-personalized-ads model will continue to weigh on ad revenue. Marketers have no long-term commitments. Buybacks of $26.26 billion and dividends of $5.32 billion were partly funded by $29.91 billion of new debt, and the stock has ranged from $17.55 to $796.25 since the IPO.",
+        "claims": [
+          {
+            "claim": "Capital spending is rising faster than free cash flow, which fell year over year.",
+            "quote": "Free cash flow $ 43,585 $ 52,103 $ 43,010",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Reality Labs losses are large and expected to persist.",
+            "quote": "we expect our 2026 RL operating losses to remain similar to 2025",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Regulatory and platform changes are expected to keep hurting ad revenue.",
+            "quote": "will continue to adversely affect, our advertising business",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "bull": {
+        "argument": "The bear case leans on a few real pressures, but it misreads the filing's economics. Free cash flow fell from $52.10 billion to $43.59 billion mainly because purchases of property and equipment rose to $69.69 billion; the business still produced $115.80 billion of operating cash flow, up from $91.33 billion. Net income dipped only because of a one-time $15.93 billion OBBBA tax charge, and the filing says the effective rate would have been 13% without the valuation allowance. Reality Labs losses of $19.19 billion are a known, disclosed drag, and FoA operating income rose 18% to $102.47 billion, so the core business is growing profit. On debt, the $29.91 billion of notes were a financing choice while cash and marketable securities still totaled $81.59 billion. Advertising pressure is real, but ad impressions rose 12% and price per ad rose 9%, which is not a franchise in decline. The filing's risks are substantial, and the capex plan of $115 billion to $135 billion is large, but the investment is tied to AI and infrastructure the company says will support its core business.",
+        "claims": [
+          {
+            "claim": "Operating cash flow grew strongly, showing the core business generates substantial cash even as capex rose.",
+            "quote": "Net cash provided by operating activities $ 115,800 $ 91,328 $ 71,113",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The net income decline reflected a one-time tax charge, with a much lower underlying rate absent the valuation allowance.",
+            "quote": "Absent the valuation allowance charge as of the enactment date, our 2025 effective tax rate would have decreased by 17 percentage points to 13%.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Family of Apps operating income grew 18%, offsetting the Reality Labs loss in the segment picture.",
+            "quote": "Family of Apps $ 102,469 $ 87,109 $ 62,871 18 % 39 %",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull case is right that operating cash flow rose to $115.80 billion, but that cash is being absorbed. Capital expenditures of $72.22 billion consumed most of it, and the company guides 2026 capex to $115 billion to $135 billion, a range that could push free cash flow lower again. The one-time-charge defense is weaker than presented: the $15.93 billion OBBBA charge is one item, yet the filing also says CAMT may keep the effective tax rate elevated and that global minimum tax and digital services taxes could raise it further. Reality Labs losses are not a rounding error. They were $19.19 billion, widened 8%, and are expected to stay similar in 2026, with the filing admitting the company depends on other segments to fund them. The $81.59 billion cash balance is partly offset by $59.0 billion of senior notes and $18.33 billion of non-marketable equity purchases. Growth in impressions and pricing is real, but the filing says ad revenue is hurt by privacy limits, Apple's iOS changes, the EU's less-personalized-ads model, and marketers have no long-term commitments. Those risks are the core of the investment case, not footnotes.",
+        "claims": [
+          {
+            "claim": "Capital spending absorbed most operating cash flow, leaving free cash flow lower year over year.",
+            "quote": "Free cash flow $ 43,585 $ 52,103 $ 43,010",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Reality Labs losses are large and the company expects them to persist into 2026.",
+            "quote": "we expect our 2026 RL operating losses to remain similar to 2025",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Privacy and platform changes are expected to keep weighing on advertising revenue.",
+            "quote": "will continue to adversely affect, our advertising business",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    }
+  ],
+  "citations": {
+    "bull": {
+      "verified": 6,
+      "total": 6
+    },
+    "bear": {
+      "verified": 6,
+      "total": 6
+    },
+    "overall": {
+      "verified": 12,
+      "total": 12,
+      "accuracy": 1.0
+    }
+  },
+  "judge": {
+    "scores": {
+      "bull": {
+        "evidence": 7,
+        "logic": 7,
+        "responsiveness": 7
+      },
+      "bear": {
+        "evidence": 6,
+        "logic": 7,
+        "responsiveness": 7
+      }
+    },
+    "winner": "bull",
+    "reasoning": "Both sides cite verified filing quotes, but the bull's evidence is somewhat more directly on point, including operating cash flow growth and the verified tax-rate language that rebuts the bear's net income argument. The bear raises legitimate points on capex guidance and Reality Labs losses, and its Round 2 reasoning about cash absorption is sound, but it leans on repeated quotes and some unverified figures like the $59.0 billion of senior notes and $18.33 billion of equity purchases, which weakens it slightly. The bull answers the bear's free-cash-flow and tax points more directly, giving it a narrow edge."
+  },
+  "usage": {
+    "calls": 6,
+    "input_tokens": 373834,
+    "output_tokens": 3714,
+    "cost_usd": 0.0392
+  }
+}
