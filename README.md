@@ -14,7 +14,7 @@ Work in progress.
 - [x] Shared Claude helper with token and cost logging (`llm.py`)
 - [x] Bull and bear agents debating over several rounds (`debate.py`)
 - [x] Judge agent with a scoring rubric
-- [x] Citation checker: minimum length, exact fast path, then fuzzy match (`rapidfuzz`, threshold 90), 7 tests passing
+- [x] Citation checker: minimum length, exact fast path, fuzzy match (`rapidfuzz`, threshold 90), and every number must match; 27 tests across the project
 - [x] Bias evaluation: swap bull/bear order and measure how often the verdict flips (`bias.py`, results below)
 - [x] Interactive static site in `site/`, built from the saved results by `build_site.py`
 - [ ] Publish on GitHub Pages (workflow added; needs a merge to `main` and Pages set to "GitHub Actions")
@@ -66,7 +66,7 @@ python debate.py AAPL
 
 This writes `debates/AAPL.json` with the transcript, per-quote verification, the judge's scores and the cost. A 2-round debate is 5 Claude calls (Haiku 5.5) and costs about 1.5 cents.
 
-Run the tests:
+Run the tests (none of them call the API):
 
 ```bash
 python -m pytest
@@ -77,6 +77,8 @@ python -m pytest
 16 non-bank companies, one 2-round debate per setup (Claude Haiku 5.5). Raw numbers are in `results/` and `debates/`; re-print the bias report with `python bias.py --report` (add `--variant bear-first` for the second setup).
 
 **Citations:** 190 of 192 quotes (99.0%) were found in the filing by code. The two misses scored 72 and 82 against a pass mark of 90. On Apple's filing, fabricated quotes scored 54 to 63, and quotes from the wrong company never passed.
+
+The fuzzy score alone cannot see a changed figure: with one digit changed in the 98 quotes that contain a number, every one still scored 90 or more. So the checker also requires every number in the quote to appear in the part of the filing it matched, and rejects all 98. It still accepts a one-word wording change (91% of quotes with a word swapped), so a verified quote proves the words are in the filing, not that they support the claim.
 
 **Judge bias test.** Each debate was judged 3 times with bull listed first and 3 times with bear listed first (96 judgments per setup), in two setups: the bull speaks first (original) or the bear speaks first.
 
@@ -92,10 +94,11 @@ python -m pytest
 
 What this says, and does not say:
 
-- **No clear effect of listing order on scores.** Both ranges include zero.
+- **No clear effect of listing order on scores.** Both ranges include zero (the interval uses a t critical value, which is wider than 1.96 with only 16 debates).
 - **The bear's edge is partly a debate-format flaw.** In the original format the bear always replies last. With the bear speaking first its share fell from 71% to 55%. But the bear still won about 7 times as often as the bull, so something else favors it. Candidates, none tested yet: the judge's taste for caution, the Risk Factors section making up most of the text, or the judge being the same model as the debaters.
 - **Order swaps flip verdicts more than rerunning does only in the second setup** (44% against a 19% baseline), though the score bonus stays small. In the first setup the flip rate (31%) matches the baseline (28%).
 - **Swap-and-average helped in one setup and not the other** (28% to 6%, then 19% to 19%), so it is not a reliable fix on this much data.
+- **The listing-order test has a confound.** When the judge lists the side that spoke second first, it reads a reply before the argument it answers, so those results mix pure position bias with a scrambled conversation. Fixing that needs a different test design and a rerun of the judging (cheap, but not done yet).
 - Only 16 debates per setup, so treat every number as a rough estimate.
 
 ## The site
@@ -128,7 +131,7 @@ python -m http.server 8123 --directory site   # preview at http://localhost:8123
 | `build_site.py` | Turns saved debates and results into `site/data.js` |
 | `site/` | The static page (HTML, CSS, JavaScript, generated data) |
 | `.github/workflows/pages.yml` | Publishes `site/` to GitHub Pages |
-| `tests/` | pytest tests for the citation checker |
+| `tests/` | pytest tests: citation checker, section extraction, bias statistics, debate-turn validation |
 | `debates/` | Saved debates, one JSON file per ticker |
 | `test_key.py` | Smoke test that the Claude API key works |
 | `requirements.txt` | Pinned dependencies |

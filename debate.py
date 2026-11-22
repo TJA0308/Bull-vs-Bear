@@ -61,6 +61,25 @@ Reply with ONLY a JSON object:
 }"""
 
 
+def parse_turn(reply):
+    """Parse a debater's reply and check its shape.
+
+    Raises ValueError (so the caller can retry) if the JSON is bad or a claim
+    lacks text for "claim" or "quote". Without this, a null quote would crash
+    the citation checker after the model calls were already paid for.
+    """
+    turn = parse_json(reply)
+    if not isinstance(turn.get("argument"), str):
+        raise ValueError('"argument" must be a string')
+    claims = turn.get("claims")
+    if not isinstance(claims, list) or not claims:
+        raise ValueError('"claims" must be a non-empty list')
+    for c in claims:
+        if not (isinstance(c, dict) and isinstance(c.get("claim"), str) and isinstance(c.get("quote"), str)):
+            raise ValueError('every claim needs a string "claim" and a string "quote"')
+    return turn
+
+
 class Agent:
     """One debater. Keeps its own conversation history between rounds."""
 
@@ -88,21 +107,22 @@ class Agent:
         self.messages.append({"role": "assistant", "content": reply})
 
         try:
-            return parse_json(reply)
-        except ValueError:  # json.JSONDecodeError is a ValueError too
+            return parse_turn(reply)
+        except ValueError as error:  # json.JSONDecodeError is a ValueError too
             # One retry: tell the model what went wrong.
             self.messages.append(
-                {"role": "user", "content": "That was not valid JSON. Reply with ONLY the JSON object."}
+                {"role": "user", "content": f"That reply was not usable ({str(error)[:200]}). "
+                                            "Reply with ONLY the JSON object in the required format."}
             )
             reply = ask_llm(self.system, self.messages)
             self.messages.append({"role": "assistant", "content": reply})
-            return parse_json(reply)
+            return parse_turn(reply)
 
 
 def check_citations(turn, filing_text):
     """Add verified/score to every claim, using code (not the LLM)."""
     for claim in turn["claims"]:
-        verified, score = verify_quote(claim.get("quote", ""), filing_text)
+        verified, score = verify_quote(claim["quote"], filing_text)
         claim["verified"] = verified
         claim["score"] = round(score, 1)
 
@@ -128,6 +148,12 @@ def format_transcript(rounds, first="bull"):
 
     `first` is which side is listed first within each round. Swapping it
     lets us test whether the judge is biased by presentation order.
+
+    Caveat: when `first` is not the side that actually spoke first, the
+    judge reads the reply before the argument it answers, so a "position
+    effect" measured this way also includes a scrambled conversation. The
+    two debate setups (bull speaks first / bear speaks first) are the
+    chronological comparison.
     """
     sides = ["bull", "bear"] if first == "bull" else ["bear", "bull"]
     lines = []

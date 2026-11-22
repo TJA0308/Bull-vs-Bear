@@ -77,9 +77,13 @@ def save_results(results, path):
 
 
 def majority(winners):
-    """Most common winner; 'tie' if there is no clear majority."""
+    """Most common winner, or 'split' if no verdict has more than half the votes.
+
+    'split' is not a tie the judge declared: it means the runs disagreed
+    (for example bull, bear, tie once each).
+    """
     (top, n), = Counter(winners).most_common(1)
-    return top if n > len(winners) / 2 else "tie"
+    return top if n > len(winners) / 2 else "split"
 
 
 def pair_verdict(a, b):
@@ -106,12 +110,16 @@ def analyze(results):
     first_wins = sum(1 for f, w in decided if f == w)
     bull_wins = sum(1 for _, w in decided if w == "bull")
 
-    # Did the majority verdict change when we only swapped the order?
-    flips = sum(
-        1 for r in ok.values()
-        if majority([j["winner"] for j in r["bull_first"]])
-        != majority([j["winner"] for j in r["bear_first"]])
-    )
+    # Did the majority verdict change when we only swapped the order? Only
+    # debates with a clear majority in BOTH orders can show a flip; a split
+    # (no majority) is counted separately instead of as a change.
+    majorities = [
+        (majority([j["winner"] for j in r["bull_first"]]),
+         majority([j["winner"] for j in r["bear_first"]]))
+        for r in ok.values()
+    ]
+    flips = sum(1 for a, b in majorities if "split" not in (a, b) and a != b)
+    unclear = sum(1 for a, b in majorities if "split" in (a, b))
 
     # Baseline randomness: same order, repeated runs, not unanimous.
     def unstable(runs):
@@ -140,9 +148,10 @@ def analyze(results):
         "judgments": len(judgments),
         "first_position_bonus_points": round(first_bonus, 2),
         "first_listed_wins": round(first_wins / len(decided), 3) if decided else None,
-        "bull_wins": round(bull_wins / len(decided), 3),
+        "bull_wins": round(bull_wins / len(decided), 3) if decided else None,
         "ties": len(judgments) - len(decided),
         "order_flip_rate": round(flips / n, 3),
+        "unclear_majority_debates": unclear,
         "same_order_instability": round(same_order_noise, 3),
         "fixed_instability": round(sum(fix_unstable(r) for r in ok.values()) / n, 3),
     }
@@ -157,10 +166,13 @@ def print_report(results):
     s = summary
     print(f"\n=== Bias report: {s['debates']} debates, {s['judgments']} judgments ===")
     print(f"bonus for being listed FIRST:  {s['first_position_bonus_points']:+.2f} points (of 30; 0 = no position effect)")
-    if s["first_listed_wins"] is not None:
+    if s["first_listed_wins"] is not None and s["bull_wins"] is not None:
         print(f"side listed FIRST wins:        {s['first_listed_wins']:.0%}   (of decided verdicts; 50% = no position effect)")
         print(f"bull wins overall:             {s['bull_wins']:.0%}   (of decided verdicts; 50% = no side preference)")
-    print(f"verdict flips when order swapped: {s['order_flip_rate']:.0%} of debates")
+    else:
+        print("no judgment named a winner (all ties)")
+    print(f"verdict flips when order swapped: {s['order_flip_rate']:.0%} of debates"
+          f"   ({s['unclear_majority_debates']} debates had no clear majority in one order)")
     print(f"unstable even in SAME order:      {s['same_order_instability']:.0%}  (randomness baseline)")
     print(f"unstable with swap-and-average:   {s['fixed_instability']:.0%}  (the fix)")
     print(f"ties: {s['ties']}" + (f"   failed tickers: {', '.join(failed)}" if failed else ""))

@@ -49,14 +49,19 @@ def collapse(text):
 _filing_cache = {}
 
 
-def filing_text(ticker):
-    """The exact text the agents saw, rebuilt from the cached 10-K HTML."""
-    if ticker in _filing_cache:
-        return _filing_cache[ticker]
-    paths = sorted(glob.glob(os.path.join("data", "raw", f"{ticker}_*.html")))
-    if not paths:
-        raise FileNotFoundError(f"No cached filing for {ticker}; run fetch.py {ticker}")
-    with open(paths[-1], encoding="utf-8") as f:
+def filing_text(ticker, accession):
+    """The exact text the agents saw, rebuilt from the cached 10-K HTML.
+
+    The accession number comes from the saved debate, so a newer 10-K cached
+    later can never be mistaken for the one the agents read.
+    """
+    key = (ticker, accession)
+    if key in _filing_cache:
+        return _filing_cache[key]
+    path = os.path.join("data", "raw", f"{ticker}_{accession}.html")
+    if not os.path.exists(path):
+        raise FileNotFoundError(f"No cached filing {path}; run fetch.py {ticker} (and keep the same 10-K)")
+    with open(path, encoding="utf-8") as f:
         text = html_to_text(f.read())
     combined = (
         "RISK FACTORS (Item 1A):\n" + extract_section(text, ITEM_1A_START, ITEM_1A_END)
@@ -65,8 +70,8 @@ def filing_text(ticker):
     )
     display = collapse(combined)
     norm = normalize(combined)
-    _filing_cache[ticker] = (display, norm, combined)
-    return _filing_cache[ticker]
+    _filing_cache[key] = (display, norm, combined)
+    return _filing_cache[key]
 
 
 def trim_to_words(s, from_left):
@@ -78,9 +83,9 @@ def trim_to_words(s, from_left):
     return s[:i] if i > len(s) - 30 else s
 
 
-def locate(quote, ticker):
+def locate(quote, ticker, accession):
     """Where in the filing does this quote (approximately) appear?"""
-    display, norm, _ = filing_text(ticker)
+    display, norm, _ = filing_text(ticker, accession)
     qn = normalize(quote)
     if len(display) != len(norm) or len(qn.split()) < MIN_WORDS:
         return None  # positions would not line up, or quote too short to place
@@ -109,7 +114,7 @@ def slim_debate(d):
                     "quote": c.get("quote", ""),
                     "verified": c["verified"],
                     "score": c["score"],
-                    "ctx": locate(c.get("quote", ""), d["ticker"]),
+                    "ctx": locate(c.get("quote", ""), d["ticker"], d["filing"]["accession"]),
                 })
             entry[side] = {"argument": turn["argument"], "claims": claims}
         rounds.append(entry)
@@ -117,6 +122,7 @@ def slim_debate(d):
         "ticker": d["ticker"],
         "name": NAMES.get(d["ticker"], d["ticker"]),
         "filingDate": d["filing"]["date"],
+        "accession": d["filing"]["accession"],
         "model": d["model"],
         "bullFirst": d["bull_first"],
         "rounds": rounds,
@@ -155,14 +161,26 @@ def drop_two_words(q):
     return " ".join(words[:m] + words[m + 2:])
 
 
+def change_one_number(q):
+    """Change the last digit of the first number; None if the quote has no number."""
+    m = citations.NUMBER.search(q)
+    if not m:
+        return None
+    digits = m.group(0)
+    last = int(digits[-1]) if digits[-1].isdigit() else None
+    if last is None:
+        return None
+    return q[:m.start()] + digits[:-1] + str((last + 3) % 10) + q[m.end():]
+
+
 def checker_experiment(debates):
     tickers = list(debates)
-    rows = {"real": [], "swap": [], "drop": [], "wrong": []}
+    rows = {"real": [], "swap": [], "drop": [], "number": [], "wrong": []}
     short = 0
     for t in tickers:
-        _, _, combined = filing_text(t)
+        _, _, combined = filing_text(t, debates[t]["accession"])
         other = tickers[(tickers.index(t) + 1) % len(tickers)]
-        _, _, other_text = filing_text(other)
+        _, _, other_text = filing_text(other, debates[other]["accession"])
         for r in debates[t]["rounds"]:
             for side in ("bull", "bear"):
                 for c in r[side]["claims"]:
@@ -175,16 +193,25 @@ def checker_experiment(debates):
                         "real": (q, combined), "swap": (swap_one_word(q), combined),
                         "drop": (drop_two_words(q), combined), "wrong": (q, other_text),
                     }
+                    changed = change_one_number(q)
+                    if changed:
+                        variants["number"] = (changed, combined)
                     for kind, (text, source) in variants.items():
                         if len(text.split()) < MIN_WORDS:
                             continue  # would fail the length rule, not the match; not informative
-                        score = verify_quote(text, source)[1]
-                        rows[kind].append({"t": t, "s": round(score, 1),
+                        ok, score = verify_quote(text, source)
+                        rows[kind].append({"t": t, "s": round(score, 1), "v": ok,
                                            "q": text if len(text) <= 150 else text[:147] + "..."})
     return {"rows": rows, "tooShort": short, "threshold": 90}
 
 
 # ---- bias results ------------------------------------------------------
+
+# Two-sided 95% t critical values by degrees of freedom (n - 1). With only
+# ~16 debates, 1.96 would make the range too narrow.
+T_95 = {5: 2.571, 8: 2.306, 9: 2.262, 10: 2.228, 11: 2.201, 12: 2.179, 13: 2.160,
+        14: 2.145, 15: 2.131, 16: 2.120, 17: 2.110, 18: 2.101, 19: 2.093, 20: 2.086}
+
 
 def variant_summary(path):
     if not os.path.exists(path):
@@ -210,13 +237,14 @@ def variant_summary(path):
         bonuses.append((mb - mr) / 2)
     mean_b = st.mean(bonuses)
     se = st.stdev(bonuses) / len(bonuses) ** 0.5 if len(bonuses) > 1 else 0.0
+    crit = T_95.get(len(bonuses) - 1, 1.96)  # small samples need a wider range than 1.96
 
     rows = {t: {"bullListedFirst": [{"w": j["winner"], "m": j["margin"]} for j in r["bull_first"]],
                 "bearListedFirst": [{"w": j["winner"], "m": j["margin"]} for j in r["bear_first"]]}
             for t, r in ok.items()}
     failed = {t: r["error"] for t, r in results.items() if "error" in r}
     return {"summary": summary, "counts": counts, "bonusMean": round(mean_b, 2),
-            "bonusLo": round(mean_b - 1.96 * se, 2), "bonusHi": round(mean_b + 1.96 * se, 2),
+            "bonusLo": round(mean_b - crit * se, 2), "bonusHi": round(mean_b + crit * se, 2),
             "rows": rows, "failed": failed}
 
 
