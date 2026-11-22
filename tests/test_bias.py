@@ -49,3 +49,20 @@ def test_position_bonus_is_half_the_margin_gap():
     # Bull is ahead by 6 when listed first and behind by 2 when listed second.
     d = debate([("bull", 6)] * 3, [("bear", -2)] * 3)
     assert analyze({"AAPL": d})["first_position_bonus_points"] == 4.0
+
+
+def test_chronological_summary_counts_and_instability():
+    from bias import analyze_chronological
+    runs = {
+        "AAPL": [run("bear", -3), run("bear", -5), run("bear", -1)],
+        "MSFT": [run("bull", 2), run("tie", 0), run("bear", -2)],
+    }
+    s = analyze_chronological(runs)
+    assert s["counts"] == {"bull": 1, "tie": 1, "bear": 4}
+    assert s["same_order_instability"] == 0.5
+    assert s["mean_margin"] == -1.5
+
+
+def test_chronological_summary_of_nothing_is_none():
+    from bias import analyze_chronological
+    assert analyze_chronological({}) is None

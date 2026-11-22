@@ -248,6 +248,14 @@ def variant_summary(path):
             "rows": rows, "failed": failed}
 
 
+def chronological_summary():
+    """Both setups re-judged in speaking order (bias.py --chrono), or None."""
+    results = bias.load_results(bias.CHRONO_PATH)
+    out = {"base": bias.analyze_chronological(results.get("base", {})),
+           "bearFirst": bias.analyze_chronological(results.get("bear-first", {}))}
+    return out if out["base"] and out["bearFirst"] else None
+
+
 def parse_prompts():
     return {
         "bull": debate_mod.SIDE_PROMPTS["bull"],
@@ -278,7 +286,8 @@ def main():
         },
         "debates": {"base": base, "bearFirst": variant},
         "bias": {"base": variant_summary(bias.results_path("base")),
-                 "bearFirst": variant_summary(bias.results_path("bear-first"))},
+                 "bearFirst": variant_summary(bias.results_path("bear-first")),
+                 "chrono": chronological_summary()},
         "checker": checker_experiment(base),
         "prompts": parse_prompts(),
         "code": {"verify": inspect.getsource(citations.verify_quote),

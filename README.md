@@ -74,7 +74,7 @@ python -m pytest
 
 ## Results
 
-16 non-bank companies, one 2-round debate per setup (Claude Haiku 5.5). Raw numbers are in `results/` and `debates/`; re-print the bias report with `python bias.py --report` (add `--variant bear-first` for the second setup).
+16 non-bank companies, one 2-round debate per setup (Claude Haiku 5.5). Raw numbers are in `results/` and `debates/` (`results/chronological.json` is the speaking-order rerun); re-print the bias report with `python bias.py --report` (add `--variant bear-first` for the second setup).
 
 **Citations:** 190 of 192 quotes (99.0%) were found in the filing by code. The two misses scored 72 and 82 against a pass mark of 90. On Apple's filing, fabricated quotes scored 54 to 63, and quotes from the wrong company never passed.
 
@@ -87,7 +87,7 @@ The fuzzy score alone cannot see a changed figure: with one digit changed in the
 | Bull wins | 4% | 8% |
 | Tie | 25% | 36% |
 | Bear wins | 71% | 55% |
-| Bonus for the side listed first (points of 30, 95% range) | +0.2 (-0.2 to +0.5) | +0.4 (-0.1 to +0.9) |
+| Bonus for the side listed first (points of 30, 95% range) | +0.2 (-0.2 to +0.6) | +0.4 (-0.2 to +1.0) |
 | Judge disagrees with itself, same order | 28% of debates | 19% |
 | Majority verdict changes when order is swapped | 31% | 44% |
 | Swap-and-average: disagreement afterward | 6% | 19% |
@@ -98,7 +98,7 @@ What this says, and does not say:
 - **The bear's edge is partly a debate-format flaw.** In the original format the bear always replies last. With the bear speaking first its share fell from 71% to 55%. But the bear still won about 7 times as often as the bull, so something else favors it. Candidates, none tested yet: the judge's taste for caution, the Risk Factors section making up most of the text, or the judge being the same model as the debaters.
 - **Order swaps flip verdicts more than rerunning does only in the second setup** (44% against a 19% baseline), though the score bonus stays small. In the first setup the flip rate (31%) matches the baseline (28%).
 - **Swap-and-average helped in one setup and not the other** (28% to 6%, then 19% to 19%), so it is not a reliable fix on this much data.
-- **The listing-order test has a confound.** When the judge lists the side that spoke second first, it reads a reply before the argument it answers, so those results mix pure position bias with a scrambled conversation. Fixing that needs a different test design and a rerun of the judging (cheap, but not done yet).
+- **The listing-order test has a confound, and the bear's edge survives removing it.** When the judge lists the side that spoke second first, it reads a reply before the argument it answers, so those results mix pure position bias with a scrambled conversation. To check, the 32 saved debates were judged again in the order they were spoken (`python bias.py --chrono`, 96 calls, about 4 cents). The bear still won 71% (bull speaks first) and 58% (bear speaks first) of judgments, the bull 6% and 4%, close to the table above. So the scrambled listing did not create the bear's edge; what does is still unexplained.
 - Only 16 debates per setup, so treat every number as a rough estimate.
 
 ## The site

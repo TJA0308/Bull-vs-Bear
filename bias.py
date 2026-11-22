@@ -12,7 +12,16 @@ Usage:
     python bias.py                  # run the default tickers (skips finished ones)
     python bias.py NVDA MSFT        # run just these
     python bias.py --report         # re-analyze saved results, no API calls
+    python bias.py --chrono         # re-judge the saved debates in speaking order
+    python bias.py --chrono --report
+
+The listing-order test above scrambles the conversation whenever the side
+listed first is not the side that spoke first. --chrono is the clean
+counterpart: the judge always reads the debate in the order it happened, so
+any preference for a side cannot come from a reply appearing before the
+argument it answers.
 """
+import glob
 import json
 import os
 import sys
@@ -61,6 +70,71 @@ def judge_both_orders(rounds):
                  "scores": verdict["scores"]}  # per-criterion, to see what drives a win
             )
     return out
+
+
+CHRONO_PATH = os.path.join("results", "chronological.json")
+
+
+def judge_in_speaking_order(debate):
+    """Judge a saved debate JUDGE_RUNS times, listing sides as they spoke."""
+    first = "bull" if debate["bull_first"] else "bear"
+    runs = []
+    for _ in range(JUDGE_RUNS):
+        verdict = judge(debate["rounds"], first=first)
+        runs.append({"winner": verdict["winner"], "margin": margin(verdict),
+                     "scores": verdict["scores"]})
+    return runs
+
+
+def run_chronological():
+    """Re-judge every saved debate of every variant. Skips finished ones."""
+    results = load_results(CHRONO_PATH)
+    for variant in VARIANTS:
+        done = results.setdefault(variant, {})
+        paths = sorted(glob.glob(os.path.join(debate_dir(variant), "*.json")))
+        for path in paths:
+            with open(path, encoding="utf-8") as f:
+                debate = json.load(f)
+            ticker = debate["ticker"]
+            if ticker in done:
+                print(f"{variant}/{ticker}: already done, skipping")
+                continue
+            print(f"\n=== {ticker} ({variant}, speaking order) ===")
+            try:
+                done[ticker] = judge_in_speaking_order(debate)
+            except Exception as e:  # one bad reply should not stop the batch
+                print(f"{variant}/{ticker}: FAILED ({type(e).__name__}: {e})")
+            save_results(results, CHRONO_PATH)
+    return results
+
+
+def analyze_chronological(runs_by_ticker):
+    """Summary of one setup judged in speaking order: {ticker: [run, ...]}."""
+    runs = [r for rs in runs_by_ticker.values() for r in rs]
+    if not runs:
+        return None
+    counts = Counter(r["winner"] for r in runs)
+    unstable = sum(1 for rs in runs_by_ticker.values() if len({r["winner"] for r in rs}) > 1)
+    return {
+        "debates": len(runs_by_ticker),
+        "judgments": len(runs),
+        "counts": {k: counts.get(k, 0) for k in ("bull", "tie", "bear")},
+        "mean_margin": round(sum(r["margin"] for r in runs) / len(runs), 2),
+        "same_order_instability": round(unstable / len(runs_by_ticker), 3),
+    }
+
+
+def print_chronological(results):
+    print("\n=== Judged in speaking order (nothing scrambled) ===")
+    for variant in VARIANTS:
+        s = analyze_chronological(results.get(variant, {}))
+        if s is None:
+            print(f"{variant}: no results yet")
+            continue
+        n, c = s["judgments"], s["counts"]
+        print(f"{variant:11} {s['debates']} debates, {n} judgments: bull {c['bull'] / n:.0%}  "
+              f"tie {c['tie'] / n:.0%}  bear {c['bear'] / n:.0%}   "
+              f"mean margin {s['mean_margin']:+.2f}  self-disagreement {s['same_order_instability']:.0%}")
 
 
 def load_results(path):
@@ -195,6 +269,11 @@ def main(args):
         args = args[:i] + args[i + 2:]
     if variant not in VARIANTS:
         sys.exit(f"Unknown variant {variant!r}. Choose from: {', '.join(VARIANTS)}")
+
+    if "--chrono" in args:
+        results = load_results(CHRONO_PATH) if "--report" in args else run_chronological()
+        print_chronological(results)
+        return
 
     path = results_path(variant)
     results = load_results(path)

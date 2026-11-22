@@ -359,15 +359,28 @@
       h("div", { "class": "cap" }, h("span", { text: label }), h("span", { text: total + " judgments, " + b.summary.debates + " debates" })), seg);
   }
 
+  // One row per way of judging: the listing-order test, and (when it has been
+  // run) the same debates re-judged in the order they were spoken.
+  function compareRows() {
+    var rows = [];
+    availableSetups.forEach(function (s) {
+      rows.push({ label: s[1] + ", listing order swapped", b: D.bias[s[0]] });
+      var c = D.bias.chrono && D.bias.chrono[s[0]];
+      if (c) rows.push({ label: s[1].replace(" (original)", "") + ", judged in speaking order",
+        b: { counts: c.counts, summary: { debates: c.debates, judgments: c.judgments } } });
+    });
+    return rows;
+  }
+
   function renderCompare() {
     var host = $("#compare");
     mountChart(host, {
       title: "Who wins, by debate setup",
-      sub: "Share of all judgments. Same companies, same filings, same judge instructions. Only who speaks first changes.",
-      draw: function (body) { availableSetups.forEach(function (s) { body.append(segRow(s[1], D.bias[s[0]])); }); },
+      sub: "Share of all judgments, same companies and filings. Only who speaks first, and the order the judge reads the debate in, change.",
+      draw: function (body) { compareRows().forEach(function (r) { body.append(segRow(r.label, r.b)); }); },
       table: function () {
         return { head: ["Setup", "Judgments", "Bull wins", "Tie", "Bear wins"],
-          rows: availableSetups.map(function (s) { var b = D.bias[s[0]], c = b.counts; return [s[1], b.summary.judgments, c.bull, c.tie, c.bear]; }) };
+          rows: compareRows().map(function (r) { var c = r.b.counts; return [r.label, r.b.summary.judgments, c.bull, c.tie, c.bear]; }) };
       },
       legend: legend([{ c: "bull", t: "Bull wins" }, { c: "tie", t: "Tie" }, { c: "bear", t: "Bear wins" }])
     });
@@ -523,6 +536,18 @@
           (b1.summary.debates < b0.summary.debates ? " (" + b1.summary.debates + " of " + b0.summary.debates + " companies run so far.)" : "") });
     }
 
+    var ch = D.bias.chrono;
+    if (ch) {
+      var n0 = tot(ch.base), n1 = tot(ch.bearFirst);
+      var cb0 = ch.base.counts.bear / n0, cb1 = ch.bearFirst.counts.bear / n1;
+      var cu0 = ch.base.counts.bull / n0, cu1 = ch.bearFirst.counts.bull / n1;
+      var near = Math.abs(cb0 - bear0) < 0.1 && (!b1 || Math.abs(cb1 - share(b1, "bear")) < 0.1);
+      items.push({ t: near ? "Reading the debate in order does not remove the bear's edge" : "Reading the debate in order changes the picture",
+        b: "The same debates were judged again with the sides listed in the order they spoke, so nothing was scrambled. The bear won " + pct(cb0) + " of judgments when the bull spoke first and " + pct(cb1) +
+          " when the bear spoke first; the bull won " + pct(cu0) + " and " + pct(cu1) + ". " +
+          (near ? "That is close to the earlier results, so the scrambled listing order does not explain why the bear wins." : "That differs from the earlier results, so part of them came from the scrambled listing order.") });
+    }
+
     var zero = function (b) { return b.bonusLo < 0 && b.bonusHi > 0; };
     var bonusLine = "Listing a side first changed its score by " + sgn(b0.bonusMean) + " points out of 30 in the original setup (95% range " + sgn(b0.bonusLo) + " to " + sgn(b0.bonusHi) + ")" +
       (b1 ? " and " + sgn(b1.bonusMean) + " with the bear speaking first (range " + sgn(b1.bonusLo) + " to " + sgn(b1.bonusHi) + ")." : ".");
@@ -658,7 +683,7 @@
     var limits = [
       ["A small test", cap(word(m.debates)) + " companies, one debate each per setup. The percentages are rough estimates, not precise measurements."],
       ["One model family", "The debaters and the judge are the same model, " + D.model + ". A judge from a different model could behave differently."],
-      ["Listing order scrambles the dialogue", "When the judge lists the side that spoke second first, it reads a reply before the argument it answers. The listing-order results mix pure position bias with that effect, and the two cannot be separated yet."],
+      ["Listing order scrambles the dialogue", "When the judge lists the side that spoke second first, it reads a reply before the argument it answers. The listing-order results mix pure position bias with that effect." + (D.bias.chrono ? " Re-judging the debates in speaking order gave similar bear shares, so this did not create the bear's edge." : "")],
       ["Quotes are checked, not claims", "The checker proves the words (and numbers) are in the filing. It cannot tell whether the quote really supports the claim built on it, and a one-word wording change can still pass."],
       ["Banks are skipped", "Banks such as JPMorgan keep their MD&A in a separate exhibit, so the extractor rejects them instead of guessing."],
       ["No stock predictions", "This shows how arguments are made and judged. It says nothing about whether a stock will go up or down."]
