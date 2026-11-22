@@ -1,3 +1,7 @@
+"""Smoke test: does the Claude API key work? Makes ONE tiny real API call.
+
+Run it by hand (it is not a pytest test): python scripts/check_key.py
+"""
 from dotenv import load_dotenv       # 1
 import anthropic
 
