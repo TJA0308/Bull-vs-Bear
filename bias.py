@@ -12,7 +12,16 @@ Usage:
     python bias.py                  # run the default tickers (skips finished ones)
     python bias.py NVDA MSFT        # run just these
     python bias.py --report         # re-analyze saved results, no API calls
+    python bias.py --chrono         # re-judge the saved debates in speaking order
+    python bias.py --chrono --report
+
+The listing-order test above scrambles the conversation whenever the side
+listed first is not the side that spoke first. --chrono is the clean
+counterpart: the judge always reads the debate in the order it happened, so
+any preference for a side cannot come from a reply appearing before the
+argument it answers.
 """
+import glob
 import json
 import os
 import sys
@@ -63,6 +72,71 @@ def judge_both_orders(rounds):
     return out
 
 
+CHRONO_PATH = os.path.join("results", "chronological.json")
+
+
+def judge_in_speaking_order(debate):
+    """Judge a saved debate JUDGE_RUNS times, listing sides as they spoke."""
+    first = "bull" if debate["bull_first"] else "bear"
+    runs = []
+    for _ in range(JUDGE_RUNS):
+        verdict = judge(debate["rounds"], first=first)
+        runs.append({"winner": verdict["winner"], "margin": margin(verdict),
+                     "scores": verdict["scores"]})
+    return runs
+
+
+def run_chronological():
+    """Re-judge every saved debate of every variant. Skips finished ones."""
+    results = load_results(CHRONO_PATH)
+    for variant in VARIANTS:
+        done = results.setdefault(variant, {})
+        paths = sorted(glob.glob(os.path.join(debate_dir(variant), "*.json")))
+        for path in paths:
+            with open(path, encoding="utf-8") as f:
+                debate = json.load(f)
+            ticker = debate["ticker"]
+            if ticker in done:
+                print(f"{variant}/{ticker}: already done, skipping")
+                continue
+            print(f"\n=== {ticker} ({variant}, speaking order) ===")
+            try:
+                done[ticker] = judge_in_speaking_order(debate)
+            except Exception as e:  # one bad reply should not stop the batch
+                print(f"{variant}/{ticker}: FAILED ({type(e).__name__}: {e})")
+            save_results(results, CHRONO_PATH)
+    return results
+
+
+def analyze_chronological(runs_by_ticker):
+    """Summary of one setup judged in speaking order: {ticker: [run, ...]}."""
+    runs = [r for rs in runs_by_ticker.values() for r in rs]
+    if not runs:
+        return None
+    counts = Counter(r["winner"] for r in runs)
+    unstable = sum(1 for rs in runs_by_ticker.values() if len({r["winner"] for r in rs}) > 1)
+    return {
+        "debates": len(runs_by_ticker),
+        "judgments": len(runs),
+        "counts": {k: counts.get(k, 0) for k in ("bull", "tie", "bear")},
+        "mean_margin": round(sum(r["margin"] for r in runs) / len(runs), 2),
+        "same_order_instability": round(unstable / len(runs_by_ticker), 3),
+    }
+
+
+def print_chronological(results):
+    print("\n=== Judged in speaking order (nothing scrambled) ===")
+    for variant in VARIANTS:
+        s = analyze_chronological(results.get(variant, {}))
+        if s is None:
+            print(f"{variant}: no results yet")
+            continue
+        n, c = s["judgments"], s["counts"]
+        print(f"{variant:11} {s['debates']} debates, {n} judgments: bull {c['bull'] / n:.0%}  "
+              f"tie {c['tie'] / n:.0%}  bear {c['bear'] / n:.0%}   "
+              f"mean margin {s['mean_margin']:+.2f}  self-disagreement {s['same_order_instability']:.0%}")
+
+
 def load_results(path):
     if os.path.exists(path):
         with open(path, encoding="utf-8") as f:
@@ -77,9 +151,13 @@ def save_results(results, path):
 
 
 def majority(winners):
-    """Most common winner; 'tie' if there is no clear majority."""
+    """Most common winner, or 'split' if no verdict has more than half the votes.
+
+    'split' is not a tie the judge declared: it means the runs disagreed
+    (for example bull, bear, tie once each).
+    """
     (top, n), = Counter(winners).most_common(1)
-    return top if n > len(winners) / 2 else "tie"
+    return top if n > len(winners) / 2 else "split"
 
 
 def pair_verdict(a, b):
@@ -106,12 +184,16 @@ def analyze(results):
     first_wins = sum(1 for f, w in decided if f == w)
     bull_wins = sum(1 for _, w in decided if w == "bull")
 
-    # Did the majority verdict change when we only swapped the order?
-    flips = sum(
-        1 for r in ok.values()
-        if majority([j["winner"] for j in r["bull_first"]])
-        != majority([j["winner"] for j in r["bear_first"]])
-    )
+    # Did the majority verdict change when we only swapped the order? Only
+    # debates with a clear majority in BOTH orders can show a flip; a split
+    # (no majority) is counted separately instead of as a change.
+    majorities = [
+        (majority([j["winner"] for j in r["bull_first"]]),
+         majority([j["winner"] for j in r["bear_first"]]))
+        for r in ok.values()
+    ]
+    flips = sum(1 for a, b in majorities if "split" not in (a, b) and a != b)
+    unclear = sum(1 for a, b in majorities if "split" in (a, b))
 
     # Baseline randomness: same order, repeated runs, not unanimous.
     def unstable(runs):
@@ -140,9 +222,10 @@ def analyze(results):
         "judgments": len(judgments),
         "first_position_bonus_points": round(first_bonus, 2),
         "first_listed_wins": round(first_wins / len(decided), 3) if decided else None,
-        "bull_wins": round(bull_wins / len(decided), 3),
+        "bull_wins": round(bull_wins / len(decided), 3) if decided else None,
         "ties": len(judgments) - len(decided),
         "order_flip_rate": round(flips / n, 3),
+        "unclear_majority_debates": unclear,
         "same_order_instability": round(same_order_noise, 3),
         "fixed_instability": round(sum(fix_unstable(r) for r in ok.values()) / n, 3),
     }
@@ -157,10 +240,13 @@ def print_report(results):
     s = summary
     print(f"\n=== Bias report: {s['debates']} debates, {s['judgments']} judgments ===")
     print(f"bonus for being listed FIRST:  {s['first_position_bonus_points']:+.2f} points (of 30; 0 = no position effect)")
-    if s["first_listed_wins"] is not None:
+    if s["first_listed_wins"] is not None and s["bull_wins"] is not None:
         print(f"side listed FIRST wins:        {s['first_listed_wins']:.0%}   (of decided verdicts; 50% = no position effect)")
         print(f"bull wins overall:             {s['bull_wins']:.0%}   (of decided verdicts; 50% = no side preference)")
-    print(f"verdict flips when order swapped: {s['order_flip_rate']:.0%} of debates")
+    else:
+        print("no judgment named a winner (all ties)")
+    print(f"verdict flips when order swapped: {s['order_flip_rate']:.0%} of debates"
+          f"   ({s['unclear_majority_debates']} debates had no clear majority in one order)")
     print(f"unstable even in SAME order:      {s['same_order_instability']:.0%}  (randomness baseline)")
     print(f"unstable with swap-and-average:   {s['fixed_instability']:.0%}  (the fix)")
     print(f"ties: {s['ties']}" + (f"   failed tickers: {', '.join(failed)}" if failed else ""))
@@ -183,6 +269,11 @@ def main(args):
         args = args[:i] + args[i + 2:]
     if variant not in VARIANTS:
         sys.exit(f"Unknown variant {variant!r}. Choose from: {', '.join(VARIANTS)}")
+
+    if "--chrono" in args:
+        results = load_results(CHRONO_PATH) if "--report" in args else run_chronological()
+        print_chronological(results)
+        return
 
     path = results_path(variant)
     results = load_results(path)

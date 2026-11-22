@@ -28,6 +28,10 @@
   function sv(tag, props) { return apply(document.createElementNS(SVGNS, tag), props, [].slice.call(arguments, 2)); }
   function icon(name) { return h("i", { "class": "ph ph-" + name, "aria-hidden": "true" }); }
 
+  var WORDS = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve",
+    "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty"];
+  var word = function (n) { return WORDS[n] || String(n); };
+  var cap = function (t) { return t.charAt(0).toUpperCase() + t.slice(1); };
   var pct = function (x, d) { return (x * 100).toFixed(d || 0) + "%"; };
   var sgn = function (v, d) { var n = Math.abs(v).toFixed(d === undefined ? 1 : d); return (v > 0 ? "+" : v < 0 ? "-" : "") + n; };
   var plural = function (n, one, many) { return n + " " + (n === 1 ? one : many); };
@@ -304,7 +308,7 @@
 
     if (runs) {
       panel.append(h("div", { "class": "card" },
-        h("h3", { text: "Same debate, judged six times" }),
+        h("h3", { text: "Same debate, judged " + word(runs.bullListedFirst.length + runs.bearListedFirst.length) + " times" }),
         h("p", { "class": "sub", text: "The arguments are identical each time. Only the listing order changes. Disagreement here is the judge's own randomness." }),
         h("div", { "class": "runs" }, runDots(runs, "bull"), runDots(runs, "bear"))));
     }
@@ -340,6 +344,7 @@
   var SETUPS = [["base", "Bull speaks first (original)"], ["bearFirst", "Bear speaks first"]];
   var availableSetups = SETUPS.filter(function (s) { return D.bias[s[0]]; });
   var biasState = { setup: "base" };
+  var NRUNS = D.bias.base ? D.bias.base.rows[Object.keys(D.bias.base.rows)[0]].bullListedFirst.length : 3;
 
   function segRow(label, b) {
     var total = b.counts.bull + b.counts.tie + b.counts.bear;
@@ -354,15 +359,28 @@
       h("div", { "class": "cap" }, h("span", { text: label }), h("span", { text: total + " judgments, " + b.summary.debates + " debates" })), seg);
   }
 
+  // One row per way of judging: the listing-order test, and (when it has been
+  // run) the same debates re-judged in the order they were spoken.
+  function compareRows() {
+    var rows = [];
+    availableSetups.forEach(function (s) {
+      rows.push({ label: s[1] + ", listing order swapped", b: D.bias[s[0]] });
+      var c = D.bias.chrono && D.bias.chrono[s[0]];
+      if (c) rows.push({ label: s[1].replace(" (original)", "") + ", judged in speaking order",
+        b: { counts: c.counts, summary: { debates: c.debates, judgments: c.judgments } } });
+    });
+    return rows;
+  }
+
   function renderCompare() {
     var host = $("#compare");
     mountChart(host, {
       title: "Who wins, by debate setup",
-      sub: "Share of all judgments. Same companies, same filings, same judge instructions. Only who speaks first changes.",
-      draw: function (body) { availableSetups.forEach(function (s) { body.append(segRow(s[1], D.bias[s[0]])); }); },
+      sub: "Share of all judgments, same companies and filings. Only who speaks first, and the order the judge reads the debate in, change.",
+      draw: function (body) { compareRows().forEach(function (r) { body.append(segRow(r.label, r.b)); }); },
       table: function () {
         return { head: ["Setup", "Judgments", "Bull wins", "Tie", "Bear wins"],
-          rows: availableSetups.map(function (s) { var b = D.bias[s[0]], c = b.counts; return [s[1], b.summary.judgments, c.bull, c.tie, c.bear]; }) };
+          rows: compareRows().map(function (r) { var c = r.b.counts; return [r.label, r.b.summary.judgments, c.bull, c.tie, c.bear]; }) };
       },
       legend: legend([{ c: "bull", t: "Bull wins" }, { c: "tie", t: "Tie" }, { c: "bear", t: "Bear wins" }])
     });
@@ -375,10 +393,12 @@
     var pad = 14, H = 104, y = 54;
     var x = function (v) { return pad + ((v + lim) / (2 * lim)) * (w - 2 * pad); };
     var svg = sv("svg", { width: w, height: H, role: "img", "aria-label": "Average bonus for the side listed first: " + sgn(mean) + " points, 95 percent range " + sgn(lo) + " to " + sgn(hi) });
-    for (var t = -lim; t <= lim; t += (lim > 4 ? 2 : 1)) {
+    var step = lim > 4 ? 2 : 1, ticks = [0];
+    for (var tk = step; tk <= lim; tk += step) ticks.push(-tk, tk);
+    ticks.forEach(function (t) {
       svg.append(sv("line", { "class": t === 0 ? "axis-line" : "grid-line", x1: x(t), x2: x(t), y1: y - 22, y2: y + 22 }),
         sv("text", { x: x(t), y: y + 40, "text-anchor": "middle", text: sgn(t, 0) === "" ? "0" : sgn(t, 0) }));
-    }
+    });
     svg.append(
       sv("line", { x1: x(lo), x2: x(hi), y1: y, y2: y, stroke: "var(--ink-2)", "stroke-width": 2, "stroke-linecap": "round" }),
       sv("line", { x1: x(lo), x2: x(lo), y1: y - 6, y2: y + 6, stroke: "var(--ink-2)", "stroke-width": 2 }),
@@ -395,7 +415,7 @@
     var s = b.summary, n = s.debates;
     var items = [
       { cap: "The judge disagrees with itself (same order, 3 runs)", v: s.same_order_instability },
-      { cap: "The majority verdict changes when the order is swapped", v: s.order_flip_rate },
+      { cap: "The majority verdict changes when the order is swapped (no-majority debates left out)", v: s.order_flip_rate },
       { cap: "The judge disagrees with itself after swap-and-average", v: s.fixed_instability }
     ];
     var max = Math.max(0.5, Math.ceil(Math.max.apply(null, items.map(function (i) { return i.v; })) * 10 + 1) / 10);
@@ -421,7 +441,7 @@
     var rows = Object.keys(b.rows);
     mountChart(host, {
       title: "Every judgment, one square each",
-      sub: "Each row is one debate, judged three times with bull listed first and three times with bear listed first.",
+      sub: "Each row is one debate, judged " + word(NRUNS) + " times with bull listed first and " + word(NRUNS) + " times with bear listed first.",
       draw: function (body) {
         var heat = h("div", { "class": "heat", role: "img", "aria-label": "Grid of judge verdicts by company and listing order" });
         heat.append(h("div", { "class": "hrow", style: "margin-bottom:4px" }, h("span"),
@@ -433,7 +453,7 @@
           function cells(list, listed) {
             list.forEach(function (run, i) {
               var cell = h("div", { "class": "cell " + run.w });
-              bindTip(cell, [{ t: VERDICT[run.w], c: "tv" }, { t: base[t].name + ", " + SIDE_NAME[listed].toLowerCase() + " listed first, run " + (i + 1) }, { t: "Bull minus bear: " + sgn(run.m, 0) + " points" }]);
+              bindTip(cell, [{ t: VERDICT[run.w], c: "tv" }, { t: (base[t] ? base[t].name : t) + ", " + SIDE_NAME[listed].toLowerCase() + " listed first, run " + (i + 1) }, { t: "Bull minus bear: " + sgn(run.m, 0) + " points" }]);
               row.append(cell);
             });
           }
@@ -445,10 +465,10 @@
         body.append(heat);
       },
       table: function () {
-        return { head: ["Company", "Listed first", "Run 1", "Run 2", "Run 3"],
+        return { head: ["Company", "Listed first"].concat(b.rows[rows[0]].bullListedFirst.map(function (_, i) { return "Run " + (i + 1); })),
           rows: rows.reduce(function (acc, t) {
-            acc.push([t, "Bull", b.rows[t].bullListedFirst[0].w, b.rows[t].bullListedFirst[1].w, b.rows[t].bullListedFirst[2].w]);
-            acc.push([t, "Bear", b.rows[t].bearListedFirst[0].w, b.rows[t].bearListedFirst[1].w, b.rows[t].bearListedFirst[2].w]);
+            acc.push([t, "Bull"].concat(b.rows[t].bullListedFirst.map(function (r) { return r.w; })));
+            acc.push([t, "Bear"].concat(b.rows[t].bearListedFirst.map(function (r) { return r.w; })));
             return acc;
           }, []) };
       },
@@ -465,7 +485,7 @@
     grid.append(a, p);
     mountChart(a, {
       title: "Is the judge just inconsistent?",
-      sub: "Share of debates, out of " + b.summary.debates + ". If swapping the order flips verdicts no more often than rerunning does, the flips are noise.",
+      sub: "Share of debates, out of " + b.summary.debates + (b.summary.unclear_majority_debates ? " (" + b.summary.unclear_majority_debates + " had no clear majority in one order)" : "") + ". If swapping the order flips verdicts no more often than rerunning does, the flips are noise.",
       draw: function (body, w) { drawStability(body, w, b); },
       table: function () {
         var s = b.summary;
@@ -516,22 +536,34 @@
           (b1.summary.debates < b0.summary.debates ? " (" + b1.summary.debates + " of " + b0.summary.debates + " companies run so far.)" : "") });
     }
 
+    var ch = D.bias.chrono;
+    if (ch) {
+      var n0 = tot(ch.base), n1 = tot(ch.bearFirst);
+      var cb0 = ch.base.counts.bear / n0, cb1 = ch.bearFirst.counts.bear / n1;
+      var cu0 = ch.base.counts.bull / n0, cu1 = ch.bearFirst.counts.bull / n1;
+      var near = Math.abs(cb0 - bear0) < 0.1 && (!b1 || Math.abs(cb1 - share(b1, "bear")) < 0.1);
+      items.push({ t: near ? "Reading the debate in order does not remove the bear's edge" : "Reading the debate in order changes the picture",
+        b: "The same debates were judged again with the sides listed in the order they spoke, so nothing was scrambled. The bear won " + pct(cb0) + " of judgments when the bull spoke first and " + pct(cb1) +
+          " when the bear spoke first; the bull won " + pct(cu0) + " and " + pct(cu1) + ". " +
+          (near ? "That is close to the earlier results, so the scrambled listing order does not explain why the bear wins." : "That differs from the earlier results, so part of them came from the scrambled listing order.") });
+    }
+
     var zero = function (b) { return b.bonusLo < 0 && b.bonusHi > 0; };
     var bonusLine = "Listing a side first changed its score by " + sgn(b0.bonusMean) + " points out of 30 in the original setup (95% range " + sgn(b0.bonusLo) + " to " + sgn(b0.bonusHi) + ")" +
       (b1 ? " and " + sgn(b1.bonusMean) + " with the bear speaking first (range " + sgn(b1.bonusLo) + " to " + sgn(b1.bonusHi) + ")." : ".");
     var allZero = zero(b0) && (!b1 || zero(b1));
-    items.push({ t: "Listing order has no clear effect on scores",
+    items.push({ t: allZero ? "Listing order has no clear effect on scores" : "Listing order moved scores in at least one setup",
       b: bonusLine + (allZero ? " Every range includes zero, so the data cannot tell this from no effect." : " At least one range excludes zero.") });
 
     function noise(label, s) {
       return label + " the judge disagreed with itself in " + pct(s.same_order_instability) + " of debates, and swapping the order changed the majority verdict in " + pct(s.order_flip_rate) + ".";
     }
     var s0 = b0.summary, s1 = b1 && b1.summary;
-    items.push({ t: "Order effects on verdicts are mixed",
+    items.push({ t: "Verdicts change with the order and with plain reruns",
       b: noise("In the original setup", s0) + (s1 ? " " + noise("With the bear speaking first", s1) : "") +
         " Swap-and-average (add one judgment from each order) took disagreement from " + pct(s0.same_order_instability) + " to " + pct(s0.fixed_instability) +
         (s1 ? " in the first setup and from " + pct(s1.same_order_instability) + " to " + pct(s1.fixed_instability) + " in the second" : "") +
-        ". With 16 debates that is not enough to call it a reliable fix." });
+        ". With " + b0.summary.debates + " debates that is not enough to call it a reliable fix." });
 
     $("#findings").replaceChildren.apply($("#findings"), items.map(function (it) {
       return h("div", { "class": "finding" }, h("h3", { text: it.t }), h("p", { text: it.b }));
@@ -552,15 +584,17 @@
     var kinds = [
       ["real", "Real quotes, exactly as the agents wrote them", "Real quotes"],
       ["swap", "The same quotes with one word swapped for “zebra”", "One word swapped"],
+      ["number", "The quotes that contain a number, with that number changed", "One number changed"],
       ["drop", "The same quotes with two words dropped", "Two words dropped"],
       ["wrong", "Real quotes checked against another company's filing", "Wrong company's filing"]
     ];
     var host = $("#strip-card");
-    function accepted(rows) { return rows.filter(function (r) { return r.s >= thr; }).length; }
+    function accepted(rows) { return rows.filter(function (r) { return r.v; }).length; }
+    function passScore(rows) { return rows.filter(function (r) { return r.s >= thr; }).length; }
 
     mountChart(host, {
-      title: "Match score for " + ck.rows.real.length + " quotes, four ways",
-      sub: "Each dot is one quote. The line is the pass mark: dots to its right are accepted.",
+      title: "Match score for " + ck.rows.real.length + " quotes, and altered copies of them",
+      sub: "Each dot is one quote. The line is the pass mark for the match score. A quote must also keep every number it cites, so a dot right of the line can still be rejected.",
       draw: function (body, w) {
         var narrow = w < 560;
         var rowH = narrow ? 112 : 96, top = 8, axisH = 30, padL = 6, padR = 6;
@@ -602,19 +636,21 @@
         body.append(svg);
       },
       table: function () {
-        return { head: ["Kind of quote", "Quotes", "Accepted", "Lowest score", "Highest score"],
+        return { head: ["Kind of quote", "Quotes", "Accepted", "Score alone would accept", "Lowest score", "Highest score"],
           rows: kinds.map(function (k) {
             var rows = ck.rows[k[0]], sc = rows.map(function (r) { return r.s; });
-            return [k[1], rows.length, accepted(rows) + " (" + pct(accepted(rows) / rows.length) + ")", Math.min.apply(null, sc), Math.max.apply(null, sc)];
+            return [k[1], rows.length, accepted(rows) + " (" + pct(accepted(rows) / rows.length) + ")", passScore(rows) + " (" + pct(passScore(rows) / rows.length) + ")", Math.min.apply(null, sc), Math.max.apply(null, sc)];
           }) };
       }
     });
 
     var rate = function (k) { return accepted(ck.rows[k]) / ck.rows[k].length; };
+    var scoreRate = function (k) { return passScore(ck.rows[k]) / ck.rows[k].length; };
     host.after(h("p", { "class": "takeaway",
       text: "A real quote passes " + pct(rate("real")) + " of the time. Swap one word and it still passes " + pct(rate("swap")) +
         ". Drop two words and it passes " + pct(rate("drop")) + ". A real quote from the wrong company passes " + pct(rate("wrong")) +
-        ". The checker forgives small slips but not invented or misplaced quotes." }));
+        ". Change a number and the match score alone would still accept " + pct(scoreRate("number")) + " of quotes, which is why the checker also demands every number match: it accepts " + pct(rate("number")) +
+        ". It forgives small wording slips but not invented, misplaced or altered-figure quotes." }));
   })();
 
   // ======================================================================
@@ -645,8 +681,10 @@
     });
 
     var limits = [
-      ["A small test", "Sixteen companies, one debate each per setup. The percentages are rough estimates, not precise measurements."],
+      ["A small test", cap(word(m.debates)) + " companies, one debate each per setup. The percentages are rough estimates, not precise measurements."],
       ["One model family", "The debaters and the judge are the same model, " + D.model + ". A judge from a different model could behave differently."],
+      ["Listing order scrambles the dialogue", "When the judge lists the side that spoke second first, it reads a reply before the argument it answers. The listing-order results mix pure position bias with that effect." + (D.bias.chrono ? " Re-judging the debates in speaking order gave similar bear shares, so this did not create the bear's edge." : "")],
+      ["Quotes are checked, not claims", "The checker proves the words (and numbers) are in the filing. It cannot tell whether the quote really supports the claim built on it, and a one-word wording change can still pass."],
       ["Banks are skipped", "Banks such as JPMorgan keep their MD&A in a separate exhibit, so the extractor rejects them instead of guessing."],
       ["No stock predictions", "This shows how arguments are made and judged. It says nothing about whether a stock will go up or down."]
     ];
