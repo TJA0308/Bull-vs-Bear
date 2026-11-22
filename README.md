@@ -133,6 +133,7 @@ python -m http.server 8123 --directory site   # preview at http://localhost:8123
 | `.github/workflows/pages.yml` | Publishes `site/` to GitHub Pages |
 | `tests/` | pytest tests: citation checker, section extraction, bias statistics, debate-turn validation |
 | `debates/` | Saved debates, one JSON file per ticker |
-| `test_key.py` | Smoke test that the Claude API key works |
+| `scripts/check_key.py` | Run by hand to check the Claude API key works (one tiny real call; not part of pytest) |
+| `pytest.ini` | Points pytest at `tests/` only, so no stray script runs during tests |
 | `requirements.txt` | Pinned dependencies |
 | `data/` | Cached filings and extracted text (git-ignored) |
