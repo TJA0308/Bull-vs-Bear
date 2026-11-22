@@ -170,17 +170,18 @@ def format_transcript(rounds, first="bull"):
     return "\n".join(lines)
 
 
-def judge(rounds, first="bull"):
+def judge(rounds, first="bull", model=None):
+    """Score a debate. `model` picks the judge (default: the debaters' model)."""
     transcript = format_transcript(rounds, first)
     messages = [{"role": "user", "content": f"DEBATE TRANSCRIPT:\n\n{transcript}\nJudge this debate."}]
-    reply = ask_llm(JUDGE_SYSTEM, messages)
+    reply = ask_llm(JUDGE_SYSTEM, messages, model=model)
     try:
         return parse_json(reply)
     except ValueError:
         # One retry with the bad reply in history, like the debaters get.
         messages.append({"role": "assistant", "content": reply})
         messages.append({"role": "user", "content": "That was not valid JSON. Reply with ONLY the JSON object."})
-        return parse_json(ask_llm(JUDGE_SYSTEM, messages))
+        return parse_json(ask_llm(JUDGE_SYSTEM, messages, model=model))
 
 
 def run_debate(ticker, num_rounds=2, bull_first=True):

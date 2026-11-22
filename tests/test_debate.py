@@ -36,3 +36,10 @@ def test_check_citations_marks_each_claim():
     check_citations(turn, "A short filing about something different entirely.")
     assert turn["claims"][0]["verified"] is False
     assert "score" in turn["claims"][0]
+
+
+def test_unknown_judge_model_is_refused_before_any_api_call():
+    import pytest
+    from llm import ask_llm
+    with pytest.raises(ValueError, match="No price known"):
+        ask_llm("system", [{"role": "user", "content": "hi"}], model="claude-not-a-model")

@@ -66,3 +66,64 @@ def test_chronological_summary_counts_and_instability():
 def test_chronological_summary_of_nothing_is_none():
     from bias import analyze_chronological
     assert analyze_chronological({}) is None
+
+
+# --- Phase B: does a different judge change the bear's share? ---
+
+def scored(winner, margin, bull=(7, 7, 7), bear=(7, 7, 7)):
+    keys = ("evidence", "logic", "responsiveness")
+    return {"winner": winner, "margin": margin,
+            "scores": {"bull": dict(zip(keys, bull)), "bear": dict(zip(keys, bear))}}
+
+
+def test_bear_share_counts_judgments():
+    from bias import bear_share
+    runs = {"AAPL": [run("bear"), run("bear"), run("bull")], "MSFT": [run("tie")] * 3}
+    assert bear_share(runs) == 100 * 2 / 6
+    assert bear_share({}) is None
+
+
+def test_judge_verdict_follows_the_preset_rule():
+    from bias import judge_verdict
+    assert judge_verdict(20) == "judge-driven"
+    assert judge_verdict(35) == "judge-driven"
+    assert judge_verdict(9.9) == "not judge-driven"
+    assert judge_verdict(-9.9) == "not judge-driven"   # moving the other way is also "no drop"
+    assert judge_verdict(15) == "inconclusive"
+    assert judge_verdict(-15) == "inconclusive"
+
+
+def test_compare_judges_reports_shift_and_paired_directions():
+    from bias import compare_judges
+    base = {"base": {"AAPL": [scored("bear", -3)] * 3, "MSFT": [scored("bear", -2)] * 3}}
+    other = {"base": {"AAPL": [scored("bull", 2)] * 3, "MSFT": [scored("bear", -2)] * 3}}
+    c = compare_judges(base, other)
+    assert c["debates"] == 2
+    assert c["bear_share_base"] == 100.0
+    assert c["bear_share_other"] == 50.0
+    assert c["shift_points"] == 50.0
+    assert c["verdict"] == "judge-driven"
+    assert c["debates_other_kinder_to_bull"] == 1   # AAPL moved from -3 to +2
+    assert c["debates_other_harsher_on_bull"] == 0  # MSFT unchanged
+
+
+def test_compare_judges_only_uses_debates_both_judged():
+    from bias import compare_judges
+    base = {"base": {"AAPL": [scored("bear", -3)] * 3, "MSFT": [scored("bear", -2)] * 3}}
+    other = {"base": {"AAPL": [scored("bear", -3)] * 3}}
+    assert compare_judges(base, other)["debates"] == 1
+    assert compare_judges(base, {}) is None
+
+
+def test_criterion_gaps_show_which_category_moves():
+    from bias import criterion_gaps
+    runs = {"AAPL": [scored("bear", -1, bull=(7, 7, 6), bear=(7, 7, 8))]}
+    assert criterion_gaps(runs) == {"evidence": 0.0, "logic": 0.0, "responsiveness": -2.0}
+
+
+def test_default_judge_keeps_the_original_results_file():
+    from bias import chrono_path, CHRONO_PATH
+    from llm import MODEL
+    assert chrono_path() == CHRONO_PATH
+    assert chrono_path(MODEL) == CHRONO_PATH
+    assert chrono_path("claude-sonnet-5-5") != CHRONO_PATH
