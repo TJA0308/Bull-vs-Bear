@@ -1,0 +1,148 @@
+{
+  "ticker": "AAPL",
+  "filing": {
+    "accession": "0000320193-26-000026",
+    "document": "aapl-20260926.htm",
+    "date": "2026-11-03"
+  },
+  "model": "claude-haiku-5-5",
+  "created": "2026-11-22T00:21:39+00:00",
+  "bull_first": false,
+  "rounds": [
+    {
+      "round": 1,
+      "bear": {
+        "argument": "Apple's own filing lays out a set of risks that make the stock a poor bet. Management states that supply constraints and rising costs for advanced semiconductors, memory and storage are underway, and that it 'expects these trends to intensify for memory and storage components.' The company warns that price increases 'may not effectively mitigate these negative impacts, and may also reduce demand.' Gross margin already depends on factors the company says will bring 'volatility and downward pressure.' Revenue concentration is a further issue: the filing says it 'generates a significant portion of its net sales from a single product category,' and iPhone sales rose 21% in 2026 largely on Pro models, so the growth is concentrated. Legal exposure is also growing, with the filing noting that the number of claims 'has generally increased over time and may continue to increase,' and a Google search licensing arrangement could be disrupted by remedies. Capital allocation adds strain: $85.8 billion of buybacks and $15.7 billion of dividends in one year, with $82.7 billion of manufacturing purchase obligations due within 12 months. Investors are being asked to pay for a heavily committed, cost-pressured model.",
+        "claims": [
+          {
+            "claim": "Management expects component supply constraints and cost increases to intensify for memory and storage.",
+            "quote": "The Company expects these trends to intensify for memory and storage components.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Price increases meant to offset component costs may fail and could reduce demand.",
+            "quote": "Actions, such as price increases, that have been and may in the future be taken by the Company may not effectively mitigate these negative impacts, and may also reduce demand for the Company’s products.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Apple faces large near-term cash commitments for manufacturing purchases.",
+            "quote": "As of September 26, 2026, the Company had manufacturing purchase obligations of $89.7 billion, with $82.7 billion payable within 12 months.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bull": {
+        "argument": "The filing shows a business with powerful momentum that the bear case underweights. Total net sales rose 15% to $478.8 billion in 2026, with iPhone up 21% and Services up 13% to $123.3 billion. Total gross margin percentage expanded to 48.8% from 46.9%, and Services gross margin reached 76.2%, showing that growth is coming with better profitability, not just volume. Management is also funding growth while returning capital: it repurchased $85.8 billion of stock and paid $15.7 billion in dividends, backed by $136.9 billion of cash, cash equivalents and marketable securities, and it states these resources are sufficient for the next 12 months and beyond. The supply cost pressures the opponent cites are real, and the filing says price increases may not fully offset them. Yet the company has already expanded margins through product mix and tariff refunds despite those headwinds. The Services franchise, with its high margin and growing advertising and cloud revenue, adds a more durable earnings stream than a hardware-only model would provide.",
+        "claims": [
+          {
+            "claim": "Total net sales grew 15% in 2026 and gross margin percentage expanded.",
+            "quote": "Total net sales $ 478,834 15 % $ 416,161 6 % $ 391,035",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Services gross margin is high and rising, supporting profit durability.",
+            "quote": "Services 76.2 % 75.4 % 73.9 %",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Cash resources are described as sufficient for the company's needs over the next 12 months and beyond.",
+            "quote": "will be sufficient to satisfy its cash requirements and capital return program over the next 12 months and beyond",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "bear": {
+        "argument": "The bull case leans on figures that the filing itself qualifies. Gross margin rose to 48.8%, but the filing attributes the Products improvement 'primarily due to product mix and tariff refunds,' and tariff refunds stem from a Supreme Court ruling striking down certain tariffs, which are not a repeatable operating gain. Management also says gross margins 'will be subject to volatility and downward pressure,' and that rising memory costs offset part of the gain. The 15% sales jump is heavily iPhone-driven, with iPhone up 21% on Pro models, while the filing admits the company 'generates a significant portion of its net sales from a single product category.' Services growth is real, but the filing ties it partly to Google search licensing, which 'could materially adversely affect' revenue if remedies are imposed or renewals fail on poor terms. Cash of $136.9 billion is offset by $78.7 billion of notes, $82.7 billion of manufacturing obligations due within a year, and $85.8 billion of buybacks. Returns are paid out of a base the filing says is exposed to memory cost inflation, rising tax rates, and legal outcomes it calls inherently uncertain.",
+        "claims": [
+          {
+            "claim": "The Products margin gain was partly driven by one-time tariff refunds rather than operations.",
+            "quote": "Products gross margin and gross margin percentage increased during 2026 compared to 2025 primarily due to product mix and tariff refunds, partially offset by higher costs, including memory.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management expects gross margins to face volatility and downward pressure.",
+            "quote": "As a result, the Company believes, in general, gross margins will be subject to volatility and downward pressure.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Services relies on licensing arrangements that could be materially harmed by the Google case.",
+            "quote": "A reversal of the order on appeal could result in the imposition of certain remedies initially proposed by the DOJ, such as those prohibiting Google from offering the Company commercial terms for search distribution.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bull": {
+        "argument": "The bear case is right that some 2026 gains are qualified, but it overstates how much they explain. The filing says Products margin rose 'primarily due to product mix and tariff refunds, partially offset by higher costs, including memory,' so mix is named first and the refunds are one driver among several. Services is the stronger piece: its gross margin rose to 76.2% from 75.4%, and the filing credits 'higher Services net sales and a different mix of services' rather than one-time items. Services net sales grew 13% to $123.3 billion, and Services is a recurring, high-margin stream that does not depend on a single launch cycle. On the Google point, the filing says the licensing arrangements 'may not be renewed on favorable terms' and that a reversal 'could' hurt, which describes a risk, not a current loss. Cash of $136.9 billion and the 12-month sufficiency statement remain the filing's own assessment, and the $82.7 billion of manufacturing obligations is a normal consequence of a $478.8 billion revenue base, not evidence of distress. The honest conclusion is that the case rests on Services durability and mix, not on tariff refunds, and investors should weigh the cost pressures the filing itself flags.",
+        "claims": [
+          {
+            "claim": "Products margin gains were attributed first to product mix, with tariff refunds as one of several drivers.",
+            "quote": "primarily due to product mix and tariff refunds, partially offset by higher costs, including memory",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Services gross margin percentage rose and was attributed to a different mix of services.",
+            "quote": "Services gross margin percentage increased during 2026 compared to 2025 primarily due to a different mix of services",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The company states its cash resources are sufficient for cash requirements over the next 12 months and beyond.",
+            "quote": "will be sufficient to satisfy its cash requirements and capital return program over the next 12 months and beyond",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    }
+  ],
+  "citations": {
+    "bull": {
+      "verified": 6,
+      "total": 6
+    },
+    "bear": {
+      "verified": 6,
+      "total": 6
+    },
+    "overall": {
+      "verified": 12,
+      "total": 12,
+      "accuracy": 1.0
+    }
+  },
+  "judge": {
+    "scores": {
+      "bull": {
+        "evidence": 8,
+        "logic": 7,
+        "responsiveness": 8
+      },
+      "bear": {
+        "evidence": 8,
+        "logic": 7,
+        "responsiveness": 7
+      }
+    },
+    "winner": "tie",
+    "reasoning": "Both sides cite verified quotes from the filing, so evidence is largely comparable. The bull effectively answered the bear's tariff-refund point by pointing to the filing listing product mix first and to Services margin gains tied to service mix, while the bear's strongest point (tariff refunds and single-category concentration) was only partly rebutted. The bear's Google-risk and cost-pressure arguments were reasonably addressed by the bull's 'risk, not current loss' framing, leaving the debate closely balanced."
+  },
+  "usage": {
+    "calls": 5,
+    "input_tokens": 128063,
+    "output_tokens": 2776,
+    "cost_usd": 0.0142
+  }
+}

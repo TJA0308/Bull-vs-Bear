@@ -1,0 +1,148 @@
+{
+  "ticker": "MSFT",
+  "filing": {
+    "accession": "0001193125-26-323660",
+    "document": "msft-20260630.htm",
+    "date": "2026-07-29"
+  },
+  "model": "claude-haiku-5-5",
+  "created": "2026-11-22T00:22:11+00:00",
+  "bull_first": false,
+  "rounds": [
+    {
+      "round": 1,
+      "bear": {
+        "argument": "The filing describes an AI and cloud buildout that is large, accelerating, and only partly proven. Management says these investments are 'in advance of fully developed revenue streams' and that 'the associated revenue may not be realized in the expected timeframes or at expected levels.' Intelligent Cloud cost of revenue rose 44% against 30% revenue growth, and Microsoft Cloud gross margin fell to 66%. Capital spending is rising sharply: cash used in investing grew $66.9 billion, and the filing warns of possible asset impairment if demand is overestimated. Purchase commitments of $194 billion and leases of $443.5 billion add fixed obligations. Earnings were also lifted by OpenAI gains. Excluding those, adjusted diluted EPS grew 22%, while reported EPS grew 32%. Legal exposure is material too: the IRS seeks $28.9 billion plus penalties and interest. Investors are paying for a payoff that the filing itself says is uncertain.",
+        "claims": [
+          {
+            "claim": "Management says AI and cloud investments are running ahead of revenue, with returns uncertain.",
+            "quote": "These investments are being made at significant scale and on an accelerated timeline, require substantial and increasing capital expenditures and continued access to capital, and are in advance of fully developed revenue streams.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Cost of revenue in Intelligent Cloud is growing faster than revenue, pressuring margins.",
+            "quote": "Cost of revenue increased $17.7 billion or 44% driven by investments in AI infrastructure to support growing customer demand.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The IRS is seeking a large additional tax payment that could affect results.",
+            "quote": "In the NOPAs, the IRS is seeking an additional tax payment of $28.9 billion plus penalties and interest.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bull": {
+        "argument": "The filing shows a business with strong, broad growth that is funding its own expansion. Microsoft Cloud revenue rose 27% to $214.4 billion, Azure and other cloud services grew 41%, and the commercial remaining performance obligation increased 84% to $678 billion, giving multi-year visibility on future revenue. Operating income rose 21% to $155.2 billion, and cash from operations increased $46.8 billion to $182.9 billion, which is the source that funds the capital program. Management's own words frame the spending as deliberate: Intelligent Cloud cost of revenue rose 44% 'to support growing customer demand,' and Microsoft 365 Commercial cloud revenue grew 17% with revenue per user lifted by Copilot and E5. Even excluding OpenAI gains, adjusted diluted EPS grew 22%, showing the core earnings engine is compounding. The filing does warn that returns are uncertain, and the bull case must accept that risk, but the demand signals and cash generation in the filing are concrete.",
+        "claims": [
+          {
+            "claim": "Commercial remaining performance obligation grew sharply, giving multi-year revenue visibility.",
+            "quote": "Commercial remaining performance obligation increased 84% to $678 billion",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Operating cash flow grew strongly enough to help fund the capital program.",
+            "quote": "Cash from operations increased $46.8 billion to $182.9 billion for fiscal year 2026",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Core earnings grew even after removing OpenAI gains, supporting the underlying business.",
+            "quote": "Adjusted diluted earnings per share (non-GAAP) $ 17.28 $ 14.13 22%",
+            "verified": true,
+            "score": 95.5
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "bear": {
+        "argument": "The bull case rests on backlog and cash, but the filing ties both to the same uncertain spending. The $678 billion commercial remaining performance obligation is a contracted-revenue figure, yet the filing says demand 'is evolving and difficult to forecast' and that customers 'may reduce, delay, or shift AI workloads to competing platforms.' Backlog does not guarantee consumption. Operating cash flow of $182.9 billion is real, but cash used in investing rose $66.9 billion, and financing outflows reached $52.5 billion, so spending is absorbing the cash generation rather than leaving surplus. Growth is also flattered: the filing attributes part of the 41% Azure growth to demand, but the 44% jump in Intelligent Cloud cost of revenue far outpaced 30% revenue growth, and Microsoft Cloud gross margin fell to 66%. The 22% adjusted EPS figure is the stronger one, but it still rests on investments the filing says may not yield 'expected returns.' Unresolved items remain: the $28.9 billion IRS claim and the $443.5 billion of lease obligations.",
+        "claims": [
+          {
+            "claim": "Backlog is not the same as guaranteed consumption, and the filing says demand is hard to forecast.",
+            "quote": "Demand for cloud-based and AI products and services is evolving and difficult to forecast.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Capital spending is absorbing operating cash flow, with investing outflows rising sharply.",
+            "quote": "Cash used in investing increased $66.9 billion to $139.5 billion for fiscal year 2026",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Cost growth in the cloud segment outpaces revenue growth, pressuring margins.",
+            "quote": "Cost of revenue increased $17.7 billion or 44% driven by investments in AI infrastructure to support growing customer demand.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bull": {
+        "argument": "The backlog is contracted revenue, not a forecast. The filing defines commercial remaining performance obligation as revenue that 'includes unearned revenue and amounts that will be invoiced and recognized as revenue in future periods,' and that backlog rose 84% to $678 billion. Demand risk is real, and the filing says so, but the Azure data points the other way: 41% growth 'driven by demand for services across the platform with continued growth across all workloads.' The investing outflow is mostly the datacenter build that produces that demand. Financing outflows are largely capital returned to shareholders, including $27.0 billion of declared dividends, while the company still generated $182.9 billion in operating cash. The margin pressure is real: Microsoft Cloud gross margin fell to 66%. But the filing attributes it to AI investment and usage that is growing with revenue, not to weakening pricing. The bear case rests on the risk that returns may not come. The filing's reported results show that returns are already arriving.",
+        "claims": [
+          {
+            "claim": "The $678 billion backlog is defined to include contracted unearned revenue and future invoiced amounts, giving multi-year revenue visibility.",
+            "quote": "which includes unearned revenue and amounts that will be invoiced and recognized as revenue in future periods",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Azure growth is attributed to demand across the platform and all workloads.",
+            "quote": "Azure and other cloud services revenue grew 41% driven by demand for services across the platform with continued growth across all workloads",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Shareholder returns continue at scale, funded by operations rather than new borrowing.",
+            "quote": "our Board of Directors declared dividends totaling $27.0 billion and $24.7 billion, respectively",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    }
+  ],
+  "citations": {
+    "bull": {
+      "verified": 6,
+      "total": 6
+    },
+    "bear": {
+      "verified": 6,
+      "total": 6
+    },
+    "overall": {
+      "verified": 12,
+      "total": 12,
+      "accuracy": 1.0
+    }
+  },
+  "judge": {
+    "scores": {
+      "bull": {
+        "evidence": 7,
+        "logic": 7,
+        "responsiveness": 6
+      },
+      "bear": {
+        "evidence": 8,
+        "logic": 7,
+        "responsiveness": 8
+      }
+    },
+    "winner": "bear",
+    "reasoning": "Both sides cite verified filing quotes, but the bear case uses more verified risk language (uncertain returns, demand difficult to forecast, investing outflows absorbing cash) and directly targets the bull's backlog and cash-flow claims. The bull's rebuttal leans on the backlog definition and dividend figures without fully addressing the bear's point that spending is absorbing operating cash, so the bear edges out a narrow win."
+  },
+  "usage": {
+    "calls": 5,
+    "input_tokens": 163159,
+    "output_tokens": 3569,
+    "cost_usd": 0.0181
+  }
+}

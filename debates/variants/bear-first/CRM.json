@@ -1,0 +1,148 @@
+{
+  "ticker": "CRM",
+  "filing": {
+    "accession": "0001108524-26-000060",
+    "document": "crm-20260131.htm",
+    "date": "2026-03-02"
+  },
+  "model": "claude-haiku-5-5",
+  "created": "2026-11-22T00:26:50+00:00",
+  "bull_first": false,
+  "rounds": [
+    {
+      "round": 1,
+      "bear": {
+        "argument": "Salesforce carries a heavier risk load than its growth headlines suggest. Principal due on outstanding debt rose from $8.5 billion to $14.5 billion in one year, after the company borrowed the full $6.0 billion Informatica facility, and the filing warns that its debt could limit its ability to get financing and could require it to 'dedicate a substantial portion of our cash flows from operations toward debt service obligations.' Cash and marketable securities fell from $14.0 billion to $9.6 billion. Meanwhile, net income rose largely on an unusual $1.0 billion swing in strategic investment gains, which the filing says are subject to 'partial or complete loss of invested capital,' and its own text notes $496 million of impairments. Customer attrition held at about eight percent, and the filing admits it 'may not be able to' predict renewals. Professional services revenue fell four percent. The company also says it 'may slow the pace' of infrastructure investments while carrying $16.7 billion of infrastructure commitments. Taken together, leverage is up, the cash cushion is down, and earnings quality depends on volatile investment marks.",
+        "claims": [
+          {
+            "claim": "Debt principal due more than doubled year over year to $14.5B, largely from the Informatica borrowing.",
+            "quote": "Principal due on our outstanding debt obligations (1) 14,500 8,500",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management warns debt service could consume operating cash flow and limit future financing.",
+            "quote": "cause us to dedicate a substantial portion of our cash flows from operations toward debt service obligations and principal repayments",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Net income benefited from volatile strategic investment gains, and the filing acknowledges impairments and possible total loss of invested capital.",
+            "quote": "All of our investments are subject to a risk of partial or total loss of invested capital.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bull": {
+        "argument": "Salesforce's fundamentals support a bull case despite the leverage concerns raised. Revenue grew 10% to $41.5 billion, and operating income rose to $8.3 billion from $7.2 billion, with operating margin expanding to about 20 percent. Cash from operations reached $15.0 billion, up 15 percent, which the company uses to fund its debt and $12.7 billion of buybacks. The debt increase is tied to a specific, disclosed acquisition, and the filing states the company believes existing cash, operating cash flow and its $5.0 billion Credit Facility will cover needs over the next 12 months and thereafter. Remaining performance obligation reached $72.4 billion, up 14 percent, giving contracted visibility. Attrition of about eight percent was described as consistent with the prior year. Management also expects operating expenses to fall as a share of revenue over time. The opponent is right that investment gains flattered net income, but operating income rose on its own, so the core business improved independently of those marks.",
+        "claims": [
+          {
+            "claim": "Operating income grew on the core business, independent of investment gains.",
+            "quote": "Income from operations was $8.3 billion as compared to $7.2 billion from a year ago",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management believes existing liquidity and credit capacity cover its needs.",
+            "quote": "we believe our existing cash, cash equivalents, marketable securities, cash provided by operating activities",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Contracted future revenue visibility increased year over year.",
+            "quote": "Total remaining performance obligation, which represents all future revenue under contract yet to be recognized, as of January 31, 2026 was approximately $72.4 billion, an increase of 14 percent year-over-year",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "bear": {
+        "argument": "The bull case leans on figures that the same filing qualifies. Operating income rose, but the filing's own table shows restructuring of $586 million, and the company says it is \"unlikely\" to incur further significant charges only \"in the near term,\" while still guiding to future cost cuts, so margin gains depend on continued restructuring. Cash from operations rose 15 percent, yet the filing says the second or third quarter is typically the smallest operating cash flow quarter and that acquisitions can adversely affect operating cash flow through interest expense. The $12.7 billion of buybacks exceeded operating cash flow net of capex and dividends, and cash fell from $14.0 billion to $9.6 billion. The 'covered for 12 months' statement is a belief, not a guarantee, and it rests on the $5.0 billion Credit Facility, while the Informatica debt matures on a schedule the filing does not show as paid down. RPO growth is also flattered by currency, since management says constant-currency growth was three points lower. Finally, the filing expects interest expense to increase, which erodes the earnings base that the bull case cites.",
+        "claims": [
+          {
+            "claim": "Cash and marketable securities fell sharply, which undercuts the claim of a strong liquidity position.",
+            "quote": "Cash, cash equivalents and marketable securities $ 9,565 $ 14,032",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The filing expects interest expense to rise because of the Informatica borrowing.",
+            "quote": "We expect that interest expense may increase due to the outstanding balance related to the Informatica Credit Agreements.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management says RPO growth was helped by currency, not just underlying demand.",
+            "quote": "Our current remaining performance obligation growth as of January 31, 2026 compared to January 31, 2025 was positively impacted by three percent compared to what would have been reported using constant currency rates.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bull": {
+        "argument": "The rebuttals are partly right, but they don't overturn the operating picture. The $586 million of restructuring is already deducted in the $8.3 billion operating income figure, and the filing says it does not expect significant additional restructuring charges in the near term, so the margin gain does not depend on ignoring those costs. Operating cash flow of $15.0 billion is an annual figure. The second and third quarter seasonality is a timing pattern that the full-year number already reflects, and the year still rose. I concede currency flattered RPO: constant-currency growth was three points lower, so the 14 percent headline should be read as roughly 11 percent on that basis. Buybacks of $12.7 billion were roughly equal to operating cash flow less capex and dividends, so they were funded from cash flow, though they also drew down the cash balance. Interest expense will rise, which is a real cost. The bull case is that the operating business grew and generated more cash. Leverage is a risk to size, not evidence of impairment.",
+        "claims": [
+          {
+            "claim": "Operating income rose on the core business, with restructuring already included in the figure.",
+            "quote": "income from operations was $8.3 billion as compared to $7.2 billion from a year ago",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management does not expect significant additional restructuring charges in the near term.",
+            "quote": "We do not expect to incur significant additional charges in connection with our restructuring initiatives in the near term.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Operating cash flow grew on a full-year basis.",
+            "quote": "Cash provided by operations for fiscal 2026 was $15.0 billion",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    }
+  ],
+  "citations": {
+    "bull": {
+      "verified": 6,
+      "total": 6
+    },
+    "bear": {
+      "verified": 6,
+      "total": 6
+    },
+    "overall": {
+      "verified": 12,
+      "total": 12,
+      "accuracy": 1.0
+    }
+  },
+  "judge": {
+    "scores": {
+      "bull": {
+        "evidence": 7,
+        "logic": 7,
+        "responsiveness": 7
+      },
+      "bear": {
+        "evidence": 8,
+        "logic": 7,
+        "responsiveness": 8
+      }
+    },
+    "winner": "bear",
+    "reasoning": "Both sides cite verified quotes, but the bear's round 2 evidence (cash decline, interest expense increase, currency-flattered RPO) is more directly tied to the bull's claims and the bear's risk points are harder to dismiss. The bull concedes the currency point and interest cost, weakening its headline case, while still making a reasonable argument that operating income and cash flow grew. On balance the bear's points are more damaging to the bull's thesis, giving the bear a modest edge."
+  },
+  "usage": {
+    "calls": 5,
+    "input_tokens": 201145,
+    "output_tokens": 3880,
+    "cost_usd": 0.0221
+  }
+}

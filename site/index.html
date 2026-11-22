@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bull vs Bear</title>
+  <meta name="description" content="Two AI analysts argue over a company's 10-K, a judge scores the debate, and code checks every quote against the filing. Includes a test of whether the judge is biased.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    try { var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <div class="wrap">
+      <a class="brand" href="#top"><span class="pair" aria-hidden="true"><i></i><i></i></span>Bull vs Bear</a>
+      <nav class="nav-links" aria-label="Sections">
+        <a href="#debates">Debates</a>
+        <a href="#bias">Bias test</a>
+        <a href="#checker">Quote checker</a>
+        <a href="#how">How it works</a>
+      </nav>
+      <div class="nav-tools">
+        <button class="icon-btn" id="theme" type="button" aria-label="Switch color theme"><i class="ph ph-moon" aria-hidden="true"></i></button>
+        <a class="icon-btn" id="repo-link" href="#" aria-label="View the code on GitHub"><i class="ph ph-github-logo" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="wrap">
+        <h1>Two AI analysts argue about a stock. Code checks every quote.</h1>
+        <div class="intro">
+          <p class="lede">They read the real 10-K, a judge scores the debate, and every quote is checked against the filing.</p>
+          <div class="actions">
+            <a class="btn" href="#debates">Read a debate <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+            <a class="btn ghost" href="#bias">See the bias test</a>
+          </div>
+        </div>
+        <div class="excerpt reveal" id="excerpt" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="figures" aria-label="Key numbers">
+      <div class="wrap" id="figures"></div>
+    </section>
+
+    <section id="debates">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2>Read the debates</h2>
+          <p>Pick a company. Each side makes its case from the filing, and every quote has a badge saying whether it was found. Open a quote to see the passage it came from.</p>
+        </div>
+        <div class="filters" id="debate-filters"></div>
+        <div class="workspace">
+          <div class="transcript" id="transcript"></div>
+          <aside class="panel" id="panel" aria-label="Judge's verdict"></aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="bias">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2>Is the judge fair?</h2>
+          <p>An AI judge can be swayed by things that have nothing to do with the argument. We judged the same debates again and again, listing the sides in different orders, then changed who speaks first.</p>
+        </div>
+        <div class="chart-card compare reveal" id="compare"></div>
+        <div class="filters" id="bias-filters"></div>
+        <div class="bias-grid" id="bias-grid"></div>
+        <div class="findings" id="findings"></div>
+        <div class="chart-card reveal" id="heat-card"></div>
+      </div>
+    </section>
+
+    <section id="checker">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2>Can the quote checker be fooled?</h2>
+          <p>A quote counts as verified when its best match in the filing scores 90 or more out of 100. We tried it on real quotes, then on altered ones, then on quotes from the wrong company.</p>
+        </div>
+        <div class="chart-card reveal" id="strip-card"></div>
+      </div>
+    </section>
+
+    <section id="how">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2>How it works</h2>
+          <p>Five stages, all in plain Python. Only the debate and the judge call a model.</p>
+        </div>
+        <ol class="steps" id="steps"></ol>
+        <div class="limits" id="limits"></div>
+        <p class="built" id="built"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>Built as a learning project. Not investment advice.</span>
+      <span><a id="footer-repo" href="#">Source on GitHub</a> <span id="stamp"></span></span>
+    </div>
+  </footer>
+
+  <div id="tip" role="tooltip" hidden></div>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
