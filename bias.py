@@ -14,6 +14,8 @@ Usage:
     python bias.py --report         # re-analyze saved results, no API calls
     python bias.py --chrono         # re-judge the saved debates in speaking order
     python bias.py --chrono --report
+    python bias.py --chrono --judge-model claude-sonnet-5-5   # same debates, different judge
+    python bias.py --compare claude-sonnet-5-5                # judge comparison, no API calls
 
 The listing-order test above scrambles the conversation whenever the side
 listed first is not the side that spoke first. --chrono is the clean
@@ -28,6 +30,7 @@ import sys
 from collections import Counter
 
 from debate import judge, run_debate, save_debate
+from llm import MODEL
 
 TICKERS = [
     "AAPL", "MSFT", "NVDA", "TSLA", "AMZN", "GOOGL", "META", "NFLX",
@@ -75,25 +78,34 @@ def judge_both_orders(rounds):
 CHRONO_PATH = os.path.join("results", "chronological.json")
 
 
-def judge_in_speaking_order(debate):
+def chrono_path(model=None):
+    """Where speaking-order results for a judge model live. The default
+    judge (the debaters' own model) keeps the original file name."""
+    if model is None or model == MODEL:
+        return CHRONO_PATH
+    return os.path.join("results", f"chronological_{model}.json")
+
+
+def judge_in_speaking_order(debate, model=None):
     """Judge a saved debate JUDGE_RUNS times, listing sides as they spoke."""
     first = "bull" if debate["bull_first"] else "bear"
     runs = []
     for _ in range(JUDGE_RUNS):
-        verdict = judge(debate["rounds"], first=first)
+        verdict = judge(debate["rounds"], first=first, model=model)
         runs.append({"winner": verdict["winner"], "margin": margin(verdict),
                      "scores": verdict["scores"]})
     return runs
 
 
-def run_chronological():
+def run_chronological(model=None):
     """Re-judge every saved debate of every variant. Skips finished ones."""
-    results = load_results(CHRONO_PATH)
+    path = chrono_path(model)
+    results = load_results(path)
     for variant in VARIANTS:
         done = results.setdefault(variant, {})
-        paths = sorted(glob.glob(os.path.join(debate_dir(variant), "*.json")))
-        for path in paths:
-            with open(path, encoding="utf-8") as f:
+        debate_paths = sorted(glob.glob(os.path.join(debate_dir(variant), "*.json")))
+        for debate_path in debate_paths:  # not "path": that one is where results are saved
+            with open(debate_path, encoding="utf-8") as f:
                 debate = json.load(f)
             ticker = debate["ticker"]
             if ticker in done:
@@ -101,10 +113,10 @@ def run_chronological():
                 continue
             print(f"\n=== {ticker} ({variant}, speaking order) ===")
             try:
-                done[ticker] = judge_in_speaking_order(debate)
+                done[ticker] = judge_in_speaking_order(debate, model)
             except Exception as e:  # one bad reply should not stop the batch
                 print(f"{variant}/{ticker}: FAILED ({type(e).__name__}: {e})")
-            save_results(results, CHRONO_PATH)
+            save_results(results, path)
     return results
 
 
@@ -135,6 +147,94 @@ def print_chronological(results):
         print(f"{variant:11} {s['debates']} debates, {n} judgments: bull {c['bull'] / n:.0%}  "
               f"tie {c['tie'] / n:.0%}  bear {c['bear'] / n:.0%}   "
               f"mean margin {s['mean_margin']:+.2f}  self-disagreement {s['same_order_instability']:.0%}")
+
+
+# Phase B rule, fixed before the run: if a different judge lowers the bear's
+# share of judgments by at least DRIFT_BIG points, the judge's taste is a main
+# driver; if it moves less than DRIFT_SMALL points, the judge is not the cause.
+DRIFT_BIG = 20
+DRIFT_SMALL = 10
+
+
+def bear_share(runs_by_ticker):
+    runs = [r for rs in runs_by_ticker.values() for r in rs]
+    if not runs:
+        return None
+    return 100 * sum(1 for r in runs if r["winner"] == "bear") / len(runs)
+
+
+def criterion_gaps(runs_by_ticker):
+    """Mean bull-minus-bear score for each criterion (negative = bear ahead)."""
+    runs = [r for rs in runs_by_ticker.values() for r in rs if r.get("scores")]
+    if not runs:
+        return None
+    return {c: round(sum(r["scores"]["bull"][c] - r["scores"]["bear"][c] for r in runs) / len(runs), 2)
+            for c in ("evidence", "logic", "responsiveness")}
+
+
+def judge_verdict(shift_points):
+    """Apply the pre-set rule to the drop in bear share (points)."""
+    if shift_points >= DRIFT_BIG:
+        return "judge-driven"
+    if abs(shift_points) < DRIFT_SMALL:
+        return "not judge-driven"
+    return "inconclusive"
+
+
+def compare_judges(base, other):
+    """Compare two judges on the same debates.
+
+    base and other look like chronological results: {variant: {ticker: [run, ...]}}.
+    Returns bear share per setup and overall, the shift, the rule's verdict,
+    and a per-company paired comparison (the debate is the real unit).
+    """
+    def pooled(results):
+        return {t + "@" + v: rs for v, by in results.items() for t, rs in by.items()}
+
+    out = {"setups": {}}
+    for v in base:
+        if v in other:
+            a, b = bear_share(base[v]), bear_share(other.get(v, {}))
+            if a is not None and b is not None:
+                out["setups"][v] = {"base": round(a, 1), "other": round(b, 1)}
+    pa, pb = pooled(base), pooled(other)
+    both = sorted(set(pa) & set(pb))
+    if not both:
+        return None
+    shares_a = bear_share({k: pa[k] for k in both})
+    shares_b = bear_share({k: pb[k] for k in both})
+    mean = lambda rs: sum(r["margin"] for r in rs) / len(rs)
+    diffs = [mean(pb[k]) - mean(pa[k]) for k in both]  # positive = other judge likes bull more
+    out.update({
+        "debates": len(both),
+        "bear_share_base": round(shares_a, 1),
+        "bear_share_other": round(shares_b, 1),
+        "shift_points": round(shares_a - shares_b, 1),
+        "verdict": judge_verdict(shares_a - shares_b),
+        "mean_margin_base": round(sum(mean(pa[k]) for k in both) / len(both), 2),
+        "mean_margin_other": round(sum(mean(pb[k]) for k in both) / len(both), 2),
+        "debates_other_kinder_to_bull": sum(1 for d in diffs if d > 0),
+        "debates_other_harsher_on_bull": sum(1 for d in diffs if d < 0),
+        "criterion_gaps_base": criterion_gaps({k: pa[k] for k in both}),
+        "criterion_gaps_other": criterion_gaps({k: pb[k] for k in both}),
+    })
+    return out
+
+
+def print_judge_comparison(base_name, other_name, c):
+    if c is None:
+        print("No debates judged by both judges yet.")
+        return
+    print(f"\n=== Judge comparison on the same {c['debates']} debates (speaking order) ===")
+    print(f"bear share of judgments:  {base_name} {c['bear_share_base']:.0f}%   {other_name} {c['bear_share_other']:.0f}%"
+          f"   (drop of {c['shift_points']:+.0f} points)")
+    for v, x in c["setups"].items():
+        print(f"  {v:11} {x['base']:.0f}% -> {x['other']:.0f}%")
+    print(f"mean margin (bull minus bear, 30-pt scale):  {c['mean_margin_base']:+.2f} -> {c['mean_margin_other']:+.2f}")
+    print(f"per debate: {other_name} kinder to bull in {c['debates_other_kinder_to_bull']}, "
+          f"harsher in {c['debates_other_harsher_on_bull']}")
+    print(f"bull-minus-bear by criterion: {c['criterion_gaps_base']} -> {c['criterion_gaps_other']}")
+    print(f"rule (big >= {DRIFT_BIG} pts, small < {DRIFT_SMALL} pts): {c['verdict']}")
 
 
 def load_results(path):
@@ -270,8 +370,21 @@ def main(args):
     if variant not in VARIANTS:
         sys.exit(f"Unknown variant {variant!r}. Choose from: {', '.join(VARIANTS)}")
 
+    judge_model = None
+    if "--judge-model" in args:
+        i = args.index("--judge-model")
+        judge_model = args[i + 1]
+        args = args[:i] + args[i + 2:]
+
+    if "--compare" in args:
+        other = args[args.index("--compare") + 1]
+        c = compare_judges(load_results(CHRONO_PATH), load_results(chrono_path(other)))
+        print_judge_comparison(MODEL, other, c)
+        return
+
     if "--chrono" in args:
-        results = load_results(CHRONO_PATH) if "--report" in args else run_chronological()
+        path = chrono_path(judge_model)
+        results = load_results(path) if "--report" in args else run_chronological(judge_model)
         print_chronological(results)
         return
 
