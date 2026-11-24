@@ -1,0 +1,1606 @@
+{
+  "base": {
+    "AAPL": [
+      {
+        "winner": "bull",
+        "margin": 2,
+        "scores": {
+          "bull": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 7,
+            "logic": 6,
+            "responsiveness": 7
+          }
+        }
+      },
+      {
+        "winner": "bull",
+        "margin": 2,
+        "scores": {
+          "bull": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 7,
+            "logic": 6,
+            "responsiveness": 7
+          }
+        }
+      },
+      {
+        "winner": "bull",
+        "margin": 2,
+        "scores": {
+          "bull": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 7,
+            "logic": 6,
+            "responsiveness": 7
+          }
+        }
+      }
+    ],
+    "ADBE": [
+      {
+        "winner": "bull",
+        "margin": 2,
+        "scores": {
+          "bull": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 7,
+            "logic": 6,
+            "responsiveness": 7
+          }
+        }
+      },
+      {
+        "winner": "bull",
+        "margin": 2,
+        "scores": {
+          "bull": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 7,
+            "logic": 6,
+            "responsiveness": 7
+          }
+        }
+      },
+      {
+        "winner": "bull",
+        "margin": 3,
+        "scores": {
+          "bull": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 8
+          },
+          "bear": {
+            "evidence": 7,
+            "logic": 6,
+            "responsiveness": 7
+          }
+        }
+      }
+    ],
+    "AMD": [
+      {
+        "winner": "bull",
+        "margin": 3,
+        "scores": {
+          "bull": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 8
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 6,
+            "responsiveness": 6
+          }
+        }
+      },
+      {
+        "winner": "bull",
+        "margin": 3,
+        "scores": {
+          "bull": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 8
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 6,
+            "responsiveness": 6
+          }
+        }
+      },
+      {
+        "winner": "bull",
+        "margin": 3,
+        "scores": {
+          "bull": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 8
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 6,
+            "responsiveness": 6
+          }
+        }
+      }
+    ],
+    "AMZN": [
+      {
+        "winner": "tie",
+        "margin": 0,
+        "scores": {
+          "bull": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          }
+        }
+      },
+      {
+        "winner": "tie",
+        "margin": 0,
+        "scores": {
+          "bull": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          }
+        }
+      },
+      {
+        "winner": "tie",
+        "margin": 0,
+        "scores": {
+          "bull": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          }
+        }
+      }
+    ],
+    "COST": [
+      {
+        "winner": "bull",
+        "margin": 1,
+        "scores": {
+          "bull": {
+            "evidence": 7,
+            "logic": 7,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 7,
+            "logic": 6,
+            "responsiveness": 7
+          }
+        }
+      },
+      {
+        "winner": "bull",
+        "margin": 1,
+        "scores": {
+          "bull": {
+            "evidence": 7,
+            "logic": 7,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 7,
+            "logic": 6,
+            "responsiveness": 7
+          }
+        }
+      },
+      {
+        "winner": "bull",
+        "margin": 1,
+        "scores": {
+          "bull": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 7,
+            "logic": 7,
+            "responsiveness": 7
+          }
+        }
+      }
+    ],
+    "CRM": [
+      {
+        "winner": "tie",
+        "margin": 0,
+        "scores": {
+          "bull": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          }
+        }
+      },
+      {
+        "winner": "tie",
+        "margin": 0,
+        "scores": {
+          "bull": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          }
+        }
+      },
+      {
+        "winner": "tie",
+        "margin": 0,
+        "scores": {
+          "bull": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          }
+        }
+      }
+    ],
+    "GOOGL": [
+      {
+        "winner": "bear",
+        "margin": -3,
+        "scores": {
+          "bull": {
+            "evidence": 7,
+            "logic": 6,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 8
+          }
+        }
+      },
+      {
+        "winner": "bear",
+        "margin": -3,
+        "scores": {
+          "bull": {
+            "evidence": 7,
+            "logic": 6,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 8
+          }
+        }
+      },
+      {
+        "winner": "bear",
+        "margin": -3,
+        "scores": {
+          "bull": {
+            "evidence": 7,
+            "logic": 6,
+            "responsiveness": 6
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          }
+        }
+      }
+    ],
+    "KO": [
+      {
+        "winner": "bear",
+        "margin": -3,
+        "scores": {
+          "bull": {
+            "evidence": 7,
+            "logic": 6,
+            "responsiveness": 6
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          }
+        }
+      },
+      {
+        "winner": "bear",
+        "margin": -2,
+        "scores": {
+          "bull": {
+            "evidence": 7,
+            "logic": 6,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          }
+        }
+      },
+      {
+        "winner": "bear",
+        "margin": -3,
+        "scores": {
+          "bull": {
+            "evidence": 7,
+            "logic": 6,
+            "responsiveness": 6
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          }
+        }
+      }
+    ],
+    "META": [
+      {
+        "winner": "bull",
+        "margin": 3,
+        "scores": {
+          "bull": {
+            "evidence": 9,
+            "logic": 8,
+            "responsiveness": 8
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          }
+        }
+      },
+      {
+        "winner": "bull",
+        "margin": 3,
+        "scores": {
+          "bull": {
+            "evidence": 9,
+            "logic": 8,
+            "responsiveness": 8
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          }
+        }
+      },
+      {
+        "winner": "bull",
+        "margin": 3,
+        "scores": {
+          "bull": {
+            "evidence": 9,
+            "logic": 8,
+            "responsiveness": 8
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          }
+        }
+      }
+    ],
+    "MSFT": [
+      {
+        "winner": "bull",
+        "margin": 2,
+        "scores": {
+          "bull": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 7,
+            "logic": 6,
+            "responsiveness": 7
+          }
+        }
+      },
+      {
+        "winner": "bull",
+        "margin": 3,
+        "scores": {
+          "bull": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 7,
+            "logic": 6,
+            "responsiveness": 6
+          }
+        }
+      },
+      {
+        "winner": "bull",
+        "margin": 2,
+        "scores": {
+          "bull": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 7,
+            "logic": 6,
+            "responsiveness": 7
+          }
+        }
+      }
+    ],
+    "NFLX": [
+      {
+        "winner": "tie",
+        "margin": 0,
+        "scores": {
+          "bull": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          }
+        }
+      },
+      {
+        "winner": "tie",
+        "margin": 0,
+        "scores": {
+          "bull": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          }
+        }
+      },
+      {
+        "winner": "tie",
+        "margin": 0,
+        "scores": {
+          "bull": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          }
+        }
+      }
+    ],
+    "NKE": [
+      {
+        "winner": "bear",
+        "margin": -4,
+        "scores": {
+          "bull": {
+            "evidence": 7,
+            "logic": 6,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 8,
+            "responsiveness": 8
+          }
+        }
+      },
+      {
+        "winner": "bear",
+        "margin": -4,
+        "scores": {
+          "bull": {
+            "evidence": 7,
+            "logic": 6,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 8,
+            "responsiveness": 8
+          }
+        }
+      },
+      {
+        "winner": "bear",
+        "margin": -4,
+        "scores": {
+          "bull": {
+            "evidence": 7,
+            "logic": 6,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 8,
+            "responsiveness": 8
+          }
+        }
+      }
+    ],
+    "NVDA": [
+      {
+        "winner": "bear",
+        "margin": -3,
+        "scores": {
+          "bull": {
+            "evidence": 7,
+            "logic": 6,
+            "responsiveness": 6
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          }
+        }
+      },
+      {
+        "winner": "tie",
+        "margin": 0,
+        "scores": {
+          "bull": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          }
+        }
+      },
+      {
+        "winner": "tie",
+        "margin": 0,
+        "scores": {
+          "bull": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          }
+        }
+      }
+    ],
+    "PEP": [
+      {
+        "winner": "bull",
+        "margin": 2,
+        "scores": {
+          "bull": {
+            "evidence": 7,
+            "logic": 6,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 6,
+            "logic": 6,
+            "responsiveness": 6
+          }
+        }
+      },
+      {
+        "winner": "bull",
+        "margin": 2,
+        "scores": {
+          "bull": {
+            "evidence": 7,
+            "logic": 6,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 6,
+            "logic": 6,
+            "responsiveness": 6
+          }
+        }
+      },
+      {
+        "winner": "bull",
+        "margin": 2,
+        "scores": {
+          "bull": {
+            "evidence": 7,
+            "logic": 6,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 6,
+            "logic": 6,
+            "responsiveness": 6
+          }
+        }
+      }
+    ],
+    "TSLA": [
+      {
+        "winner": "bear",
+        "margin": -4,
+        "scores": {
+          "bull": {
+            "evidence": 6,
+            "logic": 6,
+            "responsiveness": 6
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          }
+        }
+      },
+      {
+        "winner": "bear",
+        "margin": -4,
+        "scores": {
+          "bull": {
+            "evidence": 6,
+            "logic": 6,
+            "responsiveness": 6
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          }
+        }
+      },
+      {
+        "winner": "bear",
+        "margin": -4,
+        "scores": {
+          "bull": {
+            "evidence": 6,
+            "logic": 6,
+            "responsiveness": 6
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          }
+        }
+      }
+    ],
+    "WMT": [
+      {
+        "winner": "bull",
+        "margin": 1,
+        "scores": {
+          "bull": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 6,
+            "responsiveness": 7
+          }
+        }
+      },
+      {
+        "winner": "bull",
+        "margin": 1,
+        "scores": {
+          "bull": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 6,
+            "responsiveness": 7
+          }
+        }
+      },
+      {
+        "winner": "bull",
+        "margin": 1,
+        "scores": {
+          "bull": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 6,
+            "responsiveness": 7
+          }
+        }
+      }
+    ]
+  },
+  "bear-first": {
+    "AAPL": [
+      {
+        "winner": "tie",
+        "margin": 0,
+        "scores": {
+          "bull": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          }
+        }
+      },
+      {
+        "winner": "tie",
+        "margin": 0,
+        "scores": {
+          "bull": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          }
+        }
+      },
+      {
+        "winner": "tie",
+        "margin": 0,
+        "scores": {
+          "bull": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          }
+        }
+      }
+    ],
+    "ADBE": [
+      {
+        "winner": "bull",
+        "margin": 5,
+        "scores": {
+          "bull": {
+            "evidence": 8,
+            "logic": 8,
+            "responsiveness": 8
+          },
+          "bear": {
+            "evidence": 7,
+            "logic": 6,
+            "responsiveness": 6
+          }
+        }
+      },
+      {
+        "winner": "bull",
+        "margin": 5,
+        "scores": {
+          "bull": {
+            "evidence": 8,
+            "logic": 8,
+            "responsiveness": 8
+          },
+          "bear": {
+            "evidence": 7,
+            "logic": 6,
+            "responsiveness": 6
+          }
+        }
+      },
+      {
+        "winner": "bull",
+        "margin": 5,
+        "scores": {
+          "bull": {
+            "evidence": 8,
+            "logic": 8,
+            "responsiveness": 8
+          },
+          "bear": {
+            "evidence": 7,
+            "logic": 6,
+            "responsiveness": 6
+          }
+        }
+      }
+    ],
+    "AMD": [
+      {
+        "winner": "bull",
+        "margin": 6,
+        "scores": {
+          "bull": {
+            "evidence": 8,
+            "logic": 8,
+            "responsiveness": 8
+          },
+          "bear": {
+            "evidence": 7,
+            "logic": 5,
+            "responsiveness": 6
+          }
+        }
+      },
+      {
+        "winner": "bull",
+        "margin": 6,
+        "scores": {
+          "bull": {
+            "evidence": 8,
+            "logic": 8,
+            "responsiveness": 8
+          },
+          "bear": {
+            "evidence": 7,
+            "logic": 5,
+            "responsiveness": 6
+          }
+        }
+      },
+      {
+        "winner": "bull",
+        "margin": 6,
+        "scores": {
+          "bull": {
+            "evidence": 8,
+            "logic": 8,
+            "responsiveness": 8
+          },
+          "bear": {
+            "evidence": 7,
+            "logic": 5,
+            "responsiveness": 6
+          }
+        }
+      }
+    ],
+    "AMZN": [
+      {
+        "winner": "bear",
+        "margin": -2,
+        "scores": {
+          "bull": {
+            "evidence": 6,
+            "logic": 7,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          }
+        }
+      },
+      {
+        "winner": "bear",
+        "margin": -2,
+        "scores": {
+          "bull": {
+            "evidence": 6,
+            "logic": 7,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          }
+        }
+      },
+      {
+        "winner": "bear",
+        "margin": -1,
+        "scores": {
+          "bull": {
+            "evidence": 7,
+            "logic": 7,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          }
+        }
+      }
+    ],
+    "COST": [
+      {
+        "winner": "bull",
+        "margin": 1,
+        "scores": {
+          "bull": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 8
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          }
+        }
+      },
+      {
+        "winner": "tie",
+        "margin": 0,
+        "scores": {
+          "bull": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          }
+        }
+      },
+      {
+        "winner": "bull",
+        "margin": 1,
+        "scores": {
+          "bull": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 8
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          }
+        }
+      }
+    ],
+    "CRM": [
+      {
+        "winner": "bull",
+        "margin": 3,
+        "scores": {
+          "bull": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 8
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 6,
+            "responsiveness": 6
+          }
+        }
+      },
+      {
+        "winner": "bull",
+        "margin": 2,
+        "scores": {
+          "bull": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 8
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 6
+          }
+        }
+      },
+      {
+        "winner": "bull",
+        "margin": 3,
+        "scores": {
+          "bull": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 8
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 6,
+            "responsiveness": 6
+          }
+        }
+      }
+    ],
+    "GOOGL": [
+      {
+        "winner": "bear",
+        "margin": -2,
+        "scores": {
+          "bull": {
+            "evidence": 7,
+            "logic": 6,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          }
+        }
+      },
+      {
+        "winner": "bear",
+        "margin": -3,
+        "scores": {
+          "bull": {
+            "evidence": 7,
+            "logic": 6,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 8
+          }
+        }
+      },
+      {
+        "winner": "bear",
+        "margin": -3,
+        "scores": {
+          "bull": {
+            "evidence": 7,
+            "logic": 6,
+            "responsiveness": 6
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          }
+        }
+      }
+    ],
+    "KO": [
+      {
+        "winner": "bear",
+        "margin": -2,
+        "scores": {
+          "bull": {
+            "evidence": 7,
+            "logic": 6,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          }
+        }
+      },
+      {
+        "winner": "bear",
+        "margin": -2,
+        "scores": {
+          "bull": {
+            "evidence": 7,
+            "logic": 6,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          }
+        }
+      },
+      {
+        "winner": "bear",
+        "margin": -2,
+        "scores": {
+          "bull": {
+            "evidence": 7,
+            "logic": 6,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          }
+        }
+      }
+    ],
+    "META": [
+      {
+        "winner": "bull",
+        "margin": 6,
+        "scores": {
+          "bull": {
+            "evidence": 9,
+            "logic": 8,
+            "responsiveness": 9
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 6,
+            "responsiveness": 6
+          }
+        }
+      },
+      {
+        "winner": "bull",
+        "margin": 5,
+        "scores": {
+          "bull": {
+            "evidence": 9,
+            "logic": 8,
+            "responsiveness": 8
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 6,
+            "responsiveness": 6
+          }
+        }
+      },
+      {
+        "winner": "bull",
+        "margin": 6,
+        "scores": {
+          "bull": {
+            "evidence": 9,
+            "logic": 8,
+            "responsiveness": 9
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 6,
+            "responsiveness": 6
+          }
+        }
+      }
+    ],
+    "MSFT": [
+      {
+        "winner": "bull",
+        "margin": 1,
+        "scores": {
+          "bull": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 6
+          }
+        }
+      },
+      {
+        "winner": "bull",
+        "margin": 2,
+        "scores": {
+          "bull": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 6,
+            "responsiveness": 6
+          }
+        }
+      },
+      {
+        "winner": "bull",
+        "margin": 1,
+        "scores": {
+          "bull": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 6
+          }
+        }
+      }
+    ],
+    "NFLX": [
+      {
+        "winner": "tie",
+        "margin": 0,
+        "scores": {
+          "bull": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          }
+        }
+      },
+      {
+        "winner": "tie",
+        "margin": 0,
+        "scores": {
+          "bull": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          }
+        }
+      },
+      {
+        "winner": "bull",
+        "margin": 0,
+        "scores": {
+          "bull": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          }
+        }
+      }
+    ],
+    "NKE": [
+      {
+        "winner": "bear",
+        "margin": -1,
+        "scores": {
+          "bull": {
+            "evidence": 6,
+            "logic": 6,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 7,
+            "logic": 7,
+            "responsiveness": 6
+          }
+        }
+      },
+      {
+        "winner": "bear",
+        "margin": -1,
+        "scores": {
+          "bull": {
+            "evidence": 6,
+            "logic": 6,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 7,
+            "logic": 7,
+            "responsiveness": 6
+          }
+        }
+      },
+      {
+        "winner": "bear",
+        "margin": -1,
+        "scores": {
+          "bull": {
+            "evidence": 6,
+            "logic": 6,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 7,
+            "logic": 7,
+            "responsiveness": 6
+          }
+        }
+      }
+    ],
+    "NVDA": [
+      {
+        "winner": "tie",
+        "margin": 1,
+        "scores": {
+          "bull": {
+            "evidence": 8,
+            "logic": 6,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 6,
+            "responsiveness": 6
+          }
+        }
+      },
+      {
+        "winner": "tie",
+        "margin": 0,
+        "scores": {
+          "bull": {
+            "evidence": 8,
+            "logic": 6,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 6
+          }
+        }
+      },
+      {
+        "winner": "bull",
+        "margin": 1,
+        "scores": {
+          "bull": {
+            "evidence": 7,
+            "logic": 6,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 7,
+            "logic": 6,
+            "responsiveness": 6
+          }
+        }
+      }
+    ],
+    "PEP": [
+      {
+        "winner": "bear",
+        "margin": -1,
+        "scores": {
+          "bull": {
+            "evidence": 7,
+            "logic": 6,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 7,
+            "logic": 7,
+            "responsiveness": 7
+          }
+        }
+      },
+      {
+        "winner": "bear",
+        "margin": -1,
+        "scores": {
+          "bull": {
+            "evidence": 7,
+            "logic": 6,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 7,
+            "logic": 7,
+            "responsiveness": 7
+          }
+        }
+      },
+      {
+        "winner": "bear",
+        "margin": -1,
+        "scores": {
+          "bull": {
+            "evidence": 7,
+            "logic": 6,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 6
+          }
+        }
+      }
+    ],
+    "TSLA": [
+      {
+        "winner": "bull",
+        "margin": 1,
+        "scores": {
+          "bull": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 7,
+            "logic": 7,
+            "responsiveness": 7
+          }
+        }
+      },
+      {
+        "winner": "bull",
+        "margin": 1,
+        "scores": {
+          "bull": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 7,
+            "logic": 7,
+            "responsiveness": 7
+          }
+        }
+      },
+      {
+        "winner": "bull",
+        "margin": 1,
+        "scores": {
+          "bull": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          },
+          "bear": {
+            "evidence": 7,
+            "logic": 7,
+            "responsiveness": 7
+          }
+        }
+      }
+    ],
+    "WMT": [
+      {
+        "winner": "bull",
+        "margin": 1,
+        "scores": {
+          "bull": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 8
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          }
+        }
+      },
+      {
+        "winner": "bull",
+        "margin": 1,
+        "scores": {
+          "bull": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 8
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          }
+        }
+      },
+      {
+        "winner": "bull",
+        "margin": 1,
+        "scores": {
+          "bull": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 8
+          },
+          "bear": {
+            "evidence": 8,
+            "logic": 7,
+            "responsiveness": 7
+          }
+        }
+      }
+    ]
+  }
+}

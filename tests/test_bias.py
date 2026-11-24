@@ -127,3 +127,35 @@ def test_default_judge_keeps_the_original_results_file():
     assert chrono_path() == CHRONO_PATH
     assert chrono_path(MODEL) == CHRONO_PATH
     assert chrono_path("claude-sonnet-5-5") != CHRONO_PATH
+
+
+def test_chronological_run_saves_results_and_never_touches_debate_files(tmp_path, monkeypatch):
+    """Regression: a loop variable once shadowed the results path, so the run
+    overwrote every saved debate file with the results."""
+    import json
+    import bias
+
+    debate = {"ticker": "AAPL", "bull_first": True, "rounds": []}
+    folder = tmp_path / "debates"
+    folder.mkdir()
+    debate_file = folder / "AAPL.json"
+    debate_file.write_text(json.dumps(debate), encoding="utf-8")
+    original = debate_file.read_text(encoding="utf-8")
+
+    results_file = tmp_path / "results.json"
+    monkeypatch.setattr(bias, "VARIANTS", {"base": {"bull_first": True}})
+    monkeypatch.setattr(bias, "debate_dir", lambda variant: str(folder))
+    monkeypatch.setattr(bias, "chrono_path", lambda model=None: str(results_file))
+    monkeypatch.setattr(bias, "save_results",
+                        lambda results, path: results_file.write_text(json.dumps(results), encoding="utf-8")
+                        if path == str(results_file) else (_ for _ in ()).throw(AssertionError(f"wrote to {path}")))
+    monkeypatch.setattr(bias, "judge",
+                        lambda rounds, first="bull", model=None: {
+                            "winner": "bear",
+                            "scores": {"bull": {"evidence": 6}, "bear": {"evidence": 7}}})
+
+    bias.run_chronological("some-model")
+
+    assert debate_file.read_text(encoding="utf-8") == original
+    saved = json.loads(results_file.read_text(encoding="utf-8"))
+    assert len(saved["base"]["AAPL"]) == bias.JUDGE_RUNS

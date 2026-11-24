@@ -103,9 +103,9 @@ def run_chronological(model=None):
     results = load_results(path)
     for variant in VARIANTS:
         done = results.setdefault(variant, {})
-        paths = sorted(glob.glob(os.path.join(debate_dir(variant), "*.json")))
-        for path in paths:
-            with open(path, encoding="utf-8") as f:
+        debate_paths = sorted(glob.glob(os.path.join(debate_dir(variant), "*.json")))
+        for debate_path in debate_paths:  # not "path": that one is where results are saved
+            with open(debate_path, encoding="utf-8") as f:
                 debate = json.load(f)
             ticker = debate["ticker"]
             if ticker in done:
