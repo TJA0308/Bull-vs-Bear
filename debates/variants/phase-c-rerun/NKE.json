@@ -1,0 +1,149 @@
+{
+  "ticker": "NKE",
+  "filing": {
+    "accession": "0000320187-26-000088",
+    "document": "nke-20260531.htm",
+    "date": "2026-07-15"
+  },
+  "model": "claude-haiku-5-5",
+  "created": "2026-11-25T01:26:12+00:00",
+  "bull_first": true,
+  "input_mode": "full",
+  "rounds": [
+    {
+      "round": 1,
+      "bull": {
+        "argument": "NIKE's fiscal 2026 filing shows a company with durable scale and balance-sheet strength despite a difficult year. Revenues held at $46.4 billion, and NIKE Brand wholesale revenues rose 6% to $27.5 billion, with North America revenues up 5% on a currency-neutral basis. Gross margin expanded 20 basis points to 42.9%, and EBIT margin rose to 8.3% from 8.2%. ROIC was 18.7% on a trailing basis. The filing also reports a $986 million benefit from recovered IEEPA tariffs, which largely offset tariff costs recognized during the year. Liquidity is substantial: cash and short-term investments total $9.0 billion, long-term debt is rated A+ and A2, and management states it is in full covenant compliance. The weakness is concentrated and identified: Greater China revenues fell 11% and Converse fell 31%, and management has a defined plan to finish repositioning by December 2026. Investors are buying a company whose core North American franchise is recovering while its problem segments are being actively reset.",
+        "claims": [
+          {
+            "claim": "Wholesale revenues grew strongly, and North America is recovering",
+            "quote": "NIKE Brand wholesale revenues were $27.5 billion in fiscal 2026 compared to $25.9 billion in fiscal 2025, up 6% on a reported basis",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Gross margin expanded despite a difficult year",
+            "quote": "Gross margin increased 20 basis points to 42.9% for fiscal 2026 compared to 42.7% for fiscal 2025",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Liquidity and credit standing are strong",
+            "quote": "We currently have long-term debt ratings of A+ and A2 from S&P Global Ratings and Moody's Ratings, respectively.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The opponent's bullish case rests on headline figures that mask a weakening core. Net income fell 3% to $3,108 million and diluted EPS fell from $2.16 to $2.10. The $986 million IEEPA tariff recovery is a one-time benefit that flatters fiscal 2026 gross margin; without it, the picture is far weaker. NIKE Direct revenues fell 6%, NIKE Brand Digital fell 12% on a currency-neutral basis, and comparable store sales declined 4%. Greater China revenues fell 13% currency-neutral and EBIT fell 20%, and management expects negative impacts there and at Converse to continue throughout fiscal 2027. Operating cash flow dropped to $2,868 million from $3,698 million, while the company paused buybacks and cash fell to $9.0 billion. The filing also notes a 2025 rating downgrade by S&P and Moody's, and that the company faces securities class action lawsuits over a stock price drop. Management says further restructuring charges are possible. A turnaround that depends on future markdowns and reset costs is not a safe foundation for investment.",
+        "claims": [
+          {
+            "claim": "Operating cash flow fell sharply year over year, weakening the cash-generation case.",
+            "quote": "Cash provided by operations was $2,868 million",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management expects headwinds from the problem segments to persist into fiscal 2027, not end with the current year.",
+            "quote": "We expect negative impacts from Greater China and Converse to continue throughout fiscal 2027.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The company faces ongoing securities litigation and a past credit rating downgrade, adding risk beyond operating results.",
+            "quote": "in 2025, our rating was downgraded by S&P Global Ratings and Moody's Ratings",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "bull": {
+        "argument": "The bear case is fair on several points, but it overweights one-time items and underweights what the filing shows about the core. Strip out the IEEPA recovery and gross margin still reflects real operating gains: lower warehousing and logistics costs, favorable FX including hedges, and lower other costs each added roughly 20 basis points. North America, the largest segment, grew revenue 5% currency-neutral with EBIT up 14% and gross margin up 210 basis points. Revenue was flat at $46.4 billion despite a 2% currency-neutral decline, and the filing says the weakness is concentrated in Greater China and Converse, which are about 2 and 1 percentage points of drag. Operating cash flow of $2,868 million still covered the $2,292 million of financing outflows, and management attributes the working-capital drag largely to a receivable that was substantially collected after year-end. The rating downgrade is real, but both agencies still rate NIKE investment grade, at A+ and A2. Buybacks were paused, not abandoned, and the company says it expects to fund future repurchases from operating cash flow. The lawsuits are a risk the filing flags without quantifying. Investors are paying for a repositioning that the filing describes as on schedule for completion by December 2026.",
+        "claims": [
+          {
+            "claim": "North America is the core and it is growing with improving margin",
+            "quote": "North America revenues increased 5% on a currency-neutral basis.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Operating cash flow and balance sheet support the dividend and reset",
+            "quote": "We believe that existing Cash and equivalents, Short-term investments and cash generated by operations, together with access to external sources of funds as described above, will be sufficient to meet our domestic and foreign capital needs for the next twelve months and beyond.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Repositioning has a defined end date",
+            "quote": "we expect to complete these actions by the end of December 2026.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull case leans on segment strength that the filing does not support as a broad recovery. North America's EBIT gain rests on a 210 basis point gross margin lift and a wholesale surge of 14%, yet the filing attributes that wholesale growth partly to 'fewer marketplace management actions taken in the current year,' meaning prior-year clearance was lighter. Meanwhile NIKE Direct fell 6%, NIKE Brand Digital fell 12%, and EMEA EBIT dropped 6% with gross margin down 140 basis points. Global Brand Divisions still lost $4.6 billion. Management calls the reset 'on schedule,' but also says it 'may take additional actions which could lead to additional charges,' after $385 million in severance. Operating cash flow fell 22%, and the filing says cash covered financing outflows only because of $2,292 million of distributions, with buybacks paused. Investors are paying for a turnaround whose costs and timing the company itself does not fully control.",
+        "claims": [
+          {
+            "claim": "Management says additional restructuring charges may follow, so the reset is not finished or fully priced.",
+            "quote": "We continue to evaluate opportunities across the Company and may take additional actions which could lead to additional charges in future quarters.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Part of North America's wholesale growth came from prior-year marketplace actions that were lighter this year, not purely from demand.",
+            "quote": "fewer marketplace management actions taken in the current year",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Digital and direct channels are shrinking, and the risk factors warn of further pressure from AI-driven shopping shifts.",
+            "quote": "NIKE Brand Digital sales were $8.6 billion in fiscal 2026 compared to $9.6 billion in fiscal 2025, with declines primarily due to reduced traffic.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    }
+  ],
+  "citations": {
+    "bull": {
+      "verified": 6,
+      "total": 6
+    },
+    "bear": {
+      "verified": 6,
+      "total": 6
+    },
+    "overall": {
+      "verified": 12,
+      "total": 12,
+      "accuracy": 1.0
+    }
+  },
+  "judge": {
+    "scores": {
+      "bull": {
+        "evidence": 7,
+        "logic": 6,
+        "responsiveness": 6
+      },
+      "bear": {
+        "evidence": 7,
+        "logic": 7,
+        "responsiveness": 7
+      }
+    },
+    "winner": "bear",
+    "reasoning": "Both sides cite verified quotes, but the bear's round-2 points on lighter prior-year marketplace actions and ongoing restructuring charges directly undercut the bull's North America recovery thesis. The bull answered the IEEPA and cash-flow concerns with some substance, yet several of its numbers (e.g., the 210 bp gross margin lift, the 20 bp cost breakdown) were not backed by verified quotes, while the bear's key claims were tied to filed language."
+  },
+  "usage": {
+    "calls": 5,
+    "input_tokens": 187500,
+    "output_tokens": 2746,
+    "cost_usd": 0.0201
+  }
+}

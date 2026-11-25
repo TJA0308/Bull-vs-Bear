@@ -31,6 +31,25 @@ The 20 and 10 are the same DRIFT_BIG / DRIFT_SMALL used for Phase B. With 16
 debates (48 judgments, which are not independent) a share is only good to
 about +/-14 points, so smaller differences should not be read as findings.
 
+RESULT (run 2026-11-24; 16 companies per condition; $0.47 over 256 calls):
+
+  bear's share of judgments: original 71%, rerun 42%, balanced 58%.
+  Noise gap 29 points, so the rule's verdict is "too noisy to read": the
+  question of whether balancing the input helps the bull is NOT answered.
+
+  What the rerun did show (a finding, not a failure): regenerating debates from
+  identical input moved the bear's share by 29 points, mostly by turning bear
+  wins into ties (bull 6% -> 0%, tie 23% -> 58%). Per-company shares did not
+  repeat (rank correlation +0.03; AAPL went 67% -> 0%). So one debate per
+  company is too little data to read a share like "71%" to better than tens of
+  points. Judging the same debates twice (as Phase B did) removes that noise,
+  which is why Phase B's paired comparison still stands.
+
+  Post-hoc, not part of the pre-set rule: the mean score margin (bull minus
+  bear, 30-point scale) moved much less than the win share: -1.96 original,
+  -1.40 rerun, -1.88 balanced, and the bull won only 0 to 10% of judgments in
+  every condition. The sign of the bear's edge looks stable; its size does not.
+
 Usage:
     python phase_c.py                 # run both conditions (about 50 cents), then report
     python phase_c.py rerun           # run one condition

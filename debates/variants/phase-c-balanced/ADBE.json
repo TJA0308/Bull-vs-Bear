@@ -1,0 +1,149 @@
+{
+  "ticker": "ADBE",
+  "filing": {
+    "accession": "0000796343-26-000003",
+    "document": "adbe-20251128.htm",
+    "date": "2026-01-15"
+  },
+  "model": "claude-haiku-5-5",
+  "created": "2026-11-25T01:30:00+00:00",
+  "bull_first": true,
+  "input_mode": "balanced",
+  "rounds": [
+    {
+      "round": 1,
+      "bull": {
+        "argument": "Adobe's filing shows a business compounding at scale. Total revenue rose 11% to $23.77 billion, with subscription revenue up 12% to $22.90 billion and making up 96% of the total, a mix that the filing says makes results 'relatively predictable.' Total Adobe ARR reached $25.20 billion, up 11.5%, and remaining performance obligations grew 13% to $22.52 billion, giving visibility into future revenue. Profitability is strong: net income rose 28% to $7.13 billion and operating cash flow rose 25% to $10.03 billion, even after the prior year's $1 billion Figma termination fee. Operating expenses were roughly flat while revenue grew, pointing to operating leverage. The risk factors acknowledge AI competition and cost pressures, but the filing also documents AI being 'deeply infused' across Creative Cloud, Acrobat and Experience Platform, and recurring revenue that is recognized ratably.",
+        "claims": [
+          {
+            "claim": "Subscription revenue is the dominant and fastest-growing revenue line, supporting predictability.",
+            "quote": "Subscription $ 22,904 $ 20,521 $ 18,284 12 %",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Operating cash flow grew strongly, even after a large prior-year payment.",
+            "quote": "Cash flows from operations of $10.03 billion during fiscal 2025 increased by $1.98 billion, or 25%, compared to fiscal 2024.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Contracted future revenue visibility increased.",
+            "quote": "Remaining performance obligations of $22.52 billion as of November 28, 2025 increased by 13% from $19.96 billion",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull case rests on growth and margins, but the filing itself flags serious risks to that trajectory. Management states that its innovation 'may not be profitable' and that its 'investments in new technologies are speculative.' On AI specifically, the filing says there 'can be no assurance that our new or enhanced solutions and AI innovations will be successful, adopted or monetizable.' Competition is also rising: the filing expects 'more competition as AI continues to advance,' and warns of 'downward pressure on pricing and gross margins.' AI development is described as increasing 'the cost of our solutions' and potentially adversely impacting 'our margins.' Regulatory exposure is open-ended, with the EU AI Act allowing 'administrative fines' and obligations phasing in through 2030. The filing also says that 'consumer reception and monetization pathways are uncertain.' Revenue predictability depends on subscriptions continuing to renew, which the filing says competition could erode. Strong trailing results do not guarantee that the AI spending will pay off.",
+        "claims": [
+          {
+            "claim": "Management concedes its AI and technology investments may not pay off.",
+            "quote": "Developing new solutions is complex, requires significant investment and operational costs and may not be profitable, and our investments in new technologies are speculative",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The filing says AI monetization is uncertain, despite strong current growth.",
+            "quote": "consumer reception and monetization pathways are uncertain, our strategies may not be successful",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Competition could pressure pricing and margins and weaken renewals.",
+            "quote": "increase downward pressure on pricing and gross margins and adversely affect our renewal, upsell and cross-sell rates",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "bull": {
+        "argument": "The bear case is fair on risk, but it does not overturn the reported results. The filing says innovation 'may not be profitable,' yet it also reports that subscription revenue rose 12% to $22.90 billion and now makes up 96% of total revenue, which is the revenue base that matters most. Management's risk language is generic: the filing describes AI competition as something that could 'intensify,' but Total Adobe ARR still grew 11.5% to $25.20 billion, meaning renewals and new subscriptions are growing, not eroding. Costs are addressed too: cost of revenue rose only 8% against 11% revenue growth, and operating expenses were 'relatively flat,' so AI spending has not yet crowded out margins. Net income rose 28% and operating cash flow rose 25%, both after the prior year's $1 billion Figma termination fee. The EU AI Act fines are a real but unquantified risk, and the filing gives no evidence that they are material. Investors are paying for demonstrated execution, and the filed numbers show it.",
+        "claims": [
+          {
+            "claim": "Subscription revenue is growing and is the dominant revenue line, which counters the renewal-erosion concern.",
+            "quote": "Subscription $ 22,904 $ 20,521 $ 18,284 12 %",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Cost of revenue grew more slowly than revenue, suggesting AI costs are not yet compressing margins.",
+            "quote": "Cost of revenue of $2.55 billion during fiscal 2025 increased by $193 million, or 8%, compared to fiscal 2024.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Total ARR growth shows the recurring base is expanding despite competitive pressure.",
+            "quote": "Total Adobe ARR grew to $25.20 billion exiting fiscal 2025, representing 11.5% year-over-year growth.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull's strongest point is that the numbers are good today, but the filing itself says current results may not predict the future. Subscription revenue and ARR growth are real, yet the filing's own language on AI is conditional: AI innovations may not be 'adopted or monetizable,' and competitors 'may develop AI solutions more rapidly or successfully.' Growth in ARR is not proof that AI is paying off; the filing ties growth to features 'including generative AI capabilities' that it admits are unproven. On costs, the bull notes cost of revenue rose 8% against 11% revenue growth, but the filing also says AI development 'could adversely impact our margins' and 'increase the cost of our solutions,' so the favorable ratio may reverse as spending scales. Operating expenses being flat is a single-year observation, not a trend. Net income growth of 28% partly reflects a lapping of the $1 billion Figma fee in the prior year's cash flow, which flatters the comparison. The EU AI Act fines may be unquantified, but the filing says obligations phase in through 2030 and could require 'costly changes.' Demonstrated execution is a reason for caution, not confidence, when the filing warns that pricing pressure could erode renewals.",
+        "claims": [
+          {
+            "claim": "The filing says AI innovations may not be monetizable, so current ARR growth does not prove AI pays off.",
+            "quote": "there can be no assurance that our new or enhanced solutions and AI innovations will be successful, adopted or monetizable",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The filing warns AI development could compress margins as costs scale.",
+            "quote": "These costs could adversely impact our margins as we continue to make significant investments in AI development",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Regulation could force costly changes, with obligations running through 2030.",
+            "quote": "obligations under the EU AI Act have gone into effect and will continue to be implemented in phases through 2030",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    }
+  ],
+  "citations": {
+    "bull": {
+      "verified": 6,
+      "total": 6
+    },
+    "bear": {
+      "verified": 6,
+      "total": 6
+    },
+    "overall": {
+      "verified": 12,
+      "total": 12,
+      "accuracy": 1.0
+    }
+  },
+  "judge": {
+    "scores": {
+      "bull": {
+        "evidence": 8,
+        "logic": 7,
+        "responsiveness": 6
+      },
+      "bear": {
+        "evidence": 8,
+        "logic": 7,
+        "responsiveness": 8
+      }
+    },
+    "winner": "bear",
+    "reasoning": "Both sides cite verified quotes from the filing, so evidence is comparable. The bear more directly answered the bull's strongest points, notably the cost-ratio and Figma-lapping arguments, and argued that the bull's favorable metrics are single-year and do not prove AI monetization. The bull's Round 2 rebuttal was reasonable but leaned on the same growth figures without fully addressing the bear's forward-looking margin warning."
+  },
+  "usage": {
+    "calls": 5,
+    "input_tokens": 46915,
+    "output_tokens": 2629,
+    "cost_usd": 0.006
+  }
+}

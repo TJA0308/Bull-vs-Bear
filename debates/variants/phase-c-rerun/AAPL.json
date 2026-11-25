@@ -1,0 +1,149 @@
+{
+  "ticker": "AAPL",
+  "filing": {
+    "accession": "0000320193-26-000026",
+    "document": "aapl-20260926.htm",
+    "date": "2026-11-03"
+  },
+  "model": "claude-haiku-5-5",
+  "created": "2026-11-25T01:20:19+00:00",
+  "bull_first": true,
+  "input_mode": "full",
+  "rounds": [
+    {
+      "round": 1,
+      "bull": {
+        "argument": "The filing shows a business growing faster and more profitably than before. Total net sales rose 15% to $478,834 million in 2026, with iPhone up 21% and Services up 13% to $123,301 million. Total gross margin percentage expanded to 48.8% from 46.9%, and products gross margin rose to 39.3% from 36.8%. Demand is broad: Greater China grew 28%, Europe 15%, and Rest of Asia Pacific 18%. Management is also returning significant capital, repurchasing $85.8 billion of stock during 2026 and raising the quarterly dividend to $0.27 per share. Liquidity of $136.9 billion is described as sufficient for cash requirements and the capital return program over the next 12 months and beyond. The risk section is extensive, and the filing acknowledges that component costs, memory, tariffs and litigation could pressure margins. Still, the 2026 results show these pressures have not yet dented profitability, and the company's cash position gives it room to absorb them.",
+        "claims": [
+          {
+            "claim": "Total net sales grew 15% in 2026.",
+            "quote": "Total net sales $ 478,834 15 % $ 416,161 6 % $ 391,035",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Total gross margin percentage expanded year over year.",
+            "quote": "Total gross margin percentage 48.8 % 46.9 % 46.2 %",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Liquidity is viewed as sufficient for cash needs and capital returns over the next 12 months and beyond.",
+            "quote": "will be sufficient to satisfy its cash requirements and capital return program over the next 12 months and beyond",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The opponent's growth figures are real, but the filing shows the margin gains rest on fragile ground. Products gross margin rose partly because of tariff refunds, a one-time-style benefit that the filing says may not recur, while the filing also says memory costs are higher and expected to intensify. Management itself states that gross margins will be subject to volatility and downward pressure. Revenue is concentrated: iPhone supplied $254,098 million of $478,834 million in net sales, and the filing admits a decline in that single category could significantly affect results. Operating expenses grew 22%, with R&D up 32% on AI infrastructure, while the company warns AI investments may not be profitable. Meanwhile, the company faces a DOJ-related threat to its Google search licensing revenue and a court injunction on App Store commissions that could materially reduce revenue. Strong results today do not remove these concentrated, unresolved exposures.",
+        "claims": [
+          {
+            "claim": "Products gross margin gain was partly driven by tariff refunds, which the filing says may not be repeatable and cannot be guaranteed.",
+            "quote": "If tariffs are subsequently rescinded or revoked, the Company may not be able to successfully claim and collect tariff refunds.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management expects gross margins to face volatility and downward pressure.",
+            "quote": "the Company believes, in general, gross margins will be subject to volatility and downward pressure.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The company's future profitability from its heavy AI investments is uncertain.",
+            "quote": "There are significant risks involved in developing and deploying artificial intelligence and the usage of artificial intelligence may not enhance the Company’s products or services or be beneficial or profitable for its business.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "bull": {
+        "argument": "The opponent is right that the risks are real, but the filing supports a more measured reading. On tariff refunds, the filing says the Company recognized refunds it received as a reduction of products cost of sales, yet products gross margin percentage rose only to 39.3% from 36.8% with tariff refunds partly offset by memory costs. The underlying business, not just the refunds, carried the result. Concentration is real: iPhone is about 53% of sales, but iPhone grew 21%, and Services grew 13% to $123,301 million with a 76.2% gross margin, a higher-margin stream that is diversifying the mix. On AI spending, R&D rose 32%, but the filing attributes it to infrastructure and headcount, and revenue grew 15% alongside it, so operating expenses at 16% of sales remain manageable. On legal exposure, the filing describes the Google remedies as subject to further proceedings and the injunction as under Supreme Court review, meaning these outcomes are unresolved rather than decided. Against these open items, the $136.9 billion liquidity position and $85.8 billion of buybacks show a company able to fund its commitments.",
+        "claims": [
+          {
+            "claim": "Products gross margin percentage was higher in 2026 than in 2025, even with memory cost pressure.",
+            "quote": "Products gross margin and gross margin percentage increased during 2026 compared to 2025 primarily due to product mix and tariff refunds, partially offset by higher costs, including memory.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Services is a high-margin, fast-growing stream that diversifies revenue.",
+            "quote": "Services 93,943 76.2 % 75.4 % 73.9 %",
+            "verified": false,
+            "score": 80.6
+          },
+          {
+            "claim": "The Google and App Store outcomes remain unresolved, not decided against the Company.",
+            "quote": "The court’s order is subject to further proceedings before the D.C. District Court, which may result in changes to the interpretation or application of the remedies ordered by the court",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The opponent concedes the risks but argues they are manageable. Yet the filing's own numbers show the cushion is thinner than presented. Products gross margin rose to 39.3% partly because of tariff refunds, and the filing says memory costs will intensify, so the underlying product margin is exposed to a cost trend management expects to worsen. Management still states that gross margins will be subject to volatility and downward pressure. Services is the stronger mix story, but iPhone still generated $254,098 million of $478,834 million in sales, and the filing warns that a decline in that category could significantly affect results. Operating expenses grew 22% to $75,539 million, and R&D rose 32%, with the company admitting AI investments may not prove profitable. Liquidity and buybacks are real, but they do not remove the unresolved exposures: the Google licensing revenue could be hit by remedies the filing says could reverse on appeal, and the App Store commission injunction could materially and adversely affect revenue and gross margin if disallowed. Cash can fund the bets, but it cannot guarantee their returns.",
+        "claims": [
+          {
+            "claim": "Management expects gross margins to face volatility and downward pressure, despite the recent expansion.",
+            "quote": "the Company believes, in general, gross margins will be subject to volatility and downward pressure.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Operating expense growth is driven by AI investments whose profitability the company itself does not guarantee.",
+            "quote": "There are significant risks involved in developing and deploying artificial intelligence and the usage of artificial intelligence may not enhance the Company’s products or services or be beneficial or profitable for its business.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "A single product category generates a large share of revenue, so a decline there could significantly affect results.",
+            "quote": "the Company generates a significant portion of its net sales from a single product category and certain of the Company’s services, including third-party licensing arrangements, contribute significantly to the Company’s results of operations.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    }
+  ],
+  "citations": {
+    "bull": {
+      "verified": 5,
+      "total": 6
+    },
+    "bear": {
+      "verified": 6,
+      "total": 6
+    },
+    "overall": {
+      "verified": 11,
+      "total": 12,
+      "accuracy": 0.917
+    }
+  },
+  "judge": {
+    "scores": {
+      "bull": {
+        "evidence": 7,
+        "logic": 7,
+        "responsiveness": 7
+      },
+      "bear": {
+        "evidence": 7,
+        "logic": 7,
+        "responsiveness": 7
+      }
+    },
+    "winner": "tie",
+    "reasoning": "Both sides cite mostly verified filing language, with the bull's Services 76.2% quote unverified (a weakness against it) and the bear's claims all verified. The bull effectively responds to the tariff-refund and concentration points by showing the mix and product-margin gains, while the bear answers with the still-unresolved legal and AI exposures and expected margin pressure. Neither side decisively overturns the other's strongest point, so the debate is close to even, with the bull's unverified quote offsetting the bear's slightly more consistent sourcing."
+  },
+  "usage": {
+    "calls": 5,
+    "input_tokens": 127731,
+    "output_tokens": 2678,
+    "cost_usd": 0.0141
+  }
+}

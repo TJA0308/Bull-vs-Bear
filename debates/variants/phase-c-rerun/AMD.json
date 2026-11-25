@@ -1,0 +1,149 @@
+{
+  "ticker": "AMD",
+  "filing": {
+    "accession": "0000002488-26-000018",
+    "document": "amd-20251227.htm",
+    "date": "2026-02-04"
+  },
+  "model": "claude-haiku-5-5",
+  "created": "2026-11-25T01:23:22+00:00",
+  "bull_first": true,
+  "input_mode": "full",
+  "rounds": [
+    {
+      "round": 1,
+      "bull": {
+        "argument": "AMD's FY2025 results show strong momentum. Net revenue rose 34% to $34.6 billion, Data Center revenue grew 32% to $16.6 billion on demand for EPYC processors and Instinct MI350 Series GPUs, and Client and Gaming revenue grew 51% to $14.6 billion. Gross margin improved to 50% from 49% despite roughly $440 million of net export-control charges. Operating income nearly doubled to $3.7 billion from $1.9 billion, and operating cash flow reached $7.7 billion including discontinued operations, versus $3.0 billion a year earlier. Cash and short-term investments rose to $10.6 billion, and the company returned $1.3 billion through buybacks with $9.4 billion of authorization remaining. The filing does acknowledge real risks: customer concentration, export restrictions on MI308 sales to China, a memory shortage, and cyclical demand. But the financial record shows a company executing well and funding its AI roadmap from its own cash generation.",
+        "claims": [
+          {
+            "claim": "Revenue grew strongly across the year, with total net revenue up 34%.",
+            "quote": "net revenue increasing 34% to $34.6 billion, compared to $25.8 billion in 2024",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Operating cash flow improved sharply, supporting self-funded growth and buybacks.",
+            "quote": "Operating activities 7,709 3,041",
+            "verified": false,
+            "score": 0.0
+          },
+          {
+            "claim": "Gross margin expanded despite export-control charges, a sign of favorable product mix.",
+            "quote": "Gross margin of 50% increased by 1% compared to 49% in 2024, primarily due to product mix",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull case rests on headline growth, but the filing shows how fragile that growth is. Data Center and Client revenue depend on a handful of customers, and the filing says \"we depend on a small number of customers for a substantial portion of our business.\" Export controls already forced roughly $800 million of inventory and related charges on MI308 products, with only part reversed later. The U.S. government has also floated a 15% revenue share on licensed China sales that has not been codified, which the filing warns \"could subject us to litigation, increase our costs and harm our competitive position.\" Operating income of $3.7 billion is thin against $30.9 billion of costs, and most of the gap reflects $2.3 billion of acquisition amortization and $1.6 billion of stock compensation. Operating cash flow was lifted by $1.2 billion from discontinued operations, and inventory rose $2.2 billion. Debt also rose to $3.3 billion from $1.8 billion. The filing admits a memory shortage raises costs and pressures gross margin, and a cyclical industry has produced \"substantial losses in previous downturns.\" Growth may be real, but it is concentrated, policy-dependent and cyclical.",
+        "claims": [
+          {
+            "claim": "Heavy dependence on a small number of customers makes revenue fragile",
+            "quote": "We depend on a small number of customers for a substantial portion of our business",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Export controls already forced large inventory charges and remain uncertain",
+            "quote": "As a result of the restriction, we incurred approximately $800 million in inventory and related charges in the second quarter of 2025.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Cyclicality has caused substantial past losses",
+            "quote": "We have incurred substantial losses in previous downturns, due to substantial declines in average selling prices",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "bull": {
+        "argument": "The bear case is right that risks are real, but the filing supports a stronger reading of the record. First, the export charge was partly reversed: about $360 million of the roughly $800 million MI308 charge was reversed after shipments began in Q4 2025, so the net hit was closer to $440 million, and gross margin still rose to 50%. Second, operating cash flow is not reliant on the discontinued business alone: continuing operations generated $6.5 billion, more than double the $3.0 billion total of 2024, and that figure is after a $2.2 billion inventory build. Third, the debt increase was deliberate and modest: $3.3 billion aggregate principal against $10.6 billion of cash and short-term investments, with a $3.0 billion revolver undrawn. Fourth, the cost gap is largely non-cash: amortization and stock compensation are included in the $3.7 billion operating income figure, which still nearly doubled from $1.9 billion. The customer concentration and cyclicality warnings are genuine, and the bull case must acknowledge them, but the financial results show growth funded from the company's own operations.",
+        "claims": [
+          {
+            "claim": "About $360 million of the MI308 export charge was reversed after shipments resumed, reducing the net impact.",
+            "quote": "During the fourth quarter of fiscal year 2025, we began shipping products and reversed approximately $360 million of the charges recorded earlier in the year.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Continuing operations generated $6.5 billion of operating cash flow, more than double the prior year's total.",
+            "quote": "Net cash provided by operating activities of continuing operations was $6.5 billion in 2025",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Cash and short-term investments of $10.6 billion exceeded aggregate debt of $3.3 billion, with the $3.0 billion revolver undrawn.",
+            "quote": "No funds were drawn from this credit facility during the year ended December 27, 2025.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull's rebuttal concedes the key facts but reframes them. Yes, about $360 million of the MI308 charge was reversed, but the filing says that reversal depended on licenses that \"may be temporary or could impose onerous conditions,\" and it also says the U.S. government has floated a 15% revenue share that \"could subject us to litigation.\" A recovery that hinges on Washington's discretion is not a durable earnings base. On cash flow, continuing operations did produce $6.5 billion, but the filing attributes that to net income adjusted for $4.6 billion of non-cash items, offset by $2.4 billion of working-capital outflows, including a $2.2 billion inventory build. Cash generation is also flattered by non-cash charges that were not cash costs, so the quality of earnings is weaker than the headline. The bull says the cost gap is non-cash, but amortization of $2.3 billion and stock compensation of $1.6 billion are real economic costs to shareholders, and the company's $1.3 billion in buybacks in 2025 offset about 12.4 million shares issued elsewhere. Debt rose 83% to $3.3 billion, and interest expense rose. Finally, the filing's own language on cyclicality is unambiguous: the company has \"incurred substantial losses in previous downturns.\" A good year at the top of a cycle is not evidence of resilience through one.",
+        "claims": [
+          {
+            "claim": "The export-charge reversal depends on licenses that may be temporary or conditional",
+            "quote": "Even if we are granted licenses, the licenses may be temporary or could impose onerous conditions for us or our customers.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Operating cash flow depended on non-cash add-backs and a large inventory build",
+            "quote": "adjusted for non-cash adjustments of $4.6 billion and net cash outflows of $2.4 billion from changes in our operating assets and liabilities",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Cyclicality has produced substantial losses in past downturns",
+            "quote": "We have incurred substantial losses in previous downturns, due to substantial declines in average selling prices",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    }
+  ],
+  "citations": {
+    "bull": {
+      "verified": 5,
+      "total": 6
+    },
+    "bear": {
+      "verified": 6,
+      "total": 6
+    },
+    "overall": {
+      "verified": 11,
+      "total": 12,
+      "accuracy": 0.917
+    }
+  },
+  "judge": {
+    "scores": {
+      "bull": {
+        "evidence": 6,
+        "logic": 7,
+        "responsiveness": 7
+      },
+      "bear": {
+        "evidence": 7,
+        "logic": 7,
+        "responsiveness": 7
+      }
+    },
+    "winner": "tie",
+    "reasoning": "The bull's strongest verified claims (34% revenue growth, $6.5B continuing-operations cash flow, undrawn revolver, $360M reversal) are well grounded, but its operating cash flow headline quote failed verification and its net-charge arithmetic is loosely supported. The bear's verified quotes on customer concentration, licensing conditions, non-cash add-backs, and cyclicality directly engage the bull's cash-flow and reversal points, though some bear arguments (buybacks offsetting share issuance, debt as a weakness) are asserted with less direct support. Overall the exchange is closely matched, with the bear slightly better on evidence and responsiveness."
+  },
+  "usage": {
+    "calls": 5,
+    "input_tokens": 203777,
+    "output_tokens": 2815,
+    "cost_usd": 0.0218
+  }
+}

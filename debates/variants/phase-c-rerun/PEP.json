@@ -1,0 +1,149 @@
+{
+  "ticker": "PEP",
+  "filing": {
+    "accession": "0000077476-26-000007",
+    "document": "pep-20251227.htm",
+    "date": "2026-02-03"
+  },
+  "model": "claude-haiku-5-5",
+  "created": "2026-11-25T01:25:51+00:00",
+  "bull_first": true,
+  "input_mode": "full",
+  "rounds": [
+    {
+      "round": 1,
+      "bull": {
+        "argument": "PepsiCo's filing shows a business with substantial cash generation and shareholder returns. Free cash flow rose 9% to $8.2 billion in 2025 (from $7.5 billion), and the company expects to return about $8.9 billion to shareholders in 2026, including a 4% dividend increase. ROIC was 14.3%, and core net ROIC excluding items affecting comparability was 19.1%. Core constant-currency operating profit was up 2% for the company, with EMEA and LatAm showing gains. Management is also taking productivity action, with a 2019 Productivity Plan extended through 2030 aimed at a lower cost structure. The filing does acknowledge real headwinds: reported operating profit fell 11%, GLP-1 drugs, SNAP changes, tariffs and taxes on sugar are all named risks, and Rockstar impairments were $1.9 billion. Still, the balance sheet supports the dividend, with Tier 1 commercial paper access maintained and debt issued at favorable rates.",
+        "claims": [
+          {
+            "claim": "Free cash flow grew 9% to $8.2 billion, supporting shareholder returns.",
+            "quote": "Free cash flow, non-GAAP measure $ 8,200 $ 7,531 9 %",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management plans to return about $8.9 billion to shareholders in 2026, including a dividend increase.",
+            "quote": "We expect to return a total of approximately $8.9 billion to shareholders in 2026, comprising dividends of approximately $7.9 billion and share repurchases of approximately $1.0 billion.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Core net ROIC of 19.1% shows strong returns on capital even after adjustments.",
+            "quote": "Core Net ROIC, non-GAAP measure 19.1 %",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The filing's own headline numbers weaken the bull case. Reported operating profit fell 11% to $11.5 billion and net income attributable to PepsiCo fell 14%. The company took $1.9 billion of impairment and other charges, mostly on the Rockstar brand, which signals that acquired and indefinite-lived assets were overvalued. Core constant-currency operating profit grew only 2%, and the filing says organic volume declined. Free cash flow rose to $8.2 billion, but only because capital spending fell; operating cash flow actually dropped to $12.1 billion from $12.5 billion. Meanwhile, shareholder payouts of $8.6 billion in 2025 exceeded free cash flow, and total debt rose to about $49 billion. Long-term debt increased from $37.2 billion to $42.3 billion. The company also flags a SodaStream goodwill unit that only 'narrowly exceeded' carrying value, and it faces a 2026 mandatory transition tax payment and a global minimum tax.",
+        "claims": [
+          {
+            "claim": "Operating profit fell sharply while impairments rose, indicating weakening earnings quality.",
+            "quote": "Operating profit decreased 11%, primarily driven by certain operating cost increases, impairment charges related to the Rockstar brand, a decline in organic volume",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Operating cash flow declined, so the free cash flow increase depended on lower capital spending.",
+            "quote": "The decrease in operating cash flow primarily reflects increased cash payments for restructuring charges and cash payments for acquisition and divestiture-related charges.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Long-term debt grew while shareholder returns exceeded free cash flow.",
+            "quote": "dividend payments and share repurchases of $8.6 billion, as well as payments of long-term debt borrowings of $4.1 billion, partially offset by proceeds from the issuances of long-term debt of $8.2 billion",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "bull": {
+        "argument": "The bear's strongest points are real, and I concede them: reported operating profit fell 11%, net income fell 14%, and the Rockstar impairments were $1.9 billion. But the filing shows these are largely non-recurring and the core business is steadier. Core operating profit rose 1.5% on a reported basis and 2% constant-currency, and core net ROIC was 19.1%. The FCF rise is not only capex cuts: capex fell $0.9 billion, but operating cash flow fell only $0.4 billion, and the filing attributes that decline to restructuring and acquisition cash payments, which are one-time items. Shareholder payouts of $8.6 billion did exceed FCF, but the company funded the gap with debt in a market where it issued $8.2 billion of notes at favorable rates and kept Tier 1 commercial paper access. The SodaStream 'narrow' headroom and the 2026 transition tax ($965 million, the final payment) are known, quantified items, not surprises. The 2026 dividend increase to $5.92 is a management signal of confidence in cash generation.",
+        "claims": [
+          {
+            "claim": "Operating cash flow fell mainly because of restructuring and acquisition-related cash payments, which the filing identifies as the driver.",
+            "quote": "The decrease in operating cash flow primarily reflects increased cash payments for restructuring charges and cash payments for acquisition and divestiture-related charges.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The company funded shareholder payouts through debt issuance at favorable rates while keeping commercial paper access.",
+            "quote": "We expect to maintain Tier 1 commercial paper access, which we believe will facilitate appropriate financial flexibility and ready access to global credit markets at favorable interest rates.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The final 2026 transition tax payment is a known, fixed obligation of $965 million.",
+            "quote": "As of December 27, 2025, our mandatory transition tax liability was $965 million, which must be paid in 2026 and will represent our final payment under the provisions of the TCJ Act.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull's reframing depends on treating recurring costs as one-time. The filing describes restructuring as an ongoing program: the 2019 Productivity Plan was extended through 2030, with about $900 million of further pre-tax charges expected in 2026 and $2.65 billion still to be incurred. Restructuring and impairment charges have appeared in every year shown, so 'non-recurring' is not accurate. Core metrics also exclude $1.9 billion of impairments, which the filing says were driven by weaker assumptions about future performance. Those are signs of deteriorating expectations, not one-off noise. On cash, the bull is right that operating cash flow fell only modestly, but free cash flow still rose only because capex dropped $0.9 billion. Shareholder returns of $8.6 billion exceeded free cash flow of $8.2 billion, and long-term debt rose $5.1 billion. The 2026 plan calls for about $8.9 billion in returns, while the filing's own risks include downgrade exposure that would raise borrowing costs. A dividend increase funded partly by new debt is a bet that the rebound happens, not evidence that it has.",
+        "claims": [
+          {
+            "claim": "Restructuring charges recur each year and are expected to continue, so they are not one-time.",
+            "quote": "In our 2026 financial results, we expect to incur pre-tax charges of approximately $900 million, including cash expenditures of approximately $750 million.",
+            "verified": false,
+            "score": 86.5
+          },
+          {
+            "claim": "Impairments were driven by weakened expectations of future performance, not isolated events.",
+            "quote": "indicated a deterioration of the significant inputs used to determine the fair value of our indefinite-lived intangible assets in certain markets",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "A downgrade would raise borrowing costs and could impair access to capital markets.",
+            "quote": "Any downgrade or announcement that we are under review for a potential downgrade of our credit ratings, especially any downgrade to below investment grade, can increase our future borrowing costs",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    }
+  ],
+  "citations": {
+    "bull": {
+      "verified": 6,
+      "total": 6
+    },
+    "bear": {
+      "verified": 5,
+      "total": 6
+    },
+    "overall": {
+      "verified": 11,
+      "total": 12,
+      "accuracy": 0.917
+    }
+  },
+  "judge": {
+    "scores": {
+      "bull": {
+        "evidence": 7,
+        "logic": 7,
+        "responsiveness": 8
+      },
+      "bear": {
+        "evidence": 6,
+        "logic": 7,
+        "responsiveness": 7
+      }
+    },
+    "winner": "tie",
+    "reasoning": "Bull's Round 2 concedes the bear's strongest points and answers with verified quotes on operating cash flow drivers, commercial paper access, and the fixed $965 million transition tax, though calling restructuring 'one-time' is weakly supported. Bear's strongest point, that restructuring recurs through 2030 and impairments signal weaker expectations, is partly backed by verified evidence, but its key restructuring quote is unverified (match 86.5), which counts against it. Overall the debate is close, with each side scoring solid points and neither clearly dominating."
+  },
+  "usage": {
+    "calls": 5,
+    "input_tokens": 415580,
+    "output_tokens": 2863,
+    "cost_usd": 0.043
+  }
+}
