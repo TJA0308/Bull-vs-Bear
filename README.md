@@ -150,7 +150,7 @@ sequenceDiagram
 
 ## Run it
 
-Requires Python 3.10+ (CI runs 3.13).
+Requires Python 3.10+ (CI runs 3.10 and 3.13).
 
 <details open>
 <summary><b>Setup</b></summary>
