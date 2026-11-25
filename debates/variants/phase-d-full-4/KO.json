@@ -1,0 +1,149 @@
+{
+  "ticker": "KO",
+  "filing": {
+    "accession": "0001628280-26-010047",
+    "document": "ko-20251231.htm",
+    "date": "2026-02-20"
+  },
+  "model": "claude-haiku-5-5",
+  "created": "2026-11-25T04:24:11+00:00",
+  "bull_first": true,
+  "input_mode": "full",
+  "rounds": [
+    {
+      "round": 1,
+      "bull": {
+        "argument": "The filing shows a company with durable earnings power and strong financial backing. Operating income rose 38% to $13,762 million in 2025, and operating margin expanded to 28.7% from 21.2%, driven largely by lower other operating charges and favorable pricing; price/mix contributed 4% to net operating revenues. Unit case volume reached 33.8 billion, and the company reports a 64th consecutive annual dividend increase. Management states its liquidity position is strong, citing $15.8 billion in cash and short-term investments and $6.2 billion in unused backup credit lines. Operating cash flow grew 9% to $7,408 million. The credit ratings of A+ and A1 give it low-cost borrowing access. The filing also acknowledges real risks, including the IRS tax dispute with about $14 billion of potential additional exposure and a further BodyArmor impairment risk. Still, management says it believes it is more likely than not to prevail, and the company's cash generation and borrowing capacity give it room to absorb those outcomes.",
+        "claims": [
+          {
+            "claim": "Operating income grew strongly in 2025, supported by pricing and lower other operating charges.",
+            "quote": "Operating income was $13,762 million in 2025, compared to $9,992 million in 2024, an increase of $3,770 million, or 38%.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management describes liquidity as strong, backed by substantial cash and credit capacity.",
+            "quote": "the Company believes its current liquidity position is strong and will continue to be sufficient to fund our operating activities",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management believes it will more likely than not prevail in the IRS tax litigation.",
+            "quote": "While the Company believes that it is more likely than not that we will ultimately prevail in this litigation upon appeal",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull case leans on headline earnings, but the filing shows how fragile that rebound is. Operating income rose 38%, yet the increase was driven largely by lower other operating charges, not by stronger underlying demand. Unit case volume was flat (even) in 2025, and concentrate sales volume grew just 1%. Price/mix supplied the bulk of revenue growth, while foreign currency reduced operating income by 12%. Management also warns that inflation will continue into 2026 and that consumers may trade down to cheaper alternatives, which directly threatens the pricing that is carrying results. The BodyArmor trademark was impaired by $960 million, with $2,440 million of carrying value left, and management says further impairment is likely if results disappoint. The IRS dispute is not a small footnote: the company has paid $6.0 billion, could lose that refund, and estimates roughly $14 billion of further potential exposure for 2010 through 2025. Management's 'more likely than not' language does not remove that downside.",
+        "claims": [
+          {
+            "claim": "Flat volume means growth depends on price, which consumers may resist as inflation continues.",
+            "quote": "Unit case volume in EMEA increased 3%",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management expects further impairment on the BodyArmor trademark if results fall short.",
+            "quote": "it is likely that we would be required to recognize an additional impairment charge",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The IRS dispute could cost the company far more than the amount already paid.",
+            "quote": "The Company estimates that the potential aggregate remaining incremental tax and interest liability for the tax years 2010 through 2025 could be approximately $14 billion",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "bull": {
+        "argument": "The bear case is right that the 38% operating income jump was flattered by lower charges: other operating charges fell from $4,163 million to $1,261 million, and the prior year included a $3,109 million fairlife remeasurement. But that comparison cuts both ways. Operating margin still rose to 28.7% from 21.2%, and the filing ties gains to favorable pricing, a 61.6% gross margin up from 61.1%, and EMEA and North America operating income growth. Volume was flat, yet concentrate sales volume grew 1% and price/mix added 4% to revenue, showing pricing power that held through inflation. Currency was a real headwind (a 12% hit to operating income), but the filing notes offsets from a weaker dollar against the euro and pound, and expects favorable FX on 2026 revenue. On the IRS matter, the $6.0 billion is paid and held as a deposit, and management says it is more likely than not to prevail. The $14 billion figure is a contingent exposure, not a booked liability, and the company's $15.8 billion in cash and investments and A+/A1 ratings give it capacity to absorb it.",
+        "claims": [
+          {
+            "claim": "Gross margin improved in 2025, showing pricing and mix are protecting profitability.",
+            "quote": "Our gross profit margin increased to 61.6% in 2025 from 61.1% in 2024.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The company expects favorable currency effects on 2026 net operating revenues.",
+            "quote": "we expect foreign currency exchange rate fluctuations will have a favorable impact on our full year 2026 net operating revenues.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management believes it is more likely than not to prevail in the IRS litigation, and the $6.0 billion paid is a refundable deposit.",
+            "quote": "the Company would not receive a refund of the applicable portion or all of the $6.0 billion it paid",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull case depends on pricing and a charge-driven margin rebound, and the filing shows both are weaker than they look. Operating income rose 38%, but other operating charges fell from $4,163 million to $1,261 million, so much of the margin gain reflects a lapped one-time cost, not stronger demand. Unit case volume was even, and price/mix supplied the 4% revenue gain. The filing itself warns that consumers 'may increasingly purchase lower-priced offerings, or may forgo some purchases altogether,' which is the risk to a price-led model. Currency was not a minor offset: it cut operating income by 12%, and the expected 2026 FX benefit is a forecast, not a result. On the IRS matter, the $6.0 billion deposit is refundable only if the company prevails. The filing says that if the IRS position is upheld, the company 'would not receive a refund' of that amount, and it estimates about $14 billion of further potential exposure. Cash of $15.8 billion is not a free reserve when dividends alone totaled $8,779 million in 2025. The 'more likely than not' language is a belief, not a guarantee.",
+        "claims": [
+          {
+            "claim": "Price-led growth is exposed to consumers trading down, which the filing explicitly flags.",
+            "quote": "Consumers may be less willing to pay a price differential for our branded products and may increasingly purchase lower-priced offerings",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Currency cut operating income by 12%, a large offset to the reported gain.",
+            "quote": "fluctuations in foreign currency exchange rates, including the effects of our hedging activities, unfavorably impacted consolidated operating income by 12%",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "If the IRS position is upheld, the company would not recover the $6.0 billion it has paid.",
+            "quote": "In that event, the Company would not receive a refund of the applicable portion or all of the $6.0 billion it paid",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    }
+  ],
+  "citations": {
+    "bull": {
+      "verified": 6,
+      "total": 6
+    },
+    "bear": {
+      "verified": 6,
+      "total": 6
+    },
+    "overall": {
+      "verified": 12,
+      "total": 12,
+      "accuracy": 1.0
+    }
+  },
+  "judge": {
+    "scores": {
+      "bull": {
+        "evidence": 7,
+        "logic": 7,
+        "responsiveness": 7
+      },
+      "bear": {
+        "evidence": 7,
+        "logic": 7,
+        "responsiveness": 8
+      }
+    },
+    "winner": "bear",
+    "reasoning": "Both sides cite verified quotes, so the contest turns on reasoning. The bear effectively exposed that the 38% operating income jump was driven by lapped charges rather than demand, and it flagged the consumer trade-down risk and the 12% currency drag with verified language. The bull answered with a margin and gross-margin rebound and the 'more likely than not' IRS belief, but leaned on a forecast FX benefit and the contingent nature of the $14 billion without fully rebutting the trade-down risk, so the bear edges it narrowly."
+  },
+  "usage": {
+    "calls": 5,
+    "input_tokens": 246041,
+    "output_tokens": 4026,
+    "cost_usd": 0.0266
+  }
+}

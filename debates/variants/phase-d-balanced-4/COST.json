@@ -1,0 +1,149 @@
+{
+  "ticker": "COST",
+  "filing": {
+    "accession": "0000909832-26-000093",
+    "document": "cost-20260830.htm",
+    "date": "2026-10-07"
+  },
+  "model": "claude-haiku-5-5",
+  "created": "2026-11-25T04:50:28+00:00",
+  "bull_first": true,
+  "input_mode": "balanced",
+  "rounds": [
+    {
+      "round": 1,
+      "bull": {
+        "argument": "Costco's 2026 filing shows a business compounding on multiple fronts. Net sales rose 10% to $297,247 million, with comparable sales up 8% and digitally-enabled comparable sales up 21%, signaling that demand is broadening rather than leaning on a single channel. Net income grew 14% to $9,226 million, or $20.76 per diluted share, and management raised the quarterly dividend 13%, a sign of confidence in cash generation. Membership fee revenue rose 11% to $5,907 million, and the filing notes that renewal rates stood at 92.3% in the U.S. and Canada, a recurring-revenue base that cushions the low-margin merchandise model. Management also states that Kirkland Signature products carry higher margins and represent a growing share of sales, and that gross margin excluding gasoline inflation rose 10 basis points. The filing candidly flags risks around California concentration, AI and cybersecurity, and tariffs, but the IEEPA refunds ($184 million received, $155 million more since year-end) and continued store growth of 25 net new warehouses suggest the core engine is intact.",
+        "claims": [
+          {
+            "claim": "Comparable sales grew strongly, with digitally-enabled sales accelerating.",
+            "quote": "Digitally-enabled comparable sales increased 21% during 2026, both as reported and excluding the impact of changes in foreign currencies.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Net income and EPS grew double digits and the dividend was raised.",
+            "quote": "Net income increased 14% to $9,226, $20.76 per diluted share, compared to $8,099, $18.21 per diluted share in 2025",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Membership renewal rates remain high, supporting recurring fee revenue.",
+            "quote": "At the end of 2026, member renewal rates were 92.3% in the U.S. and Canada and 89.8% worldwide.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull case leans on headline growth, but the filing shows how concentrated and fragile that growth is. The U.S. and Canada generate 86% and 83% of net sales and operating income, and California alone is 26% of U.S. net sales, in a market the filing says has more high-volume warehouses. Net income growth of 14% was helped by one-time IEEPA tariff refunds: $184 million was received in 2026 and $155 million more afterward, though management says most will be reinvested in member value. Gross margin percentage actually fell three basis points to 11.09%, and the filing attributes the underlying softness to a shift toward gasoline and pharmacy, lower-margin categories. Gasoline alone added 130 basis points to net sales growth, so a reversal in fuel prices would remove a large part of the top-line gain. Membership fee growth was partly driven by a fee increase that management says accounted for about 30% of membership income growth. The filing also warns that AI and cyber risks could bypass controls and that new warehouses may cannibalize existing ones.",
+        "claims": [
+          {
+            "claim": "Results are highly concentrated in the U.S. and Canada and in California",
+            "quote": "Within the U.S., we are highly dependent on our California operations, which comprised 26% of U.S. net sales in 2026.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Gross margin percentage declined and the filing points to a mix shift toward lower-margin categories",
+            "quote": "Gross margin percentage decreased three basis points; it increased 10 basis points excluding the impact of gasoline price inflation",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Net sales growth was boosted by gasoline prices that may not persist, and one-time tariff refunds helped earnings",
+            "quote": "Higher gasoline prices positively impacted net sales by $3,501, or 130 basis points",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "bull": {
+        "argument": "The bear points are real, and the filing discloses them, but they do not overturn the core picture. Concentration is a risk the filing names openly, yet the U.S. and Canada account for 86% and 83% of net sales and operating income because the model has proven durable there. Gross margin fell only three basis points, and excluding gasoline inflation it rose 10 basis points to 11.22%, with warehouse ancillary and other businesses adding 19 basis points. Gasoline's 130 basis point lift to sales is real, but comparable sales still grew 8%, and excluding currency and gasoline comparable sales grew 7%, so the underlying engine did not depend on fuel. Tariff refunds are non-recurring and management is reinvesting most of them in member value, so they should not be capitalized as earnings power. On membership, fee increases explain roughly 30% of membership income growth, meaning most of the 11% came from new sign-ups and upgrades to Executive membership. Renewal at 92.3% in the U.S. and Canada remains the best evidence that members stay.",
+        "claims": [
+          {
+            "claim": "Gross margin excluding gasoline inflation actually rose, so the underlying margin did not weaken.",
+            "quote": "Excluding the impact of gasoline price inflation on net sales, gross margin percentage was 11.22%, an increase of 10 basis points.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Comparable sales growth held up even excluding gasoline and currency effects.",
+            "quote": "Increases in comparable sales excluding the impact of changes in foreign-currency and gasoline prices (1) : U.S. 7 % 7 % 5 %",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Fee increases explain only part of membership growth, and renewals stay high.",
+            "quote": "The fee income increase accounted for approximately 30% and 40% of membership income growth during 2026 and 2025.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The opponent's rebuttal reads the filing's own numbers too generously. Start with concentration: the filing says U.S. and Canada are 86% and 83% of net sales and operating income, and that a sustained slowdown in these operations 'could materially adversely affect' results. Saying the model is durable does not reduce that dependence. On gross margin, the 11.22% figure excludes gasoline inflation, but reported margin is 11.09%, down from 11.12%, and the filing says the ex-gasoline improvement came from warehouse ancillary and other businesses, while core merchandise fell 11 basis points. That is a mix shift toward lower-margin fuel and pharmacy, which the filing itself ties to lower gross margin percentage. On comparable sales, the ex-gasoline, ex-currency figure was 7%, down from 8% in 2025 in the total company, and U.S. was 7% both years, so it is not accelerating. The filing also says fee increases explain about 30% of membership growth, and renewal of 92.3% is only in the U.S. and Canada, while worldwide renewal is 89.8%. Net income growth of 14% benefited from tariff refunds of $184 million in 2026, which the filing does not guarantee will recur.",
+        "claims": [
+          {
+            "claim": "Core merchandise margin fell while the headline improvement came from gasoline and pharmacy mix",
+            "quote": "This increase was positively impacted by 19 basis points in warehouse ancillary and other businesses, primarily gasoline and pharmacy, offset by an 11 basis point decrease in core merchandise categories.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Dependence on U.S. and Canada leaves results exposed to a slowdown there",
+            "quote": "Any substantial slowing or sustained decline in these operations could materially adversely affect our business and financial results.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Worldwide renewal is lower than the U.S. and Canada figure the opponent cited",
+            "quote": "At the end of 2026, member renewal rates were 92.3% in the U.S. and Canada and 89.8% worldwide.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    }
+  ],
+  "citations": {
+    "bull": {
+      "verified": 6,
+      "total": 6
+    },
+    "bear": {
+      "verified": 6,
+      "total": 6
+    },
+    "overall": {
+      "verified": 12,
+      "total": 12,
+      "accuracy": 1.0
+    }
+  },
+  "judge": {
+    "scores": {
+      "bull": {
+        "evidence": 7,
+        "logic": 6,
+        "responsiveness": 6
+      },
+      "bear": {
+        "evidence": 8,
+        "logic": 7,
+        "responsiveness": 8
+      }
+    },
+    "winner": "bear",
+    "reasoning": "Both sides cite verified quotes, but the bear's evidence is more pointed: the verified 'core merchandise' 11 basis point decline directly undercuts the bull's ex-gasoline margin claim, and the 89.8% worldwide renewal figure qualifies the bull's 92.3% headline. The bull's rebuttal acknowledges the bear's points but answers the margin mix argument only partially, and it does not address the fee-increase and tariff-refund concerns with as much precision."
+  },
+  "usage": {
+    "calls": 5,
+    "input_tokens": 46766,
+    "output_tokens": 2795,
+    "cost_usd": 0.0061
+  }
+}

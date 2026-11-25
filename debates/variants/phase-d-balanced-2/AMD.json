@@ -1,0 +1,149 @@
+{
+  "ticker": "AMD",
+  "filing": {
+    "accession": "0000002488-26-000018",
+    "document": "amd-20251227.htm",
+    "date": "2026-02-04"
+  },
+  "model": "claude-haiku-5-5",
+  "created": "2026-11-25T04:35:30+00:00",
+  "bull_first": true,
+  "input_mode": "balanced",
+  "rounds": [
+    {
+      "round": 1,
+      "bull": {
+        "argument": "AMD's 2025 results make a strong case for the stock. Net revenue rose 34% to $34.6 billion, and Client and Gaming grew 51% to $14.6 billion, showing broad demand across segments. Data Center revenue increased 32% to $16.6 billion, driven by 5th generation EPYC processors and Instinct MI350 Series GPUs, and management describes an annual cadence of AI GPU leadership. The balance sheet also strengthened: cash and short-term investments rose to $10.6 billion from $5.1 billion, and $9.4 billion remains available for buybacks. The OpenAI agreement for 6 gigawatts of GPUs, with the first gigawatt powered by MI450 products, signals long-duration customer commitment to the AI roadmap. The filing does flag real risks, including the roughly $440 million net inventory charge tied to MI308 export controls and intense competition from Intel and Nvidia. Still, revenue momentum, expanding cash, and a major AI customer commitment outweigh these risks for a long-term investor.",
+        "claims": [
+          {
+            "claim": "Revenue grew strongly across the business in 2025.",
+            "quote": "net revenue increasing 34% to $34.6 billion, compared to $25.8 billion in 2024",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Cash and short-term investments grew substantially, strengthening the balance sheet.",
+            "quote": "Cash, cash equivalents and short-term investments as of December 27, 2025 were $10.6 billion, compared to $5.1 billion at the end of 2024.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "A large multi-year AI customer commitment supports future demand.",
+            "quote": "to deploy 6 gigawatts of AMD GPUs, with the deployment of the first gigawatt of capacity powered by our AMD Instinct MI450 series products",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull case rests on 2025 growth, but the filing shows how fragile that growth is. The company itself says the semiconductor industry is 'highly cyclical and has experienced severe downturns' and that it has 'incurred substantial losses in previous downturns.' Its Data Center AI demand depends on customers who may be 'unable to secure access to internal and external infrastructure' or 'lack, or be unable to, secure capital to fund their required AI infrastructure' and may request 'deferred-payment arrangements from vendors.' The OpenAI warrant for up to 160 million shares vests only on milestones and stock price targets, and the filing notes that 'None of the warrant shares met the vesting or exercise conditions,' so the headline commitment has produced no financial benefit yet. Export controls already forced roughly $800 million of MI308 inventory charges before a partial reversal. Meanwhile, the filing warns that Nvidia's Intel partnership 'may result in increased competition and pricing pressure.' Debt also rose to $3.3 billion from $1.8 billion. Growth at this level in a cyclical, policy-exposed industry is a reason for caution.",
+        "claims": [
+          {
+            "claim": "The company itself acknowledges the industry's cyclicality and past substantial losses.",
+            "quote": "The semiconductor industry is highly cyclical and has experienced severe downturns that have materially adversely affected, and may continue to materially adversely affect, our business in the future.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The OpenAI commitment has not yet produced financial benefit because warrant conditions are unmet.",
+            "quote": "None of the warrant shares met the vesting or exercise conditions and the warrant had no impact to our financial statements for the year ended December 27, 2025.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Customers' ability to fund AI infrastructure could delay or reduce demand for AMD products.",
+            "quote": "Customers may also lack, or be unable to, secure capital to fund their required AI infrastructure and may request alternative financing or deferred‑payment arrangements from vendors and suppliers.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "bull": {
+        "argument": "The bear case is right that the risks are real, but it overstates them against the evidence. Cyclicality is a risk the filing describes generally; the specific 2025 numbers show growth that broadened across segments: Data Center up 32%, Client and Gaming up 51%. The export-control hit was real, but the filing says about $360 million of the roughly $800 million charge was reversed after licenses were granted and shipments began, so the net effect was smaller than the headline. The warrant point cuts the other way: the OpenAI warrant is a cost-free incentive that vests only if AMD wins actual GPU purchases and stock targets are met, so it aligns OpenAI's commitment with AMD's shareholders rather than representing a liability. Debt rose to $3.3 billion, but cash and short-term investments rose to $10.6 billion over the same period, and the company still repurchased $1.3 billion of stock. The Nvidia-Intel partnership is a genuine competitive threat, and the filing says so; that is a reason to monitor execution, not a reason to reject a business with 34% revenue growth and a 6-gigawatt customer agreement.",
+        "claims": [
+          {
+            "claim": "Export-control charges were partly reversed, reducing the net impact.",
+            "quote": "during the fourth quarter of fiscal year 2025, we began shipping products and reversed approximately $360 million of the inventory and related charges recorded earlier in the year",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Cash and short-term investments grew faster than debt, leaving the balance sheet stronger.",
+            "quote": "Cash, cash equivalents and short-term investments as of December 27, 2025 were $10.6 billion, compared to $5.1 billion at the end of 2024.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Growth was broad across segments, not limited to one product line.",
+            "quote": "Client and Gaming segment net revenue of $14.6 billion in 2025 increased by 51% compared to $9.6 billion in 2024",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull case treats the warrant as free, but the filing lists it as a real transfer to OpenAI: up to 160 million shares at $0.01 each. If the tranches vest, existing shareholders are diluted, and the filing does not describe that as cost-free. The $360 million reversal is also incomplete relief. Gross margin still absorbed about $440 million of net charges, and the filing says that was only 'partially offset' by the 1% margin gain. Cash also needs context: it rose alongside a near doubling of debt, to $3.3 billion from $1.8 billion, and the 2025 acquisition of ZT Systems included 8.3 million shares. Buybacks of $1.3 billion were funded while the company was carrying more borrowing. The OpenAI deal is six gigawatts, but the filing says none of the warrant conditions has been met, and the Nvidia-Intel partnership 'may result in increased competition and pricing pressure.' Growth of 34% in a cyclical industry, with policy and customer-financing risks, is a reason for caution, not confidence.",
+        "claims": [
+          {
+            "claim": "The OpenAI warrant is a potential dilution cost to shareholders, not a cost-free incentive.",
+            "quote": "Concurrent with the agreement, we issued to OpenAI a warrant to purchase up to an aggregate of 160 million shares of AMD’s common stock at an exercise price of $0.01 per share.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Export-control charges still reduced gross margin despite the partial reversal.",
+            "quote": "partially offset by approximately $440 million of net inventory and related charges associated with the U.S. government export control",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Total debt rose sharply over the year, adding balance-sheet leverage alongside the buybacks.",
+            "quote": "Our aggregate principal amount of total debt as of December 27, 2025 was $3.3 billion, compared to $1.8 billion as of December 28, 2024.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    }
+  ],
+  "citations": {
+    "bull": {
+      "verified": 6,
+      "total": 6
+    },
+    "bear": {
+      "verified": 6,
+      "total": 6
+    },
+    "overall": {
+      "verified": 12,
+      "total": 12,
+      "accuracy": 1.0
+    }
+  },
+  "judge": {
+    "scores": {
+      "bull": {
+        "evidence": 7,
+        "logic": 6,
+        "responsiveness": 6
+      },
+      "bear": {
+        "evidence": 8,
+        "logic": 7,
+        "responsiveness": 7
+      }
+    },
+    "winner": "bear",
+    "reasoning": "Both sides cite verified quotes, but the bear's round-2 evidence (warrant dilution, the $440M net charge, and the $3.3B debt rise) directly targets the bull's claims, while the bull's cash-versus-debt framing and the 'cost-free' warrant characterization are weakened by the verified warrant language. The bull's $360M reversal point is verified but the bear rightly notes it doesn't eliminate the net charge, and the bull's round-2 use of the cash figure repeats round 1 rather than engaging the leverage concern. The bear edges it on responsiveness and evidence, though the bull's growth and cash evidence keeps the debate close."
+  },
+  "usage": {
+    "calls": 5,
+    "input_tokens": 46281,
+    "output_tokens": 3736,
+    "cost_usd": 0.0065
+  }
+}

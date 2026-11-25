@@ -1,0 +1,149 @@
+{
+  "ticker": "AAPL",
+  "filing": {
+    "accession": "0000320193-26-000026",
+    "document": "aapl-20260926.htm",
+    "date": "2026-11-03"
+  },
+  "model": "claude-haiku-5-5",
+  "created": "2026-11-25T04:18:47+00:00",
+  "bull_first": true,
+  "input_mode": "full",
+  "rounds": [
+    {
+      "round": 1,
+      "bull": {
+        "argument": "The filing shows a company growing faster and more profitably than it has in recent years. Total net sales rose 15% to $478,834 million in 2026, up from 6% growth in 2025, with iPhone up 21% and Services up 13% to $123,301 million. Total gross margin percentage expanded to 48.8% from 46.9%, and Services gross margin percentage reached 76.2%. Management is also returning substantial capital: it repurchased $85.8 billion of stock and paid $15.7 billion in dividends during 2026, and it authorized a new repurchase program of up to $100 billion. Liquidity of $136.9 billion is described as sufficient for the next 12 months and beyond. The risk section is extensive, and it acknowledges memory and storage cost pressure and possible margin downside, so the bull case must account for those headwinds. Still, the reported results show that the company has absorbed these pressures so far while expanding margins and growing revenue.",
+        "claims": [
+          {
+            "claim": "Total net sales grew 15% in 2026.",
+            "quote": "Total net sales $ 478,834 15 % $ 416,161 6 % $ 391,035",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Total gross margin percentage expanded year over year.",
+            "quote": "Total gross margin percentage 48.8 % 46.9 % 46.2 %",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management is returning substantial capital and has authorized a new buyback.",
+            "quote": "In April 2026, the Company announced a new share repurchase program of up to $100 billion",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull case leans on 2026 results that were partly flattered by one-time or mix-driven items. The filing says Products gross margin rose 'primarily due to product mix and tariff refunds,' so part of the expansion came from refunds that may not recur. The company also states that it 'expects these trends to intensify for memory and storage components,' and that price increases 'may also reduce demand.' Operating expenses rose 22% to $75,539 million, faster than sales, with R&D up 32% on AI infrastructure. Management concedes that 'gross margins will be subject to volatility and downward pressure.' The filing also reports that a 'significant portion' of revenue depends on iPhone, that Greater China and tariffs add exposure, and that Google search licensing income could be hit by remedies. Heavy buybacks of $85.8 billion funded partly by $78.7 billion of notes add financial leverage the bull case does not weigh.",
+        "claims": [
+          {
+            "claim": "Part of the 2026 margin expansion came from tariff refunds that may not recur.",
+            "quote": "Products gross margin and gross margin percentage increased during 2026 compared to 2025 primarily due to product mix and tariff refunds",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management expects component cost pressure to worsen, not ease.",
+            "quote": "The Company expects these trends to intensify for memory and storage components.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management itself expects gross margins to face downward pressure.",
+            "quote": "the Company believes, in general, gross margins will be subject to volatility and downward pressure.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "bull": {
+        "argument": "The bear case raises real issues, and the filing admits them. But the 2026 numbers still show a business that grew and got more profitable. Net sales rose 15% to $478,834 million, and total gross margin reached 48.8% versus 46.9%. The tariff refund point cuts less than it seems. The filing says the refunds were recognized as a reduction of product cost of sales, so they are a real part of the margin, but Services gross margin also rose, to 76.2% from 75.4%, with no refund involved, and Services net sales grew 13% to $123,301 million. Operating expenses rose 22%, but R&D growth reflects investment in AI infrastructure, and SG&A grew 8%, a slower pace than sales. The leverage concern is also smaller than it sounds: the company holds $136.9 billion in cash and marketable securities against $78.7 billion of notes, and management says that liquidity is sufficient for the next 12 months and beyond. The bear case is right that risks remain, especially memory costs, tariffs, and Google licensing. The filing, however, shows these pressures have so far been absorbed while revenue and margins grew.",
+        "claims": [
+          {
+            "claim": "Services gross margin percentage rose without a tariff refund.",
+            "quote": "Services gross margin percentage increased during 2026 compared to 2025 primarily due to a different mix of services",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Cash and securities exceed the fixed-rate notes outstanding.",
+            "quote": "balances of cash, cash equivalents and marketable securities, which totaled $136.9 billion as of September 26, 2026",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management says liquidity is sufficient beyond 12 months.",
+            "quote": "will be sufficient to satisfy its cash requirements and capital return program over the next 12 months and beyond",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull case treats 2026 as proof that pressures are absorbed, but the filing shows the margin gain was not clean. Products margin rose 'primarily due to product mix and tariff refunds, partially offset by higher costs, including memory.' Refunds came from a Supreme Court ruling on tariffs that were struck down, so they are non-recurring by nature. Services margin is also not as clean as it looks: its percentage rose only on 'a different mix of services, partially offset by higher costs.' Services gross margin dollars rose, but total growth depends on iPhone, which rose 21% on 'higher net sales of Pro models,' while the filing says 'a significant portion' of net sales comes from one product category. Operating expenses grew 22% against 15% sales growth, with R&D up 32%, and the filing ties that to AI spending whose returns it says may not materialize. Management also warns that memory costs will 'intensify.' Cash of $136.9 billion is real, but buybacks of $85.8 billion exceeded that year's dividends and the new $100 billion program sits on top of $78.7 billion of notes.",
+        "claims": [
+          {
+            "claim": "Products margin gain relied partly on tariff refunds from a court ruling that may not recur.",
+            "quote": "Products gross margin and gross margin percentage increased during 2026 compared to 2025 primarily due to product mix and tariff refunds",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Operating expenses grew faster than net sales, led by AI-related R&D.",
+            "quote": "Research and development $ 45,765 32 % $ 34,550 10 %",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management expects memory and storage cost pressure to intensify.",
+            "quote": "The Company expects these trends to intensify for memory and storage components.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    }
+  ],
+  "citations": {
+    "bull": {
+      "verified": 6,
+      "total": 6
+    },
+    "bear": {
+      "verified": 6,
+      "total": 6
+    },
+    "overall": {
+      "verified": 12,
+      "total": 12,
+      "accuracy": 1.0
+    }
+  },
+  "judge": {
+    "scores": {
+      "bull": {
+        "evidence": 8,
+        "logic": 7,
+        "responsiveness": 8
+      },
+      "bear": {
+        "evidence": 8,
+        "logic": 7,
+        "responsiveness": 7
+      }
+    },
+    "winner": "tie",
+    "reasoning": "Both sides cite verified quotes from the filing, so evidence quality is roughly even. The bull effectively rebutted the tariff-refund point by noting Services margin rose without any refund, and it addressed leverage with the cash-versus-notes comparison. The bear's strongest points, non-recurring refunds, intensifying memory costs, and R&D-driven opex growth, were only partly answered, so the debate is close to balanced."
+  },
+  "usage": {
+    "calls": 5,
+    "input_tokens": 127380,
+    "output_tokens": 2443,
+    "cost_usd": 0.014
+  }
+}

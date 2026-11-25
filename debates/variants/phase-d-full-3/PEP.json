@@ -1,0 +1,149 @@
+{
+  "ticker": "PEP",
+  "filing": {
+    "accession": "0000077476-26-000007",
+    "document": "pep-20251227.htm",
+    "date": "2026-02-03"
+  },
+  "model": "claude-haiku-5-5",
+  "created": "2026-11-25T04:18:01+00:00",
+  "bull_first": true,
+  "input_mode": "full",
+  "rounds": [
+    {
+      "round": 1,
+      "bull": {
+        "argument": "PepsiCo's FY2025 filing shows a business with substantial scale and cash generation despite headwinds. Net revenue reached $93,925 million, up 2%, and free cash flow rose 9% to $8,200 million. The company returned about $8.6 billion to shareholders through dividends and buybacks in 2025 and announced a 4% dividend increase for 2026. Core ROIC reached 19.1% on a net basis excluding items affecting comparability, and reported ROIC was 14.3%. Management is pursuing productivity savings and portfolio reshaping, with acquisitions such as poppi and Siete adding growth brands. The filing is candid that operating profit fell 11% on impairments, commodity costs and volume declines, and that Rockstar impairments were large. Those are real negatives, but the cash flow base and capital returns support the thesis that the franchise remains durable.",
+        "claims": [
+          {
+            "claim": "Free cash flow grew 9% in 2025 despite pressure on operating profit.",
+            "quote": "Free cash flow, non-GAAP measure $ 8,200 $ 7,531 9 %",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The company plans to return about $8.9 billion to shareholders in 2026, signaling confidence in cash generation.",
+            "quote": "We expect to return a total of approximately $8.9 billion to shareholders in 2026, comprising dividends of approximately $7.9 billion and share repurchases of approximately $1.0 billion.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Core returns on invested capital remain strong on a net basis, excluding items affecting comparability.",
+            "quote": "Core Net ROIC, non-GAAP measure 19.1 %",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull case leans on cash flow and returns, but the filing shows the earnings base is eroding. Operating profit fell 11% to $11,498 million, reported operating margin dropped 1.8 points to 12.2%, and net income fell 14%. Organic volume declined 2%, and PBNA unit volume fell 3%. The $1.9 billion of impairment charges, mostly Rockstar, reflect management's own admission that prior valuations were too high. Free cash flow of $8,200 million was helped by lower capital spending ($4,415 million versus $5,318 million), not only operating strength; operating cash flow actually declined 3%. Shareholder payouts of roughly $8.6 billion in 2025 and a planned $8.9 billion in 2026 exceed free cash flow, funded partly by $8.2 billion of new long-term debt. Core ROIC is a non-GAAP figure that adds back the very charges the filing describes as recurring. Meanwhile, the risk factors cite GLP-1 drugs, private label, tariffs, Mexico's sugar tax increase, and a 6,150 million restructuring program running to 2030.",
+        "claims": [
+          {
+            "claim": "Operating profit fell 11% and operating margin declined, showing weaker earnings quality.",
+            "quote": "Operating profit decreased 11%, primarily driven by certain operating cost increases, impairment charges related to the Rockstar brand, a decline in organic volume",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Shareholder returns in 2026 are planned to exceed the current free cash flow level, financed in part by debt.",
+            "quote": "We expect to return a total of approximately $8.9 billion to shareholders in 2026, comprising dividends of approximately $7.9 billion and share repurchases of approximately $1.0 billion.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Operating cash flow declined, and the free cash flow increase depended on lower capital spending.",
+            "quote": "The decrease in operating cash flow primarily reflects increased cash payments for restructuring charges and cash payments for acquisition and divestiture-related charges.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "bull": {
+        "argument": "The bear case is right about the earnings trend, and I concede it: operating profit fell 11%, margin dropped 1.8 points, and organic volume declined. But the rebuttal is about what drives the franchise. Free cash flow rose 9% to $8,200 million, and the filing's own reconciliation shows that comparison is not built on lower capex alone; the bear's claim that operating cash flow fell 3% is accurate, yet $12,087 million of operating cash remains large, and the decline is attributed to cash restructuring and acquisition-related payments, which are the costs of the productivity program the filing describes. Shareholder payouts exceeding free cash flow are a real tension, but the company is funding them from a balance sheet with $9,159 million of cash and ongoing Tier 1 commercial paper access. The $1,946 million of impairment charges are non-cash, and the core ROIC metric is a company-defined measure, which I should present as such, not as proof of value. The Rockstar write-down reflects a specific brand reset, not a broad collapse across the portfolio. The strongest case rests on the disciplined capital return and a cash base large enough to absorb the restructuring and tax costs the risks describe.",
+        "claims": [
+          {
+            "claim": "Free cash flow grew 9% to $8,200 million, though the bear is right that lower capex contributed.",
+            "quote": "Free cash flow, non-GAAP measure $ 8,200 $ 7,531 9 %",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The $1.9 billion impairment charges are non-cash, which limits their effect on cash generation.",
+            "quote": "Impairment and other charges 1,946 714 1,230",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Operating cash flow decline was attributed to restructuring and acquisition-related cash payments.",
+            "quote": "The decrease in operating cash flow primarily reflects increased cash payments for restructuring charges and cash payments for acquisition and divestiture-related charges.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull concedes the core problem, and that concession matters. Operating profit fell 11%, margin dropped 1.8 points, and organic volume declined, so the earnings base is weakening. On cash, the bull's point that the free cash flow rise was not driven by capex alone is fair, but the filing's own numbers do not support a clean story: operating cash flow fell 3%, and free cash flow still depended on capital spending dropping $903 million. Restructuring is a real cost, but the filing says the 2019 Productivity Plan now runs through 2030 with a total expected charge of about $6.15 billion, so the cash drain is open-ended, not a one-time bump. The bull says the balance sheet can absorb payouts, yet shareholder returns of $8.6 billion in 2025 and about $8.9 billion planned for 2026 exceed free cash flow, and the company raised $8.2 billion of long-term debt that year. Cash of $9,159 million is real, but it is partly offset by debt of $49,182 million (short-term plus long-term). The Rockstar write-down was $1.9 billion total across segments, not a single-brand footnote. The risks listed, including GLP-1 drugs, SNAP changes, Mexico's sugar tax rising to 3.08 pesos per liter, and Texas warning labels, are all identified as current pressures. Durability is not proven when the company is borrowing to fund returns.",
+        "claims": [
+          {
+            "claim": "Shareholder payouts exceed free cash flow and are partly debt-funded.",
+            "quote": "We expect to return a total of approximately $8.9 billion to shareholders in 2026, comprising dividends of approximately $7.9 billion and share repurchases of approximately $1.0 billion.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The restructuring program is open-ended, with charges running through 2030.",
+            "quote": "We expect to incur the majority of the remaining pre-tax charges and cash expenditures through 2027, with the balance to be incurred through 2030.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Operating cash flow declined, and the free cash flow increase relied on lower capital spending.",
+            "quote": "The decrease in operating cash flow primarily reflects increased cash payments for restructuring charges and cash payments for acquisition and divestiture-related charges.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    }
+  ],
+  "citations": {
+    "bull": {
+      "verified": 6,
+      "total": 6
+    },
+    "bear": {
+      "verified": 6,
+      "total": 6
+    },
+    "overall": {
+      "verified": 12,
+      "total": 12,
+      "accuracy": 1.0
+    }
+  },
+  "judge": {
+    "scores": {
+      "bull": {
+        "evidence": 7,
+        "logic": 6,
+        "responsiveness": 7
+      },
+      "bear": {
+        "evidence": 8,
+        "logic": 8,
+        "responsiveness": 8
+      }
+    },
+    "winner": "bear",
+    "reasoning": "All quotes in both sides are verified, but the bear builds more on the verified evidence: operating profit decline, shareholder payouts exceeding free cash flow, and the open-ended restructuring through 2030 directly undercut the bull's durability thesis. The bull concedes the earnings trend and reasonably qualifies its ROIC claim, but it leans on non-GAAP metrics and the balance sheet without fully answering the debt-funded payout point."
+  },
+  "usage": {
+    "calls": 5,
+    "input_tokens": 415607,
+    "output_tokens": 2881,
+    "cost_usd": 0.043
+  }
+}

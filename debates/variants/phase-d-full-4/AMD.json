@@ -1,0 +1,149 @@
+{
+  "ticker": "AMD",
+  "filing": {
+    "accession": "0000002488-26-000018",
+    "document": "amd-20251227.htm",
+    "date": "2026-02-04"
+  },
+  "model": "claude-haiku-5-5",
+  "created": "2026-11-25T04:21:57+00:00",
+  "bull_first": true,
+  "input_mode": "full",
+  "rounds": [
+    {
+      "round": 1,
+      "bull": {
+        "argument": "AMD's FY2025 filing shows strong momentum. Net revenue rose 34% to $34.6 billion, and Data Center revenue grew 32% to $16.6 billion on demand for EPYC processors and Instinct MI350 Series GPUs. Client and Gaming revenue increased 51% to $14.6 billion, with a 31% rise in processor unit shipments. Gross margin improved to 50% from 49%, even after roughly $440 million of net charges tied to the MI308 export restriction. Operating income more than doubled to $3.7 billion from $1.9 billion. Cash and short-term investments rose to $10.6 billion from $5.1 billion, and operating cash flow reached $7.7 billion including discontinued operations. The company also returned $1.3 billion to shareholders and retains $9.4 billion of repurchase authorization. The risks are real: the filing cites export controls, customer concentration, and memory shortages. Still, the financial results show a company that has grown fast while funding its AI roadmap from its own cash flow.",
+        "claims": [
+          {
+            "claim": "Net revenue grew 34% year over year to $34.6 billion.",
+            "quote": "net revenue increasing 34% to $34.6 billion, compared to $25.8 billion in 2024",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Cash and short-term investments more than doubled, supporting funding of the AI strategy.",
+            "quote": "Cash, cash equivalents and short-term investments as of December 27, 2025 were $10.6 billion, compared to $5.1 billion at the end of 2024.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Gross margin improved despite the export-control charge.",
+            "quote": "Gross margin of 50% increased by 1% compared to 49% in 2024, primarily due to product mix partially offset by approximately $440 million of net inventory and related charges",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The opponent's growth figures are real, but the filing shows how much of that growth rests on fragile footing. Management itself warns that the AI demand driving Data Center is uncertain: \"both the near-term and long-term trajectory of such generative AI solutions is unknown,\" and customers may be unable to secure data center capacity, energy, or financing. The filing also reports that customer concentration is high, stating that \"a small number of customers will continue to account for a significant part of our revenue.\" Export controls already forced roughly $800 million in inventory and related charges on MI308 products, later partly reversed, with the company noting there is \"no assurance that the U.S. government will grant licenses at all or in a timely manner.\" Cash flow was also flattered by a $1.2 billion discontinued-operations contribution from the divested ZT Manufacturing Business, and the tax line swung to a benefit driven by an $853 million release of uncertain tax positions. Operating expenses grew sharply, with R&D up 25% and MG&A up 52%. Finally, the company carries $3.3 billion of debt and a 6-gigawatt OpenAI arrangement that is contingent on milestones not yet met.",
+        "claims": [
+          {
+            "claim": "AI demand that drives Data Center growth is uncertain in duration and scale",
+            "quote": "both the near-term and long-term trajectory of such generative AI solutions is unknown",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Revenue depends heavily on a small number of customers",
+            "quote": "we expect that a small number of customers will continue to account for a significant part of our revenue",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Export controls caused large charges and licensing remains uncertain",
+            "quote": "there is no assurance that the U.S. government will grant licenses at all or in a timely manner",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "bull": {
+        "argument": "The opponent is right that risks are real, but several of their points cut less than they suggest. The $800 million MI308 charge was partly reversed: about $360 million came back in Q4 once shipments began, and the net charge in the gross margin discussion was roughly $440 million, yet gross margin still rose to 50%. The $853 million tax benefit is a non-cash release that lifted results in 2025, but it is disclosed transparently and does not change the operating business. The cash picture is also stronger than the opponent implies. Operating cash flow from continuing operations was $6.5 billion, against $3.0 billion in 2024, and the $1.2 billion from discontinued operations is additional, not a substitute. Operating income more than doubled to $3.7 billion. Management's stated expectation is that existing cash, operating cash flow and the $3.0 billion revolver will fund operations for the next 12 months and beyond. The OpenAI warrant had no financial statement impact because no milestones were met, so it is an option on future demand, not a current liability. Concentration and AI demand uncertainty are genuine risks, but they are the price of a fast-growing franchise, and the reported numbers already show that growth converting into cash and profit.",
+        "claims": [
+          {
+            "claim": "Operating cash flow from continuing operations rose sharply year over year.",
+            "quote": "Net cash provided by operating activities of continuing operations was $6.5 billion in 2025",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management expects existing resources to fund operations over the next 12 months and beyond.",
+            "quote": "we believe our cash, cash equivalents, short-term investments and cash flows from operations along with our revolving credit facility and commercial paper program will be sufficient to fund operations",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Part of the export-control charge was reversed once shipments resumed.",
+            "quote": "During the fourth quarter of fiscal year 2025, we began shipping products and reversed approximately $360 million of the inventory and related charges recorded earlier in the year.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The opponent's rebuttal treats the numbers as settled, but the filing supports caution on several points. First, the earnings improvement is less clean than it looks. Income tax went from a $381 million provision to a $103 million benefit, and the filing attributes this mainly to an $853 million release of uncertain tax positions, which is a one-time item, not operating performance. Other income of $577 million, driven by \"higher unrealized gains from long-term investments,\" also flatters pre-tax results and can reverse. Second, cash flow is less robust than the headline. Operating cash flow of $6.5 billion from continuing operations came alongside a $2.2 billion inventory build, and the company had $2.4 billion of net working capital outflows. Strip out the $1.2 billion from the divested ZT Manufacturing Business, which the filing says will not recur in the same form, and the core business is growing its balance sheet faster than its cash. Third, the cost base is rising faster than revenue: R&D grew 25% and MG&A grew 52%, against revenue growth of 34%. The opponent's point that the warrant has no current impact is accurate, but it is also a sign that demand from the largest AI customer is still contingent. The $3.3 billion debt balance has also risen from $1.8 billion, and the revolver carries a minimum interest coverage covenant.",
+        "claims": [
+          {
+            "claim": "The 2025 tax line benefit came mainly from a one-time release of uncertain tax positions",
+            "quote": "an $853 million benefit related to the release of uncertain tax positions pertaining to the reasonable cause relief for dual consolidated losses",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Operating cash flow was supported by a large inventory build",
+            "quote": "a $2.2 billion increase in inventory primarily to support the continued ramp of Data Center products in advanced process technology nodes",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Operating expenses are growing faster than revenue",
+            "quote": "Marketing, general and administrative expenses of $4.1 billion in 2025 increased by $1.4 billion, or 52%",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    }
+  ],
+  "citations": {
+    "bull": {
+      "verified": 6,
+      "total": 6
+    },
+    "bear": {
+      "verified": 6,
+      "total": 6
+    },
+    "overall": {
+      "verified": 12,
+      "total": 12,
+      "accuracy": 1.0
+    }
+  },
+  "judge": {
+    "scores": {
+      "bull": {
+        "evidence": 7,
+        "logic": 7,
+        "responsiveness": 7
+      },
+      "bear": {
+        "evidence": 7,
+        "logic": 7,
+        "responsiveness": 7
+      }
+    },
+    "winner": "tie",
+    "reasoning": "Both sides cite verified quotes from the filing, and each lands real points: the bull on growth, margins, and continuing-operations cash flow, the bear on tax-benefit quality, inventory build, and rising opex. The bull's rebuttal effectively reframes the MI308 charge and the discontinued-operations cash, but the bear's response on working capital and the one-time tax release is substantive and partly unrebutted, so neither side clearly prevails."
+  },
+  "usage": {
+    "calls": 5,
+    "input_tokens": 203929,
+    "output_tokens": 2812,
+    "cost_usd": 0.0218
+  }
+}

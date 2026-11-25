@@ -1,0 +1,149 @@
+{
+  "ticker": "META",
+  "filing": {
+    "accession": "0001628280-26-003942",
+    "document": "meta-20251231.htm",
+    "date": "2026-01-29"
+  },
+  "model": "claude-haiku-5-5",
+  "created": "2026-11-25T04:34:38+00:00",
+  "bull_first": true,
+  "input_mode": "balanced",
+  "rounds": [
+    {
+      "round": 1,
+      "bull": {
+        "argument": "The filing shows a business growing fast and generating very large profits. Full-year 2025 revenue was $200.97 billion, up 22% year-over-year, and income from operations rose 20% to $83.28 billion. Ad impressions grew 12% and average price per ad rose 9%, meaning growth came from both more ads delivered and higher pricing per ad. Family daily active people reached 3.58 billion, up 7%, giving the advertising platform a very large audience. Net income was $60.46 billion. Management also says its AI investments are already producing results: it states that its AI-powered discovery engine has 'already seen results in improved user engagement and monetization.' The Reality Labs losses (about $19.19 billion) are large, but the filing presents them as a deliberate long-term bet funded by the core business, not a sign of weakness there. The risks are real: the filing warns of regulatory limits on ad targeting, competition from TikTok, and a 17-point tax-rate hit from a valuation allowance. Still, the core growth and profitability figures are strong.",
+        "claims": [
+          {
+            "claim": "Full-year 2025 revenue grew 22% to a record level",
+            "quote": "Total revenue for 2025 was $200.97 billion, an increase of 22% compared to 2024, due to an increase in advertising revenue.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Both ad volume and pricing rose, driving growth",
+            "quote": "Ad impressions delivered across our Family of Apps in 2025 increased 12% year-over-year, and our average price per ad increased 9% year-over-year.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management reports AI investments are already improving engagement and monetization",
+            "quote": "which we have already seen results in improved user engagement and monetization of our products",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The headline growth is real, but the filing shows the engine that produces it is under structural pressure. Substantially all revenue comes from advertising on Facebook and Instagram, and marketers have no long-term commitments: 'our marketers do not have long-term advertising commitments with us.' The company also concedes that its own privacy and targeting changes 'reduce our ability to effectively target ads' and will 'continue to adversely affect our advertising business.' Growth in 2025 leaned on a 12% rise in impressions and a 9% rise in price per ad, yet the filing warns that Reels 'monetizes at a lower rate than our Feed and Stories products' and expects that to persist. Meanwhile, costs rose 24% to $117.69 billion, and management says AI will 'require significantly increased investment in infrastructure' while Reality Labs will post losses 'similar to 2025' of roughly $19.19 billion. Capital expenditures reached $72.22 billion. Investors are being asked to fund a long, costly build-out whose payoff is acknowledged to be a decade away, and whose success depends on a core business that the filing says faces ongoing regulatory and platform headwinds.",
+        "claims": [
+          {
+            "claim": "Marketers have no long-term commitments, so revenue can fall quickly if budgets shift.",
+            "quote": "our marketers do not have long-term advertising commitments with us",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management admits its own data-practice changes reduce ad targeting effectiveness and will keep hurting advertising.",
+            "quote": "Some of these changes reduce our ability to effectively target ads, which has to some extent adversely affected, and will continue to adversely affect, our advertising business.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Reality Labs losses are expected to persist at similar levels, and the payoff is long-term.",
+            "quote": "we expect our 2026 RL operating losses to remain similar to 2025",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "bull": {
+        "argument": "The opponent's strongest points are real, but they describe risks the filing already prices into a business that is still compounding. Yes, marketers lack long-term commitments, but that is common in the industry, and the filing reports 22% revenue growth and 12% more ad impressions regardless. Yes, privacy changes reduce targeting precision, but the filing says the company is offsetting this with privacy-enhancing technology, marketer data-sharing tools, and AI, and that its improvements 'are continuing to drive improved results for advertisers.' Cost growth of 24% is a fair concern, yet operating income still rose 20% to $83.28 billion and Family of Apps operating margin was 52%. Reality Labs losses of about $19.19 billion are large, but they are a bounded segment that management says is funded by core profits, and the filing says the company is 'investing now because we believe this will become the next computing platform.' Capital expenditures of $72.22 billion are offset by $60.46 billion of net income. The bull case rests on a business that is growing, highly profitable, and still earning enough to fund its bets.",
+        "claims": [
+          {
+            "claim": "Revenue growth and operating income growth continued despite targeting headwinds",
+            "quote": "Income from operations for 2025 was $83.28 billion, an increase of $13.90 billion, or 20%, compared to 2024",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management says its ad improvements are continuing to drive better advertiser results",
+            "quote": "We believe our ongoing improvements to ad targeting and measurement are continuing to drive improved results for advertisers.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Reality Labs losses are framed as a long-term bet funded by core profits",
+            "quote": "our ability to support our RL efforts is dependent on generating sufficient profits from other areas of our business",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull case leans on headline growth, but the filing describes a core engine under strain. Management says its own changes 'reduce our ability to effectively target ads' and will keep weighing on advertising, and it concedes the offsets are long-term: 'we expect that some of these efforts will be long-term initiatives.' Growth also depends on lower-monetizing products. Reels 'monetizes at a lower rate than our Feed and Stories products,' and the filing expects that to persist. Revenue rose 22%, but operating margin for Family of Apps fell from 54% to 52%, and total costs rose 24%. Capital expenditures of $72.22 billion are not fully covered by net income of $60.46 billion once you account for $26.26 billion of buybacks and $5.32 billion of dividends, and the filing says AI 'will require significantly increased investment in infrastructure.' Reality Labs losses are described as dependent on 'generating sufficient profits from other areas of our business,' so the bet rests on the very engine under pressure. Rising spending and falling margins can persist even while revenue grows.",
+        "claims": [
+          {
+            "claim": "Management concedes its offsets to ad-targeting losses are long-term, not yet proven.",
+            "quote": "we expect that some of these efforts will be long-term initiatives",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Family of Apps operating margin declined, and costs grew faster than the revenue in the core segment.",
+            "quote": "Family of Apps Revenue $ 198,759 $ 162,355 22% $ 2,207 $ 2,146 3%",
+            "verified": false,
+            "score": 83.1
+          },
+          {
+            "claim": "Reality Labs' bet depends on profits from the core business, and AI will need significantly more infrastructure spending.",
+            "quote": "our ability to support our RL efforts is dependent on generating sufficient profits from other areas of our business",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    }
+  ],
+  "citations": {
+    "bull": {
+      "verified": 6,
+      "total": 6
+    },
+    "bear": {
+      "verified": 5,
+      "total": 6
+    },
+    "overall": {
+      "verified": 11,
+      "total": 12,
+      "accuracy": 0.917
+    }
+  },
+  "judge": {
+    "scores": {
+      "bull": {
+        "evidence": 8,
+        "logic": 7,
+        "responsiveness": 7
+      },
+      "bear": {
+        "evidence": 6,
+        "logic": 7,
+        "responsiveness": 7
+      }
+    },
+    "winner": "bull",
+    "reasoning": "Bull's quotes are all verified and directly support growth, pricing, and profitability claims. Bear's strongest verified quotes support the risks, but its margin-decline claim rests on an unverified table quote that does not show the stated 54% to 52% margin change, weakening its evidence. Bull responds to most of Bear's points with verified counter-evidence, while Bear's cost and capex arguments are reasonable but less cleanly tied to verified data."
+  },
+  "usage": {
+    "calls": 5,
+    "input_tokens": 44227,
+    "output_tokens": 2672,
+    "cost_usd": 0.0058
+  }
+}

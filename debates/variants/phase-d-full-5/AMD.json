@@ -1,0 +1,149 @@
+{
+  "ticker": "AMD",
+  "filing": {
+    "accession": "0000002488-26-000018",
+    "document": "amd-20251227.htm",
+    "date": "2026-02-04"
+  },
+  "model": "claude-haiku-5-5",
+  "created": "2026-11-25T04:28:19+00:00",
+  "bull_first": true,
+  "input_mode": "full",
+  "rounds": [
+    {
+      "round": 1,
+      "bull": {
+        "argument": "AMD's 2025 results show strong momentum. Net revenue rose 34% to $34.6 billion, Data Center revenue grew 32% to $16.6 billion, and Client and Gaming revenue rose 51% to $14.6 billion. Gross margin improved to 50% from 49% despite roughly $440 million of net charges tied to the MI308 export restriction. Operating income more than doubled to $3.7 billion, and operating cash flow reached $7.7 billion including discontinued operations. Cash and short-term investments grew to $10.6 billion, and the company still has $9.4 billion remaining under its repurchase authorization. The filing also describes an AI roadmap, including the MI350 Series GPUs, the 6 gigawatt OpenAI agreement, and Helios rack-scale platform. The risks are real: export controls, customer concentration, memory shortages, and intense competition from Intel and Nvidia are all disclosed. Still, the company's revenue growth, margin expansion, and cash generation give it substantial room to absorb these pressures.",
+        "claims": [
+          {
+            "claim": "Revenue grew strongly across the company in 2025.",
+            "quote": "In 2025, we delivered strong annual revenue growth with net revenue increasing 34% to $34.6 billion, compared to $25.8 billion in 2024.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Gross margin improved despite a major export-control charge.",
+            "quote": "Gross margin of 50% increased by 1% compared to 49% in 2024, primarily due to product mix partially offset by approximately $440 million of net inventory and related charges",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Cash position strengthened significantly during the year.",
+            "quote": "Cash, cash equivalents and short-term investments as of December 27, 2025 were $10.6 billion, compared to $5.1 billion at the end of 2024.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The opponent's growth figures are real, but the filing shows how fragile that growth is. Revenue depends on a small number of customers: the filing says AMD 'depend[s] on a small number of customers for a substantial portion of our business.' Data Center demand rests on AI capacity that customers may be unable to power, finance, or build, and the filing warns that customers 'may request alternative financing or deferred-payment arrangements from vendors and suppliers.' AMD also disclosed a 6 gigawatt OpenAI commitment while the filing says it may be required to 'satisfy financial obligations under guarantees' and long-term capacity purchase agreements. Export controls already forced about $800 million of inventory charges, later partly reversed, and the government has floated a 15% revenue share with no published regulation. Operating income of $3.7 billion is modest against $34.6 billion of revenue, and it was helped by a $853 million tax benefit in the effective-rate discussion rather than operations. Meanwhile, cash rose partly because of a $1.2 billion discontinued-operations inflow, and debt nearly doubled to $3.3 billion.",
+        "claims": [
+          {
+            "claim": "Revenue depends heavily on a few customers, creating concentration risk.",
+            "quote": "We depend on a small number of customers for a substantial portion of our business",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "AI customers may need vendor financing or deferred payment, which could reduce demand or delay payment.",
+            "quote": "Customers may also lack, or be unable to, secure capital to fund their required AI infrastructure and may request alternative financing or deferred‑payment arrangements from vendors and suppliers.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Export restrictions produced large charges and the government has floated a revenue share not yet regulated.",
+            "quote": "As a result of the restriction, we incurred approximately $800 million in inventory and related charges in the second quarter of 2025.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "bull": {
+        "argument": "The bear case mixes real risks with some misreadings. Operating income of $3.7 billion is not reliant on the tax line: the $853 million benefit sits below operating income, so it does not inflate operating margin, which rose as operating income nearly doubled from $1.9 billion. The $1.2 billion discontinued-operations cash flow is disclosed separately from continuing operations, where operating cash flow was $6.5 billion, more than double 2024's $3.0 billion. Debt rose to $3.3 billion, but cash and short-term investments reached $10.6 billion, and the filing says the company expects existing resources and its $3.0 billion revolver to fund operations for the next 12 months and beyond. Export charges were partly reversed, with about $360 million recovered after shipments resumed. Customer concentration and AI demand risks are real, and the filing's warnings deserve weight, but they are risks the company is managing rather than facts that have already impaired results.",
+        "claims": [
+          {
+            "claim": "Operating cash flow from continuing operations more than doubled.",
+            "quote": "Net cash provided by operating activities of continuing operations was $6.5 billion in 2025",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Part of the export-control charge was reversed after shipments began.",
+            "quote": "During the fourth quarter of fiscal year 2025, we began shipping products and reversed approximately $360 million of the charges recorded earlier in the year.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management expects liquidity to cover operations beyond the next year.",
+            "quote": "We believe our cash, cash equivalents, short-term investments and cash flows from operations along with our revolving credit facility and commercial paper program will be sufficient to fund operations",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The opponent is right on several points, and I should concede them. The $853 million tax benefit sits below operating income, and continuing operating cash flow of $6.5 billion did more than double. But the rebuttal misses what the filing emphasizes. The $360 million reversal does not erase the pattern: the filing says any new export controls could leave AMD 'unable to sell our inventory' and force further charges, and it says licenses may be 'temporary' or carry 'onerous conditions.' The 15% revenue share, though unpublished, is a live cost that could 'subject us to litigation' and 'harm our competitive position.' The opponent's margin point also cuts both ways: operating income of $3.7 billion absorbed $4.0 billion of 'All other' costs, mostly acquisition amortization and stock compensation, so segment profit is less impressive than the headline. Debt rose from $1.8 billion to $3.3 billion, and the filing warns of cross-default and acceleration risk under the revolver. Liquidity is adequate, but it depends on a supplier base and a customer base the filing describes as concentrated and financially exposed to AI infrastructure build-outs.",
+        "claims": [
+          {
+            "claim": "Further export restrictions could force more inventory charges and limit sales, with licenses not assured.",
+            "quote": "If any new export controls impact more of our products, we may be unable to sell our inventory of such products and we may further incur inventory and related charges",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The unpublished government revenue-share demand could create litigation and cost exposure.",
+            "quote": "Any request for a percentage of the revenue by the U.S. government could subject us to litigation, increase our costs and harm our competitive position",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Customer concentration remains a substantial exposure.",
+            "quote": "We depend on a small number of customers for a substantial portion of our business",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    }
+  ],
+  "citations": {
+    "bull": {
+      "verified": 6,
+      "total": 6
+    },
+    "bear": {
+      "verified": 6,
+      "total": 6
+    },
+    "overall": {
+      "verified": 12,
+      "total": 12,
+      "accuracy": 1.0
+    }
+  },
+  "judge": {
+    "scores": {
+      "bull": {
+        "evidence": 7,
+        "logic": 7,
+        "responsiveness": 7
+      },
+      "bear": {
+        "evidence": 7,
+        "logic": 6,
+        "responsiveness": 7
+      }
+    },
+    "winner": "tie",
+    "reasoning": "Both sides cite verified quotes from the filing, though the bull's Round 1 figures on revenue and cash are strong and its Round 2 rebuttal directly addresses the bear's tax and cash-flow claims, which the bear concedes. The bear's strongest points (customer concentration, export-control exposure, debt growth) are real but its Round 2 reliance on a repeated concentration quote and on the 'All other' cost framing is less developed, so the debate is roughly even."
+  },
+  "usage": {
+    "calls": 5,
+    "input_tokens": 203782,
+    "output_tokens": 2678,
+    "cost_usd": 0.0217
+  }
+}

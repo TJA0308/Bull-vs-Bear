@@ -1,0 +1,149 @@
+{
+  "ticker": "MSFT",
+  "filing": {
+    "accession": "0001193125-26-323660",
+    "document": "msft-20260630.htm",
+    "date": "2026-07-29"
+  },
+  "model": "claude-haiku-5-5",
+  "created": "2026-11-25T04:19:15+00:00",
+  "bull_first": true,
+  "input_mode": "full",
+  "rounds": [
+    {
+      "round": 1,
+      "bull": {
+        "argument": "Microsoft's FY2026 filing shows a business compounding at scale. Revenue rose 18% to $331.8 billion, operating income grew 21% to $155.2 billion, and diluted EPS climbed 32% to $17.95. The growth is concentrated in the cloud: Microsoft Cloud revenue increased 27% to $214.4 billion, and Azure and other cloud services grew 41%. The most forward-looking figure is commercial remaining performance obligation, up 84% to $678 billion, which indicates contracted demand well beyond current quarters. Cash from operations rose $46.8 billion to $182.9 billion, giving the company the internal funding for its heavy AI buildout. The filing is candid that AI investment is pressuring margins, with Microsoft Cloud gross margin falling to 66%, and that risk is real. But the same filing shows that growth is outpacing costs at the operating line, and that the company can fund its infrastructure from operations while still paying $27.0 billion in dividends and repurchasing $16.7 billion of stock.",
+        "claims": [
+          {
+            "claim": "Commercial remaining performance obligation rose sharply, signaling contracted future demand.",
+            "quote": "Commercial remaining performance obligation increased 84% to $678 billion.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Operating income grew faster than the company's broad revenue base, showing earnings leverage.",
+            "quote": "Operating income increased $26.7 billion or 21% driven by growth in Productivity and Business Processes and Intelligent Cloud.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Operating cash flow provides internal funding for the AI buildout and shareholder returns.",
+            "quote": "Cash from operations increased $46.8 billion to $182.9 billion for fiscal year 2026",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull case rests on backlog and operating cash, but the filing shows those strengths come with rising fixed commitments and unproven returns. Management states its AI investments 'are being made at significant scale and on an accelerated timeline... and are in advance of fully developed revenue streams,' and warns that 'the associated revenue may not be realized in the expected timeframes or at expected levels.' Capital spending rose $51.4 billion, and cash used in investing reached $139.5 billion. Microsoft Cloud gross margin fell to 66%. Purchase commitments of $194.1 billion and total contractual obligations of $743.8 billion are large relative to the $182.9 billion in operating cash flow. The filing also notes that customers 'may reduce, delay, or shift AI workloads to competing platforms,' and that overestimated demand 'may lead to impairment of assets.' Operating income growth was helped by a $6.5 billion OpenAI gain, which is excluded from adjusted figures. Adjusted net income grew 22%, not 31%. The backlog is real, but it is concentrated in a few large partners who also compete with Microsoft.",
+        "claims": [
+          {
+            "claim": "AI investments are ahead of revenue and the return is uncertain",
+            "quote": "These investments are being made at significant scale and on an accelerated timeline, require substantial and increasing capital expenditures and continued access to capital, and are in advance of fully developed revenue streams.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Demand misalignment could force asset impairments",
+            "quote": "Overestimation of demand or misalignment of capacity investments may result in underutilization of infrastructure and may lead to impairment of assets on our balance sheet.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Reported EPS growth includes non-operating OpenAI gains",
+            "quote": "Current year net income and diluted EPS were positively impacted by net gains from investments in OpenAI, which resulted in an increase in net income and diluted EPS of $5.0 billion and $0.67, respectively.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "bull": {
+        "argument": "The opponent's strongest point is the OpenAI gain, but the filing places it below operating income. The $6.5 billion OpenAI gain sits in other income (expense), net, and management's own reconciliation strips it out of adjusted net income, which still grew 22%. The operating-line improvement of 21% is therefore not an OpenAI effect. Acknowledging the gap, the 31% GAAP figure is flattered by that gain, and investors should weigh the 22% adjusted growth more heavily. Cash is the second concern. Operating cash of $182.9 billion exceeded the $139.5 billion used in investing, so the buildout is currently self-funded before financing. The commitment figures are real and the filing says returns are uncertain. That uncertainty is the core bear risk, and the filing's own evidence, 84% backlog growth and 41% Azure growth, is the best available counterweight. The bull case depends on that demand converting into revenue, which the filing does not yet prove.",
+        "claims": [
+          {
+            "claim": "The OpenAI gain is recorded in other income, not operating income, so it does not explain the operating growth.",
+            "quote": "Other income (expense), net included $6.5 billion of net gains and $4.8 billion of net losses for fiscal years 2026 and 2025, respectively, from investments in OpenAI",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Operating cash flow exceeded cash used in investing during the year.",
+            "quote": "Cash from operations increased $46.8 billion to $182.9 billion for fiscal year 2026",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Azure growth was broad-based across workloads, reducing reliance on one customer segment.",
+            "quote": "Azure and other cloud services revenue grew 41% driven by demand for services across the platform with continued growth across all workloads.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The opponent concedes the central bear point: the filing says the AI returns are uncertain. That concession matters more than the headline growth rates. Operating cash of $182.9 billion covered investing outflows of $139.5 billion only before financing. The filing also shows $52.5 billion used in financing, including $27.0 billion of dividends and $16.7 billion of buybacks, so after shareholder payouts the cushion is much thinner. Capital expenditure rose $51.4 billion in a single year, and the filing warns of 'continued access to capital.' Commitments are $743.8 billion, with $194.1 billion of purchase commitments, mostly for datacenters, and the filing says demand may be 'overestimated' and assets impaired. The opponent's adjusted-EPS point also understates the problem: the 21% operating income growth is real, but Microsoft Cloud gross margin fell to 66%, and the filing attributes that decline to AI infrastructure. Growth is being bought with margin and balance-sheet commitments whose payback the filing itself says is unproven.",
+        "claims": [
+          {
+            "claim": "Investing outflows are funded only before shareholder payouts and debt-related financing",
+            "quote": "Cash used in financing increased $847 million to $52.5 billion for fiscal year 2026",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Contractual commitments are large relative to operating cash flow",
+            "quote": "Purchase commitments primarily relate to datacenters and include open purchase orders and take-or-pay contracts",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The filing says AI revenue may not arrive as expected",
+            "quote": "The associated revenue may not be realized in the expected timeframes or at expected levels.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    }
+  ],
+  "citations": {
+    "bull": {
+      "verified": 6,
+      "total": 6
+    },
+    "bear": {
+      "verified": 6,
+      "total": 6
+    },
+    "overall": {
+      "verified": 12,
+      "total": 12,
+      "accuracy": 1.0
+    }
+  },
+  "judge": {
+    "scores": {
+      "bull": {
+        "evidence": 7,
+        "logic": 7,
+        "responsiveness": 8
+      },
+      "bear": {
+        "evidence": 8,
+        "logic": 7,
+        "responsiveness": 7
+      }
+    },
+    "winner": "tie",
+    "reasoning": "Both sides cite verified quotes from the filing, with the bear side supplying more direct evidence on risk (AI revenue timing, impairment language, commitments) and the bull side answering the OpenAI point well by pointing to the other-income placement and 22% adjusted growth. The bull's Round 2 claim that operating cash exceeded investing outflows is accurate but ignores the bear's point about $52.5B in financing outflows, which weakens its funding argument; the bear's own 'adjusted EPS understates' framing is somewhat muddled. Overall the exchange is close and balanced."
+  },
+  "usage": {
+    "calls": 5,
+    "input_tokens": 163271,
+    "output_tokens": 3377,
+    "cost_usd": 0.018
+  }
+}

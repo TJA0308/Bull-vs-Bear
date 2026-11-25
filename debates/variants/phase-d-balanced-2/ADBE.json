@@ -1,0 +1,149 @@
+{
+  "ticker": "ADBE",
+  "filing": {
+    "accession": "0000796343-26-000003",
+    "document": "adbe-20251128.htm",
+    "date": "2026-01-15"
+  },
+  "model": "claude-haiku-5-5",
+  "created": "2026-11-25T04:35:52+00:00",
+  "bull_first": true,
+  "input_mode": "balanced",
+  "rounds": [
+    {
+      "round": 1,
+      "bull": {
+        "argument": "Adobe's filing shows a business compounding at scale. Total revenue rose 11% to $23.77 billion, and subscription revenue, now 96% of the total, grew 12% to $22.90 billion, giving the company a highly recurring base. Total Adobe ARR reached $25.20 billion, up 11.5%, and remaining performance obligations grew 13% to $22.52 billion, so future revenue is already contracted. Profitability improved sharply: net income rose 28% to $7.13 billion while operating expenses stayed roughly flat at $12.51 billion, and operating cash flow climbed 25% to $10.03 billion. The company is also investing in its growth path, with AI features across Creative Cloud, Acrobat Studio launched in August 2025, and the Experience Platform AI Assistant. The risk factors acknowledge intense competition and AI disruption, but management frames AI as a driver of monetization, and the financial results so far show demand holding up.",
+        "claims": [
+          {
+            "claim": "Subscription revenue is the dominant and fastest-growing revenue line, supporting predictability.",
+            "quote": "Subscription $ 22,904 $ 20,521 $ 18,284 12 %",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Contracted future revenue grew faster than the year's revenue, supporting visibility.",
+            "quote": "Remaining performance obligations of $22.52 billion as of November 28, 2025 increased by 13% from $19.96 billion as of November 29, 2024.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Earnings and cash generation grew while operating expenses stayed flat.",
+            "quote": "Operating expenses of $12.51 billion during fiscal 2025 remained relatively flat compared to fiscal 2024.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull case rests on results that are real but backward-looking, while the filing itself flags forward risks the bull case underweights. Management says AI is 'increasingly' embedded, yet warns there 'can be no assurance that our new or enhanced solutions and AI innovations will be successful, adopted or monetizable.' Competition is described as 'intensely competitive' and expected to 'intensify,' with AI-native rivals and 'downward pressure on pricing and gross margins.' AI also raises costs: the filing says it 'could adversely impact our margins' due to computing costs, and that companies may 'prevent, limit or interfere with our ability to use third-party models.' Regulatory exposure is open-ended, with EU AI Act fines possible and obligations phased 'through 2030.' Growth also leans on acquisitions that carry dilution and debt risks. Strong fiscal 2025 numbers do not resolve whether AI spending converts into durable pricing power.",
+        "claims": [
+          {
+            "claim": "Management concedes AI monetization is uncertain, not assured.",
+            "quote": "there can be no assurance that our new or enhanced solutions and AI innovations will be successful, adopted or monetizable",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The filing warns competition may pressure pricing and margins.",
+            "quote": "may increase downward pressure on pricing and gross margins and adversely affect our renewal, upsell and cross-sell rates",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "AI costs could compress margins even as the company invests heavily.",
+            "quote": "These costs could adversely impact our margins as we continue to make significant investments in AI development",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "bull": {
+        "argument": "The bear case is right that risks exist, but the filing's own numbers show they have not yet impaired the franchise. Management's risk language is standard boilerplate: it says AI 'could' affect margins, not that it has. The measured results point the other way. Gross margin pressure was not visible: cost of revenue rose 8% against 11% revenue growth. Operating expenses were flat even while AI investment continued, which means the company is funding AI without expanding its cost base. Subscription revenue at 96% of the total, with Total Adobe ARR growing 11.5% and remaining performance obligations up 13%, shows customers are still committing to the platform. Acrobat Studio and AI Assistant are shipping products, not hypotheticals. Regulatory fines and acquisition dilution are real, but the filing presents them as possibilities without quantified exposure. A bull case need not claim certainty; it needs evidence that the core economics are intact, and the reported figures provide it.",
+        "claims": [
+          {
+            "claim": "Cost of revenue grew more slowly than revenue, which argues against margin compression so far.",
+            "quote": "Cost of revenue of $2.55 billion during fiscal 2025 increased by $193 million, or 8%, compared to fiscal 2024.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Operating expenses stayed flat despite continued AI investment.",
+            "quote": "Operating expenses of $12.51 billion during fiscal 2025 remained relatively flat compared to fiscal 2024.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Contracted future revenue continued to grow, indicating customers still commit to the platform.",
+            "quote": "Remaining performance obligations of $22.52 billion as of November 28, 2025 increased by 13% from $19.96 billion as of November 29, 2024.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull's strongest evidence is accurate, but it answers a question the bear never asked. Cost of revenue rising 8% against 11% revenue growth describes fiscal 2025, not whether AI pricing power is durable. Flat operating expenses at $12.51 billion are a choice to hold spending down, and the filing says AI investment 'may continue to increase the cost of our solutions' and 'could adversely impact our margins.' Management's own sentence is that monetization is uncertain: 'there can be no assurance' AI innovations will be 'monetizable.' Remaining performance obligations and ARR growth are measured on contracts already signed under today's pricing; the filing itself warns of 'downward pressure on pricing' and lower 'renewal, upsell and cross-sell rates' if AI-native rivals gain share. Shipping products like Acrobat Studio shows activity, not yet returns. The bear's point is that the filing offers no quantified evidence the AI bet pays off, and the financial results cannot yet separate durable franchise strength from a pricing environment that could erode.",
+        "claims": [
+          {
+            "claim": "Management concedes AI monetization is uncertain, not assured.",
+            "quote": "there can be no assurance that our new or enhanced solutions and AI innovations will be successful, adopted or monetizable",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The filing warns competition may pressure pricing and margins.",
+            "quote": "may increase downward pressure on pricing and gross margins and adversely affect our renewal, upsell and cross-sell rates",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "AI costs could compress margins even as the company invests heavily.",
+            "quote": "These costs could adversely impact our margins as we continue to make significant investments in AI development",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    }
+  ],
+  "citations": {
+    "bull": {
+      "verified": 6,
+      "total": 6
+    },
+    "bear": {
+      "verified": 6,
+      "total": 6
+    },
+    "overall": {
+      "verified": 12,
+      "total": 12,
+      "accuracy": 1.0
+    }
+  },
+  "judge": {
+    "scores": {
+      "bull": {
+        "evidence": 8,
+        "logic": 7,
+        "responsiveness": 6
+      },
+      "bear": {
+        "evidence": 7,
+        "logic": 7,
+        "responsiveness": 8
+      }
+    },
+    "winner": "bear",
+    "reasoning": "Both sides cite verified quotes, but the bull's Round 2 evidence is strong and largely unrebutted on the numbers, while the bear's points on AI monetization uncertainty and pricing pressure are sourced from the filing's forward-looking language. The bear responded more directly to the bull's margin and cost argument, distinguishing backward-looking results from durable pricing power, and the bull did not fully address the warning that contracted revenue reflects current pricing. On balance the bear's responsiveness edges out the bull's stronger quantitative evidence."
+  },
+  "usage": {
+    "calls": 5,
+    "input_tokens": 46735,
+    "output_tokens": 2584,
+    "cost_usd": 0.006
+  }
+}

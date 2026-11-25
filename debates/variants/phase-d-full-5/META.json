@@ -1,0 +1,149 @@
+{
+  "ticker": "META",
+  "filing": {
+    "accession": "0001628280-26-003942",
+    "document": "meta-20251231.htm",
+    "date": "2026-01-29"
+  },
+  "model": "claude-haiku-5-5",
+  "created": "2026-11-25T04:27:35+00:00",
+  "bull_first": true,
+  "input_mode": "full",
+  "rounds": [
+    {
+      "round": 1,
+      "bull": {
+        "argument": "Meta's 2025 filing shows a business scaling strongly on its core. Total revenue rose 22% to $200.97 billion, and income from operations grew 20% to $83.28 billion. Family of Apps operating income increased 18% to $102.47 billion, and the segment's operating margin stayed at 52%. Ad impressions rose 12% and average price per ad rose 9%, indicating that demand for its ads is increasing rather than eroding. Family daily active people reached 3.58 billion, up 7%. Management also returned capital: $26.26 billion in buybacks and $5.32 billion in dividends, with $25.03 billion still authorized. The risks are real. Reality Labs lost $19.19 billion, and the filing warns of regulatory pressure in Europe and of heavy AI and capex spending, with 2026 capex guided at $115 to $135 billion. Still, the cash engine funding those bets generated $115.80 billion from operations, and the core advertising business is compounding.",
+        "claims": [
+          {
+            "claim": "Family of Apps generated strong profitability with 52% operating margin in 2025",
+            "quote": "Income (loss) from operations $ 102,469 $ 87,109 18% $ (19,193) $ (17,729) (8)% $ 83,276 $ 69,380 20% Operating margin 52 %",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Advertising demand strengthened, with average price per ad up 9% alongside 12% impression growth",
+            "quote": "The increase in average price per ad in 2025 was driven by an increase in advertising demand, which we believe is mostly due to ongoing improvements to our ad performance from our ad targeting and measurement tools.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The company generated substantial operating cash flow funding its investments and shareholder returns",
+            "quote": "The increase was due to $115.80 billion of cash generated from operations and $29.91 billion of net proceeds",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull case rests on the core ad engine, but the filing shows that engine is being squeezed from several directions at once. Management states that changes to user data practices \"reduce our ability to effectively target ads\" and \"will continue to adversely affect\" the advertising business, and that Apple's iOS changes have \"negatively impacted\" marketer budgets. Europe may force a \"materially worse user experience\" and \"significant impact\" on European revenue, with the EU's April 2025 decision still under appeal. Free cash flow fell from $52.10 billion in 2024 to $43.59 billion in 2025, even as capex rose to $72.22 billion and 2026 capex is guided at $115 to $135 billion. Reality Labs cost $19.19 billion in operating profit and losses are expected to remain similar in 2026. The 2025 effective tax rate was 30% versus 12% in 2024, and the stock has ranged from $17.55 to $796.25. Strong 2025 growth does not offset rising spending and regulatory exposure.",
+        "claims": [
+          {
+            "claim": "Free cash flow declined year over year despite higher operating cash flow, because capital spending rose sharply.",
+            "quote": "Free cash flow $ 43,585 $ 52,103 $ 43,010",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management concedes its data changes reduce ad targeting and will keep weighing on advertising.",
+            "quote": "Some of these changes reduce our ability to effectively target ads, which has to some extent adversely affected, and will continue to adversely affect, our advertising business.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The European ad model faces possible further restrictions that could materially hurt European revenue.",
+            "quote": "could result in a materially worse user experience for European users and a significant impact to our European business and revenue",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "bull": {
+        "argument": "The bear case is right that pressure exists, but the filing shows the core engine absorbing it. Targeting constraints and Apple's iOS changes are described as headwinds, yet 2025 ad impressions still rose 12% and average price per ad rose 9%, which management attributes to better ad performance from its targeting and measurement tools. Europe is a real risk, but the filing says its 'subscription for no ads' appeal is pending and that the EU-U.S. DPF framework remains in place; the hit is a scenario, not a reported result. Free cash flow fell to $43.59 billion from $52.10 billion, but operating cash flow rose to $115.80 billion, so the decline reflects deliberate capex, not weaker cash generation. Reality Labs losses are known and bounded at $19.19 billion, and the Family segment still earned $102.47 billion. The 30% tax rate is inflated by a one-time $14.03 billion valuation allowance tied to OBBBA; excluding it, the filing says the rate would have been 13%. The $17.55 to $796.25 stock range is a 2012 IPO-to-date span, not a forecast. Spending is rising, but the earnings base funding it is also rising.",
+        "claims": [
+          {
+            "claim": "Ad pricing and impressions both grew in 2025 despite targeting constraints",
+            "quote": "Ad impressions delivered across our Family of Apps in 2025 increased 12% year-over-year, and our average price per ad increased 9% year-over-year.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The 30% effective tax rate includes a one-time valuation allowance charge; excluding it the rate would be 13%",
+            "quote": "Absent the valuation allowance charge as of the enactment date, our 2025 effective tax rate would have decreased by 17 percentage points to 13%.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Operating cash generation rose, so the free cash flow decline reflects deliberate capex",
+            "quote": "The increase was due to $115.80 billion of cash generated from operations",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull case treats the core engine as untouched, but the filing ties its growth to a shrinking set of levers. Ad impressions rose 12% while average price per ad rose 9%, yet management says data-use limits \"will continue to adversely affect\" advertising, and the price gain is partly offset by a higher mix of impressions in lower-monetizing products like Reels. Free cash flow fell 16% to $43.59 billion, and management guides 2026 capex to $115 to $135 billion, a range well above 2025's $72.22 billion, so the cash cushion may keep thinning even as operating cash flow grows. The 13% tax rate excluding the valuation allowance is a hypothetical; the reported 30% is what shareholders received. Europe is not just a scenario: the EU has already issued a final decision finding the model non-compliant, and further modifications may be imposed during appeal. Reality Labs lost $19.19 billion and is expected to stay similar in 2026, with the company admitting its ability to fund these bets depends on profits elsewhere.",
+        "claims": [
+          {
+            "claim": "Free cash flow fell year over year while capex guidance for 2026 points to a much higher investment level.",
+            "quote": "We anticipate making capital expenditures of approximately $115 billion to $135 billion in 2026 to support our AI efforts and core business.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management concedes data-use changes reduce ad targeting and will keep weighing on the advertising business.",
+            "quote": "Some of these changes reduce our ability to effectively target ads, which has to some extent adversely affected, and will continue to adversely affect, our advertising business.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The European Commission has already issued a final decision that the subscription model does not comply, and further changes may follow.",
+            "quote": "In April 2025, the European Commission issued a final decision that our \"subscription for no ads\" model does not comply with such requirements.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    }
+  ],
+  "citations": {
+    "bull": {
+      "verified": 6,
+      "total": 6
+    },
+    "bear": {
+      "verified": 6,
+      "total": 6
+    },
+    "overall": {
+      "verified": 12,
+      "total": 12,
+      "accuracy": 1.0
+    }
+  },
+  "judge": {
+    "scores": {
+      "bull": {
+        "evidence": 8,
+        "logic": 7,
+        "responsiveness": 8
+      },
+      "bear": {
+        "evidence": 8,
+        "logic": 7,
+        "responsiveness": 7
+      }
+    },
+    "winner": "tie",
+    "reasoning": "Both sides rely on verified quotes from the filing, with the bull's strong operating metrics and the bear's verified admissions on ad targeting and capex both substantive. The bull effectively rebutted the bear on tax rate (one-time valuation allowance) and FCF decline (deliberate capex), while the bear countered with the verified final EU decision and 2026 capex guidance, though its 'lower-monetizing Reels' mix claim was not backed by a verified quote. Overall the debate is closely balanced."
+  },
+  "usage": {
+    "calls": 5,
+    "input_tokens": 299227,
+    "output_tokens": 2788,
+    "cost_usd": 0.0313
+  }
+}

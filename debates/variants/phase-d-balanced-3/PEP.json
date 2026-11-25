@@ -1,0 +1,149 @@
+{
+  "ticker": "PEP",
+  "filing": {
+    "accession": "0000077476-26-000007",
+    "document": "pep-20251227.htm",
+    "date": "2026-02-03"
+  },
+  "model": "claude-haiku-5-5",
+  "created": "2026-11-25T04:44:51+00:00",
+  "bull_first": true,
+  "input_mode": "balanced",
+  "rounds": [
+    {
+      "round": 1,
+      "bull": {
+        "argument": "PepsiCo presents a durable global franchise with a diversified portfolio spanning Lay's, Doritos, Gatorade, Pepsi-Cola and Quaker, sold in more than 200 countries and territories. The filing shows management actively reshaping the business: it describes a clear set of priorities, including reigniting North America through combined operations and reinvestment in brands, and growing International and away-from-home sales. It also points to concrete portfolio moves such as adding Siete, Sabra and poppi, and launching functional products like Pepsi Prebiotic Cola, aligning the company with shifting consumer demand. Management is investing in artificial intelligence, digital capabilities and manufacturing and distribution capacity, and states the goal of making its operations more agile and productive. The risks are real: the filing acknowledges weak North American execution, tariffs, GLP-1 effects, and boycotts, and Russia's exposure is material. But the company discloses these openly and has a track record of adapting. A scaled, globally diversified incumbent that is restructuring for efficiency, while investing in growth categories, offers a credible path to recovery at a reasonable valuation.",
+        "claims": [
+          {
+            "claim": "Management has set clear priorities to reignite North America and grow International and away-from-home sales.",
+            "quote": "reigniting our North America business by combining operations where it makes the most sense and using the savings to support meaningful investments in our brands",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The company is expanding into functional products and acquired brands aligned with changing consumer preferences.",
+            "quote": "adding new products with functional benefits, such as Pepsi Prebiotic Cola; and welcoming popular brands like Siete, Sabra and poppi",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The company is investing in technology and AI to improve operating efficiency and customer service.",
+            "quote": "Through our collaborations with cutting-edge technology providers, we are using artificial intelligence to reimagine our go-to-market model",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bear case rests on demand and execution risk that the filing itself describes as ongoing. PepsiCo says consumer preferences are shifting away from its products through GLP-1 medications, sugar and sodium reduction pressure, and boycotts, and it states that concerns of this kind 'have affected and may continue to affect consumer behaviors.' The filing also admits it must achieve 'the commercial and financial priorities announced during 2025 to improve our marketplace competitiveness and financial performance, including in our North American businesses,' which signals that North America is underperforming today. Tariffs and taxes on ingredients are raising input costs and could push consumers toward lower-priced private label, while retailers are 'removing our products or otherwise reducing shelf space.' Russia alone represented 20% of consolidated cash and cash equivalents at year-end 2025, up from 10%, and the filing warns of 'changes in how we operate in certain of these markets.' Management's own turnaround depends on uncertain execution, including a CEO succession risk. Diversification does not remove these exposures, and the 'reasonable valuation' claim is not supported by anything in these excerpts.",
+        "claims": [
+          {
+            "claim": "Consumer demand is already being hurt by boycotts and shifting preferences, not just hypothetically.",
+            "quote": "have affected and may continue to affect consumer behaviors and can lead consumers to reduce or publicly boycott the purchase or consumption of our products",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "North American business performance is a stated problem that management must still fix.",
+            "quote": "if we fail to achieve the commercial and financial priorities announced during 2025 to improve our marketplace competitiveness and financial performance, including in our North American businesses",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Russia exposure has grown sharply as a share of year-end cash, and operating changes there are already occurring.",
+            "quote": "20% and 10% of our consolidated cash and cash equivalents",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "bull": {
+        "argument": "The bear case is right about the risks, and I won't dispute them. Demand pressure from GLP-1 medications, sugar and sodium scrutiny, and boycotts is real, and the filing says North America must still deliver on its announced priorities. But those are the reasons management is acting, not proof that the turnaround fails. The filing describes concrete responses: functional launches such as Pepsi Prebiotic Cola, acquisitions of Siete, Sabra and poppi, and a plan to combine North American operations and reinvest the savings in brands. On Russia, the excerpts show 5% of consolidated net revenue and 20% of consolidated cash, which is a concentration in cash location, not a majority of earnings. I concede that the excerpts do not support any claim that the stock is reasonably valued, so I withdraw that point. The investment case rests on whether the restructuring executes, and that is an open question the filing does not settle.",
+        "claims": [
+          {
+            "claim": "Management has set clear priorities to reignite North America and grow International and away-from-home sales.",
+            "quote": "reigniting our North America business by combining operations where it makes the most sense and using the savings to support meaningful investments in our brands",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Russia's exposure is material in cash terms, but the filing reports it as a modest share of revenue and assets.",
+            "quote": "Russia accounted for 5% and 3% of our consolidated assets, 20% and 10% of our consolidated cash and cash equivalents",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management ties its strategy to continued value creation for shareholders, customers and consumers.",
+            "quote": "pep+ remains central to our strategy, ensuring that we continue to create value for shareholders, customers and consumers",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The opponent concedes the core risks and withdraws the valuation claim, which leaves the bear case standing on execution. Responses to the company's announced fixes are not proof of success: the filing lists 'changes in consumer preferences' and 'boycotts' as ongoing forces, and says 'the commercial and financial priorities announced during 2025' still must be achieved. A turnaround that has yet to succeed is a risk, not a solved problem. The opponent's Russia point is accurate on revenue (5%), but the same filing reports Russia at 20% of consolidated cash and cash equivalents, up from 10%, and 39% of the accumulated currency translation loss, so the exposure is concentrated where cash is held and where losses have accumulated. The filing also says the company 'cannot predict' the impact of new taxes and regulations on its financial results, and that it 'could continue to result in changes in how we operate' in several markets. Retailers are removing products and cutting shelf space, and the CEO succession risk is named explicitly. An investor is being asked to underwrite execution on a restructuring the filing itself says is unfinished, in a business facing structural demand headwinds.",
+        "claims": [
+          {
+            "claim": "The filing treats the North American turnaround as a future obligation, not a completed fix.",
+            "quote": "if we fail to achieve the commercial and financial priorities announced during 2025 to improve our marketplace competitiveness and financial performance, including in our North American businesses",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Russia's share of year-end cash rose sharply, showing concentrated exposure beyond revenue.",
+            "quote": "20% and 10% of our consolidated cash and cash equivalents",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The company says it cannot predict the financial impact of new taxes and regulations on its products.",
+            "quote": "we cannot predict the scope or form potential taxes, regulations or other limitations on our products or their packaging may take, and therefore cannot predict the impact of such taxes, regulations or limitations on our financial results",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    }
+  ],
+  "citations": {
+    "bull": {
+      "verified": 6,
+      "total": 6
+    },
+    "bear": {
+      "verified": 6,
+      "total": 6
+    },
+    "overall": {
+      "verified": 12,
+      "total": 12,
+      "accuracy": 1.0
+    }
+  },
+  "judge": {
+    "scores": {
+      "bull": {
+        "evidence": 7,
+        "logic": 6,
+        "responsiveness": 7
+      },
+      "bear": {
+        "evidence": 8,
+        "logic": 7,
+        "responsiveness": 8
+      }
+    },
+    "winner": "bear",
+    "reasoning": "Both sides used verified quotes, but the bear built a stronger, more specific evidentiary case (boycott impact, North America underperformance, Russia cash concentration, unquantifiable regulatory risk) and responded directly to the bull's Russia revenue framing by citing the currency loss share. The bull conceded the valuation claim and most risks, leaving its case resting on unproven restructuring execution, though it offered a reasonable rebuttal that the risks are reasons for management action."
+  },
+  "usage": {
+    "calls": 5,
+    "input_tokens": 47172,
+    "output_tokens": 3660,
+    "cost_usd": 0.0065
+  }
+}

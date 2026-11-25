@@ -1,0 +1,149 @@
+{
+  "ticker": "NKE",
+  "filing": {
+    "accession": "0000320187-26-000088",
+    "document": "nke-20260531.htm",
+    "date": "2026-07-15"
+  },
+  "model": "claude-haiku-5-5",
+  "created": "2026-11-25T04:18:26+00:00",
+  "bull_first": true,
+  "input_mode": "full",
+  "rounds": [
+    {
+      "round": 1,
+      "bull": {
+        "argument": "NIKE's filing shows a business with durable scale and financial strength despite a difficult year. Fiscal 2026 revenues were $46.4 billion, and NIKE Brand wholesale revenues rose 6% to $27.5 billion, with North America revenues up 5% and North America EBIT up 14% to $5.4 billion. Gross margin widened 20 basis points to 42.9%, and the company returned value to shareholders through dividends. The balance sheet is strong: long-term debt is rated A+ by S&P and A2 by Moody's, and cash and short-term investments totaled $9.0 billion. The IEEPA tariff ruling produced a $986 million cost-of-sales benefit, and nearly all the remaining receivable was collected after year-end. Management is taking deliberate action to fix the portfolio, reducing footwear supply and repositioning NIKE Direct, and it expects to complete these actions by December 2026. The weakness is concentrated in Greater China and Converse, which the filing identifies as specific problems rather than company-wide decline.",
+        "claims": [
+          {
+            "claim": "North America drove growth, with segment EBIT up 14% and gross margin expanding 210 basis points.",
+            "quote": "Reported EBIT increased 14% reflecting higher reported revenues and the following: • Gross margin expansion of 210 basis points primarily due to lower product costs",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The balance sheet is strong, with A+ and A2 long-term debt ratings and $9.0 billion in cash and short-term investments.",
+            "quote": "We currently have long-term debt ratings of A+ and A2 from S&P Global Ratings and Moody's Ratings, respectively.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management has a defined plan to reposition the business and expects to finish the actions by December 2026.",
+            "quote": "Our reportable operating segments are at different stages of progress, and we expect to complete these actions by the end of December 2026.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull case rests on one-off and segment-specific strength, while the filing shows broad underlying erosion. Net income fell 3% to $3,108 million and diluted EPS dropped from $2.16 to $2.10. Excluding the $986 million IEEPA tariff recovery, which the filing says was 'largely offsetting' tariffs recognized in fiscal 2026, the earnings picture is far weaker. NIKE Direct revenues fell 6% to $17.7 billion, with NIKE Brand Digital down 12%, and Greater China EBIT fell 20%. Operating cash flow dropped from $3,698 million to $2,868 million. Management also states that negative impacts from Greater China and Converse will continue throughout fiscal 2027, and it recorded $385 million in severance charges while warning of more. The filing also notes the company has 'no shares repurchased' in the fourth quarter and that the stock has fallen enough to trigger securities class actions.",
+        "claims": [
+          {
+            "claim": "Net income and EPS declined even with the one-time tariff benefit.",
+            "quote": "NET INCOME $ 3,108 $ 3,219 -3 % $ 5,700 -44 %",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management expects continued weakness in key segments through fiscal 2027.",
+            "quote": "We expect negative impacts from Greater China and Converse to continue throughout fiscal 2027.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Operating cash flow fell sharply year over year.",
+            "quote": "Cash provided by operations $ 2,868 $ 3,698",
+            "verified": false,
+            "score": 81.4
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "bull": {
+        "argument": "The bear case is right that fiscal 2026 was soft, but it overstates the breadth of erosion and omits context. Net income fell only 3% and revenues were flat at $46.4 billion; the filing shows NIKE Brand revenue rose 1% reported. The IEEPA benefit was a recovery of tariffs previously paid, so it is a real cash item, with $302 million received and substantially all of the remaining receivable collected after year-end. The weakness is concentrated: Greater China EBIT fell 20% and Converse EBIT fell 93%, while North America EBIT rose 14% and NIKE Brand wholesale revenue rose 6%. Consolidated EBIT margin was 8.3%, up from 8.2%. Operating cash flow fell mainly because of the receivable build and tax payments, which the filing describes as timing items. The $385 million severance charge is a deliberate cost realignment, and the filing lists 'no shares repurchased' only for one quarter after a paused program. The company also carries A+/A2 ratings and $9.0 billion of liquidity. The honest risk is that Greater China and Converse may take longer than planned, and the filing says so.",
+        "claims": [
+          {
+            "claim": "Consolidated EBIT margin rose slightly, from 8.2% to 8.3%.",
+            "quote": "EBIT margin 8.3% 8.2% 12.7%",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Operating cash flow decline was driven by a receivable build and tax payments, which the filing presents as timing-related.",
+            "quote": "The increase in Accounts receivable was primarily due to the outstanding IEEPA tariff receivable, as well as higher wholesale revenues and the timing of receipts in the normal course of business.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management frames the weakness as concentrated in specific segments with a defined end date for the reset.",
+            "quote": "North America has made the most progress against these actions, while Greater China and Converse will take more time.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull case leans on segment strength and one-time items that mask a weakening core. North America's EBIT rose only because of a $965 million IEEPA recovery booked in Cost of sales, which the filing says largely offset tariffs paid in the same year. Strip that out and consolidated results look materially worse than a 'flat' headline. NIKE Direct fell 6% to $17.7 billion, and NIKE Brand Digital dropped 12% on reduced traffic, which is the company's highest-margin channel. Wholesale growth of 6% was achieved partly by 'fewer marketplace management actions' and expanded distribution, meaning it came at the cost of pricing discipline: EMEA's footwear ASP fell roughly 3 points on higher discounts. Operating cash flow fell 22% to $2,868 million, and the filing says the company 'paused' buybacks, so the shareholder-return argument is weaker than presented. Management also expects Greater China and Converse drag to persist through fiscal 2027, while more severance charges may follow. The A+/A2 ratings were downgraded in 2025 per the filing, so the balance sheet is less pristine than implied.",
+        "claims": [
+          {
+            "claim": "The IEEPA recovery was a large one-time benefit that largely offset tariffs in the same year.",
+            "quote": "largely offsetting the impact of the IEEPA tariffs recognized during fiscal 2026",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Operating cash flow declined sharply year over year.",
+            "quote": "Cash provided by operations $ 2,868 $ 3,698",
+            "verified": false,
+            "score": 81.4
+          },
+          {
+            "claim": "Management expects Greater China and Converse weakness to persist into fiscal 2027.",
+            "quote": "We expect negative impacts from Greater China and Converse to continue throughout fiscal 2027.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    }
+  ],
+  "citations": {
+    "bull": {
+      "verified": 6,
+      "total": 6
+    },
+    "bear": {
+      "verified": 4,
+      "total": 6
+    },
+    "overall": {
+      "verified": 10,
+      "total": 12,
+      "accuracy": 0.833
+    }
+  },
+  "judge": {
+    "scores": {
+      "bull": {
+        "evidence": 7,
+        "logic": 7,
+        "responsiveness": 7
+      },
+      "bear": {
+        "evidence": 6,
+        "logic": 7,
+        "responsiveness": 7
+      }
+    },
+    "winner": "tie",
+    "reasoning": "Both sides rely mostly on verified quotes, but the bear's key cash flow claim is unverified and the bull's rebuttal on the IEEPA benefit and operating cash flow timing is reasonably supported by a verified receivable quote. The bull effectively answers the bear's cash flow and buyback points with context, while the bear's strongest verified point (the IEEPA offset and fiscal 2027 drag) goes largely unrebutted, leaving the debate closely balanced."
+  },
+  "usage": {
+    "calls": 5,
+    "input_tokens": 187321,
+    "output_tokens": 2714,
+    "cost_usd": 0.0201
+  }
+}

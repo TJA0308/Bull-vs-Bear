@@ -1,0 +1,149 @@
+{
+  "ticker": "AAPL",
+  "filing": {
+    "accession": "0000320193-26-000026",
+    "document": "aapl-20260926.htm",
+    "date": "2026-11-03"
+  },
+  "model": "claude-haiku-5-5",
+  "created": "2026-11-25T04:31:59+00:00",
+  "bull_first": true,
+  "input_mode": "balanced",
+  "rounds": [
+    {
+      "round": 1,
+      "bull": {
+        "argument": "Apple's filing shows strong momentum and a powerful capital position. Total net sales rose 15% to $478.8 billion in 2026, with iPhone up 21% and Services up 13% to $123.3 billion. Total gross margin percentage expanded to 48.8% from 46.9%, and Products gross margin rose to 39.3% from 36.8%, so the company is converting higher revenue into more profit per dollar sold. Operating expenses grew 22%, largely from R&D, which the company is directing into AI investment, a sign it is funding future growth rather than harvesting the current business. Liquidity is substantial: $136.9 billion in cash and marketable securities, which management says is sufficient for the next 12 months and beyond. The company also authorized a new $100 billion repurchase program, repurchased $85.8 billion of stock in 2026, and raised its dividend. The filing does carry real risks: management expects gross margins to face 'volatility and downward pressure,' memory costs are rising, and tariffs remain uncertain. Still, the reported results and capital return demonstrate a business that is growing, profitable, and well-funded.",
+        "claims": [
+          {
+            "claim": "Total net sales grew 15% year over year, showing strong top-line momentum.",
+            "quote": "Total net sales $ 478,834 15 % $ 416,161 6 % $ 391,035",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Total gross margin percentage expanded, indicating improved profitability per dollar of sales.",
+            "quote": "Total gross margin percentage 48.8 % 46.9 % 46.2 %",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Liquidity is substantial and management expects it to cover cash needs and capital returns.",
+            "quote": "The Company believes its balances of cash, cash equivalents and marketable securities, which totaled $136.9 billion as of September 26, 2026",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The filing's headline growth rests on fragile foundations. Management states that gross margins 'will be subject to volatility and downward pressure,' and the 48.8% margin was lifted partly by 'tariff refunds,' a one-time item that cannot be assumed to recur. Supply is tightening: the company reports 'supply constraints and rising costs' for advanced semiconductors, memory and storage, and expects these 'to intensify for memory and storage components.' Price increases may 'reduce demand for the Company's products.' Operating expenses rose 22%, with R&D up 32%, and the filing says these investments 'may not achieve expected returns.' Revenue also depends heavily on iPhone, which grew 21% largely from Pro models, while the filing acknowledges the Company holds only a 'minority market share' in its core markets and faces competitors willing to sell 'at little or no profit or even at a loss.' Tariff exposure remains open-ended, and the company is returning cash ($85.8 billion in buybacks) while carrying $78.7 billion of notes and $89.7 billion of manufacturing purchase obligations.",
+        "claims": [
+          {
+            "claim": "Management itself warns that gross margins face downward pressure, undermining the sustainability of the margin expansion.",
+            "quote": "the Company believes, in general, gross margins will be subject to volatility and downward pressure",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Part of the 2026 product margin improvement came from a non-recurring source, tariff refunds.",
+            "quote": "primarily due to product mix and tariff refunds, partially offset by higher costs, including memory",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Rising component costs may force price increases that reduce demand.",
+            "quote": "Actions, such as price increases, that have been and may in the future be taken by the Company may not effectively mitigate these negative impacts, and may also reduce demand for the Company's products.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "bull": {
+        "argument": "The opponent is right that margins face headwinds, but the filing supports the bull case more than they admit. Management does say gross margins will see 'volatility and downward pressure,' yet that is a general caution, and the reported 48.8% reflects product mix and Services growth, not only tariff refunds. Services gross margin reached 76.2%, and Services net sales grew 13% to $123.3 billion, a high-margin base that is less exposed to component costs. On tariff refunds, the filing says they were recognized as a reduction of cost of sales, but it also reports Products margin improved from 36.8% to 39.3% primarily due to product mix. Liquidity addresses the debt concern: $136.9 billion in cash and marketable securities exceeds the $78.7 billion of notes, and management states this covers cash requirements 'over the next 12 months and beyond.' The $85.8 billion of buybacks was funded from that cash base while revenue grew. R&D up 32% is a real risk, but it is an investment in AI that the company describes as competitively necessary.",
+        "claims": [
+          {
+            "claim": "Services gross margin percentage is high and was reported as increasing, offsetting component-cost pressure.",
+            "quote": "Services 93,943 82,314 71,050 Total gross margin",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management attributes the Products margin improvement primarily to product mix, not only to tariff refunds.",
+            "quote": "primarily due to product mix and tariff refunds, partially offset by higher costs, including memory",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Liquidity is sufficient to cover cash needs and capital return over the next 12 months and beyond.",
+            "quote": "will be sufficient to satisfy its cash requirements and capital return program over the next 12 months and beyond",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull case leans on averages that hide concentration and cost risk. Services carries the margin story, but Services growth was partly 'higher Services net sales' plus 'a different mix of services,' and the filing says the Services margin percentage gain came 'primarily due to a different mix of services, partially offset by higher costs.' Products margin, the segment exposed to memory and tariffs, is what management says faces pressure. Tariff refunds are real and were credited to cost of sales, so they flatter the reported margin; the filing also warns that 'If tariffs are subsequently rescinded or revoked, the Company may not be able to successfully claim and collect tariff refunds,' and that Section 232 or 301 measures could follow. On liquidity, comparing $136.9 billion of cash to $78.7 billion of notes ignores $89.7 billion of manufacturing purchase obligations, $82.7 billion due within 12 months, which are commitments that consume cash regardless of demand. Buybacks of $85.8 billion exceeded the $136.9 billion cushion's comfortable use. Finally, the filing says R&D investments 'may not achieve expected returns,' and competitors may sell 'at little or no profit or even at a loss.'",
+        "claims": [
+          {
+            "claim": "Tariff refunds were credited to cost of sales and may not recur or be collectible if tariffs are rescinded.",
+            "quote": "If tariffs are subsequently rescinded or revoked, the Company may not be able to successfully claim and collect tariff refunds",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management attributes the Products margin gain partly to tariff refunds, not only mix.",
+            "quote": "Products gross margin and gross margin percentage increased during 2026 compared to 2025 primarily due to product mix and tariff refunds",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Near-term manufacturing commitments are large relative to the liquidity cushion.",
+            "quote": "the Company had manufacturing purchase obligations of $89.7 billion, with $82.7 billion payable within 12 months",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    }
+  ],
+  "citations": {
+    "bull": {
+      "verified": 6,
+      "total": 6
+    },
+    "bear": {
+      "verified": 6,
+      "total": 6
+    },
+    "overall": {
+      "verified": 12,
+      "total": 12,
+      "accuracy": 1.0
+    }
+  },
+  "judge": {
+    "scores": {
+      "bull": {
+        "evidence": 7,
+        "logic": 6,
+        "responsiveness": 6
+      },
+      "bear": {
+        "evidence": 8,
+        "logic": 7,
+        "responsiveness": 8
+      }
+    },
+    "winner": "bear",
+    "reasoning": "Both sides cite verified quotes, but the bear side's evidence is more pointed: it ties the tariff-refund and purchase-obligation quotes directly to the bull's margin and liquidity claims, and it notes the $82.7 billion due within 12 months that undercuts the bull's cash-cushion argument. The bull's rebuttal is reasonable on product mix and Services margin, but it leans on a Services quote that the bear reframed, and it does not fully address the $82.7 billion near-term obligations."
+  },
+  "usage": {
+    "calls": 5,
+    "input_tokens": 49188,
+    "output_tokens": 2759,
+    "cost_usd": 0.0063
+  }
+}

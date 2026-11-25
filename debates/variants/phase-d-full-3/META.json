@@ -1,0 +1,149 @@
+{
+  "ticker": "META",
+  "filing": {
+    "accession": "0001628280-26-003942",
+    "document": "meta-20251231.htm",
+    "date": "2026-01-29"
+  },
+  "model": "claude-haiku-5-5",
+  "created": "2026-11-25T04:14:38+00:00",
+  "bull_first": true,
+  "input_mode": "full",
+  "rounds": [
+    {
+      "round": 1,
+      "bull": {
+        "argument": "Meta's 2025 filing shows a business with strong fundamentals. Total revenue rose 22% to $200.97 billion, and income from operations grew 20% to $83.28 billion. Family of Apps advertising drove the gain: ad impressions rose 12% and average price per ad rose 9%, which the company attributes mostly to improvements in its ad targeting and measurement tools. Cash generated from operations reached $115.80 billion, and the company paid $26.26 billion in share repurchases and $5.32 billion in dividends. Family daily active people reached 3.58 billion, up 7%. The filing is candid about risks, including Reality Labs losses of roughly $19.19 billion and regulatory pressure in Europe. Still, the core advertising engine is growing, and management is funding AI and infrastructure from that cash flow. Bulls can argue the company is compounding its core business while investing in long-term opportunities.",
+        "claims": [
+          {
+            "claim": "Revenue grew 22% in 2025 driven by advertising.",
+            "quote": "Total revenue for 2025 was $200.97 billion, an increase of 22% compared to 2024, due to an increase in advertising revenue.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Ad pricing and impressions both grew, supporting the advertising engine.",
+            "quote": "Ad impressions delivered across our Family of Apps in 2025 increased 12% year-over-year, and our average price per ad increased 9% year-over-year.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Operating cash generation was large enough to fund heavy investment and capital returns.",
+            "quote": "The increase was due to $115.80 billion of cash generated from operations and $29.91 billion of net proceeds",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull case rests on headline growth, but the filing shows that growth is being bought with rising risk and shrinking cash returns. Free cash flow fell to $43.59 billion in 2025 from $52.10 billion in 2024, even as operating cash flow rose, because capital expenditures reached $72.22 billion. Management guides to $115 billion to $135 billion of capex in 2026, and says Reality Labs losses will stay similar to 2025's $19.19 billion. Net income fell to $60.46 billion from $62.36 billion, and the effective tax rate jumped to 30% after a $15.93 billion charge. The company also funded $18.33 billion of non-marketable equity investments and $29.91 billion of net new notes, while long-term debt reached $58.74 billion. The filing warns that ad targeting is being eroded by regulation and Apple's iOS changes, and that European revenue could be materially hurt by the DMA ruling. Advertising growth depends on price increases that management attributes to targeting tools the filing says are under pressure. Investors are being asked to accept heavy spending with no guaranteed return.",
+        "claims": [
+          {
+            "claim": "Free cash flow declined year over year despite higher operating cash flow, as capex rose sharply.",
+            "quote": "Free cash flow $ 43,585 $ 52,103 $ 43,010",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management expects 2026 capital expenditures to rise substantially, with no guaranteed payoff from AI.",
+            "quote": "We anticipate making capital expenditures of approximately $115 billion to $135 billion in 2026 to support our AI efforts and core business.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Regulatory and platform changes are reducing the ad targeting that drives pricing, and the company expects this to continue.",
+            "quote": "the legislative, regulatory and platform developments described above will continue to adversely impact our advertising revenue for the foreseeable future",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "bull": {
+        "argument": "The bear case is right that capital intensity has risen, but it omits the context the filing provides. Free cash flow was $43.59 billion, still a large cash generator, and operating cash flow rose to $115.80 billion, so the decline reflects deliberate infrastructure spending of $69.69 billion on property and equipment, not a weakening core. The net income dip is explained by the one-time $15.93 billion OBBBA charge, which the filing says would have lowered the 2025 effective tax rate to 13% absent the valuation allowance. Reality Labs losses are a known, bounded cost, and the filing says FoA operating income rose 18% to $102.47 billion. On ads, the filing states the price increase was 'driven by an increase in advertising demand, which we believe is mostly due to ongoing improvements to our ad performance', and impressions grew 12%. Regulatory risk is real, but the filing describes it as adjusting, not ending, the business. The stronger case is a profitable core funding a long-term bet.",
+        "claims": [
+          {
+            "claim": "The 2025 effective tax rate would have been 13% absent the one-time valuation allowance charge.",
+            "quote": "Absent the valuation allowance charge as of the enactment date, our 2025 effective tax rate would have decreased by 17 percentage points to 13%.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Family of Apps operating income grew 18%, offsetting Reality Labs losses.",
+            "quote": "Family of Apps $ 102,469 $ 87,109 $ 62,871 18 % 39 %",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management attributes higher ad pricing mainly to improved ad performance from targeting and measurement tools.",
+            "quote": "which we believe is mostly due to ongoing improvements to our ad performance from our ad targeting and measurement tools",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull's context is fair, but it doesn't close the gap in the bear case. Yes, the $15.93 billion OBBBA charge depressed 2025 net income, but the filing's own 13% 'absent' rate is a hypothetical; the reported 30% is what shareholders received, and 2026 guidance of 13-16% is only 'absent any changes to our tax landscape.' Free cash flow fell 16% even as operating cash flow rose, and the filing says the $115 billion to $135 billion 2026 capex supports AI efforts whose returns it calls uncertain: 'there can be no assurance that the usage of AI will enhance our products... or be beneficial to our business.' On advertising, the bull quotes management's belief that targeting improvements drove pricing, but the same filing says limits on targeting 'will continue to adversely impact our advertising revenue for the foreseeable future,' and that European users may face 'a materially worse user experience' pending appeal. Reality Labs is 'bounded' only in the sense that it is a $19.19 billion annual drag expected to repeat in 2026. A profitable core is funding spending the filing itself says may not pay off.",
+        "claims": [
+          {
+            "claim": "The reported 2025 tax rate of 30% is the figure that matters; the 13% rate is hypothetical and 2026 guidance is conditional.",
+            "quote": "Absent any changes to our tax landscape, we expect our effective tax rate for the full year 2026 to be in the range of 13-16%.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The filing states that AI investments may not benefit the business, despite the spending.",
+            "quote": "There are significant risks involved in developing and deploying AI and there can be no assurance that the usage of AI will enhance our products or services or be beneficial to our business",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management expects regulatory and platform changes to keep hurting ad revenue, contrary to the bull's view that targeting is driving growth.",
+            "quote": "the legislative, regulatory and platform developments described above will continue to adversely impact our advertising revenue for the foreseeable future",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    }
+  ],
+  "citations": {
+    "bull": {
+      "verified": 6,
+      "total": 6
+    },
+    "bear": {
+      "verified": 6,
+      "total": 6
+    },
+    "overall": {
+      "verified": 12,
+      "total": 12,
+      "accuracy": 1.0
+    }
+  },
+  "judge": {
+    "scores": {
+      "bull": {
+        "evidence": 8,
+        "logic": 7,
+        "responsiveness": 7
+      },
+      "bear": {
+        "evidence": 8,
+        "logic": 7,
+        "responsiveness": 8
+      }
+    },
+    "winner": "bear",
+    "reasoning": "Both sides cite verified filing quotes, so evidence is comparable. The bear better answers the bull's rebuttal: it shows the 13% tax rate is hypothetical while the reported 30% is actual, and it pairs the AI-return disclaimer and the regulatory-headwind language against the bull's targeting-driven pricing thesis. The bull's rebuttal relies on the $69.69B property spend and FoA operating income, but leaves the forward-looking risk language largely unanswered."
+  },
+  "usage": {
+    "calls": 5,
+    "input_tokens": 299108,
+    "output_tokens": 2752,
+    "cost_usd": 0.0313
+  }
+}

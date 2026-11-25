@@ -1,0 +1,149 @@
+{
+  "ticker": "CRM",
+  "filing": {
+    "accession": "0001108524-26-000060",
+    "document": "crm-20260131.htm",
+    "date": "2026-03-02"
+  },
+  "model": "claude-haiku-5-5",
+  "created": "2026-11-25T04:16:24+00:00",
+  "bull_first": true,
+  "input_mode": "full",
+  "rounds": [
+    {
+      "round": 1,
+      "bull": {
+        "argument": "Salesforce's fiscal 2026 results show a business compounding while expanding margins. Revenue rose 10% to $41.5 billion, income from operations climbed to $8.3 billion from $7.2 billion, and operating margin rose to about 20%. Operating cash flow reached $15.0 billion, up 15%. Remaining performance obligation grew 14% to roughly $72.4 billion, and current RPO grew 16%, which gives visibility into future revenue. Subscription and support made up about 95% of revenue, and attrition was steady at approximately eight percent, which the filing says has been kept consistent versus the prior year. Management also returned capital, repurchasing about $12.7 billion of stock and paying $1.6 billion in dividends. The filing's risks are real, notably the $6.0 billion Informatica borrowing and AI competition, but the reported figures show the core subscription engine still growing and self-funding. The bull case rests on these numbers holding.",
+        "claims": [
+          {
+            "claim": "Revenue grew 10% year over year to $41.5 billion in fiscal 2026.",
+            "quote": "For fiscal 2026, revenue was $41.5 billion , an increase of ten percent year-over-year.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Operating cash flow grew 15% to $15.0 billion, supporting self-funded growth and buybacks.",
+            "quote": "Cash provided by operations for fiscal 2026 was $15.0 billion , an increase of 15 percent year-over-year.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Contracted future revenue visibility increased, with total RPO up 14%.",
+            "quote": "Total remaining performance obligation, which represents all future revenue under contract yet to be recognized, as of January 31, 2026 was approximately $72.4 billion, an increase of 14 percent year-over-year .",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull case leans on headline growth, but the filing shows several pressures that cut against it. Principal due on outstanding debt rose from $8.5 billion to $14.5 billion after the full $6.0 billion Informatica borrowing, and management warns that debt service could consume a substantial portion of operating cash flow and limit refinancing. Cash, equivalents and marketable securities fell from $14.0 billion to $9.6 billion, and investing outflows reached $8.6 billion. Income from operations is partly flattered by a $1.0 billion net gain on strategic investments, which swung from a $121 million loss, and the filing describes that portfolio as subject to partial or total loss of invested capital. Attrition of about eight percent means the company must replace a meaningful slice of its base each year, and the filing says consumption-based offerings like Agentforce have uncertain pricing and monetization. Professional services revenue fell 4% on weaker demand for large transformation projects. Operating cash flow growth also benefits from timing: the filing notes that Q1 is typically the largest collections quarter, so year-end cash figures can overstate the run rate.",
+        "claims": [
+          {
+            "claim": "Debt principal more than doubled, creating refinancing and cash-flow burdens.",
+            "quote": "Principal due on our outstanding debt obligations (1) 14,500 8,500",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Operating income benefited from a non-operating investment gain that reversed a prior-year loss.",
+            "quote": "Gains (losses) on strategic investments, net 1,017 3 (121) 0 (277) (1)",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Professional services revenue declined due to weaker demand for large engagements.",
+            "quote": "The decrease in professional services and other revenues for fiscal 2026 was primarily due to less demand for larger, multi-year transformation engagements, which may continue in the near term.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "bull": {
+        "argument": "The debt increase is real, but the filing says liquidity covers it. Principal due rose to $14.5 billion, yet management states that existing resources, including operating cash flow and undrawn Credit Facility capacity, will meet needs over the next 12 months and beyond. The opponent's gain point also misreads the income statement. The $1.0 billion strategic investment gain sits below income from operations, so the $8.3 billion operating figure, up from $7.2 billion, is not flattered by it. Operating margin improved to about 20%. Attrition, which the bear flags, was held consistent with the prior year at about eight percent. Professional services fell 4%, but they are about 5% of revenue, while subscription and support, about 95%, grew 10%. The Q1 collections timing caveat is fair, so the bull case should rest on full-year figures: $15.0 billion of operating cash flow, up 15%, funding $12.7 billion of buybacks and $1.6 billion of dividends.",
+        "claims": [
+          {
+            "claim": "Income from operations rose to $8.3 billion, and the investment gain is reported below that line, so it does not inflate operating profit.",
+            "quote": "income from operations was $8.3 billion as compared to $7.2 billion from a year ago",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management says liquidity, including Credit Facility capacity, covers debt maintenance needs, addressing the debt concern.",
+            "quote": "will be sufficient to meet our working capital, capital expenditure and debt maintenance needs over the next 12 months and thereafter.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Attrition was held steady versus the prior year, which answers the churn concern.",
+            "quote": "We continue to maintain a variety of customer programs and initiatives, which, along with increasing enterprise adoption, have helped keep our attrition rate consistent as compared to the prior year.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "I concede the gain sits below income from operations, so the $8.3 billion operating figure is not inflated by it. But the gain still matters to the bull case. It is concentrated: the filing says the mark-to-market gains were 'driven largely by $1.2 billion in gains from one privately held equity investment,' and it flows into pretax income and EPS. The filing's EPS comparison is partly driven by that non-operating item, not just the core business. On liquidity, management's 12-month sufficiency statement is a forecast, not a guarantee. The filing also says 'We expect that interest expense may increase due to the outstanding balance related to the Informatica Credit Agreements.' Cash fell from $14.0 billion to $9.6 billion. Operating cash flow of $15.0 billion was largely returned: buybacks of $12.7 billion and dividends of $1.6 billion total about $14.3 billion. That leaves little room to rebuild cash while carrying $14.5 billion of debt principal. The bull case depends on sustained operating cash flow funding both shareholder returns and debt service.",
+        "claims": [
+          {
+            "claim": "The EPS improvement includes a concentrated non-operating gain, not only core growth.",
+            "quote": "Our mark-to-market unrealized gains in fiscal 2026 were driven largely by $1.2 billion in gains from one privately held equity investment.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management expects higher interest expense from the Informatica borrowing, reducing future earnings.",
+            "quote": "We expect that interest expense may increase due to the outstanding balance related to the Informatica Credit Agreements.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Reported EPS growth was $7.80 versus $6.36, a figure that includes the investment gains.",
+            "quote": "diluted net income per share was $7.80 as compared to diluted net income per share of $6.36",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    }
+  ],
+  "citations": {
+    "bull": {
+      "verified": 6,
+      "total": 6
+    },
+    "bear": {
+      "verified": 6,
+      "total": 6
+    },
+    "overall": {
+      "verified": 12,
+      "total": 12,
+      "accuracy": 1.0
+    }
+  },
+  "judge": {
+    "scores": {
+      "bull": {
+        "evidence": 8,
+        "logic": 7,
+        "responsiveness": 8
+      },
+      "bear": {
+        "evidence": 7,
+        "logic": 7,
+        "responsiveness": 7
+      }
+    },
+    "winner": "tie",
+    "reasoning": "Both sides cite verified quotes from the filing, and the bull effectively rebuts the bear's claim that the investment gain inflates operating income, which the bear concedes. The bear retains a substantive point that the EPS comparison is partly driven by a concentrated non-operating gain and that debt service plus shareholder returns leave little cash cushion, while the bull's liquidity rebuttal is strong but relies on a forecast statement. Overall the debate is closely balanced with neither side decisively ahead."
+  },
+  "usage": {
+    "calls": 5,
+    "input_tokens": 201186,
+    "output_tokens": 5200,
+    "cost_usd": 0.0227
+  }
+}

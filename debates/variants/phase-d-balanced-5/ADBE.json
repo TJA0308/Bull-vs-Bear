@@ -1,0 +1,149 @@
+{
+  "ticker": "ADBE",
+  "filing": {
+    "accession": "0000796343-26-000003",
+    "document": "adbe-20251128.htm",
+    "date": "2026-01-15"
+  },
+  "model": "claude-haiku-5-5",
+  "created": "2026-11-25T04:56:41+00:00",
+  "bull_first": true,
+  "input_mode": "balanced",
+  "rounds": [
+    {
+      "round": 1,
+      "bull": {
+        "argument": "The filing shows a business compounding steadily. Total Adobe ARR grew to $25.20 billion, up 11.5% year over year, and Digital Media ARR reached $19.20 billion, also up 11.5%. Total revenue rose 11% to $23,769 million, with subscription revenue now 96% of the total, which management describes as recurring and predictable. Remaining performance obligations increased 13% to $22.52 billion, giving forward visibility. Profitability improved: net income rose 28% to $7.13 billion while operating expenses were relatively flat, and operating cash flow grew 25% to $10.03 billion. Management is also investing in AI, with Firefly features across Creative Cloud, Acrobat AI Assistant, and the Acrobat Studio launch. The risk factors acknowledge competition and AI disruption, but the reported numbers show that existing subscriber growth and pricing power have so far held up.",
+        "claims": [
+          {
+            "claim": "Total Adobe ARR grew 11.5% year over year to $25.20 billion.",
+            "quote": "Total Adobe ARR grew to $25.20 billion exiting fiscal 2025, representing 11.5% year-over-year growth.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Subscription revenue makes up 96% of total revenue, which supports predictability.",
+            "quote": "Subscription $ 22,904 $ 20,521 $ 18,284 12 % % Percentage of total revenue 96 % % 95 % % 94 %",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Net income rose 28% while operating expenses stayed relatively flat.",
+            "quote": "Net income of $7.13 billion during fiscal 2025 increased by $1.57 billion, or 28%, compared to fiscal 2024.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The reported growth is real, but the filing itself flags why it may not persist. Management says competition will intensify, and its own risk factors warn that competitors' AI tools could drive downward pressure on pricing. Your opponent's point that pricing power has held up is precisely what the filing says could erode. The filing also says AI investment may squeeze margins. Operating expenses were flat in fiscal 2025, but the company states that AI development costs 'could adversely impact our margins' and that it is scaling AI 'without assurance that our customers and users will adopt them.' Revenue from these products is also unproven. The filing admits that 'consumer reception and monetization pathways are uncertain.' Finally, the headline ARR growth of 11.5% is measured at constant currency rates set at the start of the year. The filing notes that revaluing ending ARR at the new rates would add about $460 million, so the reported trajectory depends on accounting conventions as well as demand. A strong recent record does not remove these disclosed risks to future growth and margins.",
+        "claims": [
+          {
+            "claim": "Management itself warns that competition may pressure pricing, renewals, and new customer acquisition.",
+            "quote": "may increase downward pressure on pricing and gross margins and adversely affect our renewal, upsell and cross-sell rates as well as our ability to attract new customers",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The company admits AI investment could hurt margins and that customer adoption is not assured.",
+            "quote": "These costs could adversely impact our margins as we continue to make significant investments in AI development, add AI capabilities and third-party AI models to our solutions",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The filing states that monetization of new AI solutions is uncertain and strategies may fail.",
+            "quote": "consumer reception and monetization pathways are uncertain, our strategies may not be successful",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "bull": {
+        "argument": "The opponent is right that risks are disclosed, but disclosed risk is not the same as demonstrated erosion. The filing reports that pricing and margins have held: net income rose 28% and cost of revenue grew only 8% against 11% revenue growth, so gross economics are expanding, not compressing. The AI margin warning is forward-looking ('could adversely impact'), while the reported results show operating expenses flat. On currency, the 11.5% ARR growth uses rates set at the start of the year, a convention the filing applies consistently to prior-year balances as well, so it is a like-for-like comparison, not a flattering one. The $460 million figure is a disclosed sensitivity, and it points to upside on a revaluation, not a hidden shortfall. Finally, remaining performance obligations rose 13% to $22.52 billion, contracted revenue that does not depend on new AI adoption to be recognized. The risks are real, but the company's contracted base and reported margins are the evidence that should carry weight.",
+        "claims": [
+          {
+            "claim": "Cost of revenue grew 8% while revenue grew 11%, so gross economics are expanding.",
+            "quote": "Cost of revenue of $2.55 billion during fiscal 2025 increased by $193 million, or 8%, compared to fiscal 2024.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Remaining performance obligations rose 13%, giving contracted forward visibility independent of new AI adoption.",
+            "quote": "Remaining performance obligations of $22.52 billion as of November 28, 2025 increased by 13% from $19.96 billion as of November 29, 2024.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The filing states that revaluing ending ARR at new rates would add about $460 million, indicating currency is not inflating the reported growth.",
+            "quote": "Revaluing our ending ARR for fiscal 2025 using currency rates determined at the beginning of fiscal 2026, our Total Adobe ARR at the end of fiscal 2025 would be $25.66 billion, or approximately $460 million higher than the ARR reported above.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "I concede the reported margins and the contracted base are real. But they describe the past, while the filing's warnings describe the future. Cost of revenue grew 8% against 11% revenue growth, yet the filing says competition may pressure pricing and renewals, and that AI investment 'could adversely impact our margins.' Flat operating expenses in one year do not show that AI spending has peaked. The 11.5% ARR growth is measured at constant currency, and the filing's own $460 million revaluation figure shows how much the reported trajectory depends on exchange-rate conventions. Remaining performance obligations of $22.52 billion are contracted, but the filing does not say those contracts are insulated from renewal pressure, and it lists renewal and upsell rates among the exposures. Revenue recognition for bundled software and cloud offerings is also a judgment area: the filing says the distinction between performance obligations 'may require significant judgment.' Strong results are real, but the disclosed risks bear on whether they persist.",
+        "claims": [
+          {
+            "claim": "Management warns competitive pressure could hit pricing, margins, and renewals, which the reported numbers do not yet show.",
+            "quote": "may increase downward pressure on pricing and gross margins and adversely affect our renewal, upsell and cross-sell rates",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The company says AI investment costs could hurt margins, a risk that flat opex in one year does not resolve.",
+            "quote": "These costs could adversely impact our margins as we continue to make significant investments in AI development",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Revenue recognition for bundled offerings requires significant judgment, so reported growth depends on accounting conclusions.",
+            "quote": "Determining whether products and services are distinct performance obligations to be accounted for separately or combined as part of a single performance obligation may require significant judgment",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    }
+  ],
+  "citations": {
+    "bull": {
+      "verified": 6,
+      "total": 6
+    },
+    "bear": {
+      "verified": 6,
+      "total": 6
+    },
+    "overall": {
+      "verified": 12,
+      "total": 12,
+      "accuracy": 1.0
+    }
+  },
+  "judge": {
+    "scores": {
+      "bull": {
+        "evidence": 8,
+        "logic": 7,
+        "responsiveness": 7
+      },
+      "bear": {
+        "evidence": 8,
+        "logic": 7,
+        "responsiveness": 8
+      }
+    },
+    "winner": "tie",
+    "reasoning": "Both sides cite verified quotes from the filing, so evidence is comparably strong. The bull's round 2 answered the bear's margin and currency points with concrete data (cost of revenue up 8% vs revenue up 11%, RPO up 13%, the $460M revaluation as upside), while the bear effectively distinguished past results from forward-looking risks and raised the revenue-recognition judgment point. Neither side decisively overturned the other, so the debate is close to even."
+  },
+  "usage": {
+    "calls": 5,
+    "input_tokens": 46993,
+    "output_tokens": 4156,
+    "cost_usd": 0.0068
+  }
+}

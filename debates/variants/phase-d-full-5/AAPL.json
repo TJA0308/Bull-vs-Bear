@@ -1,0 +1,149 @@
+{
+  "ticker": "AAPL",
+  "filing": {
+    "accession": "0000320193-26-000026",
+    "document": "aapl-20260926.htm",
+    "date": "2026-11-03"
+  },
+  "model": "claude-haiku-5-5",
+  "created": "2026-11-25T04:25:21+00:00",
+  "bull_first": true,
+  "input_mode": "full",
+  "rounds": [
+    {
+      "round": 1,
+      "bull": {
+        "argument": "The filing shows a business growing at an accelerating pace. Total net sales rose 15% to $478,834 million in 2026 from 6% growth the prior year, and iPhone net sales climbed 21%. Services grew 13% to $123,301 million, and Services gross margin percentage reached 76.2%, which supports overall margin expansion. Total gross margin percentage rose to 48.8% from 46.9%. Management is also returning significant capital: the Company repurchased $85.8 billion of common stock in 2026, paid $15.7 billion in dividends, and announced a new buyback program of up to $100 billion. Liquidity of $136.9 billion gives the Company room to keep investing in R&D, which rose 32% to $45,765 million, including artificial intelligence. The risks are real: the filing warns of memory cost pressure, tariffs, and litigation. But the Company has shown it can pass through costs and still expand margins, and it has the balance sheet to absorb shocks while continuing to reward shareholders.",
+        "claims": [
+          {
+            "claim": "Total net sales grew 15% year over year in 2026.",
+            "quote": "Total net sales $ 478,834 15 % $ 416,161 6 % $ 391,035",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Total gross margin percentage improved to 48.8% in 2026.",
+            "quote": "Total gross margin percentage 48.8 % 46.9 % 46.2 %",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The Company returned significant capital to shareholders in 2026 and announced a new buyback.",
+            "quote": "During 2026, the Company repurchased $85.8 billion of its common stock and paid dividends and dividend equivalents of $15.7 billion.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull case rests on a strong 2026, but the filing signals that much of that strength is fragile. Management says it is 'experiencing supply constraints and rising costs' for advanced semiconductors, memory and storage, and expects these trends 'to intensify for memory and storage components.' Price increases, the very lever the bulls credit, 'may also reduce demand for the Company's products.' Margin expansion was also helped by one-time items: Products gross margin rose 'primarily due to product mix and tariff refunds,' and tariff refunds followed a Supreme Court ruling that the filing itself treats as uncertain. Meanwhile R&D jumped 32% with returns not assured: the filing says these investments 'may not achieve expected returns.' Sales are concentrated, with 'a significant portion of the Company's net sales from a single product category.' Finally, the filing expects 'gross margins will be subject to volatility and downward pressure.' Buybacks of $85.8 billion are a use of cash, not proof of durable earnings.",
+        "claims": [
+          {
+            "claim": "Management expects memory and storage cost pressure to worsen, which threatens future margins.",
+            "quote": "The Company expects these trends to intensify for memory and storage components.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Price increases used to offset costs may reduce demand for products.",
+            "quote": "Actions, such as price increases, that have been and may in the future be taken by the Company may not effectively mitigate these negative impacts, and may also reduce demand for the Company’s products.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management itself expects gross margins to face downward pressure, despite the recent expansion.",
+            "quote": "the Company believes, in general, gross margins will be subject to volatility and downward pressure.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "bull": {
+        "argument": "The bear case is fair on risks, but it overstates how much the 2026 results depend on one-offs. Tariff refunds did help Products margin, yet the filing attributes Products gross margin growth to 'product mix and tariff refunds, partially offset by higher costs, including memory,' so the business absorbed real cost pressure and still grew. Services, which the filing does not tie to refunds, rose to a 76.2% gross margin and produced $93,943 million of gross margin, up from $82,314 million. Strip out any refund effect and total gross margin still rose to 48.8% from 46.9%, with mix and Services doing much of the work. On demand, iPhone sales grew 21% and Greater China grew 28%, which argues against the view that price increases are shrinking demand. The R&D increase is a deliberate investment, not a loss: total operating expenses were 16% of net sales, and the Company held $136.9 billion in cash and marketable securities to fund it. The 'downward pressure' warning is a standing caveat, not a 2026 finding.",
+        "claims": [
+          {
+            "claim": "Products gross margin rise was driven by mix and tariff refunds, offset by memory costs, so cost pressure was absorbed.",
+            "quote": "Products gross margin and gross margin percentage increased during 2026 compared to 2025 primarily due to product mix and tariff refunds, partially offset by higher costs, including memory.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Services gross margin grew to $93,943 million at a 76.2% margin, up from $82,314 million.",
+            "quote": "Services 93,943 82,314 71,050",
+            "verified": false,
+            "score": 0.0
+          },
+          {
+            "claim": "Greater China net sales grew 28% in 2026, despite price increases being discussed as a demand risk.",
+            "quote": "Greater China 82,378 28 % 64,377 (4) % 66,952",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull's rebuttal relies on numbers the filing does not isolate. The filing never quantifies the tariff refund, so 'strip out any refund effect' is an assumption, not a measured result. Products gross margin rose only 'primarily due to product mix and tariff refunds,' and the refund itself comes from a Supreme Court ruling on tariffs the filing describes as uncertain. Growth in iPhone and Greater China sales does not show price increases are harmless: the filing says they 'may also reduce demand,' and its warning about a single-category concentration still stands. The iPhone gain came with a Pro-model mix shift, which flatters average pricing. Services margin strength is real, but the filing ties it to 'a different mix of services' and concedes 'higher costs.' R&D rose 32%, nearly four times the 10% growth in net sales (478,834 vs 416,161 is 15%), and the filing says these investments 'may not achieve expected returns.' Holding cash does not show returns. Management's own words on memory costs are forward-looking, not a standing caveat: it expects these trends 'to intensify.'",
+        "claims": [
+          {
+            "claim": "The filing attributes Products margin gains partly to one-time tariff refunds, which it does not quantify.",
+            "quote": "primarily due to product mix and tariff refunds, partially offset by higher costs, including memory",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The filing says the R&D investments may not achieve expected returns.",
+            "quote": "These investments may not achieve expected returns, and the Company may not be able to develop and market new products, services and technologies successfully.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management expects memory and storage cost pressure to intensify, a 2026-specific forward warning.",
+            "quote": "The Company expects these trends to intensify for memory and storage components.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    }
+  ],
+  "citations": {
+    "bull": {
+      "verified": 5,
+      "total": 6
+    },
+    "bear": {
+      "verified": 6,
+      "total": 6
+    },
+    "overall": {
+      "verified": 11,
+      "total": 12,
+      "accuracy": 0.917
+    }
+  },
+  "judge": {
+    "scores": {
+      "bull": {
+        "evidence": 6,
+        "logic": 6,
+        "responsiveness": 6
+      },
+      "bear": {
+        "evidence": 7,
+        "logic": 7,
+        "responsiveness": 8
+      }
+    },
+    "winner": "bear",
+    "reasoning": "The bull's Services figures ($93,943M vs $82,314M) were not verified, weakening its strongest margin argument, and its claim that refund effects can be stripped out is an assumption the filing does not quantify, as the bear noted. The bear's quotes were verified and it directly engaged the bull's rebuttal on refunds, demand, and R&D returns, though its 'nearly four times' R&D comparison is a loose framing and it did not fully rebut the Greater China demand evidence."
+  },
+  "usage": {
+    "calls": 5,
+    "input_tokens": 127700,
+    "output_tokens": 2621,
+    "cost_usd": 0.0141
+  }
+}

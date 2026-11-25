@@ -75,9 +75,13 @@ def condition_dir(name):
     return os.path.join("debates", "variants", f"phase-c-{name}")
 
 
-def run_condition(name, tickers=None, results_path=RESULTS_PATH, out_dir=None):
-    """Generate one debate per ticker, judge it in speaking order, save as we go."""
+def run_condition(name, tickers=None, results_path=RESULTS_PATH, out_dir=None, input_mode=None):
+    """Generate one debate per ticker, judge it in speaking order, save as we go.
+
+    input_mode defaults to the one registered for `name` in CONDITIONS; Phase D
+    passes it explicitly for its numbered repeat draws."""
     out_dir = out_dir or condition_dir(name)
+    input_mode = input_mode or CONDITIONS[name]["input_mode"]
     results = load_results(results_path)
     done = results.setdefault(name, {})
     for ticker in tickers or TICKERS:
@@ -91,7 +95,7 @@ def run_condition(name, tickers=None, results_path=RESULTS_PATH, out_dir=None):
                 with open(debate_file, encoding="utf-8") as f:
                     debate = json.load(f)
             else:
-                debate = run_debate(ticker, bull_first=True, **CONDITIONS[name])
+                debate = run_debate(ticker, bull_first=True, input_mode=input_mode)
                 save_debate(debate, out_dir)
             done[ticker] = judge_in_speaking_order(debate)
         except Exception as e:  # one bad filing should not stop the batch
