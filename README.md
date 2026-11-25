@@ -1,87 +1,73 @@
+<div align="center">
+
 # Bull vs. Bear
 
-Two AI agents argue for and against a stock using its real SEC 10-K filing, and a third agent judges who won. Every claim is meant to quote the filing, and plain Python (not an LLM) checks that each quote really appears in it.
+**Two AI agents argue a stock using its real SEC 10-K. Plain code checks every quote. Then the judge gets tested for bias.**
+
+[![Tests](https://github.com/TJA0308/Bull-vs-Bear/actions/workflows/tests.yml/badge.svg)](https://github.com/TJA0308/Bull-vs-Bear/actions/workflows/tests.yml)
+[![Live site](https://img.shields.io/badge/live%20site-GitHub%20Pages-2b6cd4)](https://tja0308.github.io/Bull-vs-Bear/)
+[![License: MIT](https://img.shields.io/badge/license-MIT-lightgrey)](LICENSE)
+![Python](https://img.shields.io/badge/python-3.10%2B-3776ab)
+![Cost](https://img.shields.io/badge/cost-about%202%20cents%20per%20debate-1a7f37)
+
+[**Open the live site**](https://tja0308.github.io/Bull-vs-Bear/) · [Findings](#findings) · [How it works](#how-it-works) · [Run it](#run-it) · [Code tour](#code-tour)
+
+<img src="docs/pipeline.svg" alt="Pipeline: SEC 10-K to bull and bear agents, to a code-based quote checker, to a judge, to a static site" width="900">
+
+</div>
 
 > **Not investment advice.** This is a research and argument tool built for learning.
 
-## Status
+## Why this exists
 
-Work in progress.
+Ask an LLM to argue a stock and it will happily invent numbers and quotes. And when a second LLM judges the argument, you have no idea whether *its* verdict means anything. This project attacks both problems:
 
-- [x] Ticker to CIK lookup (SEC EDGAR)
-- [x] Find a company's latest 10-K and build its URL
-- [x] Download and cache the filing, extract **Item 1A (Risk Factors)** and **Item 7 (MD&A)**
-- [x] Shared Claude helper with token and cost logging (`llm.py`)
-- [x] Bull and bear agents debating over several rounds (`debate.py`)
-- [x] Judge agent with a scoring rubric
-- [x] Citation checker: minimum length, exact fast path, fuzzy match (`rapidfuzz`, threshold 90), and every number must match; 27 tests across the project
-- [x] Bias evaluation: swap bull/bear order and measure how often the verdict flips (`bias.py`, results below)
-- [x] Interactive static site in `site/`, built from the saved results by `build_site.py`
-- [x] Publish on GitHub Pages: https://tja0308.github.io/Bull-vs-Bear/
-- [x] Run the tests automatically on every pull request (GitHub Actions)
+- **Grounding.** Debaters may only use the filing's Risk Factors and MD&A text, and every quote is checked by code. 190 of 192 quotes were real.
+- **Judging.** The judge is treated as something to test. Is it swayed by listing order, speaking order, or which model it is? The last one turned out to matter a lot.
 
-## How it works
+## Findings
 
-```
-ticker -> CIK -> latest 10-K -> Item 1A + Item 7 text
-       -> bull agent <-> bear agent -> citation checker -> judge
-       -> debates/TICKER.json -> static site
-```
+Sixteen large companies, one 2-round debate per setup, judged repeatedly. Raw data is in `results/` and `debates/`. **Read every percentage below as one draw:** regenerating the same debates moved the bear's share by tens of points (finding 5). Comparisons that judge the *same* debates twice (finding 1) are not affected.
 
-Debates are generated ahead of time and saved as JSON, so the site loads instantly and visitors never spend API credits.
+### 1. Which model judges changes who wins
 
-## Setup
+<img src="docs/judge-shift.svg" alt="Same 32 debates judged by Haiku 5.5 and Sonnet 5.5. Bear wins 65 percent with Haiku and 29 percent with Sonnet." width="880">
 
-Requires Python 3.10+.
+The same 32 saved debates, judged by a second model (Sonnet 5.5). Before running it I fixed the decision rule: a drop of 20 points or more in the bear's share means the judge is the driver, under 10 means it is not. The drop was **35 points**, so the verdict is **judge-driven**.
 
-```bash
-python -m venv .venv
-.venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-```
+| | Haiku 5.5 | Sonnet 5.5 |
+|---|---|---|
+| Bear's share of verdicts | **65%** | **29%** |
+| Bull's share of verdicts | 5% | 51% |
+| Ties | 30% | 20% |
+| Mean margin, bull minus bear (30-point scale) | -1.88 | +0.55 |
+| Setup where bull speaks first: bear's share | 71% | 27% |
+| Setup where bear speaks first: bear's share | 58% | 31% |
 
-Create a `.env` file in the project root (it is git-ignored, never commit it):
+Sonnet scored the bull higher in **28 of 32 debates** and lower in 3. Per criterion, the bear's lead over the bull shrinks or flips:
 
-```
-ANTHROPIC_API_KEY=your-key
-SEC_USER_AGENT=Your Name your-email@example.com
-```
+| Bull minus bear, mean score | Haiku 5.5 | Sonnet 5.5 |
+|---|---|---|
+| Evidence | -0.32 | -0.03 |
+| Logic | -0.57 | +0.16 |
+| Responsiveness | -0.98 | +0.43 |
 
-The SEC requires the `User-Agent` to identify you and asks for no more than about 10 requests per second.
+**What this does not say.** Neither judge is "right": there is no ground truth for which side is correct, and Sonnet now leans slightly bull. Both judges are Claude models, so a bias shared by the whole model family is not tested. Thirty-two debates is a small sample, though a 35-point shift in 28 of 32 is not noise.
 
-## Usage
+### 2. Part of the bear's edge is the debate format
 
-```bash
-python fetch.py NVDA
-```
+When the bull speaks first, the bear always replies last. In that setup the "responsiveness" gap between the sides is large (-1.12). When the bear speaks first it nearly vanishes (-0.19). A smaller evidence and logic gap stays either way (about -0.3 to -0.4).
 
-This downloads NVDA's latest 10-K (cached in `data/raw/`) and writes the extracted sections to `data/NVDA_risk_factors.txt` and `data/NVDA_mdna.txt`.
+### 3. It is not an artifact of how the transcript was listed
 
-Tested on AAPL, NVDA, MSFT, TSLA, AMZN, GOOGL and META.
+Judging in the order the debate was actually spoken left the bear's edge essentially unchanged (it won 71% and 58% of judgments in the two setups, the bull 6% and 4%).
 
-Run a full debate (2 rounds by default) and save it as JSON:
+<details>
+<summary><b>Judge bias test: the full table (listing order, Haiku 5.5)</b></summary>
 
-```bash
-python debate.py AAPL
-```
+<br>
 
-This writes `debates/AAPL.json` with the transcript, per-quote verification, the judge's scores and the cost. A 2-round debate is 5 Claude calls (Haiku 5.5) and costs about 1.5 cents.
-
-Run the tests (none of them call the API):
-
-```bash
-python -m pytest
-```
-
-## Results
-
-16 non-bank companies, one 2-round debate per setup (Claude Haiku 5.5). Raw numbers are in `results/` and `debates/` (`results/chronological.json` is the speaking-order rerun); re-print the bias report with `python bias.py --report` (add `--variant bear-first` for the second setup).
-
-**Citations:** 190 of 192 quotes (99.0%) were found in the filing by code. The two misses scored 72 and 82 against a pass mark of 90. On Apple's filing, fabricated quotes scored 54 to 63, and quotes from the wrong company never passed.
-
-The fuzzy score alone cannot see a changed figure: with one digit changed in the 98 quotes that contain a number, every one still scored 90 or more. So the checker also requires every number in the quote to appear in the part of the filing it matched, and rejects all 98. It still accepts a one-word wording change (91% of quotes with a word swapped), so a verified quote proves the words are in the filing, not that they support the claim.
-
-**Judge bias test.** Each debate was judged 3 times with bull listed first and 3 times with bear listed first (96 judgments per setup), in two setups: the bull speaks first (original) or the bear speaks first.
+Each debate was judged 3 times with bull listed first and 3 times with bear listed first (96 judgments per setup), in two setups: bull speaks first (original) or bear speaks first.
 
 | | Bull speaks first | Bear speaks first |
 |---|---|---|
@@ -93,50 +79,170 @@ The fuzzy score alone cannot see a changed figure: with one digit changed in the
 | Majority verdict changes when order is swapped | 31% | 44% |
 | Swap-and-average: disagreement afterward | 6% | 19% |
 
-What this says, and does not say:
-
-- **No clear effect of listing order on scores.** Both ranges include zero (the interval uses a t critical value, which is wider than 1.96 with only 16 debates).
-- **The bear's edge is partly a debate-format flaw.** In the original format the bear always replies last. With the bear speaking first its share fell from 71% to 55%. But the bear still won about 7 times as often as the bull, so something else favors it. Candidates, none tested yet: the judge's taste for caution, the Risk Factors section making up most of the text, or the judge being the same model as the debaters.
-- **Order swaps flip verdicts more than rerunning does only in the second setup** (44% against a 19% baseline), though the score bonus stays small. In the first setup the flip rate (31%) matches the baseline (28%).
+- **No clear effect of listing order on scores.** Both ranges include zero (the interval uses a t critical value, wider than 1.96 with only 16 debates).
+- **Order swaps flip verdicts more than rerunning only in the second setup** (44% against a 19% baseline), yet the score bonus stays small.
 - **Swap-and-average helped in one setup and not the other** (28% to 6%, then 19% to 19%), so it is not a reliable fix on this much data.
-- **The listing-order test has a confound, and the bear's edge survives removing it.** When the judge lists the side that spoke second first, it reads a reply before the argument it answers, so those results mix pure position bias with a scrambled conversation. To check, the 32 saved debates were judged again in the order they were spoken (`python bias.py --chrono`, 96 calls, about 4 cents). The bear still won 71% (bull speaks first) and 58% (bear speaks first) of judgments, the bull 6% and 4%, close to the table above. So the scrambled listing did not create the bear's edge; what does is still unexplained.
-- Only 16 debates per setup, so treat every number as a rough estimate.
+- **A confound in the listing test.** When the judge lists the side that spoke second first, it reads a reply before the argument it answers. That is why finding 3 above reran everything in speaking order.
 
-## The site
+</details>
 
-`site/` is a static page (plain HTML, CSS and JavaScript) with a debate explorer, the bias lab and a quote-checker experiment. It reads `site/data.js`, which `build_site.py` generates from the saved debates and results.
+### 4. Quote verification works, and the number rule matters
 
-```bash
-python build_site.py            # regenerate site/data.js (needs the cached filings in data/raw)
-python -m http.server 8123 --directory site   # preview at http://localhost:8123
+<img src="docs/quote-check.svg" alt="Three quotes: a real one verified, one with a changed number rejected, and a fabricated one not verified" width="880">
+
+- **190 of 192 quotes (99.0%)** were found in the filing. The two misses scored 72 and 82 against a pass mark of 90. Fabricated quotes scored 54 to 63, and quotes from the wrong company never passed.
+- **The fuzzy score cannot see a changed figure.** With one digit changed in the 98 quotes that contain a number, every one still scored 90 or more. So the checker also requires every number in the quote to appear in the part of the filing it matched. That rejects all 98, and none of the 192 real verdicts changed.
+- **Limit:** it still accepts a one-word wording change (91% of quotes with a word swapped). A verified quote proves the words are in the filing, not that they support the claim.
+
+### 5. One debate per company is too noisy to pin down the bear's share
+
+A control run (Phase C): the 16 debates were regenerated from identical input and judged the same way. The bear's share of verdicts fell from **71% to 42%**, mostly because bear wins became ties (bull 6% to 0%, tie 23% to 58%). Per-company results did not repeat (AAPL went from 67% to 0%). The average score margin moved far less (-1.96 to -1.40 on a 30-point scale), and the bull won 0 to 10% of judgments in every run, so the *direction* of the bear's edge looks stable while its *size* does not.
+
+This is why the pre-set rule returned "too noisy to read" for the second Phase C question: giving the debaters equal-size chunks of Risk Factors and MD&A produced a 58% bear share, which is inside that noise. Whether input balance matters is still open. Phase B's judge comparison is unaffected, because both judges scored the very same debates.
+
+## How it works
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant F as 10-K (Items 1A + 7)
+    participant U as Bull agent
+    participant E as Bear agent
+    participant C as Quote checker (code)
+    participant J as Judge
+    F->>U: filing excerpts
+    F->>E: filing excerpts
+    loop 2 rounds
+        U->>C: argument + verbatim quotes
+        C-->>U: each quote VERIFIED or NOT
+        U->>E: argument
+        E->>C: rebuttal + verbatim quotes
+        C-->>E: each quote VERIFIED or NOT
+        E->>U: rebuttal
+    end
+    C->>J: transcript with verification tags
+    J-->>J: score evidence, logic, responsiveness
+    J->>J: winner or tie
 ```
 
-`build_site.py` reads the cached filings in `data/raw/`, so run `python fetch.py TICKER` first for any company that is not cached. `.github/workflows/pages.yml` publishes `site/` to GitHub Pages on every push to `main`; it needs no secrets. One-time setup: repo Settings, Pages, Source: "GitHub Actions".
+**Design choices worth knowing**
+
+- **Code verifies, the LLM never does.** A judge that "checks" a quote can hallucinate the check. Python cannot.
+- **Debates are saved as JSON.** The site reads files, so visitors never spend API credits and the demo cannot be run up.
+- **Bad model output gets one retry** with the error fed back, then fails loudly. Every claim must have a string `claim` and `quote`, validated *before* the citation checker runs.
+- **Pre-registered thresholds.** The judge-comparison rule (20 points big, 10 small) lives in `bias.py` as constants, written before the paid run.
+- **Unknown models are refused before any API call**, so a typo cannot spend money.
+
+## Run it
+
+Requires Python 3.10+ (CI runs 3.13).
+
+<details open>
+<summary><b>Setup</b></summary>
+
+```bash
+python -m venv .venv
+.venv\Scripts\Activate.ps1        # Windows PowerShell
+# source .venv/bin/activate       # macOS / Linux
+pip install -r requirements.txt
+```
+
+Create a `.env` file in the project root (git-ignored, never commit it):
+
+```
+ANTHROPIC_API_KEY=your-key
+SEC_USER_AGENT=Your Name your-email@example.com
+```
+
+The SEC requires the `User-Agent` to identify you and asks for no more than about 10 requests per second.
+
+</details>
+
+| Goal | Command | Cost |
+|---|---|---|
+| Download a 10-K and extract the two sections | `python fetch.py NVDA` | free |
+| Run one debate and save it | `python debate.py AAPL` | about 1.5 cents (5 calls) |
+| Run the tests (none call the API) | `python -m pytest` | free |
+| Re-print the listing-order bias report | `python bias.py --report` | free |
+| Judge saved debates in speaking order (Haiku) | `python bias.py --chrono` | about 4 cents (96 calls) |
+| Judge them with another model | `python bias.py --chrono --judge-model claude-sonnet-5-5` | about 80 cents |
+| Compare two judges' saved results | `python bias.py --compare claude-sonnet-5-5` | free |
+| Rebuild the site data | `python build_site.py` | free |
+| Preview the site | `python -m http.server 8123 --directory site` | free |
+
+<details>
+<summary><b>Sample output of <code>python debate.py AAPL</code></b></summary>
+
+```text
+AAPL: filing text is 15,071 words
+round 1: bull speaks
+round 1: bear speaks
+round 2: bull speaks
+round 2: bear speaks
+judge deliberates
+
+saved debates\AAPL.json
+winner: tie  scores: {'bull': {'evidence': 8, 'logic': 7, 'responsiveness': 7}, 'bear': {'evidence': 7, 'logic': 7, 'responsiveness': 8}}
+citations verified: 12/12 (bull 6/6, bear 6/6)
+cost: $0.0154 over 5 calls
+```
+
+</details>
+
+`build_site.py` reads the cached filings in `data/raw/`, so run `python fetch.py TICKER` first for any company that is not cached. `.github/workflows/pages.yml` publishes `site/` to GitHub Pages on every push to `main` that touches `site/`; it needs no secrets.
+
+Tested on AAPL, ADBE, AMD, AMZN, COST, CRM, GOOGL, KO, META, MSFT, NFLX, NKE, NVDA, PEP, TSLA and WMT.
+
+## Code tour
+
+New here? Read in this order:
+
+1. [`citations.py`](citations.py): the quote checker. Small, and the core idea.
+2. [`fetch.py`](fetch.py): EDGAR lookup, filing cache, section extraction.
+3. [`debate.py`](debate.py): the agents, the judge prompt, the debate loop.
+4. [`bias.py`](bias.py): the experiments and their statistics.
+5. [`tests/`](tests): what each module promises, in executable form.
+
+```text
+.
+├── fetch.py            EDGAR lookup, download, cache, extract Item 1A and Item 7
+├── llm.py              the one place that calls Claude: model, cost tracking, JSON parsing
+├── debate.py           bull and bear agents, judge, debate JSON
+├── citations.py        does this quote really appear in the filing?
+├── bias.py             order-swap, speaking-order and judge-model experiments
+├── build_site.py       saved debates + results  ->  site/data.js
+├── site/               static page: debate explorer, bias lab, quote-checker experiment
+├── debates/            one JSON per ticker, plus variants/bear-first/
+├── results/            saved bias and judge-comparison results
+├── docs/               the animated SVGs used in this README
+├── tests/              37 pytest tests, none call the API
+├── scripts/            check_key.py: one tiny real call to verify the API key
+├── data/               cached filings and extracted text (git-ignored)
+└── .github/workflows/  tests.yml (pytest on every PR and push), pages.yml (deploy site)
+```
 
 ## Known limitations
 
 - **Banks and some other filers** (for example JPM) incorporate MD&A by reference from a separate exhibit, so there is no MD&A in the 10-K body. `fetch.py` raises a clear error when a section is under 500 words instead of returning junk.
 - **ETFs and foreign filers** have no 10-K, so the lookup raises an error.
 - Section extraction uses regular expressions on the filing text, so unusual layouts may need pattern tweaks.
+- **Small samples.** Sixteen companies; treat every percentage as a rough estimate.
+- **Same-family judging.** Debaters and both judges are Claude models.
 
-## Project layout
+## Roadmap
 
-| File | Purpose |
-|---|---|
-| `fetch.py` | EDGAR lookup, filing download and cache, section extraction |
-| `llm.py` | The one place that calls Claude: model, cost tracking, JSON parsing |
-| `debate.py` | Bull and bear agents, judge, debate JSON |
-| `citations.py` | Checks that each quoted passage really appears in the filing |
-| `bias.py` | Order-swap test of the judge; writes `results/bias.json` |
-| `results/` | Saved bias test results |
-| `build_site.py` | Turns saved debates and results into `site/data.js` |
-| `site/` | The static page (HTML, CSS, JavaScript, generated data) |
-| `.github/workflows/pages.yml` | Publishes `site/` to GitHub Pages |
-| `.github/workflows/tests.yml` | Runs pytest on every pull request and push to `main` (no secrets needed) |
-| `LICENSE` | MIT license |
-| `tests/` | pytest tests: citation checker, section extraction, bias statistics, debate-turn validation |
-| `debates/` | Saved debates, one JSON file per ticker |
-| `scripts/check_key.py` | Run by hand to check the Claude API key works (one tiny real call; not part of pytest) |
-| `pytest.ini` | Points pytest at `tests/` only, so no stray script runs during tests |
-| `requirements.txt` | Pinned dependencies |
-| `data/` | Cached filings and extracted text (git-ignored) |
+- [x] Ticker to CIK lookup, 10-K download, section extraction
+- [x] Bull and bear agents, judge with a scoring rubric, cost logging
+- [x] Citation checker with exact, fuzzy and number rules
+- [x] Judge bias tests: listing order, speaking order, judge model
+- [x] Interactive static site, deployed to GitHub Pages
+- [x] Tests in CI, MIT license, `main` protected against force-push and deletion
+- [ ] Put the judge-model finding on the site
+- [x] Input experiment (Phase C): rerun noise control plus balanced input; too noisy to read
+- [ ] Repeat each debate several times (for example 5) so a share can be read to within a few points, then retest input balance
+- [ ] A third judge, to separate model size from model family
+- [ ] Refresh debates when a new 10-K appears
+
+## License
+
+[MIT](LICENSE).
