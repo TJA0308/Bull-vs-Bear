@@ -7,7 +7,7 @@
 [![Tests](https://github.com/TJA0308/Bull-vs-Bear/actions/workflows/tests.yml/badge.svg)](https://github.com/TJA0308/Bull-vs-Bear/actions/workflows/tests.yml)
 [![Live site](https://img.shields.io/badge/live%20site-GitHub%20Pages-2b6cd4)](https://tja0308.github.io/Bull-vs-Bear/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-lightgrey)](LICENSE)
-![Python](https://img.shields.io/badge/python-3.10%2B-3776ab)
+![Python](https://img.shields.io/badge/python-3.11%2B-3776ab)
 ![Cost](https://img.shields.io/badge/cost-about%202%20cents%20per%20debate-1a7f37)
 
 [**Open the live site**](https://tja0308.github.io/Bull-vs-Bear/) · [Findings](#findings) · [How it works](#how-it-works) · [Run it](#run-it) · [Code tour](#code-tour)
@@ -150,7 +150,7 @@ sequenceDiagram
 
 ## Run it
 
-Requires Python 3.10+ (CI runs 3.13).
+Requires Python 3.11+ (CI runs 3.11 and 3.13; the pinned dependencies do not install on 3.10).
 
 <details open>
 <summary><b>Setup</b></summary>
