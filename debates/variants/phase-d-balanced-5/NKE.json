@@ -1,0 +1,149 @@
+{
+  "ticker": "NKE",
+  "filing": {
+    "accession": "0000320187-26-000088",
+    "document": "nke-20260531.htm",
+    "date": "2026-07-15"
+  },
+  "model": "claude-haiku-5-5",
+  "created": "2026-11-25T04:59:23+00:00",
+  "bull_first": true,
+  "input_mode": "balanced",
+  "rounds": [
+    {
+      "round": 1,
+      "bull": {
+        "argument": "Nike's fiscal 2026 filing shows a company absorbing a difficult reset while protecting profitability. Revenues held flat at $46.4 billion, and gross margin rose 20 basis points to 42.9%, driven by lower warehousing and logistics costs and favorable currency effects. EBIT of $3.85 billion produced an 8.3% EBIT margin, up from 8.2% a year earlier, and ROIC was still 18.7% on a trailing basis. Nike Brand wholesale revenue grew 6% reported, showing demand with major retail partners. The company also recognized a $986 million benefit from recovered IEEPA tariffs, which the filing describes as largely offsetting tariff costs. Management is taking deliberate action: reducing footwear supply, reinvesting in wholesale, and cutting costs, with the expectation that these steps will reignite brand momentum. The filing does flag real weakness in Greater China and Converse, and I acknowledge that the reported 2026 net income declined 3%. Still, the core franchise generates strong returns on capital, and the restructuring is designed to restore growth.",
+        "claims": [
+          {
+            "claim": "Nike's gross margin improved in fiscal 2026.",
+            "quote": "Gross margin increased 20 basis points to 42.9% for fiscal 2026 compared to 42.7% for fiscal 2025",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The company generated strong returns on invested capital.",
+            "quote": "ROIC 18.7% 20.2%",
+            "verified": false,
+            "score": 0.0
+          },
+          {
+            "claim": "Wholesale demand grew, offsetting weakness elsewhere.",
+            "quote": "NIKE Brand wholesale revenues were $27.5 billion in fiscal 2026 compared to $25.9 billion in fiscal 2025, up 6% on a reported basis",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull case rests on headline stability, but the filing shows the underlying franchise weakening. Net income fell 3% to $3.1 billion, and diluted EPS dropped from $2.16 to $2.10. Excluding the $986 million IEEPA tariff recovery, which the filing treats as a one-time item recognized in cost of sales, the picture looks far less comfortable. NIKE Direct revenue fell 6% reported and 8% currency-neutral, with NIKE Brand Digital down 12% on reduced traffic and comparable store sales down 4%. Converse revenue dropped 31%. Management says Greater China and Converse will keep hurting results through fiscal 2027, and it recorded $385 million in severance charges and may take more. The filing also warns that consumer preferences, inventory build-ups and promotional markdowns could continue to pressure margins, and that the company may not realize a satisfactory return on its NIKE Direct investments. A recovery plan that depends on markdowns and reinvestment, with unproven results, is a risky foundation.",
+        "claims": [
+          {
+            "claim": "Net income declined and diluted EPS fell, despite the bull's focus on stable revenue.",
+            "quote": "NET INCOME $ 3,108 $ 3,219 -3 % $ 5,700 -44 %",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "NIKE Direct and digital traffic are deteriorating, which threatens the high-fixed-cost retail model.",
+            "quote": "NIKE Brand Digital sales were $8.6 billion in fiscal 2026 compared to $9.6 billion in fiscal 2025, with declines primarily due to reduced traffic.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management expects continued negative impacts from weak segments into fiscal 2027.",
+            "quote": "We expect negative impacts from Greater China and Converse to continue throughout fiscal 2027.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "bull": {
+        "argument": "The bear case is right that the franchise faces real pressure, and I won't dismiss it. But the rebuttal rests on the filing's own numbers. Net income fell 3%, yet EBIT rose to $3.85 billion from $3.78 billion and EBIT margin widened to 8.3% from 8.2%, so operating profit held up while the decline came largely from a higher tax rate. Gross margin rose 20 basis points despite markdowns, and the filing attributes the gain to lower warehousing and logistics costs and favorable currency, not to the tariff recovery. Nike Brand wholesale revenue grew 6% reported and 4% currency-neutral, and North America, which the filing says has made the most progress, grew revenue. The company is also cutting its own costs, reducing footwear supply, and recovering tariff receivables, with substantially all of the remaining balance received after May 31, 2026. Converse and Greater China are explicitly isolated as the drags, which means the weakness is identified rather than spread across the franchise. A 18.7% ROIC remains strong by any standard in this filing.",
+        "claims": [
+          {
+            "claim": "Operating profit rose even as net income fell.",
+            "quote": "EBIT $ 3,850 $ 3,778 $ 6,539",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The gross margin gain came from logistics and currency, not the tariff recovery.",
+            "quote": "Lower warehousing and logistics costs (increasing gross margin approximately 20 basis points), primarily due to channel mix",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The filing isolates the weakness to specific segments.",
+            "quote": "North America has made the most progress against these actions, while Greater China and Converse will take more time.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull's rebuttal is accurate on some numbers but misses the quality of the earnings. EBIT rose only by $72 million, while the $986 million IEEPA tariff recovery was recognized in cost of sales and largely offset tariff costs already incurred, so the reported gross margin gain is not clean evidence of improving operations. Strip out one-time benefits and the core business is shrinking: NIKE Brand Digital fell 12% on reduced traffic, NIKE store sales fell 4% on a comparable basis, and Converse revenue dropped 31%. Wholesale growth of 6% came as the company was liquidating inventory through markdowns and higher wholesale discounts, which the filing says are needed to 'create capacity for new product,' so top-line gains were bought with price concessions. The filing also says Greater China's store traffic is declining, promotions are rising, and inventory is elevated, and that these drags persist through fiscal 2027. Management has not quantified recovery timing, and it has already booked $385 million of severance with more possible. A 18.7% ROIC is measured on a base that management is actively restructuring, and the company itself says the outcome is uncertain.",
+        "claims": [
+          {
+            "claim": "Gross margin gain is distorted by a one-time tariff recovery booked in cost of sales.",
+            "quote": "we recognized a benefit of $986 million in Cost of sales within the Consolidated Statements of Income for the recovery of IEEPA tariffs paid",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Wholesale growth required liquidation of inventory through markdowns and higher discounts.",
+            "quote": "higher sales returns and discounts with our wholesale partners to reduce inventory and create capacity for new product",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Greater China's traffic and inventory problems are worsening, and drag will continue into fiscal 2027.",
+            "quote": "a trend of declining store traffic, elevated promotional activity and higher levels of inventory across the marketplace are negatively impacting revenues and overall profitability",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    }
+  ],
+  "citations": {
+    "bull": {
+      "verified": 5,
+      "total": 6
+    },
+    "bear": {
+      "verified": 6,
+      "total": 6
+    },
+    "overall": {
+      "verified": 11,
+      "total": 12,
+      "accuracy": 0.917
+    }
+  },
+  "judge": {
+    "scores": {
+      "bull": {
+        "evidence": 6,
+        "logic": 6,
+        "responsiveness": 6
+      },
+      "bear": {
+        "evidence": 8,
+        "logic": 7,
+        "responsiveness": 8
+      }
+    },
+    "winner": "bear",
+    "reasoning": "The bull's ROIC claim rests on an unverified quote, and its gross margin argument leans on a fiscal-2026 filing line that ignores the $986 million tariff recovery sitting in cost of sales. The bear's verified quotes (net income decline, digital traffic drop, the tariff recovery booked in cost of sales, and inventory-clearing discounts) directly undercut the bull's headline stability, and the bear rebuts the bull's EBIT-rise argument by noting it was only $72 million and was propped up by a one-time item."
+  },
+  "usage": {
+    "calls": 5,
+    "input_tokens": 50003,
+    "output_tokens": 2767,
+    "cost_usd": 0.0064
+  }
+}

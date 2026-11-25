@@ -52,7 +52,29 @@ DECISION RULE, fixed BEFORE any paid run (committed first, so git history shows 
 Cost: 3 full draws plus 4 balanced draws, about $1.50 (Phase C cost $0.47 for one
 full and one balanced draw). The run stops before starting another draw once it has spent $2.50.
 
-RESULT: not run yet.
+RESULT (run 2026-11-24; 7 new draws of 16 companies; $1.53 over 897 calls, 0 failures):
+
+  Draw scores (mean margin, 30-point scale):
+    full      -1.96 -1.40 -2.04 -1.81 -2.25   (mean -1.89, sd 0.32)
+    balanced  -1.88 -2.54 -1.85 -1.46 -1.81   (mean -1.91, sd 0.39)
+  Bear share of judgments per draw: full 71 42 62 62 69, balanced 58 73 56 54 62.
+  Bull share: 0 to 10% in every draw.
+
+  Question 1: -1.89 +/- 0.40 -> "bear edge confirmed" (the interval is entirely
+  below 0), for Haiku as the judge, bull speaking first.
+  Question 2: balanced minus full = -0.02 +/- 0.54 -> "not input-driven". The
+  half-width 0.54 is under 1.0, so the question was readable, and the interval
+  lies inside (-1, +1). Giving the debaters equal-size chunks of Risk Factors and
+  MD&A did not change the margin by anything near the 1-point size that matters.
+
+  Descriptive: single-draw bear shares spread by about 8 to 11 points (sd) across
+  draws of the same input, with a range of 42 to 73, so a share from one draw is
+  good to roughly +/-15 points. Per-company rank agreement across full draws was
+  only +0.18, so which companies lean bear is mostly chance at this depth.
+
+  What this does NOT show: the edge is specific to the Haiku judge (Sonnet scored
+  the original debates at +0.12, a slight bull lead, in Phase B), and the bear-first
+  setup was not repeated.
 
 Usage:
     python phase_d.py                 # run the 7 new draws (about $1.50), then report

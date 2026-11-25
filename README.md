@@ -98,7 +98,22 @@ Each debate was judged 3 times with bull listed first and 3 times with bear list
 
 A control run (Phase C): the 16 debates were regenerated from identical input and judged the same way. The bear's share of verdicts fell from **71% to 42%**, mostly because bear wins became ties (bull 6% to 0%, tie 23% to 58%). Per-company results did not repeat (AAPL went from 67% to 0%). The average score margin moved far less (-1.96 to -1.40 on a 30-point scale), and the bull won 0 to 10% of judgments in every run, so the *direction* of the bear's edge looks stable while its *size* does not.
 
-This is why the pre-set rule returned "too noisy to read" for the second Phase C question: giving the debaters equal-size chunks of Risk Factors and MD&A produced a 58% bear share, which is inside that noise. Whether input balance matters is still open. Phase B's judge comparison is unaffected, because both judges scored the very same debates.
+This is why the pre-set rule returned "too noisy to read" for the second Phase C question: giving the debaters equal-size chunks of Risk Factors and MD&A produced a 58% bear share, which is inside that noise. Phase B's judge comparison is unaffected, because both judges scored the very same debates.
+
+### 6. With five draws, the bear's edge is real for this judge, and the input is not the cause
+
+Phase D repeated the debates: 5 independent draws of the 16 companies on the full input and 5 on the balanced input, judged by Haiku 5.5. The rule was committed before the run and uses the mean score margin per draw, because that was the steadier measure. It cost $1.53.
+
+| | Full input (5 draws) | Balanced input (5 draws) |
+| --- | --- | --- |
+| Mean margin, 30-point scale (negative = bear ahead) | **-1.89** | **-1.91** |
+| Spread between draws (sd) | 0.32 | 0.39 |
+| Bear share per draw | 71, 42, 62, 62, 69% | 58, 73, 56, 54, 62% |
+
+- **The bear's lead is real under this judge:** -1.89 with a 95% interval of ±0.40, entirely below zero, though small: under 2 points out of 30. The bull won 0 to 10% of judgments in every draw.
+- **Input balance is not what drives it:** balanced minus full is -0.02 ±0.54, far inside the 1-point size set as mattering. Equal-size chunks of Risk Factors and MD&A did not help the bull.
+- **Shares from one draw are good to roughly ±15 points** (the bear share ranged 42% to 73% on near-identical setups), which is why the earlier single-draw percentages carry a caveat.
+- **Limits:** this is Haiku judging, bull speaking first. Under Sonnet the original debates came out slightly *bull*-ahead (Phase B), so the bear's edge belongs to this judge, not to the debates alone. The bear-first setup was not repeated.
 
 ## How it works
 
@@ -239,7 +254,8 @@ New here? Read in this order:
 - [x] Tests in CI, MIT license, `main` protected against force-push and deletion
 - [ ] Put the judge-model finding on the site
 - [x] Input experiment (Phase C): rerun noise control plus balanced input; too noisy to read
-- [ ] Repeat each debate several times (for example 5) so a share can be read to within a few points, then retest input balance
+- [x] Repeat each debate 5 times (Phase D): the bear's edge is real for the Haiku judge, and input balance is not the cause
+- [ ] Repeat the bear-first setup and the Sonnet judging the same way
 - [ ] A third judge, to separate model size from model family
 - [ ] Refresh debates when a new 10-K appears
 

@@ -1,0 +1,149 @@
+{
+  "ticker": "MSFT",
+  "filing": {
+    "accession": "0001193125-26-323660",
+    "document": "msft-20260630.htm",
+    "date": "2026-07-29"
+  },
+  "model": "claude-haiku-5-5",
+  "created": "2026-11-25T04:12:43+00:00",
+  "bull_first": true,
+  "input_mode": "full",
+  "rounds": [
+    {
+      "round": 1,
+      "bull": {
+        "argument": "Microsoft's FY2026 filing shows a business compounding at scale. Revenue rose 18% to $331.8 billion, operating income rose 21% to $155.2 billion, and diluted EPS rose 32% to $17.95. Microsoft Cloud revenue grew 27% to $214.4 billion, and Azure and other cloud services grew 41%. Commercial remaining performance obligation increased 84% to $678 billion, a large contracted backlog that gives visibility into future revenue. Cash from operations reached $182.9 billion. The filing does acknowledge heavy AI spending and a Microsoft Cloud gross margin that fell to 66%, and the risk factors warn that returns on these investments are uncertain. Still, the reported results show the profit engine growing faster than costs in the segments that matter most, with Intelligent Cloud operating income up 28%. Bulls see a company whose growth is accelerating with strong cash generation, even while it funds an expensive infrastructure build-out.",
+        "claims": [
+          {
+            "claim": "Revenue and operating income grew strongly in FY2026.",
+            "quote": "Revenue 331,839 $ 281,724 18% Gross margin 225,465 193,893 16% Operating income 155,237 128,528 21%",
+            "verified": true,
+            "score": 98.0
+          },
+          {
+            "claim": "Commercial backlog expanded sharply, giving forward revenue visibility.",
+            "quote": "Commercial remaining performance obligation increased 84% to $678 billion",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Azure growth is strong, supporting the cloud thesis despite AI capex.",
+            "quote": "Azure and other cloud services revenue increased 41%",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull case rests on headline growth, but the filing shows that growth is being bought with capital and margin. Intelligent Cloud cost of revenue rose 44% against 30% revenue growth, and Microsoft Cloud gross margin fell to 66%. Management attributes this directly to 'continued investments in AI infrastructure and growing AI product usage.' Capital spending is rising sharply: cash used in investing increased $66.9 billion to $139.5 billion, driven by a $51.4 billion increase in property and equipment additions. The risk factors concede that these investments 'are in advance of fully developed revenue streams' and that 'the associated revenue may not be realized in the expected timeframes or at expected levels.' The $678 billion backlog is also less certain than it looks: the filing says customers 'may reduce, delay, or shift AI workloads to competing platforms.' Finally, $5.0 billion of the net income increase came from OpenAI gains, and the filing warns of a potential $28.9 billion IRS claim. Reported EPS growth is partly non-operational.",
+        "claims": [
+          {
+            "claim": "AI infrastructure costs are outpacing revenue growth in the Intelligent Cloud segment, compressing margins.",
+            "quote": "Cost of revenue increased $17.7 billion or 44% driven by investments in AI infrastructure to support growing customer demand.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Investment spending is rising sharply and the filing admits returns are not assured.",
+            "quote": "These investments are being made at significant scale and on an accelerated timeline, require substantial and increasing capital expenditures and continued access to capital, and are in advance of fully developed revenue streams.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Part of the EPS growth came from non-operating OpenAI gains rather than the core business.",
+            "quote": "Current year net income and diluted EPS were positively impacted by net gains from investments in OpenAI, which resulted in an increase in net income and diluted EPS of $5.0 billion and $0.67, respectively.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "bull": {
+        "argument": "The bears are right about the costs. Intelligent Cloud cost of revenue rose 44%, Microsoft Cloud gross margin fell to 66%, and investing cash outflow reached $139.5 billion. But the filing shows the profit still compounding after those costs. Intelligent Cloud operating income rose 28%, and gross margin dollars grew 21%. OpenAI gains explain part of the EPS jump, but adjusted diluted EPS, which excludes them, still rose 22% to $17.28. Operating cash flow also rose $46.8 billion to $182.9 billion, which is what funds the build-out without relying on new capital. The backlog risk is real, since customers may shift AI workloads, but the 84% backlog growth shows contracted demand. The $28.9 billion IRS matter is a genuine exposure, and management says it will contest it vigorously. The bull case rests on the fact that the core earnings engine is growing faster than its costs, with the risks disclosed.",
+        "claims": [
+          {
+            "claim": "Operating income in Intelligent Cloud grew despite higher AI costs.",
+            "quote": "Operating income increased $12.4 billion or 28%.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Earnings growth holds up after removing OpenAI gains.",
+            "quote": "Adjusted diluted earnings per share (non-GAAP) 17.28 14.13 22%",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Operating cash flow grew strongly to fund the AI investment.",
+            "quote": "Cash from operations increased $46.8 billion to $182.9 billion for fiscal year 2026",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull's strongest point is that adjusted EPS rose 22% without OpenAI gains. But adjusted figures still lean on the same cost base. Intelligent Cloud cost of revenue grew 44%, about 14 points faster than revenue, and gross margin only grew in dollars because the business is larger, not because unit economics improved. Operating cash flow of $182.9 billion does not fund the build-out alone: cash used in investing rose to $139.5 billion, and financing outflows reached $52.5 billion, including $27.0 billion of dividends and $16.7 billion of buybacks. The $678 billion backlog is also less certain than it sounds. The filing states that 'the associated revenue may not be realized in the expected timeframes or at expected levels,' and that customers 'may reduce, delay, or shift AI workloads to competing platforms.' Contracted obligations are also large: purchase commitments of $194.1 billion, mostly for datacenters, are committed before demand is proven. Finally, the IRS matter is not a footnote. The NOPAs seek $28.9 billion plus penalties and interest, and the filing says resolution 'may differ from the amounts recorded.' Growth is real, but the cost of achieving it is rising faster than the reported headline.",
+        "claims": [
+          {
+            "claim": "Intelligent Cloud costs are growing much faster than revenue, so growth is coming at a rising cost.",
+            "quote": "Cost of revenue increased $17.7 billion or 44% driven by investments in AI infrastructure to support growing customer demand.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Committed datacenter spending is large and ahead of proven demand, and the filing says the associated revenue may not materialize as expected.",
+            "quote": "The associated revenue may not be realized in the expected timeframes or at expected levels.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The IRS exposure is large and its resolution may differ from what is recorded.",
+            "quote": "In the NOPAs, the IRS is seeking an additional tax payment of $28.9 billion plus penalties and interest.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    }
+  ],
+  "citations": {
+    "bull": {
+      "verified": 6,
+      "total": 6
+    },
+    "bear": {
+      "verified": 6,
+      "total": 6
+    },
+    "overall": {
+      "verified": 12,
+      "total": 12,
+      "accuracy": 1.0
+    }
+  },
+  "judge": {
+    "scores": {
+      "bull": {
+        "evidence": 8,
+        "logic": 7,
+        "responsiveness": 7
+      },
+      "bear": {
+        "evidence": 8,
+        "logic": 7,
+        "responsiveness": 8
+      }
+    },
+    "winner": "tie",
+    "reasoning": "Both sides cite verified quotes from the filing, so evidence is comparable. The bull effectively concedes the bear's cost and IRS points and reframes around operating income growth and adjusted EPS, which is a reasonable response. The bear rebuts the adjusted-EPS point directly by noting cost base pressure and cash funding gaps, and it pressed the financing and purchase-commitment figures, making its responsiveness slightly stronger, though the debate is closely balanced."
+  },
+  "usage": {
+    "calls": 5,
+    "input_tokens": 163196,
+    "output_tokens": 3471,
+    "cost_usd": 0.0181
+  }
+}

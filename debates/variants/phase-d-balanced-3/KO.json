@@ -1,0 +1,149 @@
+{
+  "ticker": "KO",
+  "filing": {
+    "accession": "0001628280-26-010047",
+    "document": "ko-20251231.htm",
+    "date": "2026-02-20"
+  },
+  "model": "claude-haiku-5-5",
+  "created": "2026-11-25T04:44:23+00:00",
+  "bull_first": true,
+  "input_mode": "balanced",
+  "rounds": [
+    {
+      "round": 1,
+      "bull": {
+        "argument": "KO's filing shows a durable global franchise. Its brands reach 2.2 billion of the estimated 65 billion servings of beverages consumed worldwide every day, and the company sells in more than 200 countries and territories, a footprint built since 1886. The business model is asset-light at its core: concentrate operations, which generate 59% of net operating revenues and 85% of unit case volume, let KO sell concentrates to bottling partners rather than carry the full cost of production. The company is also actively adapting, pursuing growth pillars including shaping a portfolio of loved brands, transforming marketing and innovation, and expanding into e-commerce, and it is investing in low- and no-calorie options in response to health concerns. The risk factors are real, including inflation, tariffs, and competition, but management states it is 'well positioned to create value,' and the filing describes deliberate responses such as productivity initiatives and commodity hedging. Investors are being asked to back a company with scale, diversified geography, and a clear plan to defend pricing and volume.",
+        "claims": [
+          {
+            "claim": "KO's brands reach a very large global consumer base.",
+            "quote": "Beverages bearing trademarks owned by or licensed to us account for 2.2 billion of the estimated 65 billion servings of all beverages consumed worldwide every day.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Concentrate operations carry most of the volume, supporting an asset-light model.",
+            "quote": "Concentrate operations 85 % 85 % Finished product operations 15 15 Total 100 % 100 %",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management believes the company is positioned to create value despite challenges.",
+            "quote": "Despite the dynamic world in which we are currently operating, we believe we are well positioned to create value for our Company and our stakeholders.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "KO's own risk factors describe a business exposed on many fronts at once. Management warns that certain markets 'experienced high rates of inflation throughout 2025, which may continue in 2026,' and that 'We expect the inflationary pressures on certain input and other costs to continue to impact our business in 2026.' The filing concedes that price increases may not succeed: 'Our attempts to offset cost pressures, such as through price increases of some of our products, may not be successful.' Consumers may respond by trading down, as the filing notes they 'may increasingly purchase lower-priced offerings, or may forgo some purchases altogether.' Competition adds pressure, with competitors able to limit share gains and retailers pushing for lower prices, while the rise of e-commerce 'may create additional consumer price deflation.' Geopolitical disruption is already present, since 'Throughout 2025, the Company faced disruption to our operations due to international conflicts.' The company's 'well positioned' language is management's own assertion, not a measured result. Investors would be paying for a plan whose success the filing itself declines to guarantee.",
+        "claims": [
+          {
+            "claim": "Management expects cost inflation to persist into 2026.",
+            "quote": "We expect the inflationary pressures on certain input and other costs to continue to impact our business in 2026.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The company admits its price increases to offset costs may not succeed.",
+            "quote": "Our attempts to offset cost pressures, such as through price increases of some of our products, may not be successful.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Consumers may trade down or stop buying, pressuring volume.",
+            "quote": "Consumers may be less willing to pay a price differential for our branded products and may increasingly purchase lower-priced offerings, or may forgo some purchases altogether.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "bull": {
+        "argument": "The bear case is fair on risks, but it treats them as if they cancel out KO's structural advantages. Yes, inflation persisted in 2025 and the filing expects input-cost pressure in 2026. But the same filing shows the company's exposure is layered: concentrate operations generate 59% of net operating revenues while carrying 85% of unit case volume, and the company explicitly describes productivity initiatives and commodity hedging as tools to offset costs. The 'may not be successful' language is a standard risk disclosure that applies to every consumer company; it is not evidence of failure. On trade-down, the filing acknowledges the risk but also notes the brand reach of 2.2 billion daily servings out of an estimated 65 billion, a scale that few competitors can match. On geopolitics, the filing reports disruption but names no loss of franchise. The strongest point for investors is that the filing discloses risks candidly rather than hiding them, and the company's footprint across more than 200 countries and territories diversifies exposure to any single market shock. Management's 'well positioned' claim is an assertion, but it is backed by the stated growth pillars and the scale data above.",
+        "claims": [
+          {
+            "claim": "Concentrate operations carry most of the volume, supporting an asset-light model.",
+            "quote": "Concentrate operations 85 % 85 % Finished product operations 15 15 Total 100 % 100 %",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The company's brands reach a very large global consumer base, which diversifies exposure to single-market shocks.",
+            "quote": "sold in more than 200 countries and territories",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management identifies productivity initiatives as a deliberate response to cost pressure.",
+            "quote": "We believe that improved productivity is essential to achieving our long-term growth objectives and, therefore, a leading priority of our Company is to design and implement the most effective and efficient business model possible.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The opponent concedes the core risks but argues they are standard disclosure. The filing is more specific than boilerplate. It says cost pressure will continue into 2026 and that price increases to offset it 'may not be successful.' Scale does not solve this: the 2.2 billion daily servings figure measures reach, not pricing power, and the filing itself says consumers 'may increasingly purchase lower-priced offerings.' Concentrate operations' 59% revenue share and 85% volume share describe mix, but the filing also says finished product operations 'generate higher net operating revenues but lower gross profit margins,' so the revenue mix does not establish margin resilience. Hedging is a tool, not a guarantee: the filing says 'we may not be able to offset cost increases through productivity initiatives or through our commodity hedging activity.' Geographic diversification helps, but the filing also reports retail-channel shifts, e-commerce price deflation, and key-customer risk that cut across all markets at once. The 'well positioned' claim is management's own assertion. A diversified company with unproven pass-through of costs still carries real earnings risk at today's valuation.",
+        "claims": [
+          {
+            "claim": "The filing says finished product operations carry lower gross margins, undercutting the idea that revenue mix protects profitability.",
+            "quote": "Generally, finished product operations generate higher net operating revenues but lower gross profit margins than concentrate operations.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The company admits hedging and productivity may not offset cost increases.",
+            "quote": "Furthermore, we may not be able to offset cost increases through productivity initiatives or through our commodity hedging activity.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "E-commerce may create consumer price deflation across markets.",
+            "quote": "the rapid growth of e‑commerce may create additional consumer price deflation by, among other things, facilitating comparison shopping",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    }
+  ],
+  "citations": {
+    "bull": {
+      "verified": 6,
+      "total": 6
+    },
+    "bear": {
+      "verified": 6,
+      "total": 6
+    },
+    "overall": {
+      "verified": 12,
+      "total": 12,
+      "accuracy": 1.0
+    }
+  },
+  "judge": {
+    "scores": {
+      "bull": {
+        "evidence": 7,
+        "logic": 6,
+        "responsiveness": 6
+      },
+      "bear": {
+        "evidence": 8,
+        "logic": 7,
+        "responsiveness": 8
+      }
+    },
+    "winner": "bear",
+    "reasoning": "All quotes in both sides are verified, but the bear side built a more specific case from risk disclosures that directly answer the bull's claims, including the lower gross margin of finished product operations, which undercuts the bull's use of the 59% revenue share as proof of margin resilience. The bull mostly reasserted scale and asset-light structure and answered the bear's inflation and trade-down points by calling them standard disclosure, which is less responsive to the specific admissions the bear cited."
+  },
+  "usage": {
+    "calls": 5,
+    "input_tokens": 46549,
+    "output_tokens": 2673,
+    "cost_usd": 0.006
+  }
+}

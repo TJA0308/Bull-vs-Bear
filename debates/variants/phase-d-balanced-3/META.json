@@ -1,0 +1,149 @@
+{
+  "ticker": "META",
+  "filing": {
+    "accession": "0001628280-26-003942",
+    "document": "meta-20251231.htm",
+    "date": "2026-01-29"
+  },
+  "model": "claude-haiku-5-5",
+  "created": "2026-11-25T04:41:20+00:00",
+  "bull_first": true,
+  "input_mode": "balanced",
+  "rounds": [
+    {
+      "round": 1,
+      "bull": {
+        "argument": "The filing shows a business with strong financial momentum. Total revenue for 2025 was $200.97 billion, up 22%, and income from operations rose 20% to $83.28 billion. Ad impressions grew 12% and average price per ad rose 9%, meaning growth came from both more ads delivered and higher monetization per ad. Family daily active people reached 3.58 billion, up 7%, giving the company an enormous audience to monetize. The company also returned capital: $26.26 billion in share repurchases and $5.32 billion in dividends, while holding $81.59 billion in cash and marketable securities. Management is candid that privacy rules, Apple and Google changes, and the Reality Labs losses of $19.19 billion weigh on results. Yet the filing notes that AI-driven content recommendations have already improved engagement and monetization, and that the company is investing heavily in ad targeting and measurement to offset these headwinds. The risks are real, but the reported growth in revenue, impressions, and pricing suggests the core advertising engine is currently compounding.",
+        "claims": [
+          {
+            "claim": "Revenue grew 22% in 2025 to $200.97 billion, showing strong top-line momentum.",
+            "quote": "Total revenue for 2025 was $200.97 billion, an increase of 22% compared to 2024, due to an increase in advertising revenue.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Growth came from both more ad impressions and higher pricing per ad.",
+            "quote": "Ad impressions delivered across our Family of Apps in 2025 increased 12% year-over-year, and our average price per ad increased 9% year-over-year.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The company returned substantial capital to shareholders while holding a large cash position.",
+            "quote": "Share repurchases of our Class A common stock were $26.26 billion and total dividend and dividend equivalent payments were $5.32 billion for the year ended December 31, 2025.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The headline growth is real, but the filing describes a business whose core engine faces structural pressure that management itself expects to persist. Management states that privacy rules and Apple and Google changes \"reduce our ability to effectively target and measure ads\" and that these developments \"will continue to adversely impact our advertising revenue for the foreseeable future.\" Substantially all revenue comes from advertising on Facebook and Instagram, and marketers have no long-term commitments, so spending can shift quickly. Growth also depends on price per ad rising 9%; if marketers push back on pricing, that lever weakens. Reels monetizes at a lower rate than Feed and Stories, and the company expects that to continue. Meanwhile, costs rose 24% to $117.69 billion, and Reality Labs lost $19.19 billion with 2026 losses expected to remain similar. Capital expenditures reached $72.22 billion, with AI requiring \"significantly increased investment in infrastructure.\" Operating margin fell from 42% to 41%, and the effective tax rate was 30%. Investors are funding large, long-dated bets whose payoff is uncertain.",
+        "claims": [
+          {
+            "claim": "Management expects privacy and platform changes to keep weighing on ad revenue",
+            "quote": "will continue to adversely impact our advertising revenue for the foreseeable future",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Marketers have no long-term commitments, so spending can fall quickly",
+            "quote": "our marketers do not have long-term advertising commitments with us",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Reality Labs losses are expected to persist and capex is rising sharply for AI",
+            "quote": "we expect our 2026 RL operating losses to remain similar to 2025",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "bull": {
+        "argument": "The bear case is right that structural pressure is real, and the filing says so plainly. But the numbers show the engine still compounding. Revenue rose 22% to $200.97 billion, and operating income grew 20% to $83.28 billion, so profit kept pace with the top line even as costs rose 24%. Growth came from both volume and price: impressions up 12% and average price per ad up 9%. Management attributes the pressure to privacy and platform changes, and says its targeting and measurement work is already helping. The 42% to 41% margin dip is modest. The 30% effective tax rate is inflated by a one-time valuation allowance charge; without it, management says the rate would be 13%. Reality Labs losses of $19.19 billion are large, but they are a disclosed, bounded choice, and 82% of costs sit in the core apps. Investors are paying for a business that still converts most incremental revenue into profit, with $81.59 billion in cash to fund the bets.",
+        "claims": [
+          {
+            "claim": "Management says its ad targeting and measurement improvements are already producing better results for advertisers.",
+            "quote": "We believe our ongoing improvements to ad targeting and measurement are continuing to drive improved results for advertisers.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Operating income grew 20%, showing profit growth kept pace with rising costs.",
+            "quote": "Income from operations for 2025 was $83.28 billion, an increase of $13.90 billion, or 20%, compared to 2024",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The 30% effective tax rate is distorted by a one-time charge; excluding it, the rate would be 13%.",
+            "quote": "Absent the valuation allowance charge as of the enactment date, our 2025 effective tax rate would have decreased by 17 percentage points to 13%.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull case rests on growth that management itself says is being propped up by volume and pricing levers that are under pressure. Revenue grew 22%, but the filing states that privacy and platform changes \"reduce our ability to effectively target and measure ads\" and will keep hurting ad revenue. Impressions rose 12%, yet Reels, which drives that volume, \"monetizes at a lower rate than our Feed and Stories products,\" and management expects this to persist. The 9% price gain assumes marketers keep paying more for less-targetable ads, while their budgets are \"pressured from time to time\" by inflation and high interest rates, and they have no long-term commitments. On the tax point, the 13% rate is a hypothetical excluding a real charge, not the rate investors will bear. Costs rose 24%, faster than revenue, and operating margin fell from 42% to 41%, a trend that continues if AI needs \"significantly increased investment in infrastructure.\" Capex of $72.22 billion and $19.19 billion in Reality Labs losses, expected to stay similar in 2026, are a long-dated bet whose payoff management admits is uncertain. Cash of $81.59 billion is large, but it is set against $58.74 billion of long-term debt and $26.26 billion of buybacks.",
+        "claims": [
+          {
+            "claim": "Management says privacy and platform changes will keep hurting ad revenue",
+            "quote": "will continue to adversely impact our advertising revenue for the foreseeable future",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Reels, a volume driver, monetizes at a lower rate",
+            "quote": "it monetizes at a lower rate than our Feed and Stories products",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "AI spending is expected to rise significantly",
+            "quote": "we expect our AI initiatives will require significantly increased investment in infrastructure",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    }
+  ],
+  "citations": {
+    "bull": {
+      "verified": 6,
+      "total": 6
+    },
+    "bear": {
+      "verified": 6,
+      "total": 6
+    },
+    "overall": {
+      "verified": 12,
+      "total": 12,
+      "accuracy": 1.0
+    }
+  },
+  "judge": {
+    "scores": {
+      "bull": {
+        "evidence": 8,
+        "logic": 7,
+        "responsiveness": 7
+      },
+      "bear": {
+        "evidence": 8,
+        "logic": 7,
+        "responsiveness": 8
+      }
+    },
+    "winner": "tie",
+    "reasoning": "Both sides cite verified quotes and rely on the same core figures, so evidence quality is roughly even. The bull effectively rebuts the bear on margin and tax distortion, but leaves the forward-looking pressure on ad revenue and rising capex only partly answered. The bear responds directly to the bull's growth and tax points and adds concrete debt context, though its 13% tax point is framed as hypothetical, which the bull could contest."
+  },
+  "usage": {
+    "calls": 5,
+    "input_tokens": 44181,
+    "output_tokens": 3311,
+    "cost_usd": 0.0061
+  }
+}

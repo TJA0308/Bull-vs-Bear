@@ -1,0 +1,149 @@
+{
+  "ticker": "PEP",
+  "filing": {
+    "accession": "0000077476-26-000007",
+    "document": "pep-20251227.htm",
+    "date": "2026-02-03"
+  },
+  "model": "claude-haiku-5-5",
+  "created": "2026-11-25T04:31:06+00:00",
+  "bull_first": true,
+  "input_mode": "full",
+  "rounds": [
+    {
+      "round": 1,
+      "bull": {
+        "argument": "PepsiCo's filing shows a business with durable earnings power and strong cash generation despite headwinds. Free cash flow rose 9% to $8.2 billion in 2025, and management plans to return about $8.9 billion to shareholders in 2026, including a 4% dividend increase to an annualized $5.92 per share. Core net ROIC is 19.1%, and ROIC is 14.3% on a reported basis, indicating efficient use of capital. Net revenue grew 2% to $93.9 billion, with organic revenue up 2% and effective net pricing up 4%, showing pricing power. Management is also actively reshaping the portfolio through acquisitions like poppi and Siete and a multi-year productivity plan expected to run through 2030. The risks cited are real, including the Rockstar impairment and tariffs, but the company's scale, cash flow and shareholder returns give it substantial capacity to absorb them.",
+        "claims": [
+          {
+            "claim": "Free cash flow grew 9% in 2025, supporting shareholder returns.",
+            "quote": "Free cash flow, non-GAAP measure $ 8,200 $ 7,531 9 %",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management expects to return about $8.9 billion to shareholders in 2026.",
+            "quote": "We expect to return a total of approximately $8.9 billion to shareholders in 2026, comprising dividends of approximately $7.9 billion and share repurchases of approximately $1.0 billion.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Core net ROIC is high, indicating efficient capital use.",
+            "quote": "Core Net ROIC, non-GAAP measure 19.1 %",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The opponent's case rests on headline metrics that the filing itself qualifies. Free cash flow rose 9%, but operating cash flow fell 3% to $12.1 billion, and the decline is attributed to higher cash restructuring and acquisition-related payments. Reported operating profit fell 11% and reported net income fell 14%. The 19.1% 'core net ROIC' excludes $1.9 billion of impairment and other charges, which the filing says were driven by Rockstar, a brand that is now being sold to Celsius. Reported ROIC is 14.3%. Organic volume declined 2%, and the filing describes pricing as the main growth driver. Dividends and buybacks of roughly $8.9 billion in 2026 exceed projected free cash flow in the filing's own terms, with debt rising to $42.3 billion long-term. Management also warns of demand erosion from GLP-1 drugs, SNAP changes, private label, and a Mexico tax increase. The 'durable earnings power' claim is therefore weaker than the summary suggests.",
+        "claims": [
+          {
+            "claim": "Reported operating profit fell 11%, and the decline is partly driven by impairments rather than just adjusted performance.",
+            "quote": "Operating profit decreased 11%, primarily driven by certain operating cost increases, impairment charges related to the Rockstar brand, a decline in organic volume",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Operating cash flow declined, and the filing attributes this to higher restructuring and acquisition-related cash payments.",
+            "quote": "The decrease in operating cash flow primarily reflects increased cash payments for restructuring charges and cash payments for acquisition and divestiture-related charges.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Organic volume declined, so growth relies on pricing that the filing says could cause reduced volume.",
+            "quote": "When prices increase, we may or may not pass on such increases to our customers, which may result in reduced volume, revenue, margins and operating results.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "bull": {
+        "argument": "The bull case is weaker than the summary implied, but the bear points are partly overstated. Free cash flow rose 9% because capital spending fell to $4.4 billion from $5.3 billion, not because operating cash flow grew; operating cash flow fell 3%, and I concede that. Reported operating profit fell 11%, and the 2025 impairments were concentrated in Rockstar. The Celsius transaction, however, moved the brand into a $585 million preferred-share stake, so the write-down is not a total loss. Impairments are non-cash, which is why core ROIC matters, but reported ROIC of 14.3% still clears a high bar. The filing does not project 2026 free cash flow, so the claim that the $8.9 billion payout exceeds it cannot be verified from this filing. Pricing is a real support: effective net pricing offset volume declines. Debt is rising, which is a legitimate risk, but the company remains investment grade with Tier 1 commercial paper access.",
+        "claims": [
+          {
+            "claim": "Management plans about $8.9 billion of 2026 shareholder returns, a large commitment that the board is willing to make.",
+            "quote": "We expect to return a total of approximately $8.9 billion to shareholders in 2026, comprising dividends of approximately $7.9 billion and share repurchases of approximately $1.0 billion.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The Rockstar write-down was paired with a transaction that exchanged the brand for an equity stake, not a pure loss.",
+            "quote": "we acquired convertible preferred shares and transferred cash and certain non-cash assets, primarily the Rockstar brand of $ 0.5 billion in the United States and Canada",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Pricing has offset volume pressure, supporting revenue.",
+            "quote": "These impacts were partially offset by productivity savings and effective net pricing.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "I concede the 2026 free-cash-flow comparison cannot be verified from this filing, so I withdraw it. The 2025 figures still support the bear case. Free cash flow of $8.2 billion came after $4.4 billion of capital spending, down from $5.3 billion. The filing calls net capital spending 'a recurring and necessary use of cash,' so a 9% FCF gain driven by lower investment is less durable than it looks. Cash dividends of $7.6 billion and buybacks of $1.0 billion totaled $8.6 billion, more than the $8.2 billion of FCF, and long-term debt rose from $37.2 billion to $42.3 billion. On Celsius, the $585 million Series B stake is classified as Level 3 because its value depends on unobservable inputs, so it is not a reliable offset to the Rockstar write-down. Reported ROIC of 14.3% is respectable, but reported operating profit fell 11%, and the company is funding payouts with borrowing.",
+        "claims": [
+          {
+            "claim": "Shareholder returns in 2025 exceeded free cash flow, and the gap was funded with new debt.",
+            "quote": "Free cash flow is not a measure of cash available for discretionary expenditures since we have certain non-discretionary obligations such as debt service that are not deducted from the measure.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The FCF increase came from lower capital spending, which the filing says is a necessary recurring use of cash.",
+            "quote": "Since net capital spending is essential to our product innovation initiatives and maintaining our operational capabilities, we believe that it is a recurring and necessary use of cash.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The Celsius stake that offsets the Rockstar write-down is valued using Level 3 unobservable inputs, so its value is uncertain.",
+            "quote": "Given our redemption rights associated with both series of shares, we classified our investments as Level 3 investments in available-for-sale debt securities.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    }
+  ],
+  "citations": {
+    "bull": {
+      "verified": 6,
+      "total": 6
+    },
+    "bear": {
+      "verified": 6,
+      "total": 6
+    },
+    "overall": {
+      "verified": 12,
+      "total": 12,
+      "accuracy": 1.0
+    }
+  },
+  "judge": {
+    "scores": {
+      "bull": {
+        "evidence": 7,
+        "logic": 6,
+        "responsiveness": 7
+      },
+      "bear": {
+        "evidence": 8,
+        "logic": 7,
+        "responsiveness": 8
+      }
+    },
+    "winner": "bear",
+    "reasoning": "Both sides cite verified filing quotes, but the bear's evidence is more directly tied to the bull's claims: it shows FCF gains came from lower capex and that 2025 shareholder payouts exceeded FCF, and it attacks the Celsius offset with a Level 3 classification point. The bull conceded operating cash flow and the 2026 comparison, and its Celsius rebuttal did not address the valuation uncertainty the bear raised. The bear also conceded the unverifiable 2026 claim, which keeps its remaining case credible."
+  },
+  "usage": {
+    "calls": 5,
+    "input_tokens": 415292,
+    "output_tokens": 4762,
+    "cost_usd": 0.0439
+  }
+}

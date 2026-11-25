@@ -1,0 +1,149 @@
+{
+  "ticker": "KO",
+  "filing": {
+    "accession": "0001628280-26-010047",
+    "document": "ko-20251231.htm",
+    "date": "2026-02-20"
+  },
+  "model": "claude-haiku-5-5",
+  "created": "2026-11-25T04:58:37+00:00",
+  "bull_first": true,
+  "input_mode": "balanced",
+  "rounds": [
+    {
+      "round": 1,
+      "bull": {
+        "argument": "KO's scale is the core of the bull case. The filing states that \"Beverages bearing trademarks owned by or licensed to us account for 2.2 billion of the estimated 65 billion servings of all beverages consumed worldwide every day,\" and it sells into more than 200 countries and territories. Its concentrate model is asset-light: concentrate operations generate 59% of net operating revenues while accounting for 85% of unit case volume, which supports margins and capital efficiency. Management also says it is \"well positioned to create value for our Company and our stakeholders,\" and it is investing across brands, capabilities and people. The risks are real. The filing warns that \"We expect the inflationary pressures on certain input and other costs to continue to impact our business in 2026,\" and that pricing may reduce volume. Still, a global franchise with this breadth and an asset-light model gives KO more room to pass through costs and absorb regional shocks than most competitors.",
+        "claims": [
+          {
+            "claim": "KO's global brand reach is very large relative to the beverage category.",
+            "quote": "Beverages bearing trademarks owned by or licensed to us account for 2.2 billion of the estimated 65 billion servings of all beverages consumed worldwide every day.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The concentrate model is asset-light and carries a large share of volume, supporting capital efficiency.",
+            "quote": "Our concentrate operations typically generate net operating revenues by selling beverage concentrates, sometimes referred to as \"beverage bases,\"",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management acknowledges continued cost inflation into 2026, a key risk the bull case must absorb.",
+            "quote": "We expect the inflationary pressures on certain input and other costs to continue to impact our business in 2026.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull case leans on scale, but the filing shows scale does not shield KO from pressure. Management concedes that \"We expect the inflationary pressures on certain input and other costs to continue to impact our business in 2026,\" and that its attempts to offset costs \"may not be successful.\" Pricing is the stated fix, yet the filing admits \"Higher product prices may result in reductions in sales volume\" and that consumers \"may increasingly purchase lower-priced offerings.\" That is a squeeze on both margin and volume at once. Competition and retailer power add further downward pressure: retailers \"may seek lower prices\" and push private-label brands. The company also reports that \"the Company faced disruption to our operations due to international conflicts\" in 2025, with the risk continuing. The \"asset-light\" framing ignores that bottlers and suppliers are critical to the system, and the filing warns that \"Any sustained or significant disruption to the manufacturing or sourcing of products or materials could increase costs and interrupt product supply.\" A company facing rising costs, weaker pricing power, and operational exposure to geopolitics is a risky holding at this stage.",
+        "claims": [
+          {
+            "claim": "Management expects input cost inflation to persist into 2026, and its cost offsets may fail.",
+            "quote": "We expect the inflationary pressures on certain input and other costs to continue to impact our business in 2026. Our attempts to offset cost pressures, such as through price increases of some of our products, may not be successful.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Price increases to offset costs may cut sales volume and push consumers to cheaper alternatives.",
+            "quote": "Higher product prices may result in reductions in sales volume. Consumers may be less willing to pay a price differential for our branded products and may increasingly purchase lower-priced offerings",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The company faced operational disruption from international conflicts in 2025, and supply chain disruption could interrupt product supply.",
+            "quote": "Throughout 2025, the Company faced disruption to our operations due to international conflicts.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "bull": {
+        "argument": "The bear case is right that pressure exists, but it overstates what the filing shows. Inflation is real, yet the filing frames pricing as a tool KO has used: it says the company's \"attempts to offset cost pressures, such as through price increases of some of our products, may not be successful,\" which is a risk warning, not a finding of failure. Volume risk from price is conditional (\"may result in reductions\"), not reported. On geopolitics, the 2025 disruption is described alongside the company's ability to keep operating across more than 200 countries and territories. The \"asset-light\" point stands: concentrate operations carry 59% of revenue but 85% of unit case volume, and bottlers, not KO, bear much of the physical plant. Retailer pressure and private label are genuine, but they are the same forces every large brand faces, and KO's scale of 2.2 billion daily servings gives it more leverage in those negotiations than smaller rivals. The filing is a balanced list of risks, and the numbers it discloses favor a durable franchise.",
+        "claims": [
+          {
+            "claim": "The filing frames the risk that price increases fail as conditional, not a reported outcome.",
+            "quote": "Our attempts to offset cost pressures, such as through price increases of some of our products, may not be successful.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Concentrate operations generate a large share of volume while carrying a smaller share of revenue, supporting capital efficiency.",
+            "quote": "Concentrate operations 59 % 59 % Finished product operations 41 41",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "KO's global reach gives it scale in negotiations and distribution.",
+            "quote": "Beverages bearing trademarks owned by or licensed to us account for 2.2 billion of the estimated 65 billion servings of all beverages consumed worldwide every day.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull case treats conditional risk language as reassurance, but the filing's own disclosures point the other way. Management does not merely say pricing \"may\" fail in the abstract; it states that inflation will \"continue to impact our business in 2026,\" so the cost headwind is a stated expectation, not a hypothetical. The volume risk is also tied to the pricing it proposes: higher prices \"may result in reductions in sales volume,\" and consumers \"may forgo some purchases altogether.\" The bull points to 2.2 billion daily servings as leverage, but the filing says retailers \"may seek lower prices,\" demand more promotional spending, and expand private-label brands, and that the Coca-Cola system's profitability could suffer as a result. Scale does not remove that pressure; it is the same pressure every large brand faces. On the 59% revenue versus 85% volume split, that structure cuts both ways: it shows that KO's economics depend on bottling partners whose health the filing says is not assured. The 2025 geopolitical disruption, with the warning that it \"has in the past led\" to supply chain and cost problems, is not offset by global reach.",
+        "claims": [
+          {
+            "claim": "Management expects input cost inflation to persist into 2026, so the cost headwind is stated, not hypothetical.",
+            "quote": "We expect the inflationary pressures on certain input and other costs to continue to impact our business in 2026.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Retailers may push for lower prices and more promotional spending, pressuring system profitability.",
+            "quote": "Retailers may seek lower prices from us and our bottling partners, may demand increased marketing or promotional expenditures",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Geopolitical instability has previously caused supply chain and cost disruptions, and may again.",
+            "quote": "Geopolitical instability has in the past led, and may in the future lead, to logistical, transportation and supply chain disruptions",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    }
+  ],
+  "citations": {
+    "bull": {
+      "verified": 6,
+      "total": 6
+    },
+    "bear": {
+      "verified": 6,
+      "total": 6
+    },
+    "overall": {
+      "verified": 12,
+      "total": 12,
+      "accuracy": 1.0
+    }
+  },
+  "judge": {
+    "scores": {
+      "bull": {
+        "evidence": 7,
+        "logic": 6,
+        "responsiveness": 6
+      },
+      "bear": {
+        "evidence": 8,
+        "logic": 7,
+        "responsiveness": 8
+      }
+    },
+    "winner": "bear",
+    "reasoning": "Both sides cite verified quotes, but the bear's evidence is somewhat richer and more directly tied to margin and volume pressure, including verified retailer and geopolitical language. The bull's rebuttal reasonably reframes the conditional risk language and the 59%/85% split, yet it leans on 'scale gives leverage' without addressing the bear's point that retailer pressure is the same for every large brand, and its 'bottlers bear physical plant' claim is not supported by a verified quote. The bear answered the bull's strongest points more directly."
+  },
+  "usage": {
+    "calls": 5,
+    "input_tokens": 46556,
+    "output_tokens": 3525,
+    "cost_usd": 0.0064
+  }
+}

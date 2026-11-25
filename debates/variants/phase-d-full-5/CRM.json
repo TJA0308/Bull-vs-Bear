@@ -1,0 +1,149 @@
+{
+  "ticker": "CRM",
+  "filing": {
+    "accession": "0001108524-26-000060",
+    "document": "crm-20260131.htm",
+    "date": "2026-03-02"
+  },
+  "model": "claude-haiku-5-5",
+  "created": "2026-11-25T04:29:07+00:00",
+  "bull_first": true,
+  "input_mode": "full",
+  "rounds": [
+    {
+      "round": 1,
+      "bull": {
+        "argument": "Salesforce delivered fiscal 2026 revenue of $41.5 billion, up ten percent, with income from operations rising to $8.3 billion and operating margin expanding to about 20 percent from 19 percent. Cash provided by operations reached $15.0 billion, up 15 percent, and current remaining performance obligation grew 16 percent to $35.1 billion, giving visibility into near-term revenue. Subscription and support made up about 95 percent of revenue, and management expects operating expenses to keep improving as a share of revenue. Attrition held at roughly eight percent, and the company returned capital through $12.7 billion of buybacks and $1.6 billion of dividends. The filing's risk factors are extensive, including AI competition, debt from the Informatica acquisition, and regulatory exposure, but these are the normal risks of a scaled software platform. Management also states it believes existing liquidity will cover needs for the next 12 months and beyond. The core economics, visible backlog, and margin trajectory support a strong investment case.",
+        "claims": [
+          {
+            "claim": "Operating margin expanded and operating income grew, showing improving profitability.",
+            "quote": "Operating margin, which represents income from operations as a percentage of total revenue, increased to approximately 20 percent for fiscal 2026 compared to approximately 19 percent in the prior year period.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Contracted future revenue visibility is strong, with current RPO up 16 percent.",
+            "quote": "Current remaining performance obligation as of January 31, 2026 was approximately $35.1 billion , an increase of 16 percent year-over-year.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Customer retention has been stable, supporting recurring revenue durability.",
+            "quote": "As of January 31, 2026, our attrition rate, excluding Slack self-service and current year acquisitions, was approximately eight percent.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull case leans on headline growth, but the filing shows the balance sheet and execution risks have shifted materially. Principal due on outstanding debt rose from $8.5 billion to $14.5 billion after the company borrowed the full $6.0 billion Informatica facility, and the filing warns that debt service could 'dedicate a substantial portion of our cash flows from operations.' Cash, equivalents and marketable securities fell from $14.0 billion to $9.6 billion, while buybacks of $12.7 billion and dividends of $1.6 billion exceeded operating cash flow of $15.0 billion once capex and acquisitions are considered. Professional services revenue declined 4 percent, with management citing 'less demand for larger, multi-year transformation engagements.' The filing also says its AI offerings have 'unproven' monetization, that attrition is about eight percent, and that AI-native competitors 'may bypass traditional business process workflows.' Operating margin gains depend on continued cost cuts that the filing admits may not be sustainable.",
+        "claims": [
+          {
+            "claim": "Debt principal roughly doubled to a level that now constrains cash flow",
+            "quote": "Principal due on our outstanding debt obligations (1) 14,500 8,500",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Professional services demand is weakening for large transformation projects",
+            "quote": "The decrease in professional services and other revenues for fiscal 2026 was primarily due to less demand for larger, multi-year transformation engagements, which may continue in the near term.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Newer AI monetization models are described as uncertain",
+            "quote": "the markets and monetization strategies for certain offerings, including Agentforce and Data 360, remain relatively new and uncertain and may present additional risks and challenges.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "bull": {
+        "argument": "The bull case holds up after the bear's objections, though the balance sheet deserves real attention. Debt principal did rise to $14.5 billion, and buybacks and dividends of about $14.3 billion exceeded what operating cash flow left after capex. But the filing shows the company has a $5.0 billion undrawn revolver, and the cash decline reflects discretionary choices. Buybacks carry no obligation, since the program 'does not obligate us to acquire any specific number of shares.' Operating cash flow grew 15 percent to $15.0 billion, which supports the debt service. The professional services dip is small relative to a business where subscription and support is about 95 percent of revenue, and that subscription line grew 10 percent. Attrition has held steady. AI monetization is genuinely uncertain, and the filing says so, but the revenue base and $35.1 billion of current RPO give the company time to prove it. The margin story is not dependent on cuts alone. Revenue growth outpaced cost growth in fiscal 2026. The investment case is strong but depends on continued cash generation and disciplined capital allocation.",
+        "claims": [
+          {
+            "claim": "The company has undrawn borrowing capacity, reducing near-term liquidity risk despite higher debt.",
+            "quote": "There were no outstanding borrowings under the Credit Facility as of January 31, 2026.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Buybacks are discretionary, not a fixed commitment, giving management flexibility to slow repurchases if needed.",
+            "quote": "The Share Repurchase Program does not have a fixed expiration date and does not obligate us to acquire any specific number of shares.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Subscription and support dominates revenue, so the professional services decline is a small part of the business.",
+            "quote": "Subscription and support revenues accounted for approximately 95 percent and 94 percent of our total revenues for fiscal 2026 and 2025, respectively.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull's rebuttal relies on framing that the filing does not fully support. First, the revolver is only a backstop: the filing says it may be used 'for general corporate purposes,' and the $6.0 billion Informatica borrowing is fully drawn, so the $14.5 billion of principal is real and growing claims on cash. Second, calling buybacks discretionary understates their role: the company spent $12.7 billion on repurchases and $1.6 billion on dividends in fiscal 2026, and it authorized another $50.0 billion in February 2026. Cash and securities fell from $14.0 billion to $9.6 billion, so the shareholder-return program was partly funded by balance-sheet reserves, not free cash flow alone. Third, operating cash flow of $15.0 billion was flattered by a $2.9 billion unearned revenue increase, while costs capitalized to obtain contracts consumed $2.8 billion. Fourth, the filing says the professional services decline 'may continue in the near term.' Finally, the filing warns that interest expense 'may increase' and that refinancing could carry 'substantially higher interest rates.'",
+        "claims": [
+          {
+            "claim": "Buybacks and dividends were partly funded from reserves, as cash and securities fell",
+            "quote": "Total cash, cash equivalents and marketable securities as of January 31, 2026 was $9.6 billion.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Professional services weakness is expected to persist",
+            "quote": "which may continue in the near term",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Higher borrowing costs are a flagged risk from the new debt",
+            "quote": "We expect that interest expense may increase due to the outstanding balance related to the Informatica Credit Agreements.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    }
+  ],
+  "citations": {
+    "bull": {
+      "verified": 6,
+      "total": 6
+    },
+    "bear": {
+      "verified": 6,
+      "total": 6
+    },
+    "overall": {
+      "verified": 12,
+      "total": 12,
+      "accuracy": 1.0
+    }
+  },
+  "judge": {
+    "scores": {
+      "bull": {
+        "evidence": 7,
+        "logic": 6,
+        "responsiveness": 6
+      },
+      "bear": {
+        "evidence": 8,
+        "logic": 7,
+        "responsiveness": 8
+      }
+    },
+    "winner": "bear",
+    "reasoning": "Both sides cite verified quotes, but the bear's evidence is more pointed and directly tied to the balance-sheet concerns, including verified debt principal doubling, cash falling to $9.6 billion, and the expected persistence of professional services weakness. The bull partly answers with the undrawn revolver and discretionary buybacks, but the bear rebuts that the revolver is a backstop and that the $50 billion new authorization undercuts the discretionary framing, leaving the bull's liquidity argument weaker."
+  },
+  "usage": {
+    "calls": 5,
+    "input_tokens": 201162,
+    "output_tokens": 3592,
+    "cost_usd": 0.0219
+  }
+}

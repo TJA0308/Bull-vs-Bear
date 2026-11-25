@@ -1,0 +1,149 @@
+{
+  "ticker": "NKE",
+  "filing": {
+    "accession": "0000320187-26-000088",
+    "document": "nke-20260531.htm",
+    "date": "2026-07-15"
+  },
+  "model": "claude-haiku-5-5",
+  "created": "2026-11-25T04:31:33+00:00",
+  "bull_first": true,
+  "input_mode": "full",
+  "rounds": [
+    {
+      "round": 1,
+      "bull": {
+        "argument": "Nike's fiscal 2026 filing shows a company with durable economics under pressure. Revenue held at $46.4 billion, gross margin rose 20 basis points to 42.9%, and North America delivered EBIT growth of 14% to $5.376 billion, with gross margin expanding 210 basis points. Wholesale revenue grew 6% to $27.5 billion, showing that partners are reinvesting in the brand. Management is also rebalancing the business deliberately: reducing footwear supply, liquidating excess inventory, and repositioning NIKE Brand Digital as a full-price platform. The $986 million IEEPA tariff recovery, largely offsetting tariffs incurred, shows a material one-time tailwind. The balance sheet is strong, with A+ and A2 long-term ratings and $9.0 billion in cash and short-term investments. The risks are real: Greater China EBIT fell 20%, Converse EBIT fell 93%, and digital sales declined 12%. Management expects those headwinds to persist through fiscal 2027. The bull case rests on the core North America franchise and a balance sheet that can fund the reset.",
+        "claims": [
+          {
+            "claim": "North America EBIT grew 14% with gross margin expansion of 210 basis points.",
+            "quote": "Gross margin expansion of 210 basis points primarily due to lower product costs, lower warehousing and logistics costs driven by channel mix, and higher ASP.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Wholesale revenue grew 6% to $27.5 billion, indicating partner reinvestment.",
+            "quote": "NIKE Brand wholesale revenues were $27.5 billion in fiscal 2026 compared to $25.9 billion in fiscal 2025, up 6% on a reported basis",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The company has strong credit ratings and substantial liquidity.",
+            "quote": "We currently have long-term debt ratings of A+ and A2 from S&P Global Ratings and Moody's Ratings, respectively.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull case leans on a one-time tailwind and a North America rebound while the underlying franchise weakens. Net income fell 3% to $3.108 billion and diluted EPS fell from $2.16 to $2.10. The $986 million IEEPA tariff recovery is non-recurring, yet it largely offset tariff costs, so reported margins flatter the core business. NIKE Direct revenue fell 6% and NIKE Brand Digital fell 12%, with management attributing the decline to reduced traffic. Greater China EBIT dropped 20%, and management expects negative impacts from Greater China and Converse to continue through fiscal 2027. Total selling and administrative expense stayed at 34.7% of revenue, and management recorded $385 million in severance charges with more possible. The filing also states that management may take additional actions that could lead to further charges. Operating cash flow fell to $2.868 billion from $3.698 billion, and the company paused buybacks. Those facts point to a reset that is still underway, with uncertain payoff.",
+        "claims": [
+          {
+            "claim": "Net income and EPS declined, and operating cash flow fell sharply, even with the tariff recovery.",
+            "quote": "Net income $ 3,108 $ 3,219 -3 % $ 5,700 -44 %",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Digital weakness is a structural risk, with NIKE Brand Digital sales falling on reduced traffic.",
+            "quote": "NIKE Brand Digital sales were $8.6 billion in fiscal 2026 compared to $9.6 billion in fiscal 2025, with declines primarily due to reduced traffic.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management expects the headwinds to persist, and further restructuring charges are possible.",
+            "quote": "We expect negative impacts from Greater China and Converse to continue throughout fiscal 2027.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "bull": {
+        "argument": "The bear case is right that fiscal 2026 was not clean, but the filing shows the reset is working where management said it would. North America EBIT rose 14% to $5.376 billion, and its gross margin expanded 210 basis points to 45.6%. That was the segment furthest along in the marketplace actions, which is exactly what management predicted. Yes, the $986 million IEEPA recovery flattered cost of sales, but the filing says it was a recovery of tariffs previously paid. It offset costs the company already incurred, so it reflects real cash returning, with $302 million received and substantially all of the remaining receivable collected after year-end. Operating cash flow fell because of that receivable build and tax payments, not because of weak demand. The balance sheet funded $2.3 billion of financing outflows, including dividends, with $9.0 billion in cash and short-term investments and A+/A2 ratings. Greater China and Converse are real drags, and the filing says so plainly. The question is whether the rest of the franchise can absorb them, and North America's results suggest it can.",
+        "claims": [
+          {
+            "claim": "North America EBIT grew 14% with gross margin expansion of 210 basis points.",
+            "quote": "Reported EBIT increased 14% reflecting higher reported revenues and the following:",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The IEEPA tariff recovery was received as cash, with most of the remaining receivable collected after year-end.",
+            "quote": "Subsequent to May 31, 2026, we received substantially all of the remaining IEEPA tariff receivable.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Operating cash flow decline was driven by the receivable build and tax payments.",
+            "quote": "The increase in Accounts receivable was primarily due to the outstanding IEEPA tariff receivable, as well as higher wholesale revenues and the timing of receipts in the normal course of business.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull case treats North America as proof the reset works, but the filing shows the segment's gains came partly from the same levers that weaken the brand. North America wholesale rose 14% on 'expanded distribution, higher shipments to existing partners and fewer marketplace management actions,' which means fewer markdowns, not stronger consumer demand. Meanwhile North America NIKE Direct fell 6%, and store comparable sales fell 2%. The $986 million IEEPA recovery is a one-time item, and it was classified mostly within North America ($965 million). Strip it out and the segment's margin story looks far weaker. Company-wide, NIKE Direct fell 6% and NIKE Brand Digital fell 12% on reduced traffic, Greater China EBIT fell 20%, and Converse EBIT fell 93%. Net income still declined 3% and operating cash flow fell from $3.698 billion to $2.868 billion, with buybacks paused. The company is leaning on distribution expansion and a one-time refund while its own direct channels shrink, and management says the drags continue into fiscal 2027.",
+        "claims": [
+          {
+            "claim": "North America's wholesale growth came from expanded distribution and fewer marketplace management actions, not only demand.",
+            "quote": "Wholesale revenues increased 14% including expanded distribution, higher shipments to existing partners and fewer marketplace management actions taken in the current year.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The IEEPA recovery was mostly booked in North America, so its margin gain is flattered by a one-time item.",
+            "quote": "$965 million and $21 million of the benefit was classified within North America and Converse, respectively",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Operating cash flow fell materially year over year, and buybacks were paused.",
+            "quote": "Operations $ 2,868 $ 3,698",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    }
+  ],
+  "citations": {
+    "bull": {
+      "verified": 6,
+      "total": 6
+    },
+    "bear": {
+      "verified": 6,
+      "total": 6
+    },
+    "overall": {
+      "verified": 12,
+      "total": 12,
+      "accuracy": 1.0
+    }
+  },
+  "judge": {
+    "scores": {
+      "bull": {
+        "evidence": 7,
+        "logic": 6,
+        "responsiveness": 6
+      },
+      "bear": {
+        "evidence": 8,
+        "logic": 7,
+        "responsiveness": 7
+      }
+    },
+    "winner": "bear",
+    "reasoning": "Bear's quotes are all verified and directly target the bull's central claims: the IEEPA recovery was mostly booked in North America, and North America wholesale growth reflected expanded distribution and fewer markdown actions rather than demand. Bull's responses on cash recovery and the operating cash flow decline are reasonable and verified, but its North America margin claim leans on the one-time recovery that bear effectively rebutted, and bull never fully addressed the wholesale-quality point. Bear edges the debate on evidence and responsiveness."
+  },
+  "usage": {
+    "calls": 5,
+    "input_tokens": 187545,
+    "output_tokens": 2787,
+    "cost_usd": 0.0201
+  }
+}

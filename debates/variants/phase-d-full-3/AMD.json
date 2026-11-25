@@ -1,0 +1,149 @@
+{
+  "ticker": "AMD",
+  "filing": {
+    "accession": "0000002488-26-000018",
+    "document": "amd-20251227.htm",
+    "date": "2026-02-04"
+  },
+  "model": "claude-haiku-5-5",
+  "created": "2026-11-25T04:15:25+00:00",
+  "bull_first": true,
+  "input_mode": "full",
+  "rounds": [
+    {
+      "round": 1,
+      "bull": {
+        "argument": "AMD's 2025 filing shows strong momentum. Net revenue rose 34% to $34.6 billion, Data Center revenue grew 32% to $16.6 billion, and Client and Gaming revenue rose 51% to $14.6 billion. Gross margin improved to 50% from 49% despite roughly $440 million of net charges tied to the MI308 export restriction. Operating income nearly doubled to $3.7 billion from $1.9 billion. Cash and short-term investments rose to $10.6 billion from $5.1 billion, and operating cash flow reached $7.7 billion including discontinued operations. The company also reversed about $360 million of the MI308 charges after shipments resumed under licenses, and it holds $9.4 billion left under its repurchase authorization. The filing does acknowledge real risks: customer concentration, export controls, and a memory shortage that could pressure margins. Still, the reported results show a business that is growing fast while generating cash, and the risks described are ones a company of this scale is expected to manage.",
+        "claims": [
+          {
+            "claim": "Revenue grew strongly across the year, with total net revenue up 34%.",
+            "quote": "net revenue increasing 34% to $34.6 billion, compared to $25.8 billion in 2024",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Cash and short-term investments more than doubled, giving the company greater financial flexibility.",
+            "quote": "Cash, cash equivalents and short-term investments as of December 27, 2025 were $10.6 billion, compared to $5.1 billion at the end of 2024.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Part of the export-control charge was reversed as shipments resumed under licenses.",
+            "quote": "During the fourth quarter of fiscal year 2025, we began shipping products and reversed approximately $360 million of the inventory and related charges recorded earlier in the year.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The headline growth masks fragile foundations. AMD depends on a small number of customers for a substantial portion of revenue, and the filing warns that losing one would materially hurt the business. Its Data Center AI growth rests on customers who may be unable to secure data center capacity, energy, or capital, and who may ask vendors for deferred-payment arrangements. Export controls already forced roughly $800 million in MI308 inventory and related charges, and the U.S. government has floated a 15% revenue share with no published regulation, which the filing says could bring litigation. Client and Gaming growth is tied to AI PC adoption whose pace is uncertain, and the company acknowledges that semi-custom revenue depends on third-party console success. Operating cash flow of $7.7 billion includes $1.2 billion from a business it has since sold, and it spent $5.5 billion on short-term investments and debt rose to $3.3 billion from $1.8 billion. Operating income of $3.7 billion is well below gross profit after amortization and stock compensation.",
+        "claims": [
+          {
+            "claim": "Revenue depends heavily on a few customers, and losing one would be material.",
+            "quote": "We depend on a small number of customers for a substantial portion of our business and we expect that a small number of customers will continue to account for a significant part of our revenue and receivables in the future.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Export restrictions already forced large inventory charges, and a possible government revenue share is unresolved.",
+            "quote": "As a result of the restriction, we incurred approximately $800 million in inventory and related charges in the second quarter of 2025.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Total debt rose and the company warns that financing may not be available on favorable terms.",
+            "quote": "Our aggregate principal amount of total debt as of December 27, 2025 was $3.3 billion, compared to $1.8 billion as of December 28, 2024.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "bull": {
+        "argument": "The bear case raises real risks, but the filing's own numbers answer several of them. Customer concentration is a risk the filing states plainly, yet it does not show a deterioration: revenue grew 34% and Data Center grew 32%. The MI308 export charge was about $800 million, and the company reversed roughly $360 million of it once licenses allowed shipments, so the net hit was about $440 million, which gross margin still absorbed while rising to 50% from 49%. Operating cash flow of $7.7 billion includes $1.2 billion from discontinued operations, but continuing operations still generated $6.5 billion, more than double the $3.0 billion of 2024. Debt rising to $3.3 billion is modest against $10.6 billion in cash and short-term investments, and the $5.5 billion in short-term investment purchases is a reallocation of cash, not a cash drain. Operating income of $3.7 billion absorbed $2.3 billion of acquisition amortization and $1.6 billion of stock compensation, so it reflects deliberate investment and acquisition costs rather than weak core economics. The filing's risk discussion is extensive, but it describes exposures, not realized losses.",
+        "claims": [
+          {
+            "claim": "Continuing operations generated $6.5 billion in operating cash flow, more than double 2024.",
+            "quote": "Net cash provided by operating activities of continuing operations was $6.5 billion in 2025",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The export-control charge was partly reversed after shipments resumed under licenses, reducing the net impact.",
+            "quote": "During the fourth quarter of fiscal year 2025, we began shipping products and reversed approximately $360 million of the inventory and related charges recorded earlier in the year.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Gross margin still rose despite the export-control charges.",
+            "quote": "Gross margin of 50% increased by 1% compared to 49% in 2024",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The opponent's netting is selective. The $440 million net MI308 charge is real, and the $360 million reversal depended on licenses the filing says could be temporary or conditional, while the government's 15% revenue expectation remains unpublished and could bring litigation. Continuing operating cash flow of $6.5 billion is a 2025 figure, but the filing attributes $2.2 billion of it to a rise in inventory, so a large part of cash generation was tied up in unsold product that carries write-down risk. Cash of $10.6 billion is offset by $3.3 billion of debt, and the filing's own covenant language requires an interest coverage ratio and restricts liens and asset sales. Operating income of $3.7 billion is only about 11% of revenue, and the filing shows Client and Gaming profit, not Data Center, drove most of the increase. Management's R&D rose 25% and MG&A 52%, so growth is being bought with rising costs. Finally, the opponent is right that the filing describes exposures rather than losses, but the exposures it lists, including customer concentration, capacity-dependent AI demand and export rules, are the ones that would hit reported results first.",
+        "claims": [
+          {
+            "claim": "Operating cash flow was lifted by a large inventory build that ties up cash.",
+            "quote": "The primary drivers of the changes in operating assets and liabilities included a $2.2 billion increase in inventory primarily to support the continued ramp of Data Center products in advanced process nodes.",
+            "verified": true,
+            "score": 98.1
+          },
+          {
+            "claim": "The export-related revenue reversal depends on licenses that may be temporary or conditional.",
+            "quote": "Even if we are granted licenses, the licenses may be temporary or could impose onerous conditions for us or our customers.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Operating expenses grew much faster than revenue, compressing the benefit of growth.",
+            "quote": "Marketing, general and administrative expenses of $4.1 billion in 2025 increased by $1.4 billion, or 52%, compared to $2.7 billion in 2024.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    }
+  ],
+  "citations": {
+    "bull": {
+      "verified": 6,
+      "total": 6
+    },
+    "bear": {
+      "verified": 6,
+      "total": 6
+    },
+    "overall": {
+      "verified": 12,
+      "total": 12,
+      "accuracy": 1.0
+    }
+  },
+  "judge": {
+    "scores": {
+      "bull": {
+        "evidence": 7,
+        "logic": 7,
+        "responsiveness": 7
+      },
+      "bear": {
+        "evidence": 8,
+        "logic": 7,
+        "responsiveness": 8
+      }
+    },
+    "winner": "tie",
+    "reasoning": "Both sides cite verified quotes from the filing, with the bear's round 2 quotes (inventory build, license conditionality, MG&A growth) adding more pointed and verifiable counterweights to the bull's headline figures. The bull effectively rebutted the bear's round 1 concentration and export points with netting and continuing-operations cash flow, but the bear's critique that the bull's netting was selective and that cash generation was tied up in inventory is substantive, leaving the debate closely balanced."
+  },
+  "usage": {
+    "calls": 5,
+    "input_tokens": 203886,
+    "output_tokens": 2772,
+    "cost_usd": 0.0218
+  }
+}

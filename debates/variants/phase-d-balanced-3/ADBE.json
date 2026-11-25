@@ -1,0 +1,149 @@
+{
+  "ticker": "ADBE",
+  "filing": {
+    "accession": "0000796343-26-000003",
+    "document": "adbe-20251128.htm",
+    "date": "2026-01-15"
+  },
+  "model": "claude-haiku-5-5",
+  "created": "2026-11-25T04:42:40+00:00",
+  "bull_first": true,
+  "input_mode": "balanced",
+  "rounds": [
+    {
+      "round": 1,
+      "bull": {
+        "argument": "The filing shows a business compounding at scale. Total revenue rose 11% to $23,769 million in fiscal 2025, and subscription revenue, the recurring core, grew 12% to $22,904 million, now 96% of the total. Total Adobe ARR reached $25.20 billion, up 11.5%, and remaining performance obligations increased 13% to $22.52 billion, giving visibility into future revenue. Profitability is strong: net income rose 28% to $7.13 billion and operating cash flow rose 25% to $10.03 billion, while operating expenses were roughly flat. The company is also investing in its AI roadmap. Acrobat Studio launched in August 2025, and AI features such as Firefly and the Acrobat AI Assistant are described as deeply infused across products. The risk factors acknowledge AI competition and pricing pressure, and those are real. But the filing also says the company's revenue and earnings are relatively predictable because of its subscription model, and the financial results to date show that model working.",
+        "claims": [
+          {
+            "claim": "Subscription revenue is the dominant and fast-growing core of the business",
+            "quote": "Subscription $ 22,904 $ 20,521 $ 18,284 12 %",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Recurring revenue base is large and growing at double-digit rates",
+            "quote": "Total Adobe ARR grew to $25.20 billion exiting fiscal 2025, representing 11.5% year-over-year growth.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Earnings and cash generation grew faster than revenue, showing strong profitability",
+            "quote": "Cash flows from operations of $10.03 billion during fiscal 2025 increased by $1.98 billion, or 25%, compared to fiscal 2024.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull case rests on results already in hand, but the filing's own risk disclosures point to a weaker forward picture. Management states that AI 'may not be successful,' that AI solutions 'may not be adopted or monetizable,' and that 'consumer reception and monetization pathways are uncertain.' Competition is described as intensifying, with 'downward pressure on pricing and gross margins' and possible reductions in 'renewal, upsell and cross-sell rates.' Meanwhile, the company must make 'significant, additional investment' in models, datasets and compute, costs that 'could adversely impact our margins.' Growth is also decelerating: subscription revenue rose 12% in fiscal 2025 versus 2024, and Digital Experience grew 9%. Net income growth of 28% also comes after the prior year's $1 billion Figma termination fee, so the comparison flatters the trend. Finally, the filing warns that the EU AI Act may force costly changes and carries administrative fines. These factors argue that the current subscription strength may not persist at its present level.",
+        "claims": [
+          {
+            "claim": "Management concedes its AI investments may not be monetized or adopted by customers.",
+            "quote": "there can be no assurance that our new or enhanced solutions and AI innovations will be successful, adopted or monetizable",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Competition is expected to pressure pricing and gross margins, which could weaken renewals and upsells.",
+            "quote": "may increase downward pressure on pricing and gross margins and adversely affect our renewal, upsell and cross-sell rates",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "AI costs could compress margins, and profit growth comparisons are flattered by a prior-year $1 billion payment.",
+            "quote": "These costs could adversely impact our margins as we continue to make significant investments in AI development",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "bull": {
+        "argument": "The opponent is right that growth is moderating. Subscription revenue grew 12%, Digital Experience grew 9%, and the Figma fee distorts the prior-year cash flow comparison. But the filing's own forward indicators do not show a collapse. Remaining performance obligations rose 13% to $22.52 billion, faster than revenue, which points to contracted revenue still building. Total Adobe ARR grew 11.5%, consistent with the recurring base holding its pace. Subscription is 96% of revenue, so most of the business is ratable and contracted. The risk factors list AI competition, pricing pressure and EU AI Act costs as real possibilities, not reported results. The filing does not quantify any decline, so the bear case is a forecast risk, while the bull case rests on reported figures. Strong ARR and backlog growth suggest the subscription base is not yet weakening, even if the rate of growth slows.",
+        "claims": [
+          {
+            "claim": "Forward contracted revenue is growing faster than current revenue",
+            "quote": "Remaining performance obligations of $22.52 billion as of November 28, 2025 increased by 13% from $19.96 billion as of November 29, 2024.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management reports continued growth in software-based subscription revenue across its portfolio",
+            "quote": "we have continued to experience growth in software-based subscription revenue across our portfolio of offerings",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management itself describes revenue and earnings as relatively predictable due to the subscription model",
+            "quote": "While our revenue and earnings are relatively predictable as a result of our subscription-based business model",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull case relies on backward-looking and contracted figures, but those figures do not settle the forward question. Remaining performance obligations rose 13%, yet RPO is not revenue and is not guaranteed to convert if customers churn or renegotiate. Management itself says revenue is 'relatively predictable' but adds that the broader implications 'particularly in the long term, remain uncertain.' ARR is also not fully clean: Total Adobe ARR of $25.20 billion becomes $25.66 billion when revalued at beginning-of-year rates, a roughly $460 million swing that shows how sensitive the headline metric is to currency. Digital Experience growth slowed to 9%, and product revenue fell 16% and services fell 10%. The filing warns that competition may pressure 'pricing and gross margins' and 'renewal, upsell and cross-sell rates,' which are the exact levers that would convert the strong ARR into sustained growth. The bear case is not that growth collapses but that a business reliant on AI monetization, facing intensifying competition and rising compute costs, may decelerate further from a level that already requires the Figma-distorted comparison to look strong.",
+        "claims": [
+          {
+            "claim": "Backlog and ARR are forward indicators of a sort, but the filing says the long-term effects of macro and trade conditions remain uncertain.",
+            "quote": "the broader implications of these macroeconomic events on our business, results of operations and overall financial position, particularly in the long term, remain uncertain",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Headline ARR depends on currency revaluation, adding about $460 million when restated at beginning-of-year rates.",
+            "quote": "Revaluing our ending ARR for fiscal 2025 using currency rates determined at the beginning of fiscal 2026, our Total Adobe ARR at the end of fiscal 2025 would be $25.66 billion, or approximately $460 million higher",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Competition may pressure the renewal and upsell rates that drive recurring growth.",
+            "quote": "may increase downward pressure on pricing and gross margins and adversely affect our renewal, upsell and cross-sell rates",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    }
+  ],
+  "citations": {
+    "bull": {
+      "verified": 6,
+      "total": 6
+    },
+    "bear": {
+      "verified": 6,
+      "total": 6
+    },
+    "overall": {
+      "verified": 12,
+      "total": 12,
+      "accuracy": 1.0
+    }
+  },
+  "judge": {
+    "scores": {
+      "bull": {
+        "evidence": 8,
+        "logic": 7,
+        "responsiveness": 7
+      },
+      "bear": {
+        "evidence": 8,
+        "logic": 7,
+        "responsiveness": 7
+      }
+    },
+    "winner": "tie",
+    "reasoning": "Both sides cite verified quotes from the filing, and the bull's RPO and ARR points are solid forward indicators while the bear's currency-revaluation and risk-disclosure points are accurately sourced. The bull effectively concedes deceleration and reframes the bear's risks as forecasts, while the bear shows the headline metrics are less clean than presented, so neither side decisively wins."
+  },
+  "usage": {
+    "calls": 5,
+    "input_tokens": 47010,
+    "output_tokens": 3235,
+    "cost_usd": 0.0063
+  }
+}

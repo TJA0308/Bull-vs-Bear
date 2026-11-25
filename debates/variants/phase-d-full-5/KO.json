@@ -1,0 +1,149 @@
+{
+  "ticker": "KO",
+  "filing": {
+    "accession": "0001628280-26-010047",
+    "document": "ko-20251231.htm",
+    "date": "2026-02-20"
+  },
+  "model": "claude-haiku-5-5",
+  "created": "2026-11-25T04:30:32+00:00",
+  "bull_first": true,
+  "input_mode": "full",
+  "rounds": [
+    {
+      "round": 1,
+      "bull": {
+        "argument": "The filing shows a company with durable earnings power and strong financial flexibility. Operating income rose 38% to $13,762 million in 2025, and operating margin expanded to 28.7% from 21.2%, driven partly by lower other operating charges and favorable pricing (price/mix contributed 4%). Gross profit margin improved to 61.6%. Operating cash flow grew 9% to $7,408 million. Management states its liquidity position is strong, citing $15.8 billion in cash and short-term investments and $6.2 billion in unused backup credit lines, and its credit ratings are A+ and A1. The company also has a 64th consecutive annual dividend increase, raising the quarterly dividend to $0.53. Risks are real: the IRS litigation could cost roughly $14 billion in potential incremental liabilities, and volume was flat. Yet the filing notes management believes it is more likely than not to prevail, and that pricing power is holding up despite inflation. Those strengths support a constructive view.",
+        "claims": [
+          {
+            "claim": "Operating income grew 38% in 2025, reflecting margin expansion.",
+            "quote": "Operating income was $13,762 million in 2025, compared to $9,992 million in 2024, an increase of $3,770 million, or 38%.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management views liquidity as strong and sufficient for the foreseeable future.",
+            "quote": "the Company believes its current liquidity position is strong and will continue to be sufficient to fund our operating activities and cash commitments for investing and financing activities for the foreseeable future.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The company believes it is more likely than not to prevail in the IRS tax litigation.",
+            "quote": "While the Company believes that it is more likely than not that we will ultimately prevail in this litigation upon appeal",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull case leans on headline operating income growth, but much of that 38% rise came from lapping a prior-year $3,109 million fairlife remeasurement charge, not from durable operating improvement. Underlying volume was flat: unit case volume was even worldwide, and North America fell 1%. Growth depended on price/mix of 4%, while the filing warns consumers may trade down to lower-priced or private-label products and that price increases may reduce volume. Currency was a major drag: a 12% hit to operating income, with Latin America's operating income down despite its margin. The IRS dispute is not a footnote. The company paid $6.0 billion, could forfeit it, and estimates roughly $14 billion more for 2010 through 2025. The BodyArmor trademark was impaired again by $960 million, with management warning further charges are likely. Liquidity is strong, but the filing says the company would need cash flows and borrowing to absorb these outcomes, which is a real drain on capacity.",
+        "claims": [
+          {
+            "claim": "Operating income growth was driven partly by lapping a large prior-year charge, not only underlying performance.",
+            "quote": "primarily driven by lower other operating charges, due to the prior year remeasurement of our contingent consideration liability to fair value in conjunction with the fairlife acquisition",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Unit case volume was flat, so growth relied on pricing that the filing warns may reduce volume.",
+            "quote": "Higher product prices may result in reductions in sales volume.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The IRS dispute carries a potentially large remaining liability that could weigh on cash flows.",
+            "quote": "The Company estimates that the potential aggregate remaining incremental tax and interest liability for the tax years 2010 through 2025 could be approximately $14 billion",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "bull": {
+        "argument": "The bear case is right that the 38% operating income jump is flattered by lapping the $3,109 million fairlife remeasurement charge in 2024, and that volume was flat. But the underlying picture is still constructive. Price/mix added 4% to revenue, and gross margin widened, so pricing power is holding even with volume flat. Currency was a real drag, costing 12% of operating income, and that is a headwind rather than a structural flaw. On the IRS dispute, the filing says the company believes it is more likely than not to prevail, and the $6.0 billion paid would be refunded if its positions are sustained. The estimated $14 billion exposure is large, but it is contingent and spread across 2010 through 2025. Against that, the company holds $15.8 billion in cash and short-term investments, has $6.2 billion in unused credit lines, and carries A+/A1 ratings. The BodyArmor impairment is a discrete loss on one brand, not a broad franchise problem. A company that can still raise prices, generate $7.4 billion in operating cash flow, and keep raising its dividend has the capacity to absorb these risks.",
+        "claims": [
+          {
+            "claim": "Pricing power is holding, with price/mix adding 4% to revenue and gross margin rising.",
+            "quote": "Our gross profit margin increased to 61.6% in 2025 from 61.1% in 2024.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Liquidity is substantial, with $15.8 billion in cash and short-term investments.",
+            "quote": "The Company's cash, cash equivalents, short-term investments and marketable securities totaled $15.8 billion as of December 31, 2025.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management believes it is more likely than not to prevail in the IRS litigation.",
+            "quote": "While the Company believes that it is more likely than not that we will ultimately prevail in this litigation upon appeal",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull concedes the central facts, so the debate turns on how much weight the remaining risks deserve. First, pricing is doing the work that volume cannot. Price/mix added 4% while unit case volume was even and North America volume fell 1%. The filing itself warns that consumers 'may increasingly purchase lower-priced offerings' and that price increases may reduce volume, so the 4% is not free growth. Second, the 12% currency drag on operating income is not a one-time item: the filing says the company uses debt financing and that FX exposure is persistent across Latin America and EMEA. Third, the IRS exposure should not be treated as contingent in the way the bull suggests. The company has already paid $6.0 billion, which the filing says would be refunded only if it prevails, and it estimates roughly $14 billion more for 2010 through 2025. Cash of $15.8 billion is real, but that is roughly a third of the potential exposure before any further hits. Fourth, BodyArmor was impaired twice, $760 million in 2024 and $960 million in 2025, with more possible.",
+        "claims": [
+          {
+            "claim": "Volume was flat, so pricing carries growth, and the filing warns higher prices may cut volume and push consumers to cheaper options.",
+            "quote": "Consumers may be less willing to pay a price differential for our branded products and may increasingly purchase lower-priced offerings, or may forgo some purchases altogether.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The IRS exposure is large relative to liquidity and the company has already paid $6.0 billion that may not be refunded.",
+            "quote": "the Company would not receive a refund of the applicable portion or all of the $6.0 billion it paid in response to the IRS invoices",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The BodyArmor trademark has been impaired twice, and further impairment is possible.",
+            "quote": "it is likely that we would be required to recognize an additional impairment charge",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    }
+  ],
+  "citations": {
+    "bull": {
+      "verified": 6,
+      "total": 6
+    },
+    "bear": {
+      "verified": 6,
+      "total": 6
+    },
+    "overall": {
+      "verified": 12,
+      "total": 12,
+      "accuracy": 1.0
+    }
+  },
+  "judge": {
+    "scores": {
+      "bull": {
+        "evidence": 7,
+        "logic": 6,
+        "responsiveness": 6
+      },
+      "bear": {
+        "evidence": 8,
+        "logic": 7,
+        "responsiveness": 8
+      }
+    },
+    "winner": "bear",
+    "reasoning": "The bear side pressed verified quotes on lapping a prior-year charge, flat volume, the $14 billion IRS exposure, and BodyArmor impairments, and it directly rebutted the bull's claim that the IRS exposure is merely contingent by noting cash covers only about a third of it. The bull conceded several points and leaned on a gross margin quote that does not really prove pricing power absorbs volume weakness, though its liquidity and litigation-confidence points were verified and reasonably framed."
+  },
+  "usage": {
+    "calls": 5,
+    "input_tokens": 246091,
+    "output_tokens": 3288,
+    "cost_usd": 0.0263
+  }
+}

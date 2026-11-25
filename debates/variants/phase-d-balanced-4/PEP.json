@@ -1,0 +1,149 @@
+{
+  "ticker": "PEP",
+  "filing": {
+    "accession": "0000077476-26-000007",
+    "document": "pep-20251227.htm",
+    "date": "2026-02-03"
+  },
+  "model": "claude-haiku-5-5",
+  "created": "2026-11-25T04:51:51+00:00",
+  "bull_first": true,
+  "input_mode": "balanced",
+  "rounds": [
+    {
+      "round": 1,
+      "bull": {
+        "argument": "PepsiCo presents a durable global franchise. It sells beverages and convenient foods in more than 200 countries and territories, and its brands include Lay's, Doritos, Cheetos, Gatorade, Pepsi-Cola, Mountain Dew, Quaker and SodaStream. Management is responding to the headwinds the filing describes. It is reigniting North America by combining operations and reinvesting savings in brands, expanding its International business, and growing away-from-home sales. Its pep+ transformation is in its fifth year, and it is investing in artificial intelligence and data analytics to sharpen commercial insight. The risk factors are real: consumer preference shifts, GLP-1 medications, tariffs, and boycotts all weigh on demand, and Russia's share of cash rose to 20% from 10%. But the filing also shows the company is actively managing these pressures through portfolio reshaping, such as reducing sugar and sodium in core brands and adding functional products like Pepsi Prebiotic Cola. A scaled, diversified company that is adapting its portfolio and cost base is positioned to absorb these risks better than smaller competitors.",
+        "claims": [
+          {
+            "claim": "PepsiCo sells in more than 200 countries and territories, giving it broad geographic diversification.",
+            "quote": "serving customers and consumers in more than 200 countries and territories",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management is reigniting North America by combining operations and reinvesting savings in brands.",
+            "quote": "reigniting our North America business by combining operations where it makes the most sense and using the savings to support meaningful investments in our brands",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The company is reshaping its portfolio to meet changing consumer demand, including functional products.",
+            "quote": "adding new products with functional benefits, such as Pepsi Prebiotic Cola",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bear case rests on how exposed PepsiCo's demand and cost base are to forces it cannot control. The filing lists consumer shifts as a core risk: changing diets, including 'increasing use of weight-loss drugs, such as GLP-1 medications,' and 'reduce or publicly boycott the purchase or consumption of our products.' Management concedes these concerns 'have affected and may continue to affect consumer behaviors.' Costs are also pressured: tariffs have 'resulted in increased input costs,' and the company may not 'pass on such increases to our customers, which may result in reduced volume, revenue, margins.' The retail picture is weakening too, with retailers 'removing our products or otherwise reducing shelf space.' Finally, the company's exposure to unstable markets is rising. Russia now represents 20% of consolidated cash and cash equivalents, up from 10%. Management's turnaround language, reigniting North America and fixing competitiveness, reads as an admission that current performance needs repair. Scale does not cure falling demand, and the filing gives little evidence the fixes are working yet.",
+        "claims": [
+          {
+            "claim": "Consumer demand faces structural and boycott-driven pressure",
+            "quote": "Concerns with any of the foregoing have affected and may continue to affect consumer behaviors and can lead consumers to reduce or publicly boycott the purchase or consumption of our products.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Tariffs raise input costs and may not be passed to customers",
+            "quote": "When prices increase, we may or may not pass on such increases to our customers, which may result in reduced volume, revenue, margins and operating results.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Russia's share of cash rose sharply, concentrating exposure in a volatile market",
+            "quote": "Russia accounted for 5% and 3% of our consolidated assets, 20% and 10% of our consolidated cash and cash equivalents",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "bull": {
+        "argument": "The bear case is right that these risks are real, but it overstates what they prove. Management's own language shows it is acting on them, not ignoring them. The filing describes a deliberate plan: reigniting North America by combining operations and reinvesting savings, growing International, and expanding away-from-home, supported by a pep+ transformation now in its fifth year. Calling the North America effort a repair is fair, but a company restructuring its operating model is making choices, not waiting to be overtaken. On costs, the filing says tariffs have affected inputs, yet management also says it will 'identify actions to potentially mitigate' them, and it is reshaping the portfolio, such as reducing sugar and sodium in Lay's and Gatorade, to fit where demand is going. On Russia, the 20% figure is a share of cash, not a share of revenue. Russia was 5% of net revenue in 2025, up only from 4%. Diversification across more than 200 countries still limits how much any one market can hurt. The filing does not prove the fixes are working. It does show a scaled company with the resources to test them.",
+        "claims": [
+          {
+            "claim": "Russia accounts for only 5% of consolidated net revenue, far less than its 20% share of cash.",
+            "quote": "Our operations in Russia accounted for 5% and 4% of our consolidated net revenue for the years ended December 27, 2025 and December 28, 2024, respectively.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management is restructuring its North America operations to reignite growth.",
+            "quote": "reigniting our North America business by combining operations where it makes the most sense and using the savings to support meaningful investments in our brands",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The company is reshaping its portfolio to match changing consumer preferences.",
+            "quote": "reducing added sugar, sodium and saturated fat in core brands like Lay’s and Gatorade",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The opponent is right that management is acting, but action is not proof of results. The filing says North America's turnaround is still being evaluated: the company is 'carefully evaluating an integrated model' and will 'take a nuanced approach.' That is a plan under study, not a result. On Russia, the opponent is correct that revenue exposure is 5%, but the filing's own figures show cash concentration jumped from 10% to 20%, and the company reports that its Russian operations face 'sanctions and export controls' and 'restrictions on the transfer of funds.' Cash that is hard to move is a real constraint, not a rounding error. On costs, 'identify actions to potentially mitigate' is a statement of intent, and the filing admits tariffs have already raised input costs. Finally, the GLP-1 and boycott risks are structural demand threats that scale does not reverse. A diversified company can still be a poor investment if its core categories shrink and its fixes remain unproven.",
+        "claims": [
+          {
+            "claim": "North America's integrated model is still under evaluation, not delivered",
+            "quote": "In North America, we are carefully evaluating an integrated model for our food and beverage supply chains, go-to-market, and commercial capabilities",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Russian cash is exposed to sanctions and transfer restrictions",
+            "quote": "sanctions and export controls in certain of these international markets (including restrictions on the transfer of funds to and from certain markets)",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Consumer demand faces structural pressure from GLP-1 medications",
+            "quote": "increasing use of weight-loss drugs, such as GLP-1 medications, or other factors",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    }
+  ],
+  "citations": {
+    "bull": {
+      "verified": 6,
+      "total": 6
+    },
+    "bear": {
+      "verified": 6,
+      "total": 6
+    },
+    "overall": {
+      "verified": 12,
+      "total": 12,
+      "accuracy": 1.0
+    }
+  },
+  "judge": {
+    "scores": {
+      "bull": {
+        "evidence": 7,
+        "logic": 7,
+        "responsiveness": 8
+      },
+      "bear": {
+        "evidence": 7,
+        "logic": 7,
+        "responsiveness": 7
+      }
+    },
+    "winner": "tie",
+    "reasoning": "Both sides cite verified quotes from the filing, and the bull's rebuttal effectively reframes the Russia figure as a share of cash rather than revenue, while the bear's rebuttal sharpens the cash-transfer restriction point and notes the turnaround is still under evaluation. Each side lands fair hits: the bull shows management is acting, and the bear shows results are unproven and cash exposure is constrained, so neither clearly outweighs the other."
+  },
+  "usage": {
+    "calls": 5,
+    "input_tokens": 47014,
+    "output_tokens": 2666,
+    "cost_usd": 0.006
+  }
+}

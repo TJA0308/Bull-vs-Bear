@@ -1,0 +1,149 @@
+{
+  "ticker": "GOOGL",
+  "filing": {
+    "accession": "0001652044-26-000018",
+    "document": "goog-20251231.htm",
+    "date": "2026-02-05"
+  },
+  "model": "claude-haiku-5-5",
+  "created": "2026-11-25T04:20:49+00:00",
+  "bull_first": true,
+  "input_mode": "full",
+  "rounds": [
+    {
+      "round": 1,
+      "bull": {
+        "argument": "The filing shows a company with deep, diversified demand drivers. Online advertising is more than 70% of revenue, yet management says AI is 'reshaping' the ad industry and that Google is building 'AI Overviews and AI Mode in Search' and enterprise AI on Google Cloud. Revenues beyond advertising, including cloud, subscriptions, platforms and devices, 'have grown at a rate higher than our advertising revenues' and are 'becoming a larger percentage of our consolidated revenues.' Management also says 'user engagement with AI products and services' is expected 'to benefit our business and our revenues.' The company is funding this with heavy capital spending, expected to 'significantly increase' in 2026, and is pursuing efficiencies through its own TPUs. Risks are real, including antitrust remedies and margin pressure, but the filing describes a business that is widening its revenue base while investing ahead of demand.",
+        "claims": [
+          {
+            "claim": "Non-advertising revenue is growing faster than advertising and becoming a larger share of revenue.",
+            "quote": "Certain of these revenues have been growing at a rate higher than our advertising revenues, becoming a larger percentage of our consolidated revenues, and we expect this trend to continue.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management expects user engagement with AI products to benefit revenues.",
+            "quote": "We expect that this evolution, including user engagement with AI products and services, will continue to benefit our business and our revenues.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management expects efficiencies from its own TPU and GPU infrastructure.",
+            "quote": "we expect to continue to drive efficiencies in our data centers, for example, through the design of our AI models and our TPU and GPU-based technical infrastructure.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The filing describes a company whose core engine is concentrated and exposed. More than 70% of 2025 revenue came from online advertising, and management concedes that AI is 'quickly reshaping the advertising industry' and that 'There is no assurance that we will adapt effectively.' Partners 'can terminate their contracts with us at any time.' Your opponent cites revenue diversification, but the filing says those other revenues 'are generally lower' margin than advertising, so their growth dilutes profitability. Capital intensity is rising sharply: management expects to 'significantly increase' technical infrastructure investment in 2026, with costs that are 'expected to significantly increase,' plus long-duration leases and 'backstops, guarantees' to infrastructure counterparties. The filing warns of 'downward pressure on our operating margin' and that 'our historical revenue growth rate and historical operating margin may not be indicative of our future performance.' Antitrust remedies in the DOJ ad technology case 'include structural remedies that could harm our business.' Heavy spending ahead of proven returns, combined with a concentrated ad base and legal overhang, is a risky setup.",
+        "claims": [
+          {
+            "claim": "Advertising remains the dominant revenue source, creating concentration risk.",
+            "quote": "We generated more than 70% of total revenues from online advertising in 2025.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Non-advertising revenue carries lower margins, so mix shift pressures profitability.",
+            "quote": "The margins on these revenues vary significantly and are generally lower than the margins on our advertising revenues.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Antitrust outcomes could include structural remedies harmful to the business.",
+            "quote": "The DOJ's remedy proposal includes structural remedies that could harm our business.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "bull": {
+        "argument": "The bear case is serious, but it overstates what the filing shows. Yes, over 70% of 2025 revenue came from online advertising, and AI is reshaping that business. But the same risk factor says the company is 'constantly adjusting to meet this shift,' and the filing describes AI engagement as something expected 'to benefit our business and our revenues.' Diversification is real, not hypothetical: non-advertising revenues are 'growing at a rate higher than our advertising revenues.' The margin point is fair, since those revenues are 'generally lower' margin, but the filing frames that as a mix effect from growth, not a sign the core is weakening. On capital intensity, the filing ties spending to demand: AI offerings 'require more compute power,' and the company is 'entering into significant leasing arrangements' to meet it. The DOJ remedies are a genuine overhang, and the filing says so plainly. Still, the company is investing ahead of demand while its revenue base is widening, which is a different risk profile than a business that is simply stalling.",
+        "claims": [
+          {
+            "claim": "Non-advertising revenue is growing faster than advertising and becoming a larger share of revenue.",
+            "quote": "Certain of these revenues have been growing at a rate higher than our advertising revenues, becoming a larger percentage of our consolidated revenues, and we expect this trend to continue.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management expects user engagement with AI products to benefit revenues.",
+            "quote": "We expect that this evolution, including user engagement with AI products and services, will continue to benefit our business and our revenues.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The company is actively adjusting to AI-driven shifts in advertising.",
+            "quote": "we and our competitors are constantly adjusting to meet this shift and provide new and evolving advertising formats",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The opponent reframes margin dilution as a mere mix effect, but the filing treats it as an ongoing pressure, not a one-time shift. It warns of 'downward pressure on our operating margin' from 'increasing costs for many aspects of our business,' and says 'Certain of our costs and expenses are relatively fixed and may not correlate to changes in revenue.' If revenue slows while fixed infrastructure costs rise, margins compress with no offset. The filing also concedes that 'our historical revenue growth rate and historical operating margin may not be indicative of our future performance.' On adaptation, the filing says plainly 'There is no assurance that we will adapt effectively and competitively.' Constant adjustment is not proof of success. Diversification is real but small relative to the core: advertising remains over 70% of revenue, and the filing says AI may 'monetize differently than our historical' offerings, which 'could affect revenue growth rates and margin trends.' Investing ahead of demand is the risk itself: management expects to 'significantly increase' infrastructure investment in 2026 and has extended 'credit support' via 'backstops and guarantees.' That is spending committed before returns are proven.",
+        "claims": [
+          {
+            "claim": "Margin pressure is ongoing and partly fixed-cost driven, not just a temporary mix effect.",
+            "quote": "Certain of our costs and expenses are relatively fixed and may not correlate to changes in revenue",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management does not assure that its AI adaptation will succeed.",
+            "quote": "There is no assurance that we will adapt effectively and competitively to meet this shift",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "AI monetization may change revenue growth and margin trends.",
+            "quote": "we may monetize differently than our historical consumer and enterprise offerings which could affect revenue growth rates and margin trends",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    }
+  ],
+  "citations": {
+    "bull": {
+      "verified": 6,
+      "total": 6
+    },
+    "bear": {
+      "verified": 6,
+      "total": 6
+    },
+    "overall": {
+      "verified": 12,
+      "total": 12,
+      "accuracy": 1.0
+    }
+  },
+  "judge": {
+    "scores": {
+      "bull": {
+        "evidence": 7,
+        "logic": 6,
+        "responsiveness": 6
+      },
+      "bear": {
+        "evidence": 8,
+        "logic": 7,
+        "responsiveness": 8
+      }
+    },
+    "winner": "bear",
+    "reasoning": "Both sides cite verified quotes, but the bear side uses more pointed verified language on margin dilution, fixed costs, and lack of assurance on AI adaptation, and directly rebuts the bull's 'mix effect' framing by pointing to the filing's description of ongoing pressure. The bull's responses are reasonable, but it largely reframes risks rather than rebutting the fixed-cost and monetization-uncertainty points, and its 'constantly adjusting' quote is about adaptation effort rather than success, which the bear correctly distinguishes."
+  },
+  "usage": {
+    "calls": 5,
+    "input_tokens": 122622,
+    "output_tokens": 2657,
+    "cost_usd": 0.0136
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "ticker": "NKE",
+  "filing": {
+    "accession": "0000320187-26-000088",
+    "document": "nke-20260531.htm",
+    "date": "2026-07-15"
+  },
+  "model": "claude-haiku-5-5",
+  "created": "2026-11-25T04:45:20+00:00",
+  "bull_first": true,
+  "input_mode": "balanced",
+  "rounds": [
+    {
+      "round": 1,
+      "bull": {
+        "argument": "Nike's fiscal 2026 filing shows a business that is stabilizing and self-correcting. Total revenues were $46.4 billion, flat versus $46.3 billion, and gross margin rose 20 basis points to 42.9%. Wholesale revenues grew 6% to $27.5 billion, showing that the brand's partners are reinvesting in Nike product. EBIT margin held at 8.3% versus 8.2% the prior year, and ROIC remained strong at 18.7%. The company is also taking deliberate action: it is reducing excess footwear supply, liquidating inventory, and realigning costs, with $385 million in severance charges to show for it. The IEEPA tariff recovery of $986 million largely offset tariff costs, and substantially all of the remaining receivable was collected after year end. Management expects the reset to be complete by December 2026. The weak spots, Greater China and Converse, are clearly identified and sized, so they do not appear to threaten the core business.",
+        "claims": [
+          {
+            "claim": "Gross margin improved year over year, showing the core business held pricing and cost discipline.",
+            "quote": "Gross margin increased 20 basis points to 42.9% for fiscal 2026 compared to 42.7% for fiscal 2025",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Wholesale partners are reinvesting in Nike, with wholesale revenue rising 6% on a reported basis.",
+            "quote": "NIKE Brand wholesale revenues were $27.5 billion in fiscal 2026 compared to $25.9 billion in fiscal 2025, up 6% on a reported basis",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The IEEPA tariff recovery largely offset the tariff costs recognized during the year, a one-time benefit to earnings.",
+            "quote": "largely offsetting the impact of the IEEPA tariffs recognized during fiscal 2026",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull case rests on a headline stabilization, but the filing shows the underlying business is shrinking where it matters most. Reported revenue was flat only because of a $986 million IEEPA tariff recovery booked in cost of sales, not operating improvement. On a currency-neutral basis, total revenues fell 2%, and NIKE Direct declined 8%, with NIKE Brand Digital down 12% and comparable store sales down 4%. Net income fell 3% and diluted EPS dropped from $2.16 to $2.10. The company also says Greater China and Converse will keep producing negative impacts through fiscal 2027, and it has not ruled out further severance charges. Gross margin rose only on items the filing describes as non-recurring or one-time in nature, while Converse revenue fell 31%. The management reset is still incomplete, so the upside depends on execution the filing does not guarantee.",
+        "claims": [
+          {
+            "claim": "Flat reported revenue masks a currency-neutral decline, and NIKE Direct and its digital channel are shrinking.",
+            "quote": "On a currency-neutral basis, NIKE, Inc. Revenues decreased 2%, primarily due to lower revenues in Greater China, Converse and Europe",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management expects continued negative impacts from weak segments and may take further restructuring charges.",
+            "quote": "We expect negative impacts from Greater China and Converse to continue throughout fiscal 2027.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Margin stability relied on a large one-time tariff recovery rather than sustained operating improvement.",
+            "quote": "we recognized a benefit of $986 million in Cost of sales within the Consolidated Statements of Income for the recovery of IEEPA tariffs paid",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "bull": {
+        "argument": "The bear case is right that fiscal 2026 was soft, but it overstates how much of the result is one-time. The $986 million IEEPA recovery largely offset tariffs Nike actually paid during the year, so it restored costs rather than creating profit. The filing's own gross margin bridge credits the 20 basis point gain to lower warehousing and logistics costs, favorable currency, and lower other costs, not to the tariff recovery. Wholesale revenue rose 6% reported and 4% currency-neutral, and North America drove that growth, which suggests partners are restocking Nike product. The bear is correct that Greater China and Converse will keep weighing on results through fiscal 2027, and that further severance charges are possible. But the filing identifies both segments and sizes their drag, and it frames the reset as targeted to finish by December 2026. EBIT margin held at 8.3% and ROIC stayed at 18.7%. Management is not promising a rebound, but the core business is intact and the problems are visible.",
+        "claims": [
+          {
+            "claim": "The filing attributes the gross margin gain to logistics, currency, and other cost factors, not to the tariff recovery.",
+            "quote": "Lower warehousing and logistics costs (increasing gross margin approximately 20 basis points), primarily due to channel mix",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Wholesale growth was driven by North America, showing partners are reinvesting in Nike product.",
+            "quote": "The increase on a currency-neutral basis was driven by higher revenues in North America, primarily offset by lower revenues in Greater China.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management expects continued drag from the weakest segments through fiscal 2027, so the bear's point on timing is valid.",
+            "quote": "We expect negative impacts from Greater China and Converse to continue throughout fiscal 2027.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull case treats wholesale growth and a stable margin as proof of health, but the filing shows both were bought at a cost. Management says its actions include 'higher sales returns and discounts with our wholesale partners' to clear inventory. Wholesale growth of 4% currency-neutral therefore comes partly from discounting and returns, not clean demand. Meanwhile NIKE Direct fell 8% currency-neutral, and NIKE Brand Digital fell 12% on lower traffic. The bull says the tariff recovery only restored costs, but the $986 million was booked in cost of sales and largely offset tariffs recognized in fiscal 2026. Gross margin's 20 basis point gain therefore sits next to a one-time benefit that the bridge does not net out. Profitability is also weaker than the bull suggests. EBIT margin of 8.3% and ROIC of 18.7% both declined from 8.2%-to-20.2% comparisons that look better only because of the recovery. Management has also said it 'may take additional actions which could lead to additional charges,' so the reset's cost is not yet known.",
+        "claims": [
+          {
+            "claim": "Wholesale growth was partly purchased through discounts and returns to clear inventory, not through clean demand.",
+            "quote": "higher sales returns and discounts with our wholesale partners to reduce inventory and create capacity for new product",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "NIKE Direct is shrinking, with digital traffic declining.",
+            "quote": "NIKE Direct revenues were $17.7 billion in fiscal 2026 compared to $18.8 billion in fiscal 2025, down 6% on a reported basis.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Further restructuring charges remain possible, so the reset's total cost is not yet known.",
+            "quote": "We continue to evaluate opportunities across the Company and may take additional actions which could lead to additional charges in future quarters.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    }
+  ],
+  "citations": {
+    "bull": {
+      "verified": 6,
+      "total": 6
+    },
+    "bear": {
+      "verified": 6,
+      "total": 6
+    },
+    "overall": {
+      "verified": 12,
+      "total": 12,
+      "accuracy": 1.0
+    }
+  },
+  "judge": {
+    "scores": {
+      "bull": {
+        "evidence": 7,
+        "logic": 7,
+        "responsiveness": 7
+      },
+      "bear": {
+        "evidence": 8,
+        "logic": 6,
+        "responsiveness": 7
+      }
+    },
+    "winner": "tie",
+    "reasoning": "Both sides cite verified quotes, and the bear's evidence is somewhat stronger, including the currency-neutral revenue decline and the NIKE Direct decline, which the bull never directly rebuts. The bull effectively counters the tariff-recovery argument by citing the gross margin bridge, which is a sound response, but its treatment of the NIKE Direct decline is thin. The bear's claim that the 20 basis point gain 'sits next to' a one-time benefit is a weaker logical link than its other points, and the 8.2%-to-20.2% comparison is muddled, so the debate is close to even."
+  },
+  "usage": {
+    "calls": 5,
+    "input_tokens": 49750,
+    "output_tokens": 4608,
+    "cost_usd": 0.0073
+  }
+}

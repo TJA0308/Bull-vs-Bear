@@ -1,0 +1,149 @@
+{
+  "ticker": "META",
+  "filing": {
+    "accession": "0001628280-26-003942",
+    "document": "meta-20251231.htm",
+    "date": "2026-01-29"
+  },
+  "model": "claude-haiku-5-5",
+  "created": "2026-11-25T04:21:12+00:00",
+  "bull_first": true,
+  "input_mode": "full",
+  "rounds": [
+    {
+      "round": 1,
+      "bull": {
+        "argument": "Meta's 2025 filing shows a business with strong financial momentum. Total revenue rose 22% to $200.97 billion, and income from operations grew 20% to $83.28 billion. Family daily active people reached 3.58 billion, up 7%, and ad impressions grew 12% while average price per ad rose 9%, which points to demand strong enough to support pricing as well as volume. Operating cash flow reached $115.80 billion, and the company returned $31.57 billion to shareholders through buybacks and dividends. The filing also acknowledges real headwinds, including privacy regulation, iOS changes, and the Reality Labs losses of about $19.19 billion, and I take those seriously. Still, the Family of Apps segment generated a 52% operating margin on $198.76 billion of revenue, and that scale gives management room to keep funding AI and infrastructure. The bull case rests on whether that cash engine can keep compounding while the company absorbs the costs of its long-term bets.",
+        "claims": [
+          {
+            "claim": "Revenue grew 22% year over year to a record total, driven by advertising.",
+            "quote": "Total revenue for 2025 was $200.97 billion, an increase of 22% compared to 2024, due to an increase in advertising revenue.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Pricing power is improving alongside ad volume, not just growing through more impressions.",
+            "quote": "Ad impressions delivered across our Family of Apps in 2025 increased 12% year-over-year, and our average price per ad increased 9% year-over-year.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The company generates substantial cash flow to fund its investments and return capital to shareholders.",
+            "quote": "The increase was due to $115.80 billion of cash generated from operations",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull case treats 2025's growth as durable, but the filing shows that growth is leaning on a shrinking set of levers while costs compound. Substantially all revenue comes from advertising on Facebook and Instagram, and marketers have no long-term commitments. The filing says privacy rules, iOS changes, and EU consent limits 'have adversely affected, and will continue to adversely affect' the advertising business, and it expects these effects to persist 'for the foreseeable future.' The 9% price-per-ad gain is partly offset by lower-monetizing Reels, and the company says Reels 'will continue to monetize at a lower rate.' Meanwhile, capital expenditures reached $72.22 billion, with guidance of $115 billion to $135 billion for 2026, and free cash flow fell from $52.10 billion in 2024 to $43.59 billion in 2025. Reality Labs lost $19.19 billion, with 2026 losses expected to remain similar. Net income also dropped from $62.36 billion to $60.46 billion, despite higher revenue, because of a $15.93 billion tax charge. The company's own risk language is that returns on these bets are uncertain.",
+        "claims": [
+          {
+            "claim": "Management expects privacy and platform headwinds to keep hurting advertising for years, not just briefly.",
+            "quote": "will continue to adversely affect our advertising business",
+            "verified": true,
+            "score": 98.3
+          },
+          {
+            "claim": "Free cash flow fell year over year despite higher operating cash flow, as capital spending surged.",
+            "quote": "Free cash flow $ 43,585 $ 52,103 $ 43,010",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The company warns that its AI and Reality Labs investments may not generate expected returns.",
+            "quote": "If our investments are not successful longer-term, our business and financial performance will be harmed",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "bull": {
+        "argument": "The bear case is right that the risks are real, but it overstates what the filing shows. Revenue still rose 22% to $200.97 billion, and the filing attributes the gain to advertising demand, with the 9% rise in average price per ad 'mostly due to ongoing improvements to our ad performance from our ad targeting and measurement tools.' That is evidence the company is adapting to signal loss, not just riding volume. The $15.93 billion tax charge is a one-time, non-cash valuation allowance tied to OBBBA; the filing says that without it the 2025 effective tax rate would have been 13%, so net income is distorted by a discrete item. Free cash flow fell, but operating cash flow rose to $115.80 billion, and the drop reflects capex the company chose to make for AI. The Family of Apps segment still earned a 52% operating margin. The honest question is whether the 2026 capex range of $115 billion to $135 billion earns returns, and the filing cannot answer that. But the cash engine is large enough to absorb the risk, and the company says it is still returning capital.",
+        "claims": [
+          {
+            "claim": "Pricing gains are attributed to improved ad performance, not just volume.",
+            "quote": "The increase in average price per ad in 2025 was driven by an increase in advertising demand, which we believe is mostly due to ongoing improvements to our ad performance from our ad targeting and measurement tools.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The 2025 tax charge is a discrete item; excluding it the effective tax rate would have been much lower.",
+            "quote": "Absent the valuation allowance charge as of the enactment date, our 2025 effective tax rate would have decreased by 17 percentage points to 13%.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Operating cash flow grew strongly, providing the funding base for investments.",
+            "quote": "Net cash provided by operating activities $ 115,800 $ 91,328 $ 71,113",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull case leans on adaptation, but the filing shows adaptation is costly and incomplete. The ad-price gain is attributed to 'ongoing improvements to our ad performance from our ad targeting and measurement tools,' yet the same filing says the signal loss 'will continue to adversely affect' advertising, and that the company's ad-targeting changes 'reduce our ability to effectively target ads.' Pricing gains coexist with that drag; they do not prove the drag is gone. On the tax charge, the bull is right that it is a discrete item, but the filing also says the 2026 effective rate is expected at 13-16%, and warns that cash taxes 'could increase in future years' as the global minimum tax phases in. The 'non-cash' label also cuts both ways: the filing shows $18.74 billion of deferred taxes and $11.23 billion of uncertain tax positions still unresolved. Free cash flow is the metric that matters for a capital return story, and it fell 16% while the company was still returning $31.57 billion. Management's own words frame the 2026 capex range as an investment whose return it cannot promise. Its Reality Labs losses are guided to stay similar. A 52% FoA margin is strong, but it is an average that the company is reinvesting heavily, and the filing gives no assurance that new spending earns back its cost.",
+        "claims": [
+          {
+            "claim": "Management ties the 9% price gain to targeting improvements, yet still says signal loss will keep hurting ad revenue.",
+            "quote": "will continue to adversely affect our advertising business",
+            "verified": true,
+            "score": 98.3
+          },
+          {
+            "claim": "Cash taxes may rise in future years as the global minimum tax phases in, cutting into cash returns.",
+            "quote": "our effective tax rate and cash tax payments could increase in future years",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Free cash flow declined sharply while capital returns continued, and the company has no assurance its capex earns a return.",
+            "quote": "Free cash flow $ 43,585 $ 52,103 $ 43,010",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    }
+  ],
+  "citations": {
+    "bull": {
+      "verified": 6,
+      "total": 6
+    },
+    "bear": {
+      "verified": 6,
+      "total": 6
+    },
+    "overall": {
+      "verified": 12,
+      "total": 12,
+      "accuracy": 1.0
+    }
+  },
+  "judge": {
+    "scores": {
+      "bull": {
+        "evidence": 8,
+        "logic": 7,
+        "responsiveness": 7
+      },
+      "bear": {
+        "evidence": 8,
+        "logic": 8,
+        "responsiveness": 8
+      }
+    },
+    "winner": "bear",
+    "reasoning": "Both sides cite verified quotes, so evidence is comparable. The bear more directly engages the bull's strongest points: it accepts the tax charge is discrete but shows cash-tax risk and unresolved deferred taxes, and it reconciles the 9% price gain with management's continued warning about signal loss. The bull's reliance on the 13% ex-charge rate and the framing of capex as a choice is reasonable but leaves the free cash flow decline and return-on-capex uncertainty largely unrebutted."
+  },
+  "usage": {
+    "calls": 5,
+    "input_tokens": 299148,
+    "output_tokens": 2732,
+    "cost_usd": 0.0313
+  }
+}

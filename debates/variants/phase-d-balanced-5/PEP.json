@@ -1,0 +1,149 @@
+{
+  "ticker": "PEP",
+  "filing": {
+    "accession": "0000077476-26-000007",
+    "document": "pep-20251227.htm",
+    "date": "2026-02-03"
+  },
+  "model": "claude-haiku-5-5",
+  "created": "2026-11-25T04:59:00+00:00",
+  "bull_first": true,
+  "input_mode": "balanced",
+  "rounds": [
+    {
+      "round": 1,
+      "bull": {
+        "argument": "PepsiCo presents a durable global franchise. Its portfolio spans brands like Lay's, Doritos, Gatorade, Pepsi-Cola and Quaker, sold in more than 200 countries and territories, giving it scale that few competitors match. Management is actively reshaping the business: the filing describes a 'Bold Ambition' built on reigniting North America, growing International, and expanding away-from-home, backed by a multi-year investment program in technology, AI, manufacturing and distribution. The company is also adapting its portfolio to consumer demand, reducing added sugar, sodium and saturated fat in core brands and adding functional products such as Pepsi Prebiotic Cola. Management acknowledges serious headwinds: consumer boycotts, GLP-1 drugs, tariffs, and the shift toward private label and e-commerce. Yet the filing frames these as risks being managed through pricing, innovation and operating simplification ('One PepsiCo'), not as thesis-breaking problems. A diversified, global, cash-generating franchise with active portfolio reshaping merits a long-term investment case, though investors should monitor North American execution closely.",
+        "claims": [
+          {
+            "claim": "PepsiCo operates a broad global footprint with a complementary brand portfolio.",
+            "quote": "serving customers and consumers in more than 200 countries and territories",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management is pursuing a clear growth strategy with defined priorities.",
+            "quote": "reigniting our North America business by combining operations where it makes the most sense and using the savings to support meaningful investments in our brands",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The company is actively reshaping its portfolio toward changing consumer demand, including functional products.",
+            "quote": "adding new products with functional benefits, such as Pepsi Prebiotic Cola",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The opponent calls PepsiCo a durable franchise, but the filing itself describes mounting demand and cost pressures that a long-term bull case must overcome. Management says consumer preferences 'have reduced and could continue to reduce consumers' willingness to purchase certain of our products, including as a result of public boycotts,' and it lists GLP-1 medications, SNAP funding changes, and private label switching among the drivers. Its own priorities are telling: the company must achieve 'the commercial and financial priorities announced during 2025 to improve our marketplace competitiveness and financial performance, including in our North American businesses,' which implies those businesses are underperforming. Costs are also rising: tariffs have 'impacted and could continue to impact our supply chain resulting in increased input costs,' and the company 'may need to increase capital, marketing or other expenditures' to compete. Finally, Russia alone was 20% of consolidated cash and cash equivalents at year-end 2025, up from 10%, concentrating liquidity in a market the filing describes as subject to sanctions and currency controls. Scale does not offset these concentrated, unresolved risks.",
+        "claims": [
+          {
+            "claim": "Management concedes boycotts and sentiment have already reduced demand for certain products.",
+            "quote": "These and other factors have reduced and could continue to reduce consumers’ willingness to purchase certain of our products, including as a result of public boycotts.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "North American performance requires a turnaround, signaling current underperformance in a core region.",
+            "quote": "if we fail to achieve the commercial and financial priorities announced during 2025 to improve our marketplace competitiveness and financial performance, including in our North American businesses",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "A large share of year-end cash sits in Russia, a sanctioned market with currency controls.",
+            "quote": "Russia accounted for 5% and 3% of our consolidated assets, 20% and 10% of our consolidated cash and cash equivalents",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "bull": {
+        "argument": "The bear case leans on real risks, but the filing shows management confronting them rather than ignoring them. Yes, consumer willingness to buy has been reduced by boycotts and shifting preferences, but the filing also shows the company responding: reformulating core brands to cut added sugar, sodium and saturated fat, and launching functional products. The 'commercial and financial priorities announced during 2025' are a self-identified fix for North America, not proof of collapse, and the company is simplifying its operating model under 'One PepsiCo' to capture savings. Tariff and cost pressures are real, yet the filing notes the company manages commodity exposure through fixed-price contracts, pricing agreements and derivatives. On Russia, the 20% cash figure is a year-end concentration in one market, and the filing reports Russia at only 5% of consolidated net revenue. That is a liquidity-location issue to monitor, not a revenue dependence. Scale across more than 200 countries remains the offset.",
+        "claims": [
+          {
+            "claim": "Management is responding to demand pressures with product reformulation and functional launches.",
+            "quote": "reducing added sugar, sodium and saturated fat in core brands like Lay's and Gatorade",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Commodity and cost exposure is actively managed through contracts and derivatives.",
+            "quote": "we manage this risk through the use of fixed-price contracts and purchase orders, pricing agreements and derivative instruments, including swaps and futures",
+            "verified": false,
+            "score": 86.5
+          },
+          {
+            "claim": "Russia represents a small share of consolidated net revenue, though a larger share of cash.",
+            "quote": "Our operations in Russia accounted for 5% and 4% of our consolidated net revenue",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The opponent is right that management is responding, but a response is not a resolution, and the filing's own language shows the risks are still open. Reformulation and functional products are described as ongoing efforts ('advancing efforts to remove artificial colors'), not completed results. On North America, the filing does not call the 2025 priorities a fix; it warns that the company may fail to achieve them, and it says the integrated model is still being 'carefully evaluated.' Savings from that model are prospective, not banked. Hedging covers commodity prices, but the filing says tariffs 'have impacted and could continue to impact our supply chain resulting in increased input costs,' and it admits that pricing pass-through may fail, reducing 'volume, revenue, margins.' On Russia, the opponent treats 5% of revenue as reassurance, yet the same sentence shows Russia's share of cash jumped from 10% to 20% in one year, and the filing still lists sanctions and currency controls that restrict transfers of funds. Liquidity trapped in a sanctioned market is a balance-sheet risk, not merely a location detail. Scale helps, but it does not remove these exposures.",
+        "claims": [
+          {
+            "claim": "Management frames its reformulation and North America fixes as ongoing efforts, not completed results.",
+            "quote": "advancing efforts to remove artificial colors and flavors in brands like Lay’s, Cheetos, and Doritos",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The filing warns the 2025 priorities may not be achieved, so North American recovery is uncertain.",
+            "quote": "if we fail to achieve the commercial and financial priorities announced during 2025 to improve our marketplace competitiveness and financial performance, including in our North American businesses",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Russian cash concentration rose sharply, and the filing cites restrictions on moving funds out of certain markets.",
+            "quote": "including restrictions on the transfer of funds to and from certain markets",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    }
+  ],
+  "citations": {
+    "bull": {
+      "verified": 5,
+      "total": 6
+    },
+    "bear": {
+      "verified": 6,
+      "total": 6
+    },
+    "overall": {
+      "verified": 11,
+      "total": 12,
+      "accuracy": 0.917
+    }
+  },
+  "judge": {
+    "scores": {
+      "bull": {
+        "evidence": 6,
+        "logic": 6,
+        "responsiveness": 7
+      },
+      "bear": {
+        "evidence": 8,
+        "logic": 7,
+        "responsiveness": 8
+      }
+    },
+    "winner": "bear",
+    "reasoning": "The bear side's quotes were all verified and it directly engaged the bull's Russia-revenue rebuttal by pointing to the sharp rise in cash concentration and transfer restrictions, which the bull did not fully answer. The bull's hedging claim rested on an unverified quote, weakening its evidentiary support, though its reformulation and revenue-share points were well sourced and its framing of management responses was reasonable."
+  },
+  "usage": {
+    "calls": 5,
+    "input_tokens": 47096,
+    "output_tokens": 2722,
+    "cost_usd": 0.0061
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "ticker": "ADBE",
+  "filing": {
+    "accession": "0000796343-26-000003",
+    "document": "adbe-20251128.htm",
+    "date": "2026-01-15"
+  },
+  "model": "claude-haiku-5-5",
+  "created": "2026-11-25T04:28:41+00:00",
+  "bull_first": true,
+  "input_mode": "full",
+  "rounds": [
+    {
+      "round": 1,
+      "bull": {
+        "argument": "Adobe's filing shows a business with strong, recurring momentum. Total Adobe ARR grew to $25.20 billion, up 11.5% year over year, and subscription revenue reached $22.90 billion, up 12%, making up 96% of total revenue. Remaining performance obligations rose 13% to $22.52 billion, giving visibility into future revenue. Operating cash flow increased 25% to $10.03 billion, and net income rose 28% to $7.13 billion. Management is also returning capital aggressively, with $11.28 billion in share repurchases during fiscal 2025 and $5.90 billion still remaining under its March 2024 authority. The risk factors are real, particularly AI competition and pricing pressure, but the filing's reported numbers show a company whose subscription model is compounding and whose cash generation is funding both growth and buybacks.",
+        "claims": [
+          {
+            "claim": "Recurring subscription revenue is growing and dominates the business.",
+            "quote": "Subscription $ 22,904 $ 20,521 $ 18,284 12 %",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Contracted future revenue is growing, supporting visibility.",
+            "quote": "Remaining performance obligations of $22.52 billion as of November 28, 2025 increased by 13% from $19.96 billion",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Cash generation is strong and management is returning capital to shareholders.",
+            "quote": "In March 2024, our Board of Directors granted authority to repurchase up to $25 billion in our common stock through March 14, 2028.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull case rests on subscription momentum, but the filing shows that momentum is exposed. Management itself warns that AI competition 'may increase downward pressure on pricing and gross margins and adversely affect our renewal, upsell and cross-sell rates.' Revenue is recognized ratably, so the filing concedes that 'Lower sales and subscriptions, reduced demand... and increases in our attrition rate... may not be fully reflected in our results... until future periods,' meaning reported growth can lag real deterioration. Working capital fell to $(37) million from $711 million, and cash fell $2.18 billion. Net cash from financing was $(11.06) billion, largely buybacks of $11.28 billion, while the company took on $6.15 billion of senior notes and agreed to a roughly $1.9 billion Semrush acquisition. Returning cash at this scale while leverage rises and AI costs climb leaves little margin for error.",
+        "claims": [
+          {
+            "claim": "AI competition could pressure pricing and renewal rates, undermining the subscription growth the bull case relies on.",
+            "quote": "may increase downward pressure on pricing and gross margins and adversely affect our renewal, upsell and cross-sell rates",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Ratable revenue recognition means attrition or demand declines may not show up in reported results for some time.",
+            "quote": "Lower sales and subscriptions, reduced demand for our solutions, and increases in our attrition rate in any given period may not be fully reflected in our results of operations until future periods.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Buybacks and acquisitions are being funded alongside rising debt and falling cash, so capital returns strain the balance sheet.",
+            "quote": "Net cash used for financing activities (11,060) (7,724) (5,182)",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "bull": {
+        "argument": "The bear case is right that AI brings pricing pressure and that ratable revenue can lag real deterioration. But the filing's reported numbers still show durable growth. Total Adobe ARR rose 11.5%, and remaining performance obligations rose 13% to $22.52 billion, so contracted future revenue is expanding. Operating cash flow of $10.03 billion covered most of the $11.28 billion in buybacks, and the rest came from the cash balance. The filing attributes the operating cash inflow partly to deferred revenue, which is what a subscription model produces, so negative working capital is not by itself a distress signal. On leverage, the debt carries no financial covenants, and the $1.5 billion revolver and commercial paper program are undrawn. The Semrush deal is to be financed from cash on hand, not new debt. The real risk is that AI competition erodes renewal and pricing faster than ARR shows. The current numbers do not yet show that erosion, and the balance sheet can absorb a slower year.",
+        "claims": [
+          {
+            "claim": "Recurring ARR is growing at a double-digit rate, which the bear case does not dispute.",
+            "quote": "Digital Media ARR grew to $19.20 billion at the end of fiscal 2025, representing 11.5% year-over-year growth.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Debt carries no financial covenants, limiting the risk that leverage forces a default.",
+            "quote": "Our senior notes do not contain any financial covenants.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Working capital is supported by deferred revenue from subscriptions paid in advance, not only by weakness.",
+            "quote": "Working capital sources of cash included increases in deferred revenue, partially offset by increases in trade receivables attributable to the timing of billings.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull concedes the core risk: AI competition may erode pricing and renewals, and ARR lags that erosion. Their rebuttal leans on lagging metrics. Remaining performance obligations and ARR are backward-looking contracted figures, and the filing warns that reduced demand and rising attrition 'may not be fully reflected in our results... until future periods.' A 11.5% ARR rise tells us little about renewals that have not yet come up. The filing also says renewal rates 'may decline or fluctuate' due to competitor prices, and that its own hedging 'may not... offset more than a portion' of currency losses.\n\nOn the balance sheet, the bull says operating cash covered most buybacks. But financing outflows were $11.06 billion against $10.03 billion of operating cash, and cash fell $2.18 billion to $5.43 billion. Working capital turned negative. Debt rose to $6.15 billion of senior notes, interest expense climbed 56%, and the Semrush deal of about $1.9 billion is cash-funded, so cash reserves shrink again. The covenant-free debt and undrawn revolver are real, but they are backstops that management may need to use if growth slows.",
+        "claims": [
+          {
+            "claim": "Reported ARR and backlog are lagging indicators, so they may not reveal renewal erosion from AI competition.",
+            "quote": "may increase downward pressure on pricing and gross margins and adversely affect our renewal, upsell and cross-sell rates",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Buybacks exceeded operating cash flow, so cash balances and borrowing capacity are being drawn down to fund shareholder returns.",
+            "quote": "Net cash used for financing activities (11,060) (7,724) (5,182)",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Interest costs are rising as debt grows, adding pressure on earnings even as cash declines.",
+            "quote": "Interest expense increased during fiscal 2025 as compared to fiscal 2024 primarily due to the senior notes issued in January 2025.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    }
+  ],
+  "citations": {
+    "bull": {
+      "verified": 6,
+      "total": 6
+    },
+    "bear": {
+      "verified": 6,
+      "total": 6
+    },
+    "overall": {
+      "verified": 12,
+      "total": 12,
+      "accuracy": 1.0
+    }
+  },
+  "judge": {
+    "scores": {
+      "bull": {
+        "evidence": 7,
+        "logic": 7,
+        "responsiveness": 7
+      },
+      "bear": {
+        "evidence": 7,
+        "logic": 7,
+        "responsiveness": 7
+      }
+    },
+    "winner": "tie",
+    "reasoning": "Both sides cite verified filing language, and the bull's Round 1 quotes (e.g., the buyback authorization) only loosely support its headline claims, while the bear's Round 1 quotes map more directly to its arguments. In Round 2 the bull responsively addresses leverage and deferred revenue with covenant and working-capital evidence, while the bear answers with lagging-indicator and cash-drawdown points, so the exchange is roughly even."
+  },
+  "usage": {
+    "calls": 5,
+    "input_tokens": 143747,
+    "output_tokens": 3062,
+    "cost_usd": 0.0159
+  }
+}
