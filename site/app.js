@@ -449,10 +449,63 @@
     host.after(h("p", { "class": "takeaway",
       text: "Rerunning the identical input moved the bear's share from " + pct(sh("original")) + " to " + pct(sh("rerun")) + ", a " + Math.round(N.noiseGap) +
         "-point gap against a " + N.noiseLimit + "-point limit set in advance. Result: " + N.verdict + ", so the shorter-input run (" + pct(sh("balanced")) +
-        ") cannot be interpreted, and whether the amount of risk text drives the bear's edge is still open. Which companies leaned bear barely repeated either" +
+        ") cannot be interpreted from one run" + (D.bias.repeats ? "; the next chart repeats it five times" : ", and whether the amount of risk text drives the bear's edge is still open") + ". Which companies leaned bear barely repeated either" +
         (N.agreement === null ? "" : " (rank correlation " + sgn(N.agreement, 2) + ")") + ". What looked steadier: the average margin (" +
         order.map(function (o) { return sgn(N.conditions[o[0]].meanMargin, 2); }).join(", ") + ") and the bull winning at most " + pct(bullMax) +
         " of judgments in every run. So the bear's lead looks consistent in direction, but its size is not known from one debate per company." }));
+  }
+
+  // Phase D: five independent draws per input condition, one dot per draw.
+  function renderRepeats() {
+    var R = D.bias.repeats, host = $("#repeat-card");
+    if (!R) return;
+    host.hidden = false;
+    var rows = [
+      { label: "Full input", scores: R.fullScores, mean: R.fullMean, half: R.fullHalf },
+      { label: "Balanced input", scores: R.balancedScores, mean: R.balancedMean, half: R.balancedHalf }
+    ];
+    var all = [];
+    rows.forEach(function (r) { all = all.concat(r.scores, [r.mean - r.half, r.mean + r.half]); });
+    var lo = Math.min(-3, Math.floor(Math.min.apply(null, all))), hi = Math.max(1, Math.ceil(Math.max.apply(null, all)));
+    mountChart(host, {
+      title: "Five runs each: is the bear's lead real, and does the input cause it?",
+      sub: "Each dot is the average score gap (bull minus bear, out of 30) over one full run of the " + D.bias.noise.debates + " companies. The ring is the average of the runs, the line its 95% range. Left of zero means the bear is ahead.",
+      draw: function (body, w) {
+        var pad = 14, rowH = 78, top = 8, axisH = 30, H = top + rows.length * rowH + axisH;
+        var x = function (v) { return pad + ((v - lo) / (hi - lo)) * (w - 2 * pad); };
+        var svg = sv("svg", { width: w, height: H, role: "img", "aria-label": "Average score gap for five runs on each input. Full input " + sgn(R.fullMean, 2) + ", balanced input " + sgn(R.balancedMean, 2) + " points out of 30." });
+        for (var t = lo; t <= hi; t++) {
+          svg.append(sv("line", { "class": t === 0 ? "axis-line" : "grid-line", x1: x(t), x2: x(t), y1: top, y2: H - axisH }),
+            sv("text", { x: x(t), y: H - 8, "text-anchor": "middle", text: t === 0 ? "0" : sgn(t, 0) }));
+        }
+        rows.forEach(function (r, i) {
+          var y = top + i * rowH + 50;
+          svg.append(sv("text", { x: pad, y: top + i * rowH + 18, text: r.label, style: "fill:var(--ink);font-size:13px;font-weight:600" }),
+            sv("text", { x: w - pad, y: top + i * rowH + 18, "text-anchor": "end", text: "average " + sgn(r.mean, 2) + " ± " + r.half.toFixed(2), style: "font-size:13px" }),
+            sv("line", { x1: x(r.mean - r.half), x2: x(r.mean + r.half), y1: y, y2: y, stroke: "var(--ink-2)", "stroke-width": 2, "stroke-linecap": "round" }));
+          r.scores.forEach(function (v, j) {
+            var dot = sv("circle", { cx: x(v), cy: y - 14 + (j % 2) * 8, r: 5, style: "fill:var(--ink-2);opacity:.55", tabindex: "0", "aria-label": r.label + ", run " + (j + 1) + ": " + sgn(v, 2) });
+            bindTip(dot, [{ t: sgn(v, 2) + " points out of 30", c: "tv" }, { t: r.label + ", run " + (j + 1) }]);
+            svg.append(dot);
+          });
+          svg.append(sv("circle", { cx: x(r.mean), cy: y, r: 6, "class": "ring", style: "fill:var(--ink)" }));
+        });
+        body.append(svg);
+      },
+      table: function () {
+        return { head: ["Input", "Run scores (points out of 30)", "Average", "95% range"],
+          rows: rows.map(function (r) { return [r.label, r.scores.map(function (v) { return sgn(v, 2); }).join(", "), sgn(r.mean, 2), "±" + r.half.toFixed(2)]; }) };
+      }
+    });
+    reveal(host);
+    var ranges = function (k) { var a = R.bearShare[k]; return Math.min.apply(null, a) + "% to " + Math.max.apply(null, a) + "%"; };
+    host.after(h("p", { "class": "takeaway",
+      text: "With " + word(R.nFull) + " full-input runs, the average gap is " + sgn(R.fullMean, 2) + " points (±" + R.fullHalf.toFixed(2) + "), entirely on the bear's side: " +
+        (R.edge === "bear edge confirmed" ? "the bear's lead is real for this judge, though small, under 2 points out of 30. " : "the data cannot separate it from zero. ") +
+        "Giving the debaters equal-size chunks of Risk Factors and MD&A shifted it by " + sgn(R.effect, 2) + " (±" + R.effectHalf.toFixed(2) + "), far inside the " + R.effectPoints.toFixed(0) +
+        "-point size set in advance as mattering. Result: " + R.input + (R.input === "not input-driven" ? ", so how much risk text the debaters read is not what drives the bear's lead." : ".") +
+        " Meanwhile the bear's share of judgments ranged from " + ranges("full") + " across the full-input runs, which is why a single run's percentage should not be trusted. " +
+        "This is the Haiku judge, bull speaking first. Under Sonnet the same debates came out slightly bull-ahead, so the lead belongs to the judge as much as to the debates." }));
   }
 
   function drawPosition(body, w, b) {
@@ -642,6 +695,7 @@
     renderCompare();
     renderJudges();
     renderNoise();
+    renderRepeats();
     if (availableSetups.length > 1) renderBiasFilters(); else $("#bias-filters").hidden = true;
     renderBiasCharts();
   }
@@ -751,7 +805,7 @@
     });
 
     var limits = [
-      ["A small test", cap(word(m.debates)) + " companies, one debate each per setup." + (D.bias.noise ? " Debating the same companies again moved the bear's share of judgments by " + Math.round(D.bias.noise.noiseGap) + " points, so each percentage is one draw, not a precise measurement." : " The percentages are rough estimates, not precise measurements.")],
+      ["A small test", cap(word(m.debates)) + " companies, one debate each per setup." + (D.bias.noise ? " Debating the same companies again moved the bear's share of judgments by " + Math.round(D.bias.noise.noiseGap) + " points, so each percentage is one draw, not a precise measurement." + (D.bias.repeats ? " Across " + word(D.bias.repeats.nFull) + " repeats of the same input, the bear's share ranged from " + Math.min.apply(null, D.bias.repeats.bearShare.full) + "% to " + Math.max.apply(null, D.bias.repeats.bearShare.full) + "%." : "") : " The percentages are rough estimates, not precise measurements.")],
       ["One model family", "The debaters are " + modelName(D.model) + (D.bias.judges ? ", and the two judges compared are " + modelName(D.bias.judges.firstModel) + " and " + modelName(D.bias.judges.secondModel) : ", and so is the judge") + ". All Claude models, so a bias shared across the family is untested, and there is no answer key to say which judge is right."],
       ["Listing order scrambles the dialogue", "When the judge lists the side that spoke second first, it reads a reply before the argument it answers. The listing-order results mix pure position bias with that effect." + (D.bias.chrono ? " Re-judging the debates in speaking order gave similar bear shares, so this did not create the bear's edge." : "")],
       ["Quotes are checked, not claims", "The checker proves the words (and numbers) are in the filing. It cannot tell whether the quote really supports the claim built on it, and a one-word wording change can still pass."],
