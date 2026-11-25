@@ -27,7 +27,7 @@ Ask an LLM to argue a stock and it will happily invent numbers and quotes. And w
 
 ## Findings
 
-Sixteen large companies, one 2-round debate per setup, judged repeatedly. Raw data is in `results/` and `debates/`.
+Sixteen large companies, one 2-round debate per setup, judged repeatedly. Raw data is in `results/` and `debates/`. **Read every percentage below as one draw:** regenerating the same debates moved the bear's share by tens of points (finding 5). Comparisons that judge the *same* debates twice (finding 1) are not affected.
 
 ### 1. Which model judges changes who wins
 
@@ -93,6 +93,12 @@ Each debate was judged 3 times with bull listed first and 3 times with bear list
 - **190 of 192 quotes (99.0%)** were found in the filing. The two misses scored 72 and 82 against a pass mark of 90. Fabricated quotes scored 54 to 63, and quotes from the wrong company never passed.
 - **The fuzzy score cannot see a changed figure.** With one digit changed in the 98 quotes that contain a number, every one still scored 90 or more. So the checker also requires every number in the quote to appear in the part of the filing it matched. That rejects all 98, and none of the 192 real verdicts changed.
 - **Limit:** it still accepts a one-word wording change (91% of quotes with a word swapped). A verified quote proves the words are in the filing, not that they support the claim.
+
+### 5. One debate per company is too noisy to pin down the bear's share
+
+A control run (Phase C): the 16 debates were regenerated from identical input and judged the same way. The bear's share of verdicts fell from **71% to 42%**, mostly because bear wins became ties (bull 6% to 0%, tie 23% to 58%). Per-company results did not repeat (AAPL went from 67% to 0%). The average score margin moved far less (-1.96 to -1.40 on a 30-point scale), and the bull won 0 to 10% of judgments in every run, so the *direction* of the bear's edge looks stable while its *size* does not.
+
+This is why the pre-set rule returned "too noisy to read" for the second Phase C question: giving the debaters equal-size chunks of Risk Factors and MD&A produced a 58% bear share, which is inside that noise. Whether input balance matters is still open. Phase B's judge comparison is unaffected, because both judges scored the very same debates.
 
 ## How it works
 
@@ -232,7 +238,8 @@ New here? Read in this order:
 - [x] Interactive static site, deployed to GitHub Pages
 - [x] Tests in CI, MIT license, `main` protected against force-push and deletion
 - [ ] Put the judge-model finding on the site
-- [ ] Input experiments: do the filing sections or their balance change the bear's edge?
+- [x] Input experiment (Phase C): rerun noise control plus balanced input; too noisy to read
+- [ ] Repeat each debate several times (for example 5) so a share can be read to within a few points, then retest input balance
 - [ ] A third judge, to separate model size from model family
 - [ ] Refresh debates when a new 10-K appears
 
