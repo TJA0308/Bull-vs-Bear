@@ -237,7 +237,7 @@ New here? Read in this order:
 - [x] Judge bias tests: listing order, speaking order, judge model
 - [x] Interactive static site, deployed to GitHub Pages
 - [x] Tests in CI, MIT license, `main` protected against force-push and deletion
-- [ ] Put the judge-model finding on the site
+- [x] Put the judge-model and noise findings on the site
 - [x] Input experiment (Phase C): rerun noise control plus balanced input; too noisy to read
 - [ ] Repeat each debate several times (for example 5) so a share can be read to within a few points, then retest input balance
 - [ ] A third judge, to separate model size from model family

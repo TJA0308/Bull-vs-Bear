@@ -256,6 +256,55 @@ def chronological_summary():
     return out if out["base"] and out["bearFirst"] else None
 
 
+def _counts_and_margin(runs_by_ticker):
+    runs = [r for rs in runs_by_ticker.values() for r in rs]
+    counts = {k: sum(1 for r in runs if r["winner"] == k) for k in ("bull", "tie", "bear")}
+    return {"counts": counts, "judgments": len(runs), "debates": len(runs_by_ticker),
+            "meanMargin": round(st.mean(r["margin"] for r in runs), 2)}
+
+
+def judges_summary(other_model="claude-sonnet-5-5"):
+    """Phase B: the same saved debates judged by two models (speaking order), or None."""
+    first = bias.load_results(bias.CHRONO_PATH)
+    second = bias.load_results(bias.chrono_path(other_model))
+    comp = bias.compare_judges(first, second)
+    if comp is None:
+        return None
+    setups = {}
+    for key, name in (("base", "base"), ("bearFirst", "bear-first")):
+        a, b = first.get(name, {}), second.get(name, {})
+        common = sorted(set(a) & set(b))
+        if common:
+            setups[key] = {"first": _counts_and_margin({t: a[t] for t in common}),
+                           "second": _counts_and_margin({t: b[t] for t in common})}
+    return {"firstModel": bias.MODEL, "secondModel": other_model, "setups": setups,
+            "debates": comp["debates"], "shiftPoints": comp["shift_points"], "verdict": comp["verdict"],
+            "kinder": comp["debates_other_kinder_to_bull"], "harsher": comp["debates_other_harsher_on_bull"],
+            "bearBase": comp["bear_share_base"], "bearOther": comp["bear_share_other"],
+            "bigRule": bias.DRIFT_BIG}
+
+
+def noise_summary():
+    """Phase C: rerun and balanced-input debates judged by the original judge, or None."""
+    import phase_c
+    saved = bias.load_results(phase_c.RESULTS_PATH)
+    original = phase_c.load_original()
+    rerun, balanced = saved.get("rerun", {}), saved.get("balanced", {})
+    comp = phase_c.compare_conditions(original, rerun, balanced)
+    if comp is None:
+        return None
+    common = sorted(set(original) & set(rerun) & set(balanced))
+    pick = lambda runs: {t: runs[t] for t in common}
+    return {"debates": comp["debates"], "noiseGap": comp["noise_gap"], "effect": comp["effect"],
+            "verdict": comp["verdict"], "agreement": comp["same_company_agreement"],
+            "noiseLimit": phase_c.DRIFT_BIG,
+            "conditions": {"original": _counts_and_margin(pick(original)),
+                           "rerun": _counts_and_margin(pick(rerun)),
+                           "balanced": _counts_and_margin(pick(balanced))},
+            "perCompany": {t: {"original": round(phase_c.bear_share({t: original[t]})),
+                               "rerun": round(phase_c.bear_share({t: rerun[t]}))} for t in common}}
+
+
 def parse_prompts():
     return {
         "bull": debate_mod.SIDE_PROMPTS["bull"],
@@ -287,7 +336,9 @@ def main():
         "debates": {"base": base, "bearFirst": variant},
         "bias": {"base": variant_summary(bias.results_path("base")),
                  "bearFirst": variant_summary(bias.results_path("bear-first")),
-                 "chrono": chronological_summary()},
+                 "chrono": chronological_summary(),
+                 "judges": judges_summary(),
+                 "noise": noise_summary()},
         "checker": checker_experiment(base),
         "prompts": parse_prompts(),
         "code": {"verify": inspect.getsource(citations.verify_quote),

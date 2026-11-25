@@ -387,6 +387,74 @@
     reveal(host);
   }
 
+  function modelName(id) {
+    var parts = String(id).replace(/^claude-/, "").split("-");
+    return cap(parts[0]) + (parts.length > 1 ? " " + parts.slice(1).join(".") : "");
+  }
+  function asSeg(c) { return { counts: c.counts, summary: { debates: c.debates, judgments: c.judgments } }; }
+
+  // Phase B: the same saved debates, two different judge models.
+  function renderJudges() {
+    var J = D.bias.judges, host = $("#judge-card");
+    if (!J) return;
+    host.hidden = false;
+    var a = modelName(J.firstModel), b = modelName(J.secondModel);
+    var names = { base: "bull speaks first", bearFirst: "bear speaks first" };
+    var keys = Object.keys(J.setups);
+    function rows() {
+      var out = [];
+      keys.forEach(function (k) {
+        out.push({ label: a + ", " + names[k], c: J.setups[k].first }, { label: b + ", " + names[k], c: J.setups[k].second });
+      });
+      return out;
+    }
+    mountChart(host, {
+      title: "Does it matter which model judges?",
+      sub: "The same " + J.debates + " saved debates, judged in speaking order by " + a + " and by " + b + ". The debates are identical; only the judge changes.",
+      draw: function (body) { rows().forEach(function (r) { body.append(segRow(r.label, asSeg(r.c))); }); },
+      table: function () {
+        return { head: ["Judge and setup", "Judgments", "Bull wins", "Tie", "Bear wins", "Mean margin (30-pt scale)"],
+          rows: rows().map(function (r) { return [r.label, r.c.judgments, r.c.counts.bull, r.c.counts.tie, r.c.counts.bear, sgn(r.c.meanMargin, 2)]; }) };
+      },
+      legend: legend([{ c: "bull", t: "Bull wins" }, { c: "tie", t: "Tie" }, { c: "bear", t: "Bear wins" }])
+    });
+    reveal(host);
+    var m0 = (J.setups.base || J.setups[keys[0]]);
+    host.after(h("p", { "class": "takeaway",
+      text: "On the same debates, the bear's share of judgments went from " + Math.round(J.bearBase) + "% under " + a + " to " + Math.round(J.bearOther) + "% under " + b +
+        " (a " + Math.round(J.shiftPoints) + "-point drop, past the " + J.bigRule + "-point line fixed before the run). " + b + " scored the bull higher in " + J.kinder + " of " + J.debates +
+        " debates and lower in " + J.harsher + ". The average margin even changes sign, from " + sgn(m0.first.meanMargin, 2) + " to " + sgn(m0.second.meanMargin, 2) +
+        " points out of 30 in the original setup. So the judge model matters a lot. What this cannot show is which judge is right, since no answer key exists, and both are Claude models." }));
+  }
+
+  // Phase C: the same companies debated again from scratch.
+  function renderNoise() {
+    var N = D.bias.noise, host = $("#noise-card");
+    if (!N) return;
+    host.hidden = false;
+    var order = [["original", "First run"], ["rerun", "Rerun, identical input"], ["balanced", "Rerun, shorter balanced input"]];
+    mountChart(host, {
+      title: "How much does one run tell us?",
+      sub: "The same " + N.debates + " companies debated again from scratch (bull speaks first), judged by " + modelName(D.bias.judges ? D.bias.judges.firstModel : D.model) + ". Debaters are random, so a rerun of the same input shows how far chance alone moves the result.",
+      draw: function (body) { order.forEach(function (o) { body.append(segRow(o[1], asSeg(N.conditions[o[0]]))); }); },
+      table: function () {
+        return { head: ["Condition", "Judgments", "Bull wins", "Tie", "Bear wins", "Mean margin (30-pt scale)"],
+          rows: order.map(function (o) { var c = N.conditions[o[0]]; return [o[1], c.judgments, c.counts.bull, c.counts.tie, c.counts.bear, sgn(c.meanMargin, 2)]; }) };
+      },
+      legend: legend([{ c: "bull", t: "Bull wins" }, { c: "tie", t: "Tie" }, { c: "bear", t: "Bear wins" }])
+    });
+    reveal(host);
+    var sh = function (k) { return N.conditions[k].counts.bear / N.conditions[k].judgments; };
+    var bullMax = Math.max.apply(null, order.map(function (o) { return N.conditions[o[0]].counts.bull / N.conditions[o[0]].judgments; }));
+    host.after(h("p", { "class": "takeaway",
+      text: "Rerunning the identical input moved the bear's share from " + pct(sh("original")) + " to " + pct(sh("rerun")) + ", a " + Math.round(N.noiseGap) +
+        "-point gap against a " + N.noiseLimit + "-point limit set in advance. Result: " + N.verdict + ", so the shorter-input run (" + pct(sh("balanced")) +
+        ") cannot be interpreted, and whether the amount of risk text drives the bear's edge is still open. Which companies leaned bear barely repeated either" +
+        (N.agreement === null ? "" : " (rank correlation " + sgn(N.agreement, 2) + ")") + ". What looked steadier: the average margin (" +
+        order.map(function (o) { return sgn(N.conditions[o[0]].meanMargin, 2); }).join(", ") + ") and the bull winning at most " + pct(bullMax) +
+        " of judgments in every run. So the bear's lead looks consistent in direction, but its size is not known from one debate per company." }));
+  }
+
   function drawPosition(body, w, b) {
     var lo = b.bonusLo, hi = b.bonusHi, mean = b.bonusMean;
     var lim = Math.max(2, Math.ceil(Math.max(Math.abs(lo), Math.abs(hi))) + 1);
@@ -523,16 +591,16 @@
     var items = [];
 
     var bull0 = share(b0, "bull"), bear0 = share(b0, "bear"), tie0 = share(b0, "tie");
-    items.push({ t: bear0 > bull0 ? "The bear won most judgments" : "The bull won most judgments",
-      b: "With the bull speaking first, the bear won " + pct(bear0) + " of judgments, the bull " + pct(bull0) + ", and " + pct(tie0) + " were ties." });
+    items.push({ t: bear0 > bull0 ? "In this run the bear won most judgments" : "In this run the bull won most judgments",
+      b: "With the bull speaking first, the bear won " + pct(bear0) + " of judgments, the bull " + pct(bull0) + ", and " + pct(tie0) + " were ties." +
+        (D.bias.noise ? " Debating the same companies again gave a bear share of " + pct(D.bias.noise.conditions.rerun.counts.bear / D.bias.noise.conditions.rerun.judgments) + ", so read these shares as one draw, not a fixed rate." : "") });
 
     if (b1) {
       var bull1 = share(b1, "bull"), bear1 = share(b1, "bear"), tie1 = share(b1, "tie");
       var drop = bear0 - bear1;
-      var ratio = bull1 > 0 ? Math.round(bear1 / bull1) : null;
       items.push({ t: drop >= 0.1 ? "Replying last helps the bear, but does not explain it" : "Speaking order changed little",
         b: "With the bear speaking first, its share went from " + pct(bear0) + " to " + pct(bear1) + " and ties from " + pct(tie0) + " to " + pct(tie1) + ". The bull moved from " + pct(bull0) + " to " + pct(bull1) + "." +
-          (ratio && bear1 > bull1 ? " The bear still won about " + ratio + " times as many judgments as the bull, so something other than speaking order still favors it." : "") +
+          (bear1 > bull1 ? " The bear still won more judgments than the bull, so speaking order alone does not account for the gap. How large the gap really is, one debate per company cannot say." : "") +
           (b1.summary.debates < b0.summary.debates ? " (" + b1.summary.debates + " of " + b0.summary.debates + " companies run so far.)" : "") });
     }
 
@@ -572,6 +640,8 @@
 
   if (D.bias.base) {
     renderCompare();
+    renderJudges();
+    renderNoise();
     if (availableSetups.length > 1) renderBiasFilters(); else $("#bias-filters").hidden = true;
     renderBiasCharts();
   }
@@ -681,8 +751,8 @@
     });
 
     var limits = [
-      ["A small test", cap(word(m.debates)) + " companies, one debate each per setup. The percentages are rough estimates, not precise measurements."],
-      ["One model family", "The debaters and the judge are the same model, " + D.model + ". A judge from a different model could behave differently."],
+      ["A small test", cap(word(m.debates)) + " companies, one debate each per setup." + (D.bias.noise ? " Debating the same companies again moved the bear's share of judgments by " + Math.round(D.bias.noise.noiseGap) + " points, so each percentage is one draw, not a precise measurement." : " The percentages are rough estimates, not precise measurements.")],
+      ["One model family", "The debaters are " + modelName(D.model) + (D.bias.judges ? ", and the two judges compared are " + modelName(D.bias.judges.firstModel) + " and " + modelName(D.bias.judges.secondModel) : ", and so is the judge") + ". All Claude models, so a bias shared across the family is untested, and there is no answer key to say which judge is right."],
       ["Listing order scrambles the dialogue", "When the judge lists the side that spoke second first, it reads a reply before the argument it answers. The listing-order results mix pure position bias with that effect." + (D.bias.chrono ? " Re-judging the debates in speaking order gave similar bear shares, so this did not create the bear's edge." : "")],
       ["Quotes are checked, not claims", "The checker proves the words (and numbers) are in the filing. It cannot tell whether the quote really supports the claim built on it, and a one-word wording change can still pass."],
       ["Banks are skipped", "Banks such as JPMorgan keep their MD&A in a separate exhibit, so the extractor rejects them instead of guessing."],

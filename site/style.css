@@ -309,5 +309,6 @@ footer a { text-underline-offset: 3px; }
 }
 
 .takeaway { margin-top: 18px; color: var(--ink-2); max-width: 72ch; }
+.takeaway + .chart-card, .takeaway + .filters { margin-top: 32px; }
 #stamp { margin-left: 14px; }
 .bias-grid .b .body { display: flex; align-items: center; min-height: 150px; }
