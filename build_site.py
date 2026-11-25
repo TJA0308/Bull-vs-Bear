@@ -305,6 +305,22 @@ def noise_summary():
                                "rerun": round(phase_c.bear_share({t: rerun[t]}))} for t in common}}
 
 
+def repeats_summary():
+    """Phase D: five independent draws per input condition, or None."""
+    import phase_d
+    a = phase_d.analyze(phase_d.load_draws())
+    if a["n_full"] < 2 or a["n_balanced"] < 2:
+        return None
+    r = lambda x: round(x, 2)
+    return {"nFull": a["n_full"], "nBalanced": a["n_balanced"],
+            "fullScores": [r(x) for x in a["full_scores"]], "balancedScores": [r(x) for x in a["balanced_scores"]],
+            "fullMean": r(a["full_mean"]), "fullHalf": r(a["full_half"]),
+            "balancedMean": r(a["balanced_mean"]), "balancedHalf": r(a["balanced_half"]),
+            "effect": r(a["effect"]), "effectHalf": r(a["effect_half"]),
+            "edge": a["edge"], "input": a["input"], "effectPoints": phase_d.EFFECT_POINTS,
+            "bearShare": a["bear_share"]}
+
+
 def parse_prompts():
     return {
         "bull": debate_mod.SIDE_PROMPTS["bull"],
@@ -338,7 +354,8 @@ def main():
                  "bearFirst": variant_summary(bias.results_path("bear-first")),
                  "chrono": chronological_summary(),
                  "judges": judges_summary(),
-                 "noise": noise_summary()},
+                 "noise": noise_summary(),
+                 "repeats": repeats_summary()},
         "checker": checker_experiment(base),
         "prompts": parse_prompts(),
         "code": {"verify": inspect.getsource(citations.verify_quote),
