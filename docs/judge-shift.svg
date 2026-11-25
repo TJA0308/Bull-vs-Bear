@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 300" role="img" aria-labelledby="t d">
+  <title id="t">Same 32 debates, two judges</title>
+  <desc id="d">Share of 96 judgments each. Haiku 5.5: bull 5 percent, tie 30, bear 65. Sonnet 5.5: bull 51 percent, tie 20, bear 29.</desc>
+  <style>
+    :root { --text:#1f2328; --muted:#59636e; --grid:#d0d7de; --bull:#2b6cd4; --bear:#d4690b; --tie:#9aa4af; --surface:#ffffff; }
+    @media (prefers-color-scheme: dark) {
+      :root { --text:#e6edf3; --muted:#9198a1; --grid:#30363d; --bull:#4a8ae8; --bear:#d57620; --tie:#6e7681; --surface:#0d1117; }
+    }
+    text { font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; fill: var(--text); }
+    .title { font-size: 17px; font-weight: 600; }
+    .muted { font-size: 12.5px; fill: var(--muted); }
+    .row   { font-size: 14px; font-weight: 600; }
+    .val   { font-size: 14px; font-variant-numeric: tabular-nums; }
+    .seg   { transform-box: fill-box; transform-origin: left center; animation: grow 1.1s cubic-bezier(.2,.7,.2,1) both; }
+    .d2    { animation-delay: .35s; }
+    .fade  { animation: fade .6s ease-out 1.2s both; }
+    @keyframes grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+    @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+    @media (prefers-reduced-motion: reduce) { .seg, .fade { animation: none; } }
+  </style>
+
+  <text class="title" x="10" y="26">Same 32 debates, two judges: who wins?</text>
+  <text class="muted" x="10" y="46">Share of 96 judgments each, transcripts read in speaking order</text>
+
+  <!-- legend -->
+  <rect x="640" y="14" width="12" height="12" rx="3" style="fill:var(--bull)"/><text class="muted" x="658" y="25">Bull</text>
+  <rect x="706" y="14" width="12" height="12" rx="3" style="fill:var(--tie)"/><text class="muted" x="724" y="25">Tie</text>
+  <rect x="768" y="14" width="12" height="12" rx="3" style="fill:var(--bear)"/><text class="muted" x="786" y="25">Bear</text>
+
+  <!-- scale: bar starts at x=170, 100% = 690px (6.9 px per point), 2px gaps between segments -->
+  <!-- Haiku: 5 / 30 / 65 -->
+  <text class="row" x="10" y="104">Haiku 5.5</text>
+  <text class="muted" x="10" y="122">the debaters' model</text>
+  <rect class="seg" x="170" y="80" width="32.5" height="48" rx="4" style="fill:var(--bull)"/>
+  <rect class="seg" x="204.5" y="80" width="205" height="48" rx="4" style="fill:var(--tie)"/>
+  <rect class="seg" x="411.5" y="80" width="448.5" height="48" rx="4" style="fill:var(--bear)"/>
+  <g class="fade">
+    <text class="val" x="186" y="150" text-anchor="middle">5%</text>
+    <text class="val" x="307" y="150" text-anchor="middle">30%</text>
+    <text class="val" x="636" y="150" text-anchor="middle" style="font-weight:700">65%</text>
+  </g>
+
+  <!-- Sonnet: 51 / 20 / 29 -->
+  <text class="row" x="10" y="204">Sonnet 5.5</text>
+  <text class="muted" x="10" y="222">a larger judge</text>
+  <rect class="seg d2" x="170" y="180" width="350" height="48" rx="4" style="fill:var(--bull)"/>
+  <rect class="seg d2" x="522" y="180" width="136" height="48" rx="4" style="fill:var(--tie)"/>
+  <rect class="seg d2" x="660" y="180" width="200" height="48" rx="4" style="fill:var(--bear)"/>
+  <g class="fade">
+    <text class="val" x="345" y="250" text-anchor="middle" style="font-weight:700">51%</text>
+    <text class="val" x="590" y="250" text-anchor="middle">20%</text>
+    <text class="val" x="760" y="250" text-anchor="middle">29%</text>
+  </g>
+
+  <text class="muted" x="10" y="288">Bear's share of verdicts: 65% to 29%, a 35-point drop. Neither judge is "right": there is no ground truth for who is correct.</text>
+</svg>

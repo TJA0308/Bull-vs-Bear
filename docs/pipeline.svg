@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 190" role="img" aria-labelledby="t d">
+  <title id="t">Bull vs. Bear pipeline</title>
+  <desc id="d">A 10-K filing feeds a bull and a bear agent. Plain code checks every quote. A judge scores the debate, and the results feed a static site.</desc>
+  <style>
+    :root { --box:#f6f8fa; --stroke:#d0d7de; --text:#1f2328; --muted:#59636e;
+            --bull:#2b6cd4; --bear:#d4690b; --code:#0f766e; --flow:#8c959f; }
+    @media (prefers-color-scheme: dark) {
+      :root { --box:#161b22; --stroke:#30363d; --text:#e6edf3; --muted:#9198a1;
+              --bull:#4a8ae8; --bear:#d57620; --code:#3fb9a8; --flow:#6e7681; }
+    }
+    text { font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; fill: var(--text); }
+    .step { font-size: 12px; fill: var(--muted); letter-spacing: .06em; }
+    .name { font-size: 15px; font-weight: 600; }
+    .sub  { font-size: 12px; fill: var(--muted); }
+    .box  { fill: var(--box); stroke: var(--stroke); stroke-width: 1.5; }
+    .code { stroke: var(--code); stroke-width: 2; }
+    .flow { stroke: var(--flow); stroke-width: 2; fill: none; stroke-dasharray: 5 5; animation: move 1s linear infinite; }
+    .chip { font-size: 11px; font-weight: 700; fill: #fff; letter-spacing: .04em; }
+    .pop  { animation: pop 5s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    @keyframes move { to { stroke-dashoffset: -20; } }
+    @keyframes pop  { 0%,100% { transform: scale(1); } 50% { transform: scale(1.04); } }
+    @media (prefers-reduced-motion: reduce) { .flow, .pop { animation: none; } }
+  </style>
+  <defs>
+    <marker id="a" viewBox="0 0 8 8" refX="6" refY="4" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L8 4 L0 8 z" fill="var(--flow)"/>
+    </marker>
+  </defs>
+
+  <!-- 1 filing -->
+  <text class="step" x="8" y="38">1  INPUT</text>
+  <rect class="box" x="8" y="48" width="150" height="96" rx="10"/>
+  <text class="name" x="83" y="84" text-anchor="middle">SEC 10-K</text>
+  <text class="sub" x="83" y="106" text-anchor="middle">Item 1A  Risk Factors</text>
+  <text class="sub" x="83" y="124" text-anchor="middle">Item 7  MD&amp;A</text>
+
+  <!-- 2 debate -->
+  <text class="step" x="194" y="38">2  DEBATE</text>
+  <rect class="box" x="194" y="48" width="150" height="96" rx="10"/>
+  <rect x="206" y="62" width="56" height="24" rx="6" style="fill:var(--bull)"/>
+  <text class="chip" x="234" y="78" text-anchor="middle">BULL</text>
+  <rect x="276" y="62" width="56" height="24" rx="6" style="fill:var(--bear)"/>
+  <text class="chip" x="304" y="78" text-anchor="middle">BEAR</text>
+  <path d="M264 74 H274" stroke="var(--flow)" stroke-width="2" marker-end="url(#a)"/>
+  <text class="sub" x="269" y="110" text-anchor="middle">2 rounds, each</text>
+  <text class="sub" x="269" y="127" text-anchor="middle">quotes the filing</text>
+
+  <!-- 3 checker -->
+  <text class="step" x="380" y="38">3  VERIFY</text>
+  <g class="pop">
+    <rect class="box code" x="380" y="48" width="150" height="96" rx="10"/>
+    <text class="name" x="455" y="84" text-anchor="middle">Quote checker</text>
+    <text class="sub" x="455" y="106" text-anchor="middle">plain Python, no LLM</text>
+    <text class="sub" x="455" y="124" text-anchor="middle">exact + fuzzy + numbers</text>
+  </g>
+
+  <!-- 4 judge -->
+  <text class="step" x="566" y="38">4  JUDGE</text>
+  <rect class="box" x="566" y="48" width="150" height="96" rx="10"/>
+  <text class="name" x="641" y="84" text-anchor="middle">Judge model</text>
+  <text class="sub" x="641" y="106" text-anchor="middle">evidence, logic,</text>
+  <text class="sub" x="641" y="124" text-anchor="middle">responsiveness</text>
+
+  <!-- 5 site -->
+  <text class="step" x="752" y="38">5  SHOW</text>
+  <rect class="box" x="752" y="48" width="140" height="96" rx="10"/>
+  <text class="name" x="822" y="84" text-anchor="middle">Static site</text>
+  <text class="sub" x="822" y="106" text-anchor="middle">saved JSON, no</text>
+  <text class="sub" x="822" y="124" text-anchor="middle">API calls to view</text>
+
+  <!-- flows -->
+  <path class="flow" d="M160 96 H190" marker-end="url(#a)"/>
+  <path class="flow" d="M346 96 H376" marker-end="url(#a)"/>
+  <path class="flow" d="M532 96 H562" marker-end="url(#a)"/>
+  <path class="flow" d="M718 96 H748" marker-end="url(#a)"/>
+
+  <text class="sub" x="8" y="178">Debates are generated once and saved as JSON, so visitors never spend API credits.</text>
+</svg>
