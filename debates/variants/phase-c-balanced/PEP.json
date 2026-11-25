@@ -1,0 +1,149 @@
+{
+  "ticker": "PEP",
+  "filing": {
+    "accession": "0000077476-26-000007",
+    "document": "pep-20251227.htm",
+    "date": "2026-02-03"
+  },
+  "model": "claude-haiku-5-5",
+  "created": "2026-11-25T01:32:01+00:00",
+  "bull_first": true,
+  "input_mode": "balanced",
+  "rounds": [
+    {
+      "round": 1,
+      "bull": {
+        "argument": "PepsiCo's filing shows a company investing to adapt. Management states that \"Since 2018, we have made significant investments in the business to adapt to the changing landscape,\" spanning technology, AI, manufacturing and warehousing. Brand momentum is visible: the Walking Taco platform is thriving in venues, and management says the away-from-home push continues. The pep+ transformation is in its fifth year, and the portfolio is being reshaped with functional products like Pepsi Prebiotic Cola and acquisitions including Siete, Sabra and poppi. Management is also consolidating into One PepsiCo through shared global services and streamlined processes, aimed at productivity. The risks are real. The filing flags GLP-1 medications, tariffs, private label competition, boycotts, and the need to deliver on North American priorities. Russia's 20% share of consolidated cash is a concentrated exposure worth watching. Still, a diversified portfolio across more than 200 countries, combined with active reinvention, gives PepsiCo the tools to respond to these pressures.",
+        "claims": [
+          {
+            "claim": "Management points to sustained, multi-year investment to adapt the business to market change, including technology and AI.",
+            "quote": "Since 2018, we have made significant investments in the business to adapt to the changing landscape.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Specific brand platforms show commercial traction in away-from-home channels.",
+            "quote": "The successful Walking Taco platform is thriving in stadiums, arenas, and parks across the United States",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The company says it is actively expanding its away-from-home business into new occasions.",
+            "quote": "We continued to expand our away-from-home business into new occasions.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "PepsiCo's own filing lists a long chain of demand threats. Management concedes consumer preferences are shifting away from its products, citing GLP-1 medications, private label switching, and public boycotts, and says these factors 'have reduced and could continue to reduce consumers' willingness to purchase certain of our products.' Competitive pressure is intense, with Coca-Cola named as primary beverage rival, and management admits it must still 'achieve the commercial and financial priorities announced during 2025' in North America, implying those results are not yet secured. Retail is also shifting: retailers are 'removing our products or otherwise reducing shelf space,' and the company warns that losing a key customer 'has adversely affected' the business. Meanwhile, the investments cited as adaptation are large and unproven, and management says it cannot predict the scope of new taxes on its products. Russia supplies 20% of consolidated cash, a concentration the filing ties to 'risks of additional impairments or write-offs.' Diversification does not remove these exposures; it spreads them.",
+        "claims": [
+          {
+            "claim": "Management admits demand for certain products has already been reduced by consumer concerns and boycotts.",
+            "quote": "These factors have reduced and could continue to reduce consumers’ willingness to purchase certain of our products, including as a result of public boycotts.",
+            "verified": true,
+            "score": 98.7
+          },
+          {
+            "claim": "North American turnaround targets are stated as unachieved priorities, not completed results.",
+            "quote": "if we fail to achieve the commercial and financial priorities announced during 2025 to improve our marketplace competitiveness and financial performance, including in our North American businesses",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Russia's concentration of cash creates exposure to impairments and write-offs.",
+            "quote": "including risks of additional impairments or write-offs and currency fluctuation",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "bull": {
+        "argument": "The bear case is real, but it omits context the filing supplies. Management does concede demand headwinds, yet it frames them as risks it is actively managing, not as established declines. On North America, the filing describes the 2025 priorities as a plan to reignite the business by combining operations and reinvesting savings in brands, which is a targeted response rather than a sign of failure. Retail pressure is acknowledged, but the company is building e-commerce, digital tools, and AI-driven go-to-market capabilities to meet customers where they now buy. On Russia, the filing does say 20% of consolidated cash sits there, but that figure is a single-line exposure within a business serving more than 200 countries; cash concentration is a treasury issue the company has disclosed transparently. Management also points to tangible results, such as Walking Taco thriving in stadiums and arenas, and pep+ entering its fifth year with portfolio reshaping. Diversification does not eliminate risk, but it lets one weak market be offset by others. The investment case rests on execution, and the filing gives evidence of execution underway.",
+        "claims": [
+          {
+            "claim": "Management frames the North American priorities as an active plan to reignite the business, not a confirmed shortfall.",
+            "quote": "reigniting our North America business by combining operations where it makes the most sense and using the savings to support meaningful investments in our brands",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management identifies concrete commercial traction in away-from-home channels.",
+            "quote": "The successful Walking Taco platform is thriving in stadiums, arenas, and parks across the United States",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "The company is investing in digital and AI capabilities to serve retail customers as channels shift.",
+            "quote": "We are building smarter systems with technologies like artificial intelligence to better serve our customers and consumers",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The opponent's rebuttal treats management's own words as reassurance, but the filing's qualifiers cut the other way. Management says consumer concerns 'have reduced' demand, and that the company must still 'achieve' its North American priorities; a plan that is still being executed is not evidence that execution is working. The filing gives no metric showing these priorities have turned the business around, and Walking Taco, a stadium platform, does not establish broad growth. On retail, the filing says retailers are 'removing our products or otherwise reducing shelf space,' and that losing a key customer 'has adversely affected' results, which is an admitted realized loss, not a hypothetical. Russia is more than a treasury footnote: it is 5% of assets but 20% of consolidated cash, and the filing ties that exposure to 'risks of additional impairments or write-offs.' Diversification helps only if other markets carry the load, yet the filing also lists Argentina, Brazil, China, Mexico, Turkey and others as sites of volatility and currency controls. Concentrated tariff, tax and GLP-1 risks are not offset by geography alone.",
+        "claims": [
+          {
+            "claim": "Retailers are already removing products and cutting shelf space, a realized demand loss.",
+            "quote": "retailers and buying groups are shifting traditional value propositions, removing our products or otherwise reducing shelf space allocated to our products",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Loss of key customers has already hurt results, not just could in theory.",
+            "quote": "the loss of any of our key customers has adversely affected and c an continue to adversely affect our business.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Russia's cash share rose sharply, tying concentration to impairment risk.",
+            "quote": "20% and 10% of our consolidated cash and cash equivalents",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    }
+  ],
+  "citations": {
+    "bull": {
+      "verified": 6,
+      "total": 6
+    },
+    "bear": {
+      "verified": 6,
+      "total": 6
+    },
+    "overall": {
+      "verified": 12,
+      "total": 12,
+      "accuracy": 1.0
+    }
+  },
+  "judge": {
+    "scores": {
+      "bull": {
+        "evidence": 6,
+        "logic": 6,
+        "responsiveness": 6
+      },
+      "bear": {
+        "evidence": 8,
+        "logic": 7,
+        "responsiveness": 8
+      }
+    },
+    "winner": "bear",
+    "reasoning": "All quotes in the transcript are verified, but the bear side builds its case on more direct admissions from the filing (demand reduction, realized customer losses, shelf-space cuts) and ties them to specific exposures, while the bull relies on qualitative investment claims and a single Walking Taco stadium example that does not show broad growth. The bull's rebuttal reframes concessions as active management without offering metrics, and it only partly answers the bear's Russia and retail points, so the bear wins on evidence and responsiveness."
+  },
+  "usage": {
+    "calls": 5,
+    "input_tokens": 46806,
+    "output_tokens": 3486,
+    "cost_usd": 0.0064
+  }
+}

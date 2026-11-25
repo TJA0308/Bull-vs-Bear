@@ -1,0 +1,149 @@
+{
+  "ticker": "MSFT",
+  "filing": {
+    "accession": "0001193125-26-323660",
+    "document": "msft-20260630.htm",
+    "date": "2026-07-29"
+  },
+  "model": "claude-haiku-5-5",
+  "created": "2026-11-25T01:27:03+00:00",
+  "bull_first": true,
+  "input_mode": "balanced",
+  "rounds": [
+    {
+      "round": 1,
+      "bull": {
+        "argument": "Microsoft's fiscal 2026 filing shows a business compounding at scale. Total revenue rose 18% to $331,839 million, operating income grew 21% to $155,237 million, and diluted EPS climbed 32% to $17.95. Microsoft Cloud revenue increased 27% to $214.4 billion, and Azure and other cloud services grew 41%. The commercial remaining performance obligation rose 84% to $678 billion, which gives unusual visibility into future revenue. Intelligent Cloud operating income grew 28%, and Productivity and Business Processes grew 20%, so the core engines are expanding profit, not just sales. The filing does not hide the cost of the AI build-out: Microsoft Cloud gross margin fell to 66%, and the risk factors warn that AI returns may take years. But those costs are being absorbed while earnings still grew faster than revenue, and the backlog suggests customers are committing capital ahead of delivery. The bull case rests on a company that is investing heavily and still converting that investment into growing operating profit.",
+        "claims": [
+          {
+            "claim": "Commercial remaining performance obligation grew 84%, signaling large contracted future revenue.",
+            "quote": "Commercial remaining performance obligation increased 84% to $678 billion.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Azure and other cloud services revenue grew 41%, showing strong cloud demand.",
+            "quote": "Azure and other cloud services revenue increased 41%.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Operating income grew faster than revenue, showing profit growth despite heavy AI spending.",
+            "quote": "Operating income increased $26.7 billion or 21% driven by growth in Productivity and Business Processes and Intelligent Cloud.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull case leans on backlog and growth rates, but the filing itself flags that the AI build-out may not pay back. Management states the investments are 'being made at significant scale and on an accelerated timeline' and are 'in advance of fully developed revenue streams,' and that 'the associated revenue may not be realized in the expected timeframes or at expected levels.' Microsoft Cloud gross margin already fell to 66%, and total gross margin percentage 'decreased slightly' because of AI infrastructure. Earnings growth of 31% in net income was helped by OpenAI gains of $5.0 billion, which the company itself excludes from its adjusted figures; adjusted net income grew 22%, not 31%. The commercial backlog is a contractual promise, not revenue, and the filing warns that customers may 'reduce, delay, or shift AI workloads to competing platforms.' Capacity that goes unused 'may lead to impairment of assets on our balance sheet.' A company spending ahead of demand, with margins compressing and a meaningful share of reported growth tied to a single partner's valuation, carries risk the headline numbers obscure.",
+        "claims": [
+          {
+            "claim": "Management concedes AI investments are ahead of revenue and may not produce expected returns",
+            "quote": "are in advance of fully developed revenue streams. The associated revenue may not be realized in the expected timeframes or at expected levels.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Microsoft Cloud gross margin fell, reflecting AI cost pressure",
+            "quote": "Microsoft Cloud gross margin percentage decreased to 66% driven by continued investments in AI infrastructure and growing AI product usage",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Overbuilt capacity could force asset impairments",
+            "quote": "Overestimation of demand or misalignment of capacity investments may result in underutilization of infrastructure and may lead to impairment of assets on our balance sheet.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "bull": {
+        "argument": "The bear points are real, and the filing states them plainly, but they do not overturn the core picture. Management itself says the AI build-out is 'being made at significant scale' and that the backlog is what grounds the bet: commercial remaining performance obligation rose 84% to $678 billion. Backlog is not revenue, but it is contracted, and it is far larger than the company's annual revenue of $331,839 million. On the OpenAI point, the opponent is right that GAAP net income growth of 31% includes the $5.0 billion gain, and adjusted net income grew 22%. Even so, adjusted growth of 22% still outpaced revenue growth of 18%, and operating income, which excludes investment gains, grew 21%. Margin compression is real, with Microsoft Cloud gross margin at 66%, but the filing attributes it to 'efficiency gains in Azure and Microsoft 365 Commercial cloud' offsetting AI costs. The impairment and demand risks are legitimate and should be monitored, not dismissed.",
+        "claims": [
+          {
+            "claim": "Commercial remaining performance obligation grew 84% to $678 billion, giving contracted backing for the AI spending.",
+            "quote": "Commercial remaining performance obligation increased 84% to $678 billion.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Adjusted net income, which strips out OpenAI gains, still grew 22%, ahead of 18% revenue growth.",
+            "quote": "Adjusted net income (non-GAAP) 128,786 105,452 22%",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management attributes the Microsoft Cloud margin pressure partly to offsetting efficiency gains, not only to AI costs.",
+            "quote": "Microsoft Cloud gross margin percentage decreased to 66% driven by continued investments in AI infrastructure and growing AI product usage, offset in part by efficiency gains in Azure and Microsoft 365 Commercial cloud.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull case treats backlog as proof, but the filing frames it as a forecast that depends on customers continuing to buy. Commercial remaining performance obligation is 'the commercial portion of revenue allocated to remaining performance obligations, which includes unearned revenue and amounts that will be invoiced,' so it is not earned income, and the risk factors warn that customers 'may reduce, delay, or shift AI workloads to competing platforms.' Operating income growth of 21% is real, but the same filing says cost of revenue rose 21% and that Intelligent Cloud cost of revenue jumped 44% against 30% segment revenue growth. That gap is the AI build-out showing up in costs faster than in sales. The filing's own language is that efficiency gains 'offset in part' the AI costs, meaning the offset is partial, not complete. Microsoft Cloud gross margin fell to 66%, and management says the new investments 'will continue to increase our operating costs and may decrease our operating margins.' The opponent's margin defense depends on efficiency gains continuing, which the filing does not guarantee. Adjusted growth of 22% is also a fair figure, but it still rests on a capital program the company describes as 'speculative' at its core.",
+        "claims": [
+          {
+            "claim": "Backlog is a contractual forecast, not earned revenue, and customers can shift workloads away",
+            "quote": "customers may reduce, delay, or shift AI workloads to competing platforms, on-premises or local deployments, or other alternatives",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Intelligent Cloud costs grew far faster than its revenue, showing AI costs outpacing sales",
+            "quote": "Cost of revenue 57,876 40,171 44% Operating expenses 22,943 21,505 7%",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management expects the new investments to keep pressuring operating margins",
+            "quote": "will continue to increase our operating costs and may decrease our operating margins",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    }
+  ],
+  "citations": {
+    "bull": {
+      "verified": 6,
+      "total": 6
+    },
+    "bear": {
+      "verified": 6,
+      "total": 6
+    },
+    "overall": {
+      "verified": 12,
+      "total": 12,
+      "accuracy": 1.0
+    }
+  },
+  "judge": {
+    "scores": {
+      "bull": {
+        "evidence": 8,
+        "logic": 7,
+        "responsiveness": 7
+      },
+      "bear": {
+        "evidence": 7,
+        "logic": 8,
+        "responsiveness": 8
+      }
+    },
+    "winner": "bear",
+    "reasoning": "Both sides cite verified filing language, so evidence is close, though the bear's 'speculative' characterization is not supported by any verified quote. The bear's Intelligent Cloud cost-of-revenue gap (44% vs. roughly 30% segment revenue growth) and the 'offset in part' point directly challenge the bull's margin-defense argument, and the bull never addresses the cost gap. The bull's concessions on OpenAI and margins were honest, but the bear's cost analysis lands harder."
+  },
+  "usage": {
+    "calls": 5,
+    "input_tokens": 48939,
+    "output_tokens": 3578,
+    "cost_usd": 0.0067
+  }
+}

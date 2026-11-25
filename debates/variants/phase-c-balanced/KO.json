@@ -1,0 +1,149 @@
+{
+  "ticker": "KO",
+  "filing": {
+    "accession": "0001628280-26-010047",
+    "document": "ko-20251231.htm",
+    "date": "2026-02-20"
+  },
+  "model": "claude-haiku-5-5",
+  "created": "2026-11-25T01:31:36+00:00",
+  "bull_first": true,
+  "input_mode": "balanced",
+  "rounds": [
+    {
+      "round": 1,
+      "bull": {
+        "argument": "KO's filing shows a global franchise with durable reach and a deliberate strategy to defend it. Its brands are sold in more than 200 countries and territories, and the filing states that trademarked beverages account for 2.2 billion of the estimated 65 billion servings consumed worldwide every day, a scale few competitors can match. The company is also actively managing the headwinds it describes: it lists productivity as 'a leading priority,' pursues innovation in low- and no-calorie options to address obesity concerns, and is building e-commerce capabilities as retail shifts online. Management states it believes 'we are well positioned to create value for our Company and our stakeholders.' The risks are real. Inflation, tariffs, and supply disruptions are repeatedly cited, and the filing admits price increases may not offset costs. But the same filing describes a company with diversified categories, a mix of concentrate operations (59% of revenue, 85% of volume) that is structurally capital-light, and a long track record of adapting to change. Investors are paid to bear risks like these, and KO's scale and brand equity give it more room to absorb them than most peers.",
+        "claims": [
+          {
+            "claim": "Global scale and brand reach",
+            "quote": "now sold in more than 200 countries and territories",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Trademarked beverages' share of worldwide consumption",
+            "quote": "Beverages bearing trademarks owned by or licensed to us account for 2.2 billion of the estimated 65 billion servings",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management believes the company is well positioned",
+            "quote": "we believe we are well positioned to create value for our Company and our stakeholders",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The filing describes a company whose profitability is exposed on several fronts at once. Management concedes that inflationary pressures on input and other costs will continue to affect the business in 2026, and admits that price increases 'may not be successful.' The filing warns that higher prices 'may result in reductions in sales volume,' and that consumers 'may increasingly purchase lower-priced offerings, or may forgo some purchases altogether.' Competition and retailer pressure compound this: retailers 'may seek lower prices' and 'may be more likely to use their distribution networks to introduce and develop private-label brands.' Geopolitical disruption is not hypothetical either; the filing says the Company 'faced disruption to our operations due to international conflicts' throughout 2025. The opponent's scale argument does not address the margin squeeze the filing itself describes. Size and brand equity do not prevent price-driven volume loss, and 'well positioned' is management's own characterization, not a measured outcome. An investor is paid for bearing risk only if the compensation fits the risk, and this filing gives little assurance that margins will hold.",
+        "claims": [
+          {
+            "claim": "Management expects input cost inflation to persist, pressuring margins.",
+            "quote": "We expect the inflationary pressures on certain input and other costs to continue to impact our business in 2026.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Price increases may fail to offset costs and may cut sales volume.",
+            "quote": "Our attempts to offset cost pressures, such as through price increases of some of our products, may not be successful. Higher product prices may result in reductions in sales volume.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Retailers may push private-label brands and lower prices, eroding profitability.",
+            "quote": "Retailers may seek lower prices from us and our bottling partners, may demand increased marketing or promotional expenditures",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "bull": {
+        "argument": "The bear case rests on risks the filing does name, but it overstates what they imply. Management's statement that it expects input cost pressure to continue in 2026 is a disclosed assumption, not a forecast of collapse, and the filing pairs it with a stated response: productivity is 'a leading priority,' and the company is 'continuing to invest in our portfolio of brands, our strategic capabilities and our people.' The volume risk is real, but the filing's own data show the company's economics are weighted toward concentrate operations, which are 59% of revenue but 85% of unit case volume, and which generate higher gross margins than finished product operations. That mix cushions the margin squeeze more than a pure bottler would face. On competition, the filing acknowledges private-label and discounter growth, but it also describes a company with 'a wide variety of beverage options' and a portfolio spanning sparkling, water, coffee, tea, and dairy categories, which limits exposure to any single price point. I concede 'well positioned' is management's characterization. But the risks cited are the ones any global beverage company faces, and the filing does not show KO losing ground to them. The investment case is that scale and diversification let it absorb these pressures better than most peers.",
+        "claims": [
+          {
+            "claim": "Concentrate operations carry a larger share of volume than revenue",
+            "quote": "Concentrate operations 59 % 59 % Finished product operations 41 41 Total 100 %",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management is investing and prioritizing productivity in response to cost pressure",
+            "quote": "therefore, a leading priority of our Company is to design and implement the most effective and efficient business model possible",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Portfolio breadth across beverage categories",
+            "quote": "Trademark Coca-Cola; sparkling flavors; water, sports, coffee and tea; juice, value-added dairy and plant-based beverages; and emerging beverages",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The opponent is right that concentrate operations carry higher margins, and the filing says so: finished product operations have 'lower gross profit margins than concentrate operations.' But the mix point does not settle the risk. The filing's own mitigation is less certain than the opponent suggests: 'we may not be able to offset cost increases through productivity initiatives or through our commodity hedging activity.' Productivity is described as a priority, not a proven offset. Volume is the other exposure. Management warns that consumers 'may forgo some purchases altogether' when prices rise, and about 85% of unit case volume sits in concentrate operations, so volume losses there would hit the economics the opponent relies on. On share, the filing does not claim KO is gaining ground. It says the company's ability to maintain or gain share 'may be limited as a result of actions by competitors.' Diversification helps only if the added categories are profitable, and the filing does not show that. Scale is a real advantage, but the filing describes a margin squeeze without a demonstrated fix.",
+        "claims": [
+          {
+            "claim": "Management admits it may not be able to offset cost increases through productivity or hedging.",
+            "quote": "we may not be able to offset cost increases through productivity initiatives or through our commodity hedging activity.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Concentrate operations carry higher margins, but the filing confirms finished product operations are the lower-margin segment, so the mix only partly cushions the squeeze.",
+            "quote": "Generally, finished product operations generate higher net operating revenues but lower gross profit margins than concentrate operations.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management says KO's ability to maintain or gain share may be limited by competitors.",
+            "quote": "Our ability to maintain or gain share of sales in the global market or in regional or local markets may be limited as a result of actions by competitors.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    }
+  ],
+  "citations": {
+    "bull": {
+      "verified": 6,
+      "total": 6
+    },
+    "bear": {
+      "verified": 6,
+      "total": 6
+    },
+    "overall": {
+      "verified": 12,
+      "total": 12,
+      "accuracy": 1.0
+    }
+  },
+  "judge": {
+    "scores": {
+      "bull": {
+        "evidence": 7,
+        "logic": 6,
+        "responsiveness": 6
+      },
+      "bear": {
+        "evidence": 8,
+        "logic": 7,
+        "responsiveness": 8
+      }
+    },
+    "winner": "bear",
+    "reasoning": "All quotes on both sides are verified, but the bear side's quotes more directly target the bull's central claims (margin cushioning from mix, productivity as offset, share strength) and it used the bull's own 59%/85% concentrate data against it. The bull's concession that 'well positioned' is only management characterization and its reliance on scale and diversification leave its margin defense less substantiated, though it did note the risks are industry-wide and the filing shows no share loss."
+  },
+  "usage": {
+    "calls": 5,
+    "input_tokens": 46549,
+    "output_tokens": 3571,
+    "cost_usd": 0.0064
+  }
+}

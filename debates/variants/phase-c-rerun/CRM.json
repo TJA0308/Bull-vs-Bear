@@ -1,0 +1,149 @@
+{
+  "ticker": "CRM",
+  "filing": {
+    "accession": "0001108524-26-000060",
+    "document": "crm-20260131.htm",
+    "date": "2026-03-02"
+  },
+  "model": "claude-haiku-5-5",
+  "created": "2026-11-25T01:24:16+00:00",
+  "bull_first": true,
+  "input_mode": "full",
+  "rounds": [
+    {
+      "round": 1,
+      "bull": {
+        "argument": "Salesforce's filing shows a scaled, cash-generative CRM franchise. Fiscal 2026 revenue rose 10% to $41.5 billion, income from operations climbed to $8.3 billion from $7.2 billion, and operating cash flow reached $15.0 billion, up 15%. Remaining performance obligation grew 14% to about $72.4 billion, giving substantial contracted visibility. Management reports attrition of approximately eight percent, consistent with the prior year, and says growth was driven by volume rather than pricing. The company also returned capital aggressively, repurchasing about $12.7 billion of stock and paying $1.6 billion in dividends, while the Board authorized a new $50.0 billion buyback. The bear case will focus on leverage and acquisition risk, and the filing does disclose $14.5 billion in principal debt against $9.6 billion of cash. Still, management states the existing liquidity, operating cash flow and an undrawn $5.0 billion credit facility are sufficient for the next 12 months and beyond. Recurring revenue at this scale, with improving margins, is a durable foundation.",
+        "claims": [
+          {
+            "claim": "Operating cash flow grew 15% to $15.0 billion in fiscal 2026.",
+            "quote": "Cash provided by operations for fiscal 2026 was $15.0 billion , an increase of 15 percent year-over-year.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Remaining performance obligation provides large contracted visibility, up 14% year over year.",
+            "quote": "Total remaining performance obligation, which represents all future revenue under contract yet to be recognized, as of January 31, 2026 was approximately $72.4 billion, an increase of 14 percent year-over-year .",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management believes existing liquidity and borrowing capacity will cover needs over the next 12 months and beyond.",
+            "quote": "We believe our existing cash, cash equivalents, marketable securities, cash provided by operating activities, unbilled amounts related to contracted noncancellable subscription agreements, which are not reflected on the balance sheet, and, if necessary, our borrowing capacity under our Credit Facility will be sufficient to meet our working capital, capital expenditure and debt maintenance needs over the next 12 months and thereafter.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "The bull case leans on headline growth, but the filing shows a balance sheet and cost structure that deserve scrutiny. Principal debt rose from $8.5 billion to $14.5 billion after the $6.0 billion Informatica borrowing, while cash fell from $14.0 billion to $9.6 billion. Cash returned to shareholders through buybacks ($12.7 billion) and dividends ($1.6 billion) exceeded operating cash flow of $15.0 billion once acquisitions ($9.3 billion) and strategic investments are counted, so the company is funding payouts and deals with borrowed or drawn-down money. Further, the company warns that interest expense 'may increase' and that refinancing could carry 'substantially higher interest rates.' Growth is also less durable than it looks: subscription revenue growth of 10% includes Informatica's $399 million contribution, and the company notes professional services fell 4% on 'less demand for larger, multi-year transformation engagements.' Management concedes that AI monetization for Agentforce and Data 360 'remain relatively new and uncertain,' and the stock's $1.0 billion fiscal 2026 gain came largely from mark-to-market swings on private investments rather than operations.",
+        "claims": [
+          {
+            "claim": "Debt has risen sharply while cash has fallen, increasing financial leverage.",
+            "quote": "Principal due on our outstanding debt obligations (1) 14,500 8,500",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Management warns that refinancing could carry substantially higher interest rates and that interest expense may increase.",
+            "quote": "Any new or refinanced debt may be subject to substantially higher interest rates, which could adversely affect our financial condition and impact our business.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Shareholder returns and acquisitions were funded beyond what operating cash alone supported, and AI monetization remains uncertain.",
+            "quote": "the markets and monetization strategies for certain offerings, including Agentforce and Data 360, remain relatively new and uncertain",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "bull": {
+        "argument": "The bear case is right that leverage rose and that not all growth is organic, but the filing still supports a durable franchise. Operating cash flow of $15.0 billion covered the roughly $14.3 billion of buybacks and dividends, and the Informatica borrowing funded the acquisition, not the payouts. Management expects operating cash flow to keep growing as long as expenses track revenue. Informatica contributed about $0.4 billion, roughly one point of the 10% growth, so organic growth was still about nine percent by my arithmetic. Attrition held near eight percent, and management says growth came from volume, not pricing. The $1.0 billion investment gain is non-operating and should be discounted; operating income of $8.3 billion, up from $7.2 billion, is the better measure. Higher interest expense and refinancing risk are real, and I concede them. But with $72.4 billion of remaining performance obligation and a $5.0 billion undrawn facility, the balance sheet is stretched, not impaired.",
+        "claims": [
+          {
+            "claim": "Management expects operating cash flow to keep growing if expenses stay in line with revenue growth, which supports the payout capacity.",
+            "quote": "As our business continues to grow, and assuming our expenses remain in line with or less than our revenue growth, we expect to continue to see growth in net cash provided by operating activities.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Informatica contributed only about one point of revenue growth, so the core business still expanded.",
+            "quote": "Informatica contributed approximately $0.4 billion of revenue in fiscal 2026.",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Attrition remained stable near eight percent, supporting the durability of the subscription base.",
+            "quote": "As of January 31, 2026, our attrition rate, excluding Slack self-service and current year acquisitions, was approximately eight percent.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      },
+      "bear": {
+        "argument": "Operating cash flow does not cover the full set of cash uses. The filing shows $15.0 billion of operating cash, but the buybacks ($12.6 billion) and dividends ($1.6 billion) alone consume about $14.2 billion. Investing outflows then add $9.3 billion for acquisitions, $1.8 billion for strategic investments and $594 million of capital expenditures. Those were partly offset by $3.0 billion from marketable securities, yet cash and securities still fell from $14.0 billion to $9.6 billion while principal debt rose from $8.5 billion to $14.5 billion. Shareholder returns are being funded by a balance sheet that is shrinking and borrowing more. The bull case also relies on operating income, but $586 million of restructuring charges recurred, and management says it will 'continue to evaluate and operationalize future programs' to hold margins. The $1.0 billion investment gain was mark-to-market, not cash. Finally, the company itself warns that refinancing 'may be subject to substantially higher interest rates.' A stretched balance sheet with rising debt is a real risk for equity holders.",
+        "claims": [
+          {
+            "claim": "Principal debt rose sharply while cash and marketable securities fell, increasing leverage.",
+            "quote": "Principal due on our outstanding debt obligations (1) 14,500 8,500",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Acquisitions consumed far more cash than the surplus left after shareholder payouts.",
+            "quote": "net outflows for acquisitions of $9.3 billion, which is primarily associated with $8.1 billion, net, related to the Informatica acquisition",
+            "verified": true,
+            "score": 100.0
+          },
+          {
+            "claim": "Refinancing the debt could be materially more expensive, which would weigh on earnings and cash flow.",
+            "quote": "Any new or refinanced debt may be subject to substantially higher interest rates, which could adversely affect our financial condition and impact our business.",
+            "verified": true,
+            "score": 100.0
+          }
+        ]
+      }
+    }
+  ],
+  "citations": {
+    "bull": {
+      "verified": 6,
+      "total": 6
+    },
+    "bear": {
+      "verified": 6,
+      "total": 6
+    },
+    "overall": {
+      "verified": 12,
+      "total": 12,
+      "accuracy": 1.0
+    }
+  },
+  "judge": {
+    "scores": {
+      "bull": {
+        "evidence": 8,
+        "logic": 7,
+        "responsiveness": 7
+      },
+      "bear": {
+        "evidence": 8,
+        "logic": 7,
+        "responsiveness": 7
+      }
+    },
+    "winner": "tie",
+    "reasoning": "Both sides cite verified filing quotes, and the core debate turns on whether operating cash flow covers buybacks, dividends, and acquisitions. The bull correctly concedes leverage and interest-rate risk and reframes organic growth, but its claim that operating cash covered payouts ignores acquisition and investment outflows the bear raised. The bear's cash-flow arithmetic is more complete, though it does not fully address the bull's point that the debt financed Informatica, so the debate is closely balanced."
+  },
+  "usage": {
+    "calls": 5,
+    "input_tokens": 201742,
+    "output_tokens": 4707,
+    "cost_usd": 0.0225
+  }
+}

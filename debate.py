@@ -184,14 +184,34 @@ def judge(rounds, first="bull", model=None):
         return parse_json(ask_llm(JUDGE_SYSTEM, messages, model=model))
 
 
-def run_debate(ticker, num_rounds=2, bull_first=True):
+BALANCED_WORDS = 2500  # per section, in the "balanced" input mode
+
+
+def build_filing_text(sections, input_mode="full"):
+    """The text both debaters see (and that quotes are checked against).
+
+    "full": the whole of Item 1A and Item 7 (the original setup, unchanged).
+    "balanced": the first BALANCED_WORDS words of each, so neither section
+    outweighs the other. Used to test whether Risk Factors being the bulk of
+    the text is what favors the bear.
+    """
+    if input_mode not in ("full", "balanced"):
+        raise ValueError(f"Unknown input_mode {input_mode!r}; use 'full' or 'balanced'")
+    risk, mdna = sections["risk_factors"], sections["mdna"]
+    if input_mode == "balanced":
+        risk = " ".join(risk.split()[:BALANCED_WORDS])
+        mdna = " ".join(mdna.split()[:BALANCED_WORDS])
+    return (
+        "RISK FACTORS (Item 1A):\n" + risk
+        + "\n\nMANAGEMENT'S DISCUSSION AND ANALYSIS (Item 7):\n" + mdna
+    )
+
+
+def run_debate(ticker, num_rounds=2, bull_first=True, input_mode="full"):
     ticker = ticker.upper()
     sections = get_sections(ticker)
-    filing_text = (
-        "RISK FACTORS (Item 1A):\n" + sections["risk_factors"]
-        + "\n\nMANAGEMENT'S DISCUSSION AND ANALYSIS (Item 7):\n" + sections["mdna"]
-    )
-    print(f"{ticker}: filing text is {len(filing_text.split()):,} words")
+    filing_text = build_filing_text(sections, input_mode)
+    print(f"{ticker}: filing text is {len(filing_text.split()):,} words ({input_mode})")
 
     before = dict(totals)
     agents = {side: Agent(side, ticker, filing_text) for side in ("bull", "bear")}
@@ -219,6 +239,7 @@ def run_debate(ticker, num_rounds=2, bull_first=True):
         "model": MODEL,
         "created": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "bull_first": bull_first,
+        "input_mode": input_mode,
         "rounds": rounds,
         "citations": citation_stats(rounds),
         "judge": verdict,
