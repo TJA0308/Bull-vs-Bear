@@ -42,6 +42,18 @@ so git history shows it):
   set before any model output exists and are not tuned afterwards. The "always
   say yes" baseline is reported next to them so a pass has to beat it.
 
+RESULT (run 2026-11-26; 40 pairs labelled by hand and committed before the model ran; $0.003):
+
+  A = 48% (needs 70)   B = 68% (needs 85; "always yes" = 75%)   M = 60% of 10 (needs 20)
+  Verdict under the rule: DROP. The layer is not shown on the site.
+
+  Post-hoc, not part of the rule: the model called 9 of the 10 hand-built mismatches
+  "no", but the human labels called 5 of those 10 "partly" or "yes" (for example a
+  free-cash-flow table against a claim about segment EBIT). The human labels look
+  noisy or loose, and 40 pairs is small, so the test says "not shown to agree with
+  these labels", not "the idea fails". Thresholds and verdict were not changed
+  after seeing the result.
+
 Cost: about 40 calls of a few hundred tokens each, well under $0.05 at Haiku
 prices. Running it on all 190 verified claims is under $0.20.
 

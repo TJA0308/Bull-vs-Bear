@@ -115,6 +115,21 @@ Phase D repeated the debates: 5 independent draws of the 16 companies on the ful
 - **Shares from one draw are good to roughly ±15 points** (the bear share ranged 42% to 73% on near-identical setups), which is why the earlier single-draw percentages carry a caveat.
 - **Limits:** this is Haiku judging, bull speaking first. Under Sonnet the original debates came out slightly *bull*-ahead (Phase B), so the bear's edge belongs to this judge, not to the debates alone. The bear-first setup was not repeated.
 
+### 7. A model check of "does the quote support the claim" did not pass its own test
+
+The code checker proves a quote's words are in the filing, not that they back the claim. So I tried a second layer: one Haiku call per claim and quote pair, answering yes, partly or no. Before any model call I fixed a keep-or-drop rule and hand-labelled 40 pairs (30 real, 10 deliberately mismatched). The rule needed 70% exact agreement, 85% agreement on "supported at all", and at most 20% of my "no" pairs let through.
+
+| | Needed | Result |
+| --- | --- | --- |
+| Exact agreement (yes / partly / no) | 70% | **48%** |
+| Agreement on supported at all vs no | 85% | **68%** (always saying "yes" scores 75%) |
+| My "no" pairs the model let through | at most 20% | **60%** (6 of 10) |
+
+**Verdict under the pre-set rule: dropped.** It is not on the site. Cost $0.003.
+
+- **Why this number should be read with care:** the model labelled 9 of the 10 hand-built mismatches "no", yet my labels called 5 of those 10 "partly" or "yes", including a free-cash-flow table against a claim about segment EBIT. So either some of my labels are wrong or my labelling was too loose, and 40 pairs is a very small test. The result says the check was not shown to agree with these labels, not that the idea is bad.
+- **Not changed after seeing it:** the thresholds and the verdict stay as committed.
+
 ## How it works
 
 ```mermaid
@@ -255,6 +270,8 @@ New here? Read in this order:
 - [x] Put the judge-model and noise findings on the site
 - [x] Input experiment (Phase C): rerun noise control plus balanced input; too noisy to read
 - [x] Repeat each debate 5 times (Phase D): the bear's edge is real for the Haiku judge, and input balance is not the cause
+- [x] Model check of claim support against hand labels (dropped: failed its pre-set rule)
+- [ ] Redo the claim-support test with more pairs and a second labeller
 - [ ] Repeat the bear-first setup and the Sonnet judging the same way
 - [ ] A third judge, to separate model size from model family
 - [ ] Refresh debates when a new 10-K appears
