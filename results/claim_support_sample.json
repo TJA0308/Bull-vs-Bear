@@ -1,0 +1,442 @@
+[
+  {
+    "ticker": "PEP",
+    "claim": "Core operating profit increased 1.5%, so the operating decline is largely due to items affecting comparability rather than weakening underlying results.",
+    "quote": "Core, non-GAAP measure 6,545 3,285 1,856 2,571 2,144 464 (1,953) 14,912",
+    "built_as": "real",
+    "source": {
+      "claim_from": "PEP round 2 bull claim 1",
+      "quote_from": "PEP round 2 bull claim 1"
+    },
+    "id": "P01"
+  },
+  {
+    "ticker": "META",
+    "claim": "The net income decline reflected a one-time tax charge, with a much lower underlying rate absent the valuation allowance.",
+    "quote": "we expect our 2026 RL operating losses to remain similar to 2025",
+    "built_as": "mismatch_same_company",
+    "source": {
+      "claim_from": "META round 2 bull claim 2",
+      "quote_from": "META round 2 bear claim 2"
+    },
+    "id": "P02"
+  },
+  {
+    "ticker": "TSLA",
+    "claim": "The business has consistently generated operating cash flow above capital spending, supporting self-funding.",
+    "quote": "Our business has generally been consistently generating cash flow from operations in excess of our level of capital spend",
+    "built_as": "real",
+    "source": {
+      "claim_from": "TSLA round 1 bull claim 2",
+      "quote_from": "TSLA round 1 bull claim 2"
+    },
+    "id": "P03"
+  },
+  {
+    "ticker": "AMD",
+    "claim": "AMD depends on a small number of customers for a substantial part of revenue, so losing one would hurt materially.",
+    "quote": "We depend on a small number of customers for a substantial portion of our business",
+    "built_as": "real",
+    "source": {
+      "claim_from": "AMD round 2 bear claim 2",
+      "quote_from": "AMD round 2 bear claim 2"
+    },
+    "id": "P04"
+  },
+  {
+    "ticker": "AMZN",
+    "claim": "Large new investments may be written down or written off if benefits fall short.",
+    "quote": "Failure to realize the benefits of amounts we invest in new technologies, products, or services could result in the value of those investments being written down or written off.",
+    "built_as": "real",
+    "source": {
+      "claim_from": "AMZN round 1 bear claim 3",
+      "quote_from": "AMZN round 1 bear claim 3"
+    },
+    "id": "P05"
+  },
+  {
+    "ticker": "WMT",
+    "claim": "Cash generation improved despite heavier capital spending.",
+    "quote": "Free cash flow for fiscal 2026 increased when compared to fiscal 2025 due to an increase in cash provided by operating income, lower cash tax payments and timing of certain payments",
+    "built_as": "real",
+    "source": {
+      "claim_from": "WMT round 1 bull claim 2",
+      "quote_from": "WMT round 1 bull claim 2"
+    },
+    "id": "P06"
+  },
+  {
+    "ticker": "ADBE",
+    "claim": "The working capital deficit reflects subscription billing dynamics, with deferred revenue a source of cash.",
+    "quote": "Working capital sources of cash included increases in deferred revenue, partially offset by increases in trade receivables attributable to the timing of billings.",
+    "built_as": "real",
+    "source": {
+      "claim_from": "ADBE round 2 bull claim 2",
+      "quote_from": "ADBE round 2 bull claim 2"
+    },
+    "id": "P07"
+  },
+  {
+    "ticker": "AAPL",
+    "claim": "iPhone growth was driven by premium Pro models, showing demand strength behind the concentration risk.",
+    "quote": "iPhone net sales increased during 2026 compared to 2025 due to higher net sales of Pro models.",
+    "built_as": "real",
+    "source": {
+      "claim_from": "AAPL round 2 bull claim 2",
+      "quote_from": "AAPL round 2 bull claim 2"
+    },
+    "id": "P08"
+  },
+  {
+    "ticker": "KO",
+    "claim": "The $6.0 billion IRS payment could be lost if the adverse Tax Court portions are upheld.",
+    "quote": "the Company would not receive a refund of the applicable portion or all of the $6.0 billion it paid in response to the IRS invoices issued in September 2024",
+    "built_as": "real",
+    "source": {
+      "claim_from": "KO round 2 bear claim 1",
+      "quote_from": "KO round 2 bear claim 1"
+    },
+    "id": "P09"
+  },
+  {
+    "ticker": "NVDA",
+    "claim": "Inventory and purchase-obligation losses are a recurring margin risk, not a one-time event.",
+    "quote": "Sales increased 12% in 2025, compared to the prior year.",
+    "built_as": "mismatch_other_company",
+    "source": {
+      "claim_from": "NVDA round 1 bear claim 1",
+      "quote_from": "AMZN round 1 bull claim 1"
+    },
+    "id": "P10"
+  },
+  {
+    "ticker": "AMD",
+    "claim": "Client and Gaming profitability improved sharply, not just revenue.",
+    "quote": "Cash, cash equivalents and short-term investments as of December 27, 2025 were $10.6 billion, compared to $5.1 billion at the end of 2024.",
+    "built_as": "mismatch_same_company",
+    "source": {
+      "claim_from": "AMD round 2 bull claim 1",
+      "quote_from": "AMD round 1 bull claim 2"
+    },
+    "id": "P11"
+  },
+  {
+    "ticker": "NFLX",
+    "claim": "Profitability expanded meaningfully, with operating margin up about three points.",
+    "quote": "Operating margin for the year ended December 31, 2025 increased by approximately three percentage points as compared to the prior comparative period",
+    "built_as": "real",
+    "source": {
+      "claim_from": "NFLX round 2 bull claim 1",
+      "quote_from": "NFLX round 2 bull claim 1"
+    },
+    "id": "P12"
+  },
+  {
+    "ticker": "NVDA",
+    "claim": "Operating cash flow and liquidity are strong, supporting operations and shareholder returns.",
+    "quote": "We believe that we have sufficient liquidity to meet our operating requirements for at least the next twelve months and for the foreseeable future",
+    "built_as": "real",
+    "source": {
+      "claim_from": "NVDA round 1 bull claim 2",
+      "quote_from": "NVDA round 1 bull claim 2"
+    },
+    "id": "P13"
+  },
+  {
+    "ticker": "AAPL",
+    "claim": "The filing's liquidity assurance depends on continued debt market access.",
+    "quote": "along with cash generated by ongoing operations and continued access to debt markets, will be sufficient to satisfy its cash requirements and capital return program",
+    "built_as": "real",
+    "source": {
+      "claim_from": "AAPL round 2 bear claim 3",
+      "quote_from": "AAPL round 2 bear claim 3"
+    },
+    "id": "P14"
+  },
+  {
+    "ticker": "META",
+    "claim": "Ad growth came from both more impressions and higher pricing per ad.",
+    "quote": "Ad impressions delivered across our Family of Apps in 2025 increased 12% year-over-year, and our average price per ad increased 9% year-over-year.",
+    "built_as": "real",
+    "source": {
+      "claim_from": "META round 1 bull claim 2",
+      "quote_from": "META round 1 bull claim 2"
+    },
+    "id": "P15"
+  },
+  {
+    "ticker": "NKE",
+    "claim": "North America's direct-to-consumer business declined, with digital sales down 10%.",
+    "quote": "NIKE Direct revenues decreased 6% due to declines in digital sales of 10% and declines in store sales of 2%.",
+    "built_as": "real",
+    "source": {
+      "claim_from": "NKE round 2 bear claim 2",
+      "quote_from": "NKE round 2 bear claim 2"
+    },
+    "id": "P16"
+  },
+  {
+    "ticker": "AMZN",
+    "claim": "Operating cash flow rose sharply, supporting the capital build-out.",
+    "quote": "We had no borrowings outstanding under the two unsecured revolving credit facilities or the commercial paper programs as of December 31, 2025.",
+    "built_as": "mismatch_same_company",
+    "source": {
+      "claim_from": "AMZN round 2 bull claim 1",
+      "quote_from": "AMZN round 2 bull claim 3"
+    },
+    "id": "P17"
+  },
+  {
+    "ticker": "NVDA",
+    "claim": "Compute & Networking and Graphics operating income both grew, with Graphics operating income up 80%.",
+    "quote": "Graphics 9,156 5,085 4,071 80 %",
+    "built_as": "real",
+    "source": {
+      "claim_from": "NVDA round 2 bull claim 2",
+      "quote_from": "NVDA round 2 bull claim 2"
+    },
+    "id": "P18"
+  },
+  {
+    "ticker": "AMD",
+    "claim": "Gross margin improved despite the export-control charge, which the filing acknowledges as a risk.",
+    "quote": "Gross margin of 50% increased by 1% compared to 49% in 2024, primarily due to product mix partially offset by approximately $440 million of net inventory and related charges",
+    "built_as": "real",
+    "source": {
+      "claim_from": "AMD round 1 bull claim 3",
+      "quote_from": "AMD round 1 bull claim 3"
+    },
+    "id": "P19"
+  },
+  {
+    "ticker": "TSLA",
+    "claim": "Liquidity is substantial, including cash, short-term investments and unused credit.",
+    "quote": "As of December 31, 2025, we had $16.51 billion and $27.55 billion of cash and cash equivalents and short-term investments, respectively.",
+    "built_as": "real",
+    "source": {
+      "claim_from": "TSLA round 2 bull claim 2",
+      "quote_from": "TSLA round 2 bull claim 2"
+    },
+    "id": "P20"
+  },
+  {
+    "ticker": "NVDA",
+    "claim": "Revenue grew 65% to $215.9 billion in fiscal 2026, with Data Center revenue up 68%.",
+    "quote": "we recognized a benefit of $986 million in Cost of sales within the Consolidated Statements of Income for the recovery of IEEPA tariffs paid",
+    "built_as": "mismatch_other_company",
+    "source": {
+      "claim_from": "NVDA round 1 bull claim 1",
+      "quote_from": "NKE round 1 bear claim 1"
+    },
+    "id": "P21"
+  },
+  {
+    "ticker": "MSFT",
+    "claim": "Cash balance fell while investments rose sharply",
+    "quote": "Cash, cash equivalents, and short-term investments totaled $76.8 billion and $94.6 billion as of June 30, 2026 and 2025, respectively.",
+    "built_as": "real",
+    "source": {
+      "claim_from": "MSFT round 2 bear claim 1",
+      "quote_from": "MSFT round 2 bear claim 1"
+    },
+    "id": "P22"
+  },
+  {
+    "ticker": "NKE",
+    "claim": "North America, the largest segment, grew EBIT 14% on higher reported revenues.",
+    "quote": "Free cash flow $ 38,219 $ 11,194",
+    "built_as": "mismatch_other_company",
+    "source": {
+      "claim_from": "NKE round 2 bull claim 2",
+      "quote_from": "AMZN round 2 bear claim 1"
+    },
+    "id": "P23"
+  },
+  {
+    "ticker": "NFLX",
+    "claim": "Management expects liquidity to cover cash needs for the next twelve months and beyond.",
+    "quote": "We currently anticipate that cash flows from operations, available funds and access to financing sources",
+    "built_as": "real",
+    "source": {
+      "claim_from": "NFLX round 1 bull claim 3",
+      "quote_from": "NFLX round 1 bull claim 3"
+    },
+    "id": "P24"
+  },
+  {
+    "ticker": "MSFT",
+    "claim": "Management disputes the IRS adjustment and believes its reserves are adequate",
+    "quote": "As of June 30, 2026, we believe our allowances for income tax contingencies are adequate. We disagree with the proposed adjustments and will vigorously contest the NOPAs",
+    "built_as": "real",
+    "source": {
+      "claim_from": "MSFT round 2 bull claim 3",
+      "quote_from": "MSFT round 2 bull claim 3"
+    },
+    "id": "P25"
+  },
+  {
+    "ticker": "PEP",
+    "claim": "Planned 2026 shareholder returns exceed the free cash flow generated in 2025.",
+    "quote": "We expect to return a total of approximately $8.9 billion to shareholders in 2026, comprising dividends of approximately $7.9 billion and share repurchases of approximately $1.0 billion.",
+    "built_as": "real",
+    "source": {
+      "claim_from": "PEP round 1 bear claim 2",
+      "quote_from": "PEP round 1 bear claim 2"
+    },
+    "id": "P26"
+  },
+  {
+    "ticker": "COST",
+    "claim": "Most IEEPA tariff refunds are being returned to members, limiting the one-time benefit to shareholders.",
+    "quote": "we intend to continue to invest the majority of the refunds in increased value for the member.",
+    "built_as": "real",
+    "source": {
+      "claim_from": "COST round 2 bull claim 3",
+      "quote_from": "COST round 2 bull claim 3"
+    },
+    "id": "P27"
+  },
+  {
+    "ticker": "NVDA",
+    "claim": "The company returned substantial capital, repurchasing $40.4 billion of stock in fiscal 2026.",
+    "quote": "This is our 64 th consecutive annual increase.",
+    "built_as": "mismatch_other_company",
+    "source": {
+      "claim_from": "NVDA round 1 bull claim 3",
+      "quote_from": "KO round 1 bull claim 3"
+    },
+    "id": "P28"
+  },
+  {
+    "ticker": "CRM",
+    "claim": "Cash and marketable securities fell, reducing the liquidity buffer.",
+    "quote": "Total cash, cash equivalents and marketable securities as of January 31, 2026 was $9.6 billion.",
+    "built_as": "real",
+    "source": {
+      "claim_from": "CRM round 2 bear claim 3",
+      "quote_from": "CRM round 2 bear claim 3"
+    },
+    "id": "P29"
+  },
+  {
+    "ticker": "GOOGL",
+    "claim": "Management warns efficiency gains may not continue at past rates, so cost offsets are uncertain.",
+    "quote": "we may also not be able to continue to drive efficiencies at the rate we have in the past",
+    "built_as": "real",
+    "source": {
+      "claim_from": "GOOGL round 2 bear claim 1",
+      "quote_from": "GOOGL round 2 bear claim 1"
+    },
+    "id": "P30"
+  },
+  {
+    "ticker": "KO",
+    "claim": "Operating cash flow grew despite one-time payments",
+    "quote": "Cash from operations increased $46.8 billion to $182.9 billion for fiscal year 2026",
+    "built_as": "mismatch_other_company",
+    "source": {
+      "claim_from": "KO round 2 bull claim 3",
+      "quote_from": "MSFT round 2 bull claim 1"
+    },
+    "id": "P31"
+  },
+  {
+    "ticker": "WMT",
+    "claim": "Free cash flow growth was helped by lower cash taxes and payment timing, not only by operating strength.",
+    "quote": "Free cash flow for fiscal 2026 increased when compared to fiscal 2025 due to an increase in cash provided by operating income, lower cash tax payments and timing of certain payments",
+    "built_as": "real",
+    "source": {
+      "claim_from": "WMT round 1 bear claim 2",
+      "quote_from": "WMT round 1 bear claim 2"
+    },
+    "id": "P32"
+  },
+  {
+    "ticker": "GOOGL",
+    "claim": "Non-advertising revenues are growing faster than advertising, and management expects this trend to continue, which lowers reliance on ads.",
+    "quote": "The DOJ's remedy proposal includes structural remedies that could harm our business.",
+    "built_as": "mismatch_same_company",
+    "source": {
+      "claim_from": "GOOGL round 2 bull claim 1",
+      "quote_from": "GOOGL round 2 bear claim 3"
+    },
+    "id": "P33"
+  },
+  {
+    "ticker": "GOOGL",
+    "claim": "Non-advertising revenue streams are growing faster than advertising, diversifying the business.",
+    "quote": "Certain of these revenues have been growing at a rate higher than our advertising revenues, becoming a larger percentage of our consolidated revenues, and we expect this trend to continue.",
+    "built_as": "real",
+    "source": {
+      "claim_from": "GOOGL round 1 bull claim 1",
+      "quote_from": "GOOGL round 1 bull claim 1"
+    },
+    "id": "P34"
+  },
+  {
+    "ticker": "META",
+    "claim": "The company generated strong free cash flow while investing heavily.",
+    "quote": "Free cash flow $ 43,585 $ 52,103 $ 43,010",
+    "built_as": "real",
+    "source": {
+      "claim_from": "META round 1 bull claim 3",
+      "quote_from": "META round 1 bull claim 3"
+    },
+    "id": "P35"
+  },
+  {
+    "ticker": "NKE",
+    "claim": "Operating cash flow fell sharply year over year despite the recovery.",
+    "quote": "cash provided by operations was $2,868 million. This was driven by Net income of $3,108 million",
+    "built_as": "real",
+    "source": {
+      "claim_from": "NKE round 2 bear claim 3",
+      "quote_from": "NKE round 2 bear claim 3"
+    },
+    "id": "P36"
+  },
+  {
+    "ticker": "CRM",
+    "claim": "Operating margin expanded, showing improving profitability.",
+    "quote": "Operating margin, which represents income from operations as a percentage of total revenue, increased to approximately 20 percent for fiscal 2026 compared to approximately 19 percent in the prior year period.",
+    "built_as": "real",
+    "source": {
+      "claim_from": "CRM round 1 bull claim 1",
+      "quote_from": "CRM round 1 bull claim 1"
+    },
+    "id": "P37"
+  },
+  {
+    "ticker": "KO",
+    "claim": "Volume growth is essentially flat, and currency reduced operating income by 12%.",
+    "quote": "In 2025, fluctuations in foreign currency exchange rates, including the effects of our hedging activities, unfavorably impacted consolidated operating income by 12%",
+    "built_as": "real",
+    "source": {
+      "claim_from": "KO round 1 bear claim 2",
+      "quote_from": "KO round 1 bear claim 2"
+    },
+    "id": "P38"
+  },
+  {
+    "ticker": "AMD",
+    "claim": "Revenue growth was broad-based and strong in 2025.",
+    "quote": "approximately $440 million of net inventory and related charges associated with the U.S. government export control on AMD Instinct\u2122 MI308 Data Center GPU products",
+    "built_as": "mismatch_same_company",
+    "source": {
+      "claim_from": "AMD round 1 bull claim 1",
+      "quote_from": "AMD round 2 bull claim 2"
+    },
+    "id": "P39"
+  },
+  {
+    "ticker": "COST",
+    "claim": "A large share of membership fee growth came from a fee increase rather than from member growth alone.",
+    "quote": "The fee income increase accounted for approximately 30% and 40% of membership income growth during 2026 and 2025.",
+    "built_as": "real",
+    "source": {
+      "claim_from": "COST round 2 bear claim 3",
+      "quote_from": "COST round 2 bear claim 3"
+    },
+    "id": "P40"
+  }
+]

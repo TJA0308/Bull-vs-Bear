@@ -1,0 +1,162 @@
+{
+  "P01": {
+    "verdict": "no",
+    "reason": "The quote is a table row of segment figures with no year-over-year comparison, no 1.5% increase, and no discussion of items affecting comparability or underlying results."
+  },
+  "P02": {
+    "verdict": "no",
+    "reason": "The quote discusses expected future operating losses for 2026 and says nothing about a net income decline, a one-time tax charge, or a valuation allowance."
+  },
+  "P03": {
+    "verdict": "yes",
+    "reason": "The quote says the business has consistently generated operating cash flow in excess of capital spending, which directly matches the claim; 'self-funding' is a reasonable direct inference from that."
+  },
+  "P04": {
+    "verdict": "partly",
+    "reason": "The quote supports the dependence on a small number of customers for a substantial portion of business, but it does not say that losing one would hurt materially."
+  },
+  "P05": {
+    "verdict": "partly",
+    "reason": "The quote covers write-downs or write-offs if benefits are not realized, but says nothing specific about 'large' new investments, which the claim emphasizes."
+  },
+  "P06": {
+    "verdict": "partly",
+    "reason": "The quote supports the improvement in free cash flow, but says nothing about capital spending increasing, which is the 'despite heavier capital spending' part of the claim."
+  },
+  "P07": {
+    "verdict": "partly",
+    "reason": "The quote confirms deferred revenue was a source of cash and ties receivables to billing timing, but it never mentions a working capital deficit or subscription billing as its cause."
+  },
+  "P08": {
+    "verdict": "partly",
+    "reason": "The quote supports that iPhone sales rose due to higher Pro model sales, but says nothing about demand strength or concentration risk, which the claim adds."
+  },
+  "P09": {
+    "verdict": "partly",
+    "reason": "The quote says the company would not get a refund of the $6.0 billion if the outcome goes against it, which supports the loss point, but it does not mention the Tax Court or the adverse portions being upheld as the condition."
+  },
+  "P10": {
+    "verdict": "no",
+    "reason": "The quote discusses sales growth and says nothing about inventory or purchase-obligation losses or whether they recur."
+  },
+  "P11": {
+    "verdict": "no",
+    "reason": "The quote reports consolidated cash and short-term investments rising to $10.6 billion, which says nothing about Client and Gaming segment profitability."
+  },
+  "P12": {
+    "verdict": "yes",
+    "reason": "The quote states operating margin rose by approximately three percentage points, matching the claim's direction and magnitude; 'meaningfully' is a characterization the quote's figure supports."
+  },
+  "P13": {
+    "verdict": "partly",
+    "reason": "The quote supports liquidity being sufficient for operating needs, but says nothing about operating cash flow strength or shareholder returns."
+  },
+  "P14": {
+    "verdict": "yes",
+    "reason": "The quote states that cash from operations together with continued access to debt markets will be sufficient to meet cash requirements, which directly implies liquidity depends on continued debt market access."
+  },
+  "P15": {
+    "verdict": "yes",
+    "reason": "The quote states that ad impressions rose 12% and average price per ad rose 9% year-over-year, which directly supports growth from both more impressions and higher pricing."
+  },
+  "P16": {
+    "verdict": "partly",
+    "reason": "The quote shows digital sales down 10% and NIKE Direct revenues down 6%, but it does not mention North America, so the regional scope in the claim is unsupported."
+  },
+  "P17": {
+    "verdict": "no",
+    "reason": "The quote discusses the absence of borrowings under credit facilities and says nothing about operating cash flow rising or supporting capital spending."
+  },
+  "P18": {
+    "verdict": "partly",
+    "reason": "The quote supports Graphics operating income rising 80% (9,156 vs. 5,085), but it says nothing about Compute & Networking growing."
+  },
+  "P19": {
+    "verdict": "partly",
+    "reason": "The quote supports that gross margin rose from 49% to 50% despite about $440 million in inventory and related charges, but it never names export controls or says the filing treats them as a risk."
+  },
+  "P20": {
+    "verdict": "partly",
+    "reason": "The quote gives cash, cash equivalents and short-term investments amounts supporting that part of liquidity, but says nothing about unused credit, which the claim also asserts."
+  },
+  "P21": {
+    "verdict": "no",
+    "reason": "The quote concerns a $986 million benefit from recovered IEEPA tariffs in cost of sales and says nothing about revenue growth or Data Center revenue figures."
+  },
+  "P22": {
+    "verdict": "partly",
+    "reason": "The quote shows combined cash and short-term investments fell from $94.6 billion to $76.8 billion, but it does not break out cash alone or show investments rising, so the claim that investments rose sharply is unsupported."
+  },
+  "P23": {
+    "verdict": "no",
+    "reason": "The quote is about free cash flow figures and says nothing about North America's segment EBIT, revenues, or growth rate."
+  },
+  "P24": {
+    "verdict": "partly",
+    "reason": "The quote is on topic and references anticipated cash sources, but it is truncated and does not mention covering cash needs for the next twelve months or beyond."
+  },
+  "P25": {
+    "verdict": "yes",
+    "reason": "The quote states management disagrees with the proposed adjustments (the IRS NOPAs) and believes its tax contingency allowances are adequate, matching both parts of the claim."
+  },
+  "P26": {
+    "verdict": "partly",
+    "reason": "The quote gives the planned 2026 shareholder returns of about $8.9 billion, but says nothing about 2025 free cash flow, so the comparison in the claim cannot be verified from it."
+  },
+  "P27": {
+    "verdict": "partly",
+    "reason": "The quote says the company intends to reinvest the majority of refunds for the member, which supports part of the claim's idea that refunds go to members, but it does not mention returning refunds to members as a payout or limiting any shareholder benefit."
+  },
+  "P28": {
+    "verdict": "no",
+    "reason": "The quote concerns a consecutive annual dividend increase and says nothing about stock repurchases or the $40.4 billion figure."
+  },
+  "P29": {
+    "verdict": "partly",
+    "reason": "The quote gives the year-end balance of $9.6 billion but says nothing about it falling or about any effect on the liquidity buffer, so the directional claim is unsupported."
+  },
+  "P30": {
+    "verdict": "yes",
+    "reason": "The quote says efficiencies may not continue at the past rate, which directly matches the claim's warning; the claim's inference that cost offsets are uncertain follows directly from that."
+  },
+  "P31": {
+    "verdict": "partly",
+    "reason": "The quote supports that operating cash flow grew, but it says nothing about one-time payments, so the claim's causal framing goes beyond it."
+  },
+  "P32": {
+    "verdict": "yes",
+    "reason": "The quote states free cash flow increased due to higher operating cash, lower cash tax payments, and timing of certain payments, which directly supports the claim that growth was helped by lower cash taxes and payment timing beyond operating strength."
+  },
+  "P33": {
+    "verdict": "no",
+    "reason": "The quote discusses a DOJ remedy proposal that could harm the business and says nothing about non-advertising revenue growth, advertising reliance, or management expectations."
+  },
+  "P34": {
+    "verdict": "partly",
+    "reason": "The quote says certain non-advertising revenues grow faster than advertising and are becoming a larger share, which supports the claim's direction, but it refers only to 'certain' streams and does not explicitly say all non-advertising streams or describe it as diversification."
+  },
+  "P35": {
+    "verdict": "partly",
+    "reason": "The quote gives a free cash flow figure for three years, which supports the strong free cash flow part, but says nothing about heavy investing or whether the amounts are strong."
+  },
+  "P36": {
+    "verdict": "no",
+    "reason": "The quote reports operating cash flow of $2,868 million driven by net income, with no prior-year comparison, so it neither shows a sharp year-over-year decline nor a recovery."
+  },
+  "P37": {
+    "verdict": "yes",
+    "reason": "The quote states operating margin rose from about 19 percent to about 20 percent, which directly supports the claim of margin expansion and improved profitability."
+  },
+  "P38": {
+    "verdict": "partly",
+    "reason": "The quote supports the currency impact of 12% on operating income, but it says nothing about volume growth being flat."
+  },
+  "P39": {
+    "verdict": "no",
+    "reason": "The quote concerns inventory and related charges from an export control, not revenue growth, and says nothing about breadth or strength of 2025 revenue."
+  },
+  "P40": {
+    "verdict": "partly",
+    "reason": "The quote says fee increases accounted for roughly 30% and 40% of membership income growth in 2026 and 2025, which supports a meaningful fee-driven share but not that it was a 'large share' or the majority, and it doesn't address member growth alone."
+  }
+}
