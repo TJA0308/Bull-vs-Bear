@@ -47,6 +47,7 @@ prices. Running it on all 190 verified claims is under $0.20.
 
 Usage:
     python claim_support.py sample    # write the label sheet (no API calls)
+    python claim_support.py label     # open a button page for labelling (saves to the sheet)
     python claim_support.py run       # run the model on the labelled sample, then report
     python claim_support.py --report  # analyze saved results, no API calls
 """
@@ -174,6 +175,87 @@ def read_labels(path=LABELS_PATH):
     return labels
 
 
+# --- the labelling page (a tiny local server so the buttons can save to the CSV) ---
+
+PAGE_PATH = os.path.join("scripts", "label.html")
+
+
+def read_rows(path=LABELS_PATH):
+    with open(path, encoding="utf-8-sig", newline="") as f:
+        return list(csv.DictReader(f))
+
+
+def set_label(path, pair_id, label):
+    """Write one label ("" clears it) into the sheet. Raises ValueError for an unknown id or label."""
+    label = (label or "").strip().lower()
+    if label and label not in LABELS:
+        raise ValueError(f"label must be one of {', '.join(LABELS)} (or empty to clear)")
+    rows = read_rows(path)
+    hit = [r for r in rows if r["id"] == pair_id]
+    if not hit:
+        raise ValueError(f"unknown id {pair_id!r}")
+    hit[0]["label"] = label
+    tmp = path + ".tmp"                       # write a whole new file, then swap it in
+    with open(tmp, "w", encoding="utf-8-sig", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=["id", "claim", "quote", "label"])
+        w.writeheader()
+        w.writerows(rows)
+    os.replace(tmp, path)
+
+
+def make_handler(sheet_path):
+    from http.server import BaseHTTPRequestHandler
+
+    class Handler(BaseHTTPRequestHandler):
+        def _send(self, code, body, kind="text/plain; charset=utf-8"):
+            data = body if isinstance(body, bytes) else body.encode("utf-8")
+            self.send_response(code)
+            self.send_header("Content-Type", kind)
+            self.send_header("Content-Length", str(len(data)))
+            self.end_headers()
+            self.wfile.write(data)
+
+        def do_GET(self):
+            if self.path == "/":
+                with open(PAGE_PATH, "rb") as f:
+                    self._send(200, f.read(), "text/html; charset=utf-8")
+            elif self.path == "/api/pairs":
+                rows = [{"id": r["id"], "claim": r["claim"], "quote": r["quote"], "label": r["label"]}
+                        for r in read_rows(sheet_path)]
+                self._send(200, json.dumps(rows), "application/json")
+            else:
+                self._send(404, "not found")
+
+        def do_POST(self):
+            if self.path != "/api/label":
+                return self._send(404, "not found")
+            try:
+                body = json.loads(self.rfile.read(int(self.headers.get("Content-Length", 0))))
+                set_label(sheet_path, body.get("id"), body.get("label"))
+            except (ValueError, TypeError, AttributeError) as e:
+                return self._send(400, str(e))
+            self._send(200, "ok")
+
+        def log_message(self, *args):         # keep the terminal quiet
+            pass
+
+    return Handler
+
+
+def serve_labeller(sheet_path=LABELS_PATH, port=8765, open_browser=True):
+    from http.server import HTTPServer
+    server = HTTPServer(("127.0.0.1", port), make_handler(sheet_path))   # this computer only
+    url = f"http://127.0.0.1:{port}/"
+    print(f"Labelling page: {url}\nAnswers save to {sheet_path} as you click. Press Ctrl+C here when done.")
+    if open_browser:
+        import webbrowser
+        webbrowser.open(url)
+    try:
+        server.serve_forever()
+    except KeyboardInterrupt:
+        print("\nstopped")
+
+
 # --- the model check ---
 
 def check_support(claim, quote, model=None):
@@ -292,9 +374,11 @@ if __name__ == "__main__":
     cmd = sys.argv[1] if len(sys.argv) > 1 else ""
     if cmd == "sample":
         make_sample()
+    elif cmd == "label":
+        serve_labeller(*sys.argv[2:3])          # optional: a path to a different sheet
     elif cmd == "run":
         run()
     elif cmd == "--report":
         report()
     else:
-        sys.exit("Usage: python claim_support.py sample | run | --report")
+        sys.exit("Usage: python claim_support.py sample | label | run | --report")

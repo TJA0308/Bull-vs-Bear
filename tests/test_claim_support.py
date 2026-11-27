@@ -159,3 +159,56 @@ def test_drop_when_it_confuses_yes_and_partly_too_often():
 def test_no_human_no_pairs_means_not_enough_data():
     assert cs.decide(cs.score(labels("yes", "yes"), labels("yes", "no"))) == "not enough data"
     assert cs.decide(None) == "not enough data"
+
+
+# --- the labelling page's saving ---
+
+def sheet(tmp_path):
+    path = str(tmp_path / "labels.csv")
+    cs.write_label_sheet(cs.build_sample(fake_pairs(), n_real=4, n_mismatched=2), path)
+    return path
+
+
+def test_set_label_changes_only_its_row_and_can_clear(tmp_path):
+    path = sheet(tmp_path)
+    before = cs.read_rows(path)
+    cs.set_label(path, "P02", " Partly ")
+    after = cs.read_rows(path)
+    assert [r["label"] for r in after] == ["", "partly", "", "", "", ""]
+    assert [(r["claim"], r["quote"]) for r in after] == [(r["claim"], r["quote"]) for r in before]
+    cs.set_label(path, "P02", "")
+    assert all(r["label"] == "" for r in cs.read_rows(path))
+
+
+def test_set_label_refuses_bad_input(tmp_path):
+    path = sheet(tmp_path)
+    with pytest.raises(ValueError):
+        cs.set_label(path, "P01", "maybe")
+    with pytest.raises(ValueError):
+        cs.set_label(path, "P99", "yes")
+    assert all(r["label"] == "" for r in cs.read_rows(path))
+
+
+def test_labelling_server_serves_pairs_and_saves_labels(tmp_path):
+    import threading
+    import urllib.error
+    import urllib.request
+    from http.server import HTTPServer
+    path = sheet(tmp_path)
+    server = HTTPServer(("127.0.0.1", 0), cs.make_handler(path))
+    threading.Thread(target=server.serve_forever, daemon=True).start()
+    base = f"http://127.0.0.1:{server.server_port}"
+    try:
+        pairs = json.load(urllib.request.urlopen(base + "/api/pairs"))
+        assert len(pairs) == 6 and set(pairs[0]) == {"id", "claim", "quote", "label"}   # no key leaks out
+        req = lambda body: urllib.request.Request(base + "/api/label", json.dumps(body).encode(),
+                                                  {"Content-Type": "application/json"})
+        assert urllib.request.urlopen(req({"id": "P03", "label": "no"})).status == 200
+        assert cs.read_labels.__name__ and cs.read_rows(path)[2]["label"] == "no"
+        with pytest.raises(urllib.error.HTTPError) as e:
+            urllib.request.urlopen(req({"id": "P03", "label": "maybe"}))
+        assert e.value.code == 400
+        assert b"Does the quote support the claim" in urllib.request.urlopen(base + "/").read()
+    finally:
+        server.shutdown()
+        server.server_close()
