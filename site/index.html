@@ -6,6 +6,15 @@
   <title>Bull vs Bear</title>
   <meta name="description" content="Two AI analysts argue over a company's 10-K, a judge scores the debate, and code checks every quote against the filing. Includes a test of whether the judge is biased.">
   <meta name="color-scheme" content="light dark">
+  <link rel="canonical" href="https://tja0308.github.io/Bull-vs-Bear/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tja0308.github.io/Bull-vs-Bear/">
+  <meta property="og:title" content="Bull vs Bear: two AI analysts argue a stock, code checks every quote">
+  <meta property="og:description" content="Two Claude agents debate a company's SEC 10-K. Plain code verifies every quote, and the judge is tested for bias across judge models and repeated runs.">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Bull vs Bear: two AI analysts argue a stock, code checks every quote">
+  <meta name="twitter:description" content="Two Claude agents debate a company's SEC 10-K. Plain code verifies every quote, and the judge is tested for bias.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='6' y='5' width='8' height='22' rx='4' fill='%232b6cd4'/%3E%3Crect x='18' y='5' width='8' height='22' rx='4' fill='%23d9622b'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css">
   <link rel="stylesheet" href="style.css">
   <script>
@@ -48,6 +57,16 @@
 
     <section class="figures" aria-label="Key numbers">
       <div class="wrap" id="figures"></div>
+    </section>
+
+    <section id="start" aria-labelledby="start-h" hidden>
+      <div class="wrap">
+        <div class="sec-head">
+          <h2 id="start-h">Start here: three things we found</h2>
+          <p>This page shows saved results for 16 companies. Each card links to the evidence.</p>
+        </div>
+        <div class="takes" id="takes"></div>
+      </div>
     </section>
 
     <section id="debates">
@@ -98,6 +117,7 @@
           <p>Five stages, all in plain Python. Only the debate and the judge call a model.</p>
         </div>
         <ol class="steps" id="steps"></ol>
+        <div class="runbox" id="runbox"></div>
         <div class="limits" id="limits"></div>
         <p class="built" id="built"></p>
       </div>

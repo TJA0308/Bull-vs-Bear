@@ -312,3 +312,22 @@ footer a { text-underline-offset: 3px; }
 .takeaway + .chart-card, .takeaway + .filters { margin-top: 32px; }
 #stamp { margin-left: 14px; }
 .bias-grid .b .body { display: flex; align-items: center; min-height: 150px; }
+
+/* ---------- start here ---------- */
+#start { padding-top: 24px; }
+.takes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.take { display: grid; align-content: start; gap: 10px; background: var(--surface); border: 1px solid var(--hair); border-radius: var(--r); padding: 20px 22px; box-shadow: var(--shadow); text-decoration: none; color: inherit; transition: border-color .15s, transform .15s cubic-bezier(.16,1,.3,1); }
+.take:hover { border-color: var(--axis); transform: translateY(-2px); }
+.take h3 { font-size: 17px; font-weight: 650; line-height: 1.25; letter-spacing: -0.01em; }
+.take p { color: var(--ink-2); font-size: 15px; }
+.take .go { margin-top: 4px; display: inline-flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 600; }
+@media (max-width: 900px) { .takes { grid-template-columns: 1fr; } }
+
+/* ---------- run it yourself ---------- */
+.runbox { margin-top: 48px; background: var(--surface); border: 1px solid var(--hair); border-radius: var(--r); padding: 22px 24px; box-shadow: var(--shadow); display: grid; gap: 12px; }
+.runbox h3 { font-size: 17px; font-weight: 650; }
+.runbox p { color: var(--ink-2); max-width: 70ch; }
+.runbox .cmds { font-family: var(--mono); font-size: 13px; line-height: 1.6; background: var(--surface-2); border-radius: var(--r-sm); padding: 14px 16px; overflow-x: auto; white-space: pre; margin: 0; }
+.cmd-tools { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; font-size: 14px; }
+.cmd-tools .copied { color: var(--ink-2); min-width: 7ch; }
+.cmd-tools .more { text-underline-offset: 3px; }
