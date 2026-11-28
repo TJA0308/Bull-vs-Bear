@@ -818,6 +818,61 @@
       "Python, the Claude API, SEC EDGAR, BeautifulSoup, RapidFuzz and pytest. This page is plain HTML, CSS and JavaScript generated from the saved results by build_site.py, and hosted on GitHub Pages.");
   })();
 
+  // ======================================================================
+  // Start here: three take-aways, numbers read from the data so they cannot drift
+  // ======================================================================
+  (function takeaways() {
+    var m = D.meta, cards = [];
+    var jd = D.bias && D.bias.judges, rp = D.bias && D.bias.repeats;
+    if (jd) {
+      cards.push({ href: "#bias", t: "The judge decides more than the debate",
+        p: "On the same " + jd.debates + " debates, " + modelName(jd.firstModel) + " gave the bear " + Math.round(jd.bearBase) + "% of the wins and " +
+          modelName(jd.secondModel) + " gave it " + Math.round(jd.bearOther) + "%. Swapping only the judge moved the result by " + Math.round(jd.shiftPoints) + " points.",
+        go: "See the judge comparison" });
+    }
+    if (rp) {
+      cards.push({ href: "#bias", t: "The bear's edge is small, and only under one judge",
+        p: "One debate per company is too noisy to read, so we repeated " + word(rp.nFull) + " times. Under " + modelName(D.model) + " the bear's average lead was " +
+          Math.abs(rp.fullMean).toFixed(1) + " points of 30 (give or take " + rp.fullHalf.toFixed(1) + "), and balancing the filing text did not change it.",
+        go: "See the repeated runs" });
+    }
+    cards.push({ href: "#checker", t: "Code proves quotes are real, not that they prove the claim",
+      p: "Plain code found " + m.verified + " of " + m.quotes + " quotes in the filings. It cannot tell whether a quote really backs the claim. We tried a model check for that, and it did not agree with hand labels well enough, so it is not used.",
+      go: "See how the checker was tested" });
+    var box = $("#takes");
+    box.append.apply(box, cards.map(function (c) {
+      return h("a", { "class": "take", href: c.href }, h("h3", { text: c.t }), h("p", { text: c.p }),
+        h("span", { "class": "go" }, c.go, icon("arrow-right")));
+    }));
+    $("#start").hidden = false;
+  })();
+
+  // ======================================================================
+  // Run it yourself
+  // ======================================================================
+  (function runbox() {
+    var cmds = [
+      "git clone " + D.repo + ".git",
+      "cd Bull-vs-Bear",
+      "python -m venv .venv",
+      ".venv\\Scripts\\Activate.ps1      # Windows. On macOS or Linux: source .venv/bin/activate",
+      "pip install -r requirements.txt",
+      "# create a .env file with ANTHROPIC_API_KEY=... and SEC_USER_AGENT=\"Your Name you@example.com\"",
+      "python debate.py AAPL"
+    ].join("\n");
+    var status = h("span", { "class": "copied", role: "status" });
+    var copy = h("button", { type: "button", "class": "src-btn", on: { click: function () {
+      var done = function (msg) { status.textContent = msg; setTimeout(function () { status.textContent = ""; }, 2000); };
+      try { navigator.clipboard.writeText(cmds).then(function () { done("Copied"); }, function () { done("Select and copy"); }); }
+      catch (e) { done("Select and copy"); }
+    } } }, icon("copy"), "Copy commands");
+    $("#runbox").append(
+      h("h3", { text: "Run it yourself" }),
+      h("p", { text: "The page above shows saved results. To debate any company that files a 10-K, run it on your own computer. You need Python 3.11 or newer and your own Anthropic API key. One debate costs about $" + D.meta.costPerDebate.toFixed(2) + "." }),
+      h("pre", { "class": "cmds", tabindex: "0", text: cmds }),
+      h("div", { "class": "cmd-tools" }, copy, status, h("a", { href: D.repo + "#run-it", "class": "more" }, "Full instructions in the README")));
+  })();
+
   // ---------- links, stamp ----------
   ["#repo-link", "#footer-repo"].forEach(function (s) { $(s).setAttribute("href", D.repo); });
   $("#stamp").textContent = "Data generated " + D.generated.slice(0, 10) + ".";
