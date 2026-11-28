@@ -25,6 +25,17 @@ Ask an LLM to argue a stock and it will happily invent numbers and quotes. And w
 - **Grounding.** Debaters may only use the filing's Risk Factors and MD&A text, and every quote is checked by code. 190 of 192 quotes were real.
 - **Judging.** The judge is treated as something to test. Is it swayed by listing order, speaking order, or which model it is? The last one turned out to matter a lot.
 
+## Results at a glance
+
+| Question | Answer |
+|---|---|
+| Are the quotes real? | **Yes.** Plain code verified 190 of 192 against the filings, and the checker rejects altered numbers (finding 4). |
+| Does the judge matter? | **A lot.** On the same 32 debates the bear won 65% under Haiku 5.5 and 29% under Sonnet 5.5 (finding 1). |
+| Is the bear's edge real? | **Small, and only under Haiku.** Five repeats gave -1.89 points of 30 (±0.40); balancing the input did not change it (findings 5 and 6). |
+| Does a quote support its claim? | **Not shown.** A model check of this failed its own pre-set test against my hand labels, so it is not used (finding 7). |
+
+Every test had its decision rule written and committed before the run, so the git history shows the rule came first.
+
 ## Findings
 
 Sixteen large companies, one 2-round debate per setup, judged repeatedly. Raw data is in `results/` and `debates/`. **Read every percentage below as one draw:** regenerating the same debates moved the bear's share by tens of points (finding 5). Comparisons that judge the *same* debates twice (finding 1) are not affected.
@@ -197,6 +208,8 @@ The SEC requires the `User-Agent` to identify you and asks for no more than abou
 | Judge saved debates in speaking order (Haiku) | `python bias.py --chrono` | about 4 cents (96 calls) |
 | Judge them with another model | `python bias.py --chrono --judge-model claude-sonnet-5-5` | about 80 cents |
 | Compare two judges' saved results | `python bias.py --compare claude-sonnet-5-5` | free |
+| Re-print the Phase D repeat-draw results | `python phase_d.py --report` | free |
+| Re-score the claim-support check against the saved labels | `python claim_support.py --report` | free |
 | Rebuild the site data | `python build_site.py` | free |
 | Preview the site | `python -m http.server 8123 --directory site` | free |
 
@@ -240,13 +253,16 @@ New here? Read in this order:
 ├── debate.py           bull and bear agents, judge, debate JSON
 ├── citations.py        does this quote really appear in the filing?
 ├── bias.py             order-swap, speaking-order and judge-model experiments
+├── phase_c.py          rerun noise control and balanced-input experiment (rule in the docstring)
+├── phase_d.py          five repeat draws per setup (rule and result in the docstring)
+├── claim_support.py    model check "does the quote back the claim", scored against hand labels
 ├── build_site.py       saved debates + results  ->  site/data.js
 ├── site/               static page: debate explorer, bias lab, quote-checker experiment
 ├── debates/            one JSON per ticker, plus variants/bear-first/
-├── results/            saved bias and judge-comparison results
+├── results/            saved bias, judge, repeat-draw and claim-support results
 ├── docs/               the animated SVGs used in this README
-├── tests/              37 pytest tests, none call the API
-├── scripts/            check_key.py: one tiny real call to verify the API key
+├── tests/              83 pytest tests, none call the API
+├── scripts/            check_key.py (one tiny real call to verify the API key), label.html (button page for hand labelling)
 ├── data/               cached filings and extracted text (git-ignored)
 └── .github/workflows/  tests.yml (pytest on every PR and push), pages.yml (deploy site)
 ```
